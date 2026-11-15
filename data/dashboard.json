@@ -1,0 +1,3263 @@
+{
+ "generated_at": "2026-11-15T18:13-05:00",
+ "today": "2026-11-15",
+ "goal": {
+  "race": "Miami Marathon",
+  "race_date": "2027-01-31",
+  "goal_time": "3:45:00",
+  "goal_pace": "8:35",
+  "tuneup": {
+   "race": "Gainesville Half Marathon",
+   "date": "2027-01-16"
+  },
+  "reference_result": {
+   "race": "Half marathon (July 2026)",
+   "distance_mi": 13.1,
+   "time": "1:42:30"
+  },
+  "goal_seconds": 13500
+ },
+ "paces": {
+  "easy": "10:00\u201310:45",
+  "recovery": "10:30+",
+  "mp": "8:35",
+  "tempo": "7:55\u20138:05",
+  "interval": "7:30\u20137:40"
+ },
+ "countdown": {
+  "race_days": 77,
+  "half_days": 62,
+  "week": 1,
+  "weeks_total": 11
+ },
+ "today_plan": null,
+ "tomorrow_plan": {
+  "date": "2026-11-16",
+  "week": 1,
+  "location": "Gainesville",
+  "run": {
+   "type": "easy",
+   "miles": 3,
+   "title": "Easy 3 mi",
+   "details": "Conversational, 10:00\u201310:45/mi."
+  },
+  "cross": null,
+  "lift": {
+   "focus": "Chest & Back",
+   "details": "~70% volume, 2\u20133 reps in reserve"
+  },
+  "note": "",
+  "actual": {
+   "run_miles": 0,
+   "runs": [],
+   "lift": false,
+   "cross": false
+  },
+  "status": "planned"
+ },
+ "current_week": {
+  "week": 1,
+  "label": "Return",
+  "location": "Gainesville",
+  "start": "2026-11-16",
+  "end": "2026-11-22",
+  "planned_miles": 15.0,
+  "actual_miles": 0,
+  "long_planned": 6,
+  "long_actual": 0,
+  "lifts": 0,
+  "is_current": false,
+  "is_past": false,
+  "days": [
+   {
+    "date": "2026-11-16",
+    "week": 1,
+    "location": "Gainesville",
+    "run": {
+     "type": "easy",
+     "miles": 3,
+     "title": "Easy 3 mi",
+     "details": "Conversational, 10:00\u201310:45/mi."
+    },
+    "cross": null,
+    "lift": {
+     "focus": "Chest & Back",
+     "details": "~70% volume, 2\u20133 reps in reserve"
+    },
+    "note": "",
+    "actual": {
+     "run_miles": 0,
+     "runs": [],
+     "lift": false,
+     "cross": false
+    },
+    "status": "planned"
+   },
+   {
+    "date": "2026-11-17",
+    "week": 1,
+    "location": "Gainesville",
+    "run": null,
+    "cross": {
+     "type": "bike",
+     "minutes": 30,
+     "title": "Easy bike 30 min",
+     "details": "Conversational / nose-breathing effort."
+    },
+    "lift": {
+     "focus": "Legs",
+     "details": "Light \u2014 ~70% volume"
+    },
+    "note": "",
+    "actual": {
+     "run_miles": 0,
+     "runs": [],
+     "lift": false,
+     "cross": false
+    },
+    "status": "planned"
+   },
+   {
+    "date": "2026-11-18",
+    "week": 1,
+    "location": "Gainesville",
+    "run": {
+     "type": "easy",
+     "miles": 3,
+     "title": "Easy 3 mi",
+     "details": "Conversational, 10:00\u201310:45/mi."
+    },
+    "cross": null,
+    "lift": {
+     "focus": "Shoulders & Arms",
+     "details": "~70% volume"
+    },
+    "note": "",
+    "actual": {
+     "run_miles": 0,
+     "runs": [],
+     "lift": false,
+     "cross": false
+    },
+    "status": "planned"
+   },
+   {
+    "date": "2026-11-19",
+    "week": 1,
+    "location": "Gainesville",
+    "run": null,
+    "cross": {
+     "type": "incline_walk",
+     "minutes": 30,
+     "title": "Incline walk 30 min",
+     "details": "10\u201312% incline, 3.0\u20133.5 mph, no rails. Swap for bike if legs are sore."
+    },
+    "lift": {
+     "focus": "Back & Bis",
+     "details": "~70% volume"
+    },
+    "note": "Full rest instead if you feel run-down.",
+    "actual": {
+     "run_miles": 0,
+     "runs": [],
+     "lift": false,
+     "cross": false
+    },
+    "status": "planned"
+   },
+   {
+    "date": "2026-11-20",
+    "week": 1,
+    "location": "Gainesville",
+    "run": {
+     "type": "long",
+     "miles": 6,
+     "title": "Long run 6 mi",
+     "details": "Easy the whole way. No lifting."
+    },
+    "cross": null,
+    "lift": null,
+    "note": "",
+    "actual": {
+     "run_miles": 0,
+     "runs": [],
+     "lift": false,
+     "cross": false
+    },
+    "status": "planned"
+   },
+   {
+    "date": "2026-11-21",
+    "week": 1,
+    "location": "Gainesville",
+    "run": {
+     "type": "easy",
+     "miles": 3,
+     "title": "Easy 3 mi + 4 strides",
+     "details": "Conversational, 10:00\u201310:45/mi."
+    },
+    "cross": null,
+    "lift": {
+     "focus": "Chest, Tris & Shoulders",
+     "details": "~70% volume"
+    },
+    "note": "Strides only if you feel good.",
+    "actual": {
+     "run_miles": 0,
+     "runs": [],
+     "lift": false,
+     "cross": false
+    },
+    "status": "planned"
+   },
+   {
+    "date": "2026-11-22",
+    "week": 1,
+    "location": "Gainesville",
+    "run": null,
+    "cross": null,
+    "lift": null,
+    "note": "Travel to NY \u2014 full rest.",
+    "actual": {
+     "run_miles": 0,
+     "runs": [],
+     "lift": false,
+     "cross": false
+    },
+    "status": "planned"
+   }
+  ]
+ },
+ "weeks": [
+  {
+   "week": 1,
+   "label": "Return",
+   "location": "Gainesville",
+   "start": "2026-11-16",
+   "end": "2026-11-22",
+   "planned_miles": 15.0,
+   "actual_miles": 0,
+   "long_planned": 6,
+   "long_actual": 0,
+   "lifts": 0,
+   "is_current": false,
+   "is_past": false
+  },
+  {
+   "week": 2,
+   "label": "Rebuild",
+   "location": "New York (Thanksgiving)",
+   "start": "2026-11-23",
+   "end": "2026-11-29",
+   "planned_miles": 23.0,
+   "actual_miles": 0,
+   "long_planned": 8,
+   "long_actual": 0,
+   "lifts": 0,
+   "is_current": false,
+   "is_past": false
+  },
+  {
+   "week": 3,
+   "label": "Build 1",
+   "location": "Gainesville",
+   "start": "2026-11-30",
+   "end": "2026-12-06",
+   "planned_miles": 27.0,
+   "actual_miles": 0,
+   "long_planned": 10,
+   "long_actual": 0,
+   "lifts": 0,
+   "is_current": false,
+   "is_past": false
+  },
+  {
+   "week": 4,
+   "label": "Build 2",
+   "location": "Gainesville",
+   "start": "2026-12-07",
+   "end": "2026-12-13",
+   "planned_miles": 31.0,
+   "actual_miles": 0,
+   "long_planned": 13,
+   "long_actual": 0,
+   "lifts": 0,
+   "is_current": false,
+   "is_past": false
+  },
+  {
+   "week": 5,
+   "label": "Cutback + travel",
+   "location": "Gainesville \u2192 New York",
+   "start": "2026-12-14",
+   "end": "2026-12-20",
+   "planned_miles": 27.0,
+   "actual_miles": 0,
+   "long_planned": 11,
+   "long_actual": 0,
+   "lifts": 0,
+   "is_current": false,
+   "is_past": false
+  },
+  {
+   "week": 6,
+   "label": "Build 3",
+   "location": "New York",
+   "start": "2026-12-21",
+   "end": "2026-12-27",
+   "planned_miles": 35.0,
+   "actual_miles": 0,
+   "long_planned": 15,
+   "long_actual": 0,
+   "lifts": 0,
+   "is_current": false,
+   "is_past": false
+  },
+  {
+   "week": 7,
+   "label": "Peak",
+   "location": "New York",
+   "start": "2026-12-28",
+   "end": "2027-01-03",
+   "planned_miles": 38.0,
+   "actual_miles": 0,
+   "long_planned": 18,
+   "long_actual": 0,
+   "lifts": 0,
+   "is_current": false,
+   "is_past": false
+  },
+  {
+   "week": 8,
+   "label": "Sharpen",
+   "location": "New York \u2192 Gainesville",
+   "start": "2027-01-04",
+   "end": "2027-01-10",
+   "planned_miles": 34.0,
+   "actual_miles": 0,
+   "long_planned": 15,
+   "long_actual": 0,
+   "lifts": 0,
+   "is_current": false,
+   "is_past": false
+  },
+  {
+   "week": 9,
+   "label": "Tune-up race",
+   "location": "Gainesville",
+   "start": "2027-01-11",
+   "end": "2027-01-17",
+   "planned_miles": 30.0,
+   "actual_miles": 0,
+   "long_planned": 14,
+   "long_actual": 0,
+   "lifts": 0,
+   "is_current": false,
+   "is_past": false
+  },
+  {
+   "week": 10,
+   "label": "Taper",
+   "location": "Gainesville",
+   "start": "2027-01-18",
+   "end": "2027-01-24",
+   "planned_miles": 27.0,
+   "actual_miles": 0,
+   "long_planned": 10,
+   "long_actual": 0,
+   "lifts": 0,
+   "is_current": false,
+   "is_past": false
+  },
+  {
+   "week": 11,
+   "label": "Race week",
+   "location": "Gainesville \u2192 Miami",
+   "start": "2027-01-25",
+   "end": "2027-01-31",
+   "planned_miles": 43.2,
+   "actual_miles": 0,
+   "long_planned": 26.2,
+   "long_actual": 0,
+   "lifts": 0,
+   "is_current": false,
+   "is_past": false
+  }
+ ],
+ "days": [
+  {
+   "date": "2026-11-16",
+   "week": 1,
+   "location": "Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 3,
+    "title": "Easy 3 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest & Back",
+    "details": "~70% volume, 2\u20133 reps in reserve"
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-17",
+   "week": 1,
+   "location": "Gainesville",
+   "run": null,
+   "cross": {
+    "type": "bike",
+    "minutes": 30,
+    "title": "Easy bike 30 min",
+    "details": "Conversational / nose-breathing effort."
+   },
+   "lift": {
+    "focus": "Legs",
+    "details": "Light \u2014 ~70% volume"
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-18",
+   "week": 1,
+   "location": "Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 3,
+    "title": "Easy 3 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Shoulders & Arms",
+    "details": "~70% volume"
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-19",
+   "week": 1,
+   "location": "Gainesville",
+   "run": null,
+   "cross": {
+    "type": "incline_walk",
+    "minutes": 30,
+    "title": "Incline walk 30 min",
+    "details": "10\u201312% incline, 3.0\u20133.5 mph, no rails. Swap for bike if legs are sore."
+   },
+   "lift": {
+    "focus": "Back & Bis",
+    "details": "~70% volume"
+   },
+   "note": "Full rest instead if you feel run-down.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-20",
+   "week": 1,
+   "location": "Gainesville",
+   "run": {
+    "type": "long",
+    "miles": 6,
+    "title": "Long run 6 mi",
+    "details": "Easy the whole way. No lifting."
+   },
+   "cross": null,
+   "lift": null,
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-21",
+   "week": 1,
+   "location": "Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 3,
+    "title": "Easy 3 mi + 4 strides",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest, Tris & Shoulders",
+    "details": "~70% volume"
+   },
+   "note": "Strides only if you feel good.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-22",
+   "week": 1,
+   "location": "Gainesville",
+   "run": null,
+   "cross": null,
+   "lift": null,
+   "note": "Travel to NY \u2014 full rest.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-23",
+   "week": 2,
+   "location": "New York (Thanksgiving)",
+   "run": {
+    "type": "easy",
+    "miles": 3,
+    "title": "Easy 3 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest & Back",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-24",
+   "week": 2,
+   "location": "New York (Thanksgiving)",
+   "run": {
+    "type": "easy",
+    "miles": 5,
+    "title": "Easy 5 mi + 6 strides",
+    "details": "Easy pace, then 6 \u00d7 20 sec quick & relaxed."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Legs",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-25",
+   "week": 2,
+   "location": "New York (Thanksgiving)",
+   "run": null,
+   "cross": {
+    "type": "bike",
+    "minutes": 35,
+    "title": "Easy bike 35 min",
+    "details": "Conversational / nose-breathing effort."
+   },
+   "lift": {
+    "focus": "Shoulders & Arms",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-26",
+   "week": 2,
+   "location": "New York (Thanksgiving)",
+   "run": {
+    "type": "easy",
+    "miles": 4,
+    "title": "Easy 4 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": null,
+   "note": "Thanksgiving \u2014 Turkey Trot is fine at steady effort, not a race.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-27",
+   "week": 2,
+   "location": "New York (Thanksgiving)",
+   "run": {
+    "type": "long",
+    "miles": 8,
+    "title": "Long run 8 mi",
+    "details": "Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."
+   },
+   "cross": null,
+   "lift": null,
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-28",
+   "week": 2,
+   "location": "New York (Thanksgiving)",
+   "run": {
+    "type": "recovery",
+    "miles": 3,
+    "title": "Recovery 3 mi",
+    "details": "Very easy, 10:30+/mi. Shake out the long run."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Back & Bis",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-29",
+   "week": 2,
+   "location": "New York (Thanksgiving)",
+   "run": null,
+   "cross": null,
+   "lift": {
+    "focus": "Chest, Tris & Shoulders",
+    "details": ""
+   },
+   "note": "Travel back to Gainesville.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-30",
+   "week": 3,
+   "location": "Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 4,
+    "title": "Easy 4 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest & Back",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-01",
+   "week": 3,
+   "location": "Gainesville",
+   "run": {
+    "type": "workout",
+    "miles": 6,
+    "title": "Tempo: 3 \u00d7 1 mi",
+    "details": "1.5 mi warm-up \u00b7 3 \u00d7 1 mi @ 7:55\u20138:05 w/ 90 sec jog \u00b7 1.5 mi cool-down"
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Legs",
+    "details": ""
+   },
+   "note": "Run AM, lift PM.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-02",
+   "week": 3,
+   "location": "Gainesville",
+   "run": null,
+   "cross": {
+    "type": "bike",
+    "minutes": 40,
+    "title": "Easy bike 40 min",
+    "details": "Conversational / nose-breathing effort."
+   },
+   "lift": {
+    "focus": "Shoulders & Arms",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-03",
+   "week": 3,
+   "location": "Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 4,
+    "title": "Easy 4 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Back & Bis",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-04",
+   "week": 3,
+   "location": "Gainesville",
+   "run": {
+    "type": "long",
+    "miles": 10,
+    "title": "Long run 10 mi",
+    "details": "Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."
+   },
+   "cross": null,
+   "lift": null,
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-05",
+   "week": 3,
+   "location": "Gainesville",
+   "run": {
+    "type": "recovery",
+    "miles": 3,
+    "title": "Recovery 3 mi",
+    "details": "Very easy, 10:30+/mi. Shake out the long run."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest, Tris & Shoulders",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-06",
+   "week": 3,
+   "location": "Gainesville",
+   "run": null,
+   "cross": null,
+   "lift": null,
+   "note": "Full rest.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-07",
+   "week": 4,
+   "location": "Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 4,
+    "title": "Easy 4 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest & Back",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-08",
+   "week": 4,
+   "location": "Gainesville",
+   "run": {
+    "type": "workout",
+    "miles": 6,
+    "title": "Tempo: 2 \u00d7 2 mi",
+    "details": "1 mi warm-up \u00b7 2 \u00d7 2 mi @ 7:55\u20138:05 w/ 2 min jog \u00b7 1 mi cool-down"
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Legs",
+    "details": ""
+   },
+   "note": "Run AM, lift PM.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-09",
+   "week": 4,
+   "location": "Gainesville",
+   "run": null,
+   "cross": {
+    "type": "incline_walk",
+    "minutes": 35,
+    "title": "Incline walk 35 min",
+    "details": "10\u201312% incline, 3.0\u20133.5 mph, no rails. Swap for bike if legs are sore."
+   },
+   "lift": {
+    "focus": "Shoulders & Arms",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-10",
+   "week": 4,
+   "location": "Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 5,
+    "title": "Easy 5 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Back & Bis",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-11",
+   "week": 4,
+   "location": "Gainesville",
+   "run": {
+    "type": "long",
+    "miles": 13,
+    "title": "Long run 13 mi",
+    "details": "10 easy, last 3 @ marathon pace (8:35)."
+   },
+   "cross": null,
+   "lift": null,
+   "note": "First marathon-pace miles.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-12",
+   "week": 4,
+   "location": "Gainesville",
+   "run": {
+    "type": "recovery",
+    "miles": 3,
+    "title": "Recovery 3 mi",
+    "details": "Very easy, 10:30+/mi. Shake out the long run."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest, Tris & Shoulders",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-13",
+   "week": 4,
+   "location": "Gainesville",
+   "run": null,
+   "cross": null,
+   "lift": null,
+   "note": "Full rest.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-14",
+   "week": 5,
+   "location": "Gainesville \u2192 New York",
+   "run": {
+    "type": "workout",
+    "miles": 5,
+    "title": "MP run: 3 mi @ 8:35",
+    "details": "1 mi warm-up \u00b7 3 mi @ 8:35 \u00b7 1 mi cool-down"
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Legs",
+    "details": ""
+   },
+   "note": "Before travel.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-15",
+   "week": 5,
+   "location": "Gainesville \u2192 New York",
+   "run": null,
+   "cross": null,
+   "lift": null,
+   "note": "Travel to NY (approx.) \u2014 rest.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-16",
+   "week": 5,
+   "location": "Gainesville \u2192 New York",
+   "run": {
+    "type": "easy",
+    "miles": 4,
+    "title": "Easy 4 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest & Back",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-17",
+   "week": 5,
+   "location": "Gainesville \u2192 New York",
+   "run": {
+    "type": "easy",
+    "miles": 4,
+    "title": "Easy 4 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Back & Bis",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-18",
+   "week": 5,
+   "location": "Gainesville \u2192 New York",
+   "run": null,
+   "cross": {
+    "type": "bike",
+    "minutes": 40,
+    "title": "Easy bike 40 min",
+    "details": "Conversational / nose-breathing effort."
+   },
+   "lift": {
+    "focus": "Shoulders & Arms",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-19",
+   "week": 5,
+   "location": "Gainesville \u2192 New York",
+   "run": {
+    "type": "long",
+    "miles": 11,
+    "title": "Long run 11 mi",
+    "details": "Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."
+   },
+   "cross": null,
+   "lift": null,
+   "note": "Cutback week.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-20",
+   "week": 5,
+   "location": "Gainesville \u2192 New York",
+   "run": {
+    "type": "recovery",
+    "miles": 3,
+    "title": "Recovery 3 mi",
+    "details": "Very easy, 10:30+/mi. Shake out the long run."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest, Tris & Shoulders",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-21",
+   "week": 6,
+   "location": "New York",
+   "run": {
+    "type": "easy",
+    "miles": 5,
+    "title": "Easy 5 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest & Back",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-22",
+   "week": 6,
+   "location": "New York",
+   "run": {
+    "type": "workout",
+    "miles": 7,
+    "title": "MP run: 5 mi @ 8:35",
+    "details": "1 mi warm-up \u00b7 5 mi @ 8:35 \u00b7 1 mi cool-down"
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Legs",
+    "details": ""
+   },
+   "note": "Treadmill at 1% if icy.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-23",
+   "week": 6,
+   "location": "New York",
+   "run": null,
+   "cross": {
+    "type": "bike",
+    "minutes": 40,
+    "title": "Easy bike 40 min",
+    "details": "Conversational / nose-breathing effort."
+   },
+   "lift": {
+    "focus": "Shoulders & Arms",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-24",
+   "week": 6,
+   "location": "New York",
+   "run": {
+    "type": "easy",
+    "miles": 5,
+    "title": "Easy 5 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Back & Bis",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-25",
+   "week": 6,
+   "location": "New York",
+   "run": null,
+   "cross": null,
+   "lift": null,
+   "note": "Christmas \u2014 rest (optional easy bike).",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-26",
+   "week": 6,
+   "location": "New York",
+   "run": {
+    "type": "long",
+    "miles": 15,
+    "title": "Long run 15 mi",
+    "details": "Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."
+   },
+   "cross": null,
+   "lift": null,
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-27",
+   "week": 6,
+   "location": "New York",
+   "run": {
+    "type": "recovery",
+    "miles": 3,
+    "title": "Recovery 3 mi",
+    "details": "Very easy, 10:30+/mi. Shake out the long run."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest, Tris & Shoulders",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-28",
+   "week": 7,
+   "location": "New York",
+   "run": {
+    "type": "easy",
+    "miles": 4,
+    "title": "Easy 4 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest & Back",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-29",
+   "week": 7,
+   "location": "New York",
+   "run": {
+    "type": "workout",
+    "miles": 8,
+    "title": "Tempo: 3 \u00d7 1.5 mi",
+    "details": "1.5 mi warm-up \u00b7 3 \u00d7 1.5 mi @ 7:55\u20138:05 w/ 2 min jog \u00b7 1 mi cool-down"
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Legs",
+    "details": "Last heavy leg day \u2014 maintenance from here"
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-30",
+   "week": 7,
+   "location": "New York",
+   "run": null,
+   "cross": {
+    "type": "bike",
+    "minutes": 40,
+    "title": "Easy bike 40 min",
+    "details": "Conversational / nose-breathing effort."
+   },
+   "lift": {
+    "focus": "Shoulders & Arms",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-31",
+   "week": 7,
+   "location": "New York",
+   "run": {
+    "type": "easy",
+    "miles": 5,
+    "title": "Easy 5 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Back & Bis",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-01",
+   "week": 7,
+   "location": "New York",
+   "run": null,
+   "cross": null,
+   "lift": null,
+   "note": "New Year's Day \u2014 rest before the long run.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-02",
+   "week": 7,
+   "location": "New York",
+   "run": {
+    "type": "long",
+    "miles": 18,
+    "title": "Long run 18 mi",
+    "details": "Peak long run. Easy; gel every 45 min; last 2 mi can drift toward 8:35."
+   },
+   "cross": null,
+   "lift": null,
+   "note": "Biggest run of the block.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-03",
+   "week": 7,
+   "location": "New York",
+   "run": {
+    "type": "recovery",
+    "miles": 3,
+    "title": "Recovery 3 mi",
+    "details": "Very easy, 10:30+/mi. Shake out the long run."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest, Tris & Shoulders",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-04",
+   "week": 8,
+   "location": "New York \u2192 Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 4,
+    "title": "Easy 4 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest & Back",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-05",
+   "week": 8,
+   "location": "New York \u2192 Gainesville",
+   "run": {
+    "type": "workout",
+    "miles": 7,
+    "title": "Tempo: 2 \u00d7 2.5 mi",
+    "details": "1 mi warm-up \u00b7 2 \u00d7 2.5 mi @ 7:55\u20138:05 w/ 2 min jog \u00b7 1 mi cool-down"
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Legs",
+    "details": "Maintenance: lighter, fewer sets"
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-06",
+   "week": 8,
+   "location": "New York \u2192 Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 5,
+    "title": "Easy 5 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Shoulders & Arms",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-07",
+   "week": 8,
+   "location": "New York \u2192 Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 3,
+    "title": "Easy 3 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Back & Bis",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-08",
+   "week": 8,
+   "location": "New York \u2192 Gainesville",
+   "run": null,
+   "cross": null,
+   "lift": null,
+   "note": "Travel back to Gainesville \u2014 rest.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-09",
+   "week": 8,
+   "location": "New York \u2192 Gainesville",
+   "run": {
+    "type": "long",
+    "miles": 15,
+    "title": "Long run 15 mi",
+    "details": "7 easy, then 8 @ marathon pace (8:35). Race-day fueling and shoes."
+   },
+   "cross": null,
+   "lift": null,
+   "note": "Dress rehearsal for race pace.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-10",
+   "week": 8,
+   "location": "New York \u2192 Gainesville",
+   "run": null,
+   "cross": null,
+   "lift": {
+    "focus": "Chest, Tris & Shoulders",
+    "details": ""
+   },
+   "note": "Rest from running.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-11",
+   "week": 9,
+   "location": "Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 4,
+    "title": "Easy 4 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest & Back",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-12",
+   "week": 9,
+   "location": "Gainesville",
+   "run": {
+    "type": "workout",
+    "miles": 6,
+    "title": "MP run: 4 mi @ 8:35",
+    "details": "1 mi warm-up \u00b7 4 mi @ 8:35 \u00b7 1 mi cool-down"
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Legs",
+    "details": "Light maintenance"
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-13",
+   "week": 9,
+   "location": "Gainesville",
+   "run": null,
+   "cross": {
+    "type": "bike",
+    "minutes": 30,
+    "title": "Easy bike 30 min",
+    "details": "Conversational / nose-breathing effort."
+   },
+   "lift": {
+    "focus": "Shoulders & Arms",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-14",
+   "week": 9,
+   "location": "Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 4,
+    "title": "Easy 4 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Back & Bis",
+    "details": ""
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-15",
+   "week": 9,
+   "location": "Gainesville",
+   "run": {
+    "type": "shakeout",
+    "miles": 2,
+    "title": "Shakeout 2 mi + 4 strides",
+    "details": "Very easy."
+   },
+   "cross": null,
+   "lift": null,
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-16",
+   "week": 9,
+   "location": "Gainesville",
+   "run": {
+    "type": "race",
+    "miles": 14,
+    "title": "Gainesville Half Marathon",
+    "details": "1 mi warm-up \u00b7 first 10 mi @ 8:35 \u00b7 last 5K ~8:00. Controlled \u2014 NOT all-out."
+   },
+   "cross": null,
+   "lift": null,
+   "note": "Race-day rehearsal: breakfast, gels, shoes.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-17",
+   "week": 9,
+   "location": "Gainesville",
+   "run": null,
+   "cross": null,
+   "lift": {
+    "focus": "Chest, Tris & Shoulders",
+    "details": "Light"
+   },
+   "note": "Rest from running.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-18",
+   "week": 10,
+   "location": "Gainesville",
+   "run": {
+    "type": "recovery",
+    "miles": 3,
+    "title": "Recovery 3 mi",
+    "details": "Very easy, 10:30+/mi. Shake out the long run."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest & Back",
+    "details": "Light"
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-19",
+   "week": 10,
+   "location": "Gainesville",
+   "run": {
+    "type": "workout",
+    "miles": 6,
+    "title": "Intervals: 4 \u00d7 1 mi",
+    "details": "1 mi warm-up \u00b7 4 \u00d7 1 mi @ 7:55\u20138:05 w/ 90 sec jog \u00b7 1 mi cool-down"
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Legs",
+    "details": "Light \u2014 last leg session"
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-20",
+   "week": 10,
+   "location": "Gainesville",
+   "run": null,
+   "cross": {
+    "type": "bike",
+    "minutes": 30,
+    "title": "Easy bike 30 min",
+    "details": "Conversational / nose-breathing effort."
+   },
+   "lift": {
+    "focus": "Shoulders & Arms",
+    "details": "Light"
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-21",
+   "week": 10,
+   "location": "Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 5,
+    "title": "Easy 5 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Back & Bis",
+    "details": "Light"
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-22",
+   "week": 10,
+   "location": "Gainesville",
+   "run": {
+    "type": "long",
+    "miles": 10,
+    "title": "Long run 10 mi",
+    "details": "Easy. Last long run."
+   },
+   "cross": null,
+   "lift": null,
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-23",
+   "week": 10,
+   "location": "Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 3,
+    "title": "Easy 3 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest, Tris & Shoulders",
+    "details": "Light"
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-24",
+   "week": 10,
+   "location": "Gainesville",
+   "run": null,
+   "cross": null,
+   "lift": null,
+   "note": "Full rest.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-25",
+   "week": 11,
+   "location": "Gainesville \u2192 Miami",
+   "run": {
+    "type": "easy",
+    "miles": 4,
+    "title": "Easy 4 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest & Back",
+    "details": "Very light, upper only"
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-26",
+   "week": 11,
+   "location": "Gainesville \u2192 Miami",
+   "run": {
+    "type": "workout",
+    "miles": 5,
+    "title": "MP tune: 2 mi @ 8:35",
+    "details": "1.5 mi warm-up \u00b7 2 mi @ 8:35 \u00b7 1.5 mi cool-down"
+   },
+   "cross": null,
+   "lift": null,
+   "note": "No leg lifting this week.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-27",
+   "week": 11,
+   "location": "Gainesville \u2192 Miami",
+   "run": {
+    "type": "easy",
+    "miles": 3,
+    "title": "Easy 3 mi",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Shoulders & Arms",
+    "details": "Very light"
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-28",
+   "week": 11,
+   "location": "Gainesville \u2192 Miami",
+   "run": {
+    "type": "easy",
+    "miles": 3,
+    "title": "Easy 3 mi + 4 strides",
+    "details": "Conversational, 10:00\u201310:45/mi."
+   },
+   "cross": null,
+   "lift": null,
+   "note": "Start carb-loading Friday.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-29",
+   "week": 11,
+   "location": "Gainesville \u2192 Miami",
+   "run": null,
+   "cross": null,
+   "lift": null,
+   "note": "Rest. Travel to Miami; pick up bib.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-30",
+   "week": 11,
+   "location": "Gainesville \u2192 Miami",
+   "run": {
+    "type": "shakeout",
+    "miles": 2,
+    "title": "Shakeout 2 mi",
+    "details": "15\u201320 min very easy + 3 strides."
+   },
+   "cross": null,
+   "lift": null,
+   "note": "Lay out gear tonight.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2027-01-31",
+   "week": 11,
+   "location": "Gainesville \u2192 Miami",
+   "run": {
+    "type": "race",
+    "miles": 26.2,
+    "title": "MIAMI MARATHON",
+    "details": "Goal 3:45 \u2192 8:35/mi. First 3 mi at 8:40\u20138:45, settle into 8:35, push only after mile 20."
+   },
+   "cross": null,
+   "lift": null,
+   "note": "Race day.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  }
+ ],
+ "compliance": {
+  "runs_planned": 0,
+  "runs_done": 0,
+  "pct": null,
+  "miles_planned": 0,
+  "miles_done": 0
+ },
+ "totals": {
+  "block_miles": 0,
+  "block_runs": 0,
+  "longest": 0
+ },
+ "prediction": {
+  "current": {
+   "seconds": 12805,
+   "method": "July half, adjusted by Garmin VO2max trend (56 \u2192 57)",
+   "fitness_seconds": 12670,
+   "endurance_penalty": 135,
+   "time": "3:33:25",
+   "pace": "8:08",
+   "gap": -695
+  },
+  "history": [
+   {
+    "date": "2026-07-25",
+    "seconds": 12998,
+    "source": "July half",
+    "fitness_seconds": 12778
+   },
+   {
+    "date": "2026-07-29",
+    "seconds": 12986,
+    "source": "VO2max trend",
+    "fitness_seconds": 12766
+   },
+   {
+    "date": "2026-07-31",
+    "seconds": 13010,
+    "source": "VO2max trend",
+    "fitness_seconds": 12790
+   },
+   {
+    "date": "2026-08-01",
+    "seconds": 13035,
+    "source": "VO2max trend",
+    "fitness_seconds": 12815
+   },
+   {
+    "date": "2026-08-03",
+    "seconds": 13084,
+    "source": "VO2max trend",
+    "fitness_seconds": 12864
+   },
+   {
+    "date": "2026-08-04",
+    "seconds": 13108,
+    "source": "VO2max trend",
+    "fitness_seconds": 12888
+   },
+   {
+    "date": "2026-08-06",
+    "seconds": 13158,
+    "source": "VO2max trend",
+    "fitness_seconds": 12938
+   },
+   {
+    "date": "2026-08-09",
+    "seconds": 13133,
+    "source": "VO2max trend",
+    "fitness_seconds": 12913
+   },
+   {
+    "date": "2026-08-11",
+    "seconds": 13133,
+    "source": "VO2max trend",
+    "fitness_seconds": 12913
+   },
+   {
+    "date": "2026-08-13",
+    "seconds": 13108,
+    "source": "VO2max trend",
+    "fitness_seconds": 12888
+   },
+   {
+    "date": "2026-08-17",
+    "seconds": 13108,
+    "source": "VO2max trend",
+    "fitness_seconds": 12888
+   },
+   {
+    "date": "2026-08-18",
+    "seconds": 13084,
+    "source": "VO2max trend",
+    "fitness_seconds": 12864
+   },
+   {
+    "date": "2026-08-19",
+    "seconds": 13059,
+    "source": "VO2max trend",
+    "fitness_seconds": 12839
+   },
+   {
+    "date": "2026-08-20",
+    "seconds": 13010,
+    "source": "VO2max trend",
+    "fitness_seconds": 12790
+   },
+   {
+    "date": "2026-08-21",
+    "seconds": 13035,
+    "source": "VO2max trend",
+    "fitness_seconds": 12815
+   },
+   {
+    "date": "2026-08-23",
+    "seconds": 13010,
+    "source": "VO2max trend",
+    "fitness_seconds": 12790
+   },
+   {
+    "date": "2026-08-25",
+    "seconds": 12986,
+    "source": "VO2max trend",
+    "fitness_seconds": 12766
+   },
+   {
+    "date": "2026-08-26",
+    "seconds": 13035,
+    "source": "VO2max trend",
+    "fitness_seconds": 12815
+   },
+   {
+    "date": "2026-08-27",
+    "seconds": 13035,
+    "source": "VO2max trend",
+    "fitness_seconds": 12815
+   },
+   {
+    "date": "2026-08-28",
+    "seconds": 13035,
+    "source": "VO2max trend",
+    "fitness_seconds": 12815
+   },
+   {
+    "date": "2026-09-02",
+    "seconds": 13059,
+    "source": "VO2max trend",
+    "fitness_seconds": 12839
+   },
+   {
+    "date": "2026-09-03",
+    "seconds": 13059,
+    "source": "VO2max trend",
+    "fitness_seconds": 12839
+   },
+   {
+    "date": "2026-09-04",
+    "seconds": 13084,
+    "source": "VO2max trend",
+    "fitness_seconds": 12864
+   },
+   {
+    "date": "2026-09-05",
+    "seconds": 13108,
+    "source": "VO2max trend",
+    "fitness_seconds": 12888
+   },
+   {
+    "date": "2026-09-06",
+    "seconds": 13220,
+    "source": "VO2max trend",
+    "fitness_seconds": 12815
+   },
+   {
+    "date": "2026-09-07",
+    "seconds": 13195,
+    "source": "VO2max trend",
+    "fitness_seconds": 12790
+   },
+   {
+    "date": "2026-09-08",
+    "seconds": 13220,
+    "source": "VO2max trend",
+    "fitness_seconds": 12815
+   },
+   {
+    "date": "2026-09-10",
+    "seconds": 13244,
+    "source": "VO2max trend",
+    "fitness_seconds": 12839
+   },
+   {
+    "date": "2026-09-11",
+    "seconds": 13224,
+    "source": "VO2max trend",
+    "fitness_seconds": 12864
+   },
+   {
+    "date": "2026-09-13",
+    "seconds": 13199,
+    "source": "VO2max trend",
+    "fitness_seconds": 12839
+   },
+   {
+    "date": "2026-09-14",
+    "seconds": 13224,
+    "source": "VO2max trend",
+    "fitness_seconds": 12864
+   },
+   {
+    "date": "2026-09-15",
+    "seconds": 13248,
+    "source": "VO2max trend",
+    "fitness_seconds": 12888
+   },
+   {
+    "date": "2026-09-16",
+    "seconds": 13224,
+    "source": "VO2max trend",
+    "fitness_seconds": 12864
+   },
+   {
+    "date": "2026-09-18",
+    "seconds": 13224,
+    "source": "VO2max trend",
+    "fitness_seconds": 12864
+   },
+   {
+    "date": "2026-09-20",
+    "seconds": 13109,
+    "source": "VO2max trend",
+    "fitness_seconds": 12839
+   },
+   {
+    "date": "2026-09-22",
+    "seconds": 13109,
+    "source": "VO2max trend",
+    "fitness_seconds": 12839
+   },
+   {
+    "date": "2026-09-23",
+    "seconds": 13109,
+    "source": "VO2max trend",
+    "fitness_seconds": 12839
+   },
+   {
+    "date": "2026-09-24",
+    "seconds": 13085,
+    "source": "VO2max trend",
+    "fitness_seconds": 12815
+   },
+   {
+    "date": "2026-09-25",
+    "seconds": 13109,
+    "source": "VO2max trend",
+    "fitness_seconds": 12839
+   },
+   {
+    "date": "2026-09-28",
+    "seconds": 13060,
+    "source": "VO2max trend",
+    "fitness_seconds": 12790
+   },
+   {
+    "date": "2026-09-29",
+    "seconds": 13060,
+    "source": "VO2max trend",
+    "fitness_seconds": 12790
+   },
+   {
+    "date": "2026-10-01",
+    "seconds": 13060,
+    "source": "VO2max trend",
+    "fitness_seconds": 12790
+   },
+   {
+    "date": "2026-10-05",
+    "seconds": 13085,
+    "source": "VO2max trend",
+    "fitness_seconds": 12815
+   },
+   {
+    "date": "2026-10-06",
+    "seconds": 13085,
+    "source": "VO2max trend",
+    "fitness_seconds": 12815
+   },
+   {
+    "date": "2026-10-07",
+    "seconds": 13060,
+    "source": "VO2max trend",
+    "fitness_seconds": 12790
+   },
+   {
+    "date": "2026-10-09",
+    "seconds": 12970,
+    "source": "VO2max trend",
+    "fitness_seconds": 12790
+   },
+   {
+    "date": "2026-10-11",
+    "seconds": 12970,
+    "source": "VO2max trend",
+    "fitness_seconds": 12790
+   },
+   {
+    "date": "2026-10-12",
+    "seconds": 12970,
+    "source": "VO2max trend",
+    "fitness_seconds": 12790
+   },
+   {
+    "date": "2026-10-14",
+    "seconds": 12970,
+    "source": "VO2max trend",
+    "fitness_seconds": 12790
+   },
+   {
+    "date": "2026-10-16",
+    "seconds": 12946,
+    "source": "VO2max trend",
+    "fitness_seconds": 12766
+   },
+   {
+    "date": "2026-10-17",
+    "seconds": 12970,
+    "source": "VO2max trend",
+    "fitness_seconds": 12790
+   },
+   {
+    "date": "2026-10-18",
+    "seconds": 12922,
+    "source": "VO2max trend",
+    "fitness_seconds": 12742
+   },
+   {
+    "date": "2026-10-19",
+    "seconds": 12850,
+    "source": "VO2max trend",
+    "fitness_seconds": 12670
+   },
+   {
+    "date": "2026-10-20",
+    "seconds": 12826,
+    "source": "VO2max trend",
+    "fitness_seconds": 12646
+   },
+   {
+    "date": "2026-10-22",
+    "seconds": 12757,
+    "source": "VO2max trend",
+    "fitness_seconds": 12622
+   },
+   {
+    "date": "2026-10-24",
+    "seconds": 12757,
+    "source": "VO2max trend",
+    "fitness_seconds": 12622
+   },
+   {
+    "date": "2026-10-26",
+    "seconds": 12781,
+    "source": "VO2max trend",
+    "fitness_seconds": 12646
+   },
+   {
+    "date": "2026-10-28",
+    "seconds": 12805,
+    "source": "VO2max trend",
+    "fitness_seconds": 12670
+   },
+   {
+    "date": "2026-10-29",
+    "seconds": 12734,
+    "source": "VO2max trend",
+    "fitness_seconds": 12599
+   },
+   {
+    "date": "2026-10-30",
+    "seconds": 12757,
+    "source": "VO2max trend",
+    "fitness_seconds": 12622
+   },
+   {
+    "date": "2026-11-07",
+    "seconds": 12781,
+    "source": "VO2max trend",
+    "fitness_seconds": 12646
+   },
+   {
+    "date": "2026-11-08",
+    "seconds": 12805,
+    "source": "VO2max trend",
+    "fitness_seconds": 12670
+   },
+   {
+    "date": "2026-11-10",
+    "seconds": 12853,
+    "source": "VO2max trend",
+    "fitness_seconds": 12718
+   },
+   {
+    "date": "2026-11-11",
+    "seconds": 12901,
+    "source": "VO2max trend",
+    "fitness_seconds": 12766
+   },
+   {
+    "date": "2026-11-15",
+    "seconds": 12805,
+    "fitness_seconds": 12670,
+    "source": "Today"
+   }
+  ],
+  "goal_seconds": 13500
+ },
+ "efficiency": [
+  {
+   "date": "2026-06-18",
+   "ef": 1.049,
+   "pace": "9:25",
+   "hr": 163.0,
+   "ef_avg": 1.049
+  },
+  {
+   "date": "2026-07-29",
+   "ef": 1.142,
+   "pace": "9:43",
+   "hr": 145.0,
+   "ef_avg": 1.095
+  },
+  {
+   "date": "2026-07-31",
+   "ef": 1.094,
+   "pace": "9:29",
+   "hr": 155.0,
+   "ef_avg": 1.095
+  },
+  {
+   "date": "2026-08-03",
+   "ef": 1.093,
+   "pace": "9:53",
+   "hr": 149.0,
+   "ef_avg": 1.095
+  },
+  {
+   "date": "2026-08-06",
+   "ef": 1.039,
+   "pace": "9:27",
+   "hr": 164.0,
+   "ef_avg": 1.083
+  },
+  {
+   "date": "2026-08-18",
+   "ef": 1.166,
+   "pace": "9:27",
+   "hr": 146.0,
+   "ef_avg": 1.107
+  },
+  {
+   "date": "2026-08-21",
+   "ef": 1.164,
+   "pace": "9:24",
+   "hr": 147.0,
+   "ef_avg": 1.111
+  },
+  {
+   "date": "2026-08-23",
+   "ef": 1.169,
+   "pace": "9:22",
+   "hr": 147.0,
+   "ef_avg": 1.126
+  },
+  {
+   "date": "2026-08-28",
+   "ef": 1.101,
+   "pace": "9:30",
+   "hr": 154.0,
+   "ef_avg": 1.128
+  },
+  {
+   "date": "2026-09-02",
+   "ef": 1.022,
+   "pace": "10:06",
+   "hr": 156.0,
+   "ef_avg": 1.124
+  },
+  {
+   "date": "2026-09-03",
+   "ef": 1.067,
+   "pace": "9:22",
+   "hr": 161.0,
+   "ef_avg": 1.105
+  },
+  {
+   "date": "2026-09-04",
+   "ef": 1.023,
+   "pace": "9:43",
+   "hr": 162.0,
+   "ef_avg": 1.076
+  },
+  {
+   "date": "2026-09-08",
+   "ef": 1.095,
+   "pace": "9:29",
+   "hr": 155.0,
+   "ef_avg": 1.062
+  },
+  {
+   "date": "2026-09-10",
+   "ef": 1.068,
+   "pace": "9:40",
+   "hr": 156.0,
+   "ef_avg": 1.055
+  },
+  {
+   "date": "2026-09-14",
+   "ef": 0.956,
+   "pace": "10:31",
+   "hr": 160.0,
+   "ef_avg": 1.042
+  },
+  {
+   "date": "2026-09-15",
+   "ef": 1.165,
+   "pace": "9:32",
+   "hr": 145.0,
+   "ef_avg": 1.061
+  },
+  {
+   "date": "2026-09-20",
+   "ef": 1.14,
+   "pace": "9:21",
+   "hr": 151.0,
+   "ef_avg": 1.085
+  },
+  {
+   "date": "2026-09-23",
+   "ef": 1.155,
+   "pace": "10:14",
+   "hr": 136.0,
+   "ef_avg": 1.097
+  },
+  {
+   "date": "2026-09-25",
+   "ef": 1.051,
+   "pace": "9:53",
+   "hr": 155.0,
+   "ef_avg": 1.093
+  },
+  {
+   "date": "2026-10-06",
+   "ef": 1.125,
+   "pace": "9:48",
+   "hr": 146.0,
+   "ef_avg": 1.127
+  },
+  {
+   "date": "2026-10-09",
+   "ef": 1.119,
+   "pace": "9:16",
+   "hr": 155.0,
+   "ef_avg": 1.118
+  },
+  {
+   "date": "2026-10-11",
+   "ef": 1.122,
+   "pace": "9:26",
+   "hr": 152.0,
+   "ef_avg": 1.114
+  },
+  {
+   "date": "2026-10-17",
+   "ef": 1.175,
+   "pace": "9:51",
+   "hr": 139.0,
+   "ef_avg": 1.118
+  }
+ ],
+ "recovery": {
+  "resting_hr": [],
+  "hrv": [
+   {
+    "date": "2026-10-17",
+    "v": 68
+   },
+   {
+    "date": "2026-10-18",
+    "v": 62
+   },
+   {
+    "date": "2026-10-19",
+    "v": 43
+   },
+   {
+    "date": "2026-10-20",
+    "v": 54
+   },
+   {
+    "date": "2026-10-21",
+    "v": 44
+   },
+   {
+    "date": "2026-10-22",
+    "v": 49
+   },
+   {
+    "date": "2026-10-23",
+    "v": 49
+   },
+   {
+    "date": "2026-10-24",
+    "v": 51
+   },
+   {
+    "date": "2026-10-25",
+    "v": 65
+   },
+   {
+    "date": "2026-10-26",
+    "v": 64
+   },
+   {
+    "date": "2026-10-27",
+    "v": 59
+   },
+   {
+    "date": "2026-10-28",
+    "v": 58
+   },
+   {
+    "date": "2026-10-29",
+    "v": 48
+   },
+   {
+    "date": "2026-10-30",
+    "v": 57
+   },
+   {
+    "date": "2026-10-31",
+    "v": 63
+   },
+   {
+    "date": "2026-11-01",
+    "v": 52
+   },
+   {
+    "date": "2026-11-02",
+    "v": 52
+   },
+   {
+    "date": "2026-11-03",
+    "v": 72
+   },
+   {
+    "date": "2026-11-04",
+    "v": 74
+   },
+   {
+    "date": "2026-11-05",
+    "v": 63
+   },
+   {
+    "date": "2026-11-06",
+    "v": 73
+   },
+   {
+    "date": "2026-11-07",
+    "v": 76
+   },
+   {
+    "date": "2026-11-08",
+    "v": 69
+   },
+   {
+    "date": "2026-11-09",
+    "v": 61
+   },
+   {
+    "date": "2026-11-10",
+    "v": 62
+   },
+   {
+    "date": "2026-11-11",
+    "v": 61
+   },
+   {
+    "date": "2026-11-12",
+    "v": 42
+   },
+   {
+    "date": "2026-11-13",
+    "v": 63
+   },
+   {
+    "date": "2026-11-14",
+    "v": 67
+   },
+   {
+    "date": "2026-11-15",
+    "v": 79
+   }
+  ],
+  "sleep_hours": [
+   {
+    "date": "2026-10-17",
+    "v": 10.02
+   },
+   {
+    "date": "2026-10-18",
+    "v": 6.68
+   },
+   {
+    "date": "2026-10-19",
+    "v": 4.48
+   },
+   {
+    "date": "2026-10-20",
+    "v": 9.15
+   },
+   {
+    "date": "2026-10-21",
+    "v": 3.7
+   },
+   {
+    "date": "2026-10-22",
+    "v": 6.57
+   },
+   {
+    "date": "2026-10-23",
+    "v": 4.3
+   },
+   {
+    "date": "2026-10-24",
+    "v": 6.48
+   },
+   {
+    "date": "2026-10-25",
+    "v": 6.03
+   },
+   {
+    "date": "2026-10-26",
+    "v": 10.0
+   },
+   {
+    "date": "2026-10-27",
+    "v": 5.8
+   },
+   {
+    "date": "2026-10-28",
+    "v": 8.33
+   },
+   {
+    "date": "2026-10-29",
+    "v": 4.3
+   },
+   {
+    "date": "2026-10-30",
+    "v": 8.38
+   },
+   {
+    "date": "2026-10-31",
+    "v": 7.23
+   },
+   {
+    "date": "2026-11-01",
+    "v": 9.68
+   },
+   {
+    "date": "2026-11-02",
+    "v": 3.68
+   },
+   {
+    "date": "2026-11-03",
+    "v": 6.05
+   },
+   {
+    "date": "2026-11-04",
+    "v": 4.13
+   },
+   {
+    "date": "2026-11-05",
+    "v": 9.77
+   },
+   {
+    "date": "2026-11-06",
+    "v": 9.42
+   },
+   {
+    "date": "2026-11-07",
+    "v": 10.13
+   },
+   {
+    "date": "2026-11-08",
+    "v": 9.85
+   },
+   {
+    "date": "2026-11-09",
+    "v": 7.05
+   },
+   {
+    "date": "2026-11-10",
+    "v": 7.2
+   },
+   {
+    "date": "2026-11-11",
+    "v": 9.95
+   },
+   {
+    "date": "2026-11-12",
+    "v": 4.68
+   },
+   {
+    "date": "2026-11-13",
+    "v": 5.73
+   },
+   {
+    "date": "2026-11-14",
+    "v": 6.78
+   },
+   {
+    "date": "2026-11-15",
+    "v": 6.57
+   }
+  ],
+  "sleep_score": [
+   {
+    "date": "2026-10-17",
+    "v": 82
+   },
+   {
+    "date": "2026-10-18",
+    "v": 68
+   },
+   {
+    "date": "2026-10-19",
+    "v": 56
+   },
+   {
+    "date": "2026-10-20",
+    "v": 80
+   },
+   {
+    "date": "2026-10-21",
+    "v": 39
+   },
+   {
+    "date": "2026-10-22",
+    "v": 63
+   },
+   {
+    "date": "2026-10-23",
+    "v": 50
+   },
+   {
+    "date": "2026-10-24",
+    "v": 50
+   },
+   {
+    "date": "2026-10-25",
+    "v": 72
+   },
+   {
+    "date": "2026-10-26",
+    "v": 89
+   },
+   {
+    "date": "2026-10-27",
+    "v": 61
+   },
+   {
+    "date": "2026-10-28",
+    "v": 76
+   },
+   {
+    "date": "2026-10-29",
+    "v": 40
+   },
+   {
+    "date": "2026-10-30",
+    "v": 68
+   },
+   {
+    "date": "2026-10-31",
+    "v": 76
+   },
+   {
+    "date": "2026-11-01",
+    "v": 84
+   },
+   {
+    "date": "2026-11-02",
+    "v": 37
+   },
+   {
+    "date": "2026-11-03",
+    "v": 66
+   },
+   {
+    "date": "2026-11-04",
+    "v": 47
+   },
+   {
+    "date": "2026-11-05",
+    "v": 88
+   },
+   {
+    "date": "2026-11-06",
+    "v": 90
+   },
+   {
+    "date": "2026-11-07",
+    "v": 92
+   },
+   {
+    "date": "2026-11-08",
+    "v": 78
+   },
+   {
+    "date": "2026-11-09",
+    "v": 77
+   },
+   {
+    "date": "2026-11-10",
+    "v": 78
+   },
+   {
+    "date": "2026-11-11",
+    "v": 60
+   },
+   {
+    "date": "2026-11-12",
+    "v": 38
+   },
+   {
+    "date": "2026-11-13",
+    "v": 70
+   },
+   {
+    "date": "2026-11-14",
+    "v": 81
+   },
+   {
+    "date": "2026-11-15",
+    "v": 83
+   }
+  ],
+  "flags": []
+ },
+ "recent_runs": [
+  {
+   "id": 25048873274,
+   "date": "2026-11-11",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 7.01,
+   "time": "1:04:16",
+   "pace": "9:10",
+   "pace_s": 550,
+   "hr": 154.0,
+   "max_hr": 179.0,
+   "elev_ft": 127,
+   "cadence": 167.171875,
+   "te": 3.4000000953674316,
+   "label": "AEROBIC_BASE"
+  },
+  {
+   "id": 25036851863,
+   "date": "2026-11-10",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 3.11,
+   "time": "28:09",
+   "pace": "9:04",
+   "pace_s": 544,
+   "hr": 155.0,
+   "max_hr": 169.0,
+   "elev_ft": 42,
+   "cadence": 165.265625,
+   "te": 3.0,
+   "label": "AEROBIC_BASE"
+  },
+  {
+   "id": 25014573740,
+   "date": "2026-11-08",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 4.0,
+   "time": "35:43",
+   "pace": "8:55",
+   "pace_s": 535,
+   "hr": 148.0,
+   "max_hr": 178.0,
+   "elev_ft": 64,
+   "cadence": 165.375,
+   "te": 3.0999999046325684,
+   "label": "AEROBIC_BASE"
+  },
+  {
+   "id": 25001572772,
+   "date": "2026-11-07",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 2.01,
+   "time": "16:05",
+   "pace": "8:01",
+   "pace_s": 481,
+   "hr": 162.0,
+   "max_hr": 175.0,
+   "elev_ft": 44,
+   "cadence": 168.8125,
+   "te": 2.799999952316284,
+   "label": "TEMPO"
+  },
+  {
+   "id": 24907773723,
+   "date": "2026-10-30",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 10.0,
+   "time": "1:23:24",
+   "pace": "8:20",
+   "pace_s": 500,
+   "hr": 166.0,
+   "max_hr": 182.0,
+   "elev_ft": 218,
+   "cadence": 169.59375,
+   "te": 4.5,
+   "label": "LACTATE_THRESHOLD"
+  },
+  {
+   "id": 24899030414,
+   "date": "2026-10-29",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 4.12,
+   "time": "31:41",
+   "pace": "7:42",
+   "pace_s": 462,
+   "hr": 164.0,
+   "max_hr": 179.0,
+   "elev_ft": 4,
+   "cadence": 170.53125,
+   "te": 3.5,
+   "label": "TEMPO"
+  },
+  {
+   "id": 24885269344,
+   "date": "2026-10-28",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 4.01,
+   "time": "35:19",
+   "pace": "8:49",
+   "pace_s": 529,
+   "hr": 161.0,
+   "max_hr": 179.0,
+   "elev_ft": 85,
+   "cadence": 167.21875,
+   "te": 3.299999952316284,
+   "label": "TEMPO"
+  },
+  {
+   "id": 24862914878,
+   "date": "2026-10-26",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 4.01,
+   "time": "35:01",
+   "pace": "8:44",
+   "pace_s": 524,
+   "hr": 162.0,
+   "max_hr": 178.0,
+   "elev_ft": 78,
+   "cadence": 169.78125,
+   "te": 3.299999952316284,
+   "label": "TEMPO"
+  },
+  {
+   "id": 24840604867,
+   "date": "2026-10-24",
+   "name": "Nashville Running",
+   "type": "running",
+   "miles": 2.01,
+   "time": "18:42",
+   "pace": "9:17",
+   "pace_s": 557,
+   "hr": 150.0,
+   "max_hr": 175.0,
+   "elev_ft": 170,
+   "cadence": 161.84375,
+   "te": 2.5,
+   "label": "TEMPO"
+  },
+  {
+   "id": 24815057158,
+   "date": "2026-10-22",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 15.01,
+   "time": "2:16:17",
+   "pace": "9:05",
+   "pace_s": 545,
+   "hr": 142.0,
+   "max_hr": 169.0,
+   "elev_ft": 409,
+   "cadence": 169.578125,
+   "te": 4.0,
+   "label": "AEROBIC_BASE"
+  },
+  {
+   "id": 24797182199,
+   "date": "2026-10-20",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 5.0,
+   "time": "41:55",
+   "pace": "8:23",
+   "pace_s": 503,
+   "hr": 153.0,
+   "max_hr": 179.0,
+   "elev_ft": 73,
+   "cadence": 169.78125,
+   "te": 3.4000000953674316,
+   "label": "AEROBIC_BASE"
+  },
+  {
+   "id": 24784307677,
+   "date": "2026-10-19",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 4.01,
+   "time": "29:37",
+   "pace": "7:24",
+   "pace_s": 444,
+   "hr": 160.0,
+   "max_hr": 191.0,
+   "elev_ft": 7,
+   "cadence": 170.5625,
+   "te": 3.5999999046325684,
+   "label": "TEMPO"
+  }
+ ],
+ "last_activity": {
+  "id": 25048873274,
+  "date": "2026-11-11",
+  "name": "Gainesville Running",
+  "type": "running",
+  "miles": 7.01,
+  "time": "1:04:16",
+  "pace": "9:10",
+  "pace_s": 550,
+  "hr": 154.0,
+  "max_hr": 179.0,
+  "elev_ft": 127,
+  "cadence": 167.171875,
+  "te": 3.4000000953674316,
+  "label": "AEROBIC_BASE"
+ },
+ "sync_warnings": [],
+ "demo": false
+}
