@@ -1,0 +1,383 @@
+{
+ "hrv": {
+  "hrvSummaries": [
+   {
+    "baseline": {
+     "balancedLow": "int",
+     "balancedUpper": "int",
+     "lowUpper": "int",
+     "markerValue": "float"
+    },
+    "calendarDate": "str",
+    "createTimeStamp": "str",
+    "feedbackPhrase": "str",
+    "lastNight5MinHigh": "int",
+    "lastNightAvg": "int",
+    "status": "str",
+    "weeklyAvg": "int"
+   }
+  ],
+  "userProfilePk": "int"
+ },
+ "resting_hr": {
+  "data": [
+   {
+    "bodyBattery": {
+     "activityEvents": [
+      "..."
+     ],
+     "chargedValue": "int",
+     "drainedValue": "int",
+     "dynamicFeedbackEvent": {
+      "bodyBatteryLevel": "...",
+      "eventTimestampGmt": "...",
+      "feedbackLongType": "...",
+      "feedbackShortType": "..."
+     },
+     "endOfDayDynamicFeedbackEvent": {
+      "bodyBatteryLevel": "...",
+      "eventTimestampGmt": "...",
+      "feedbackLongType": "...",
+      "feedbackShortType": "..."
+     },
+     "featureVersion": "str",
+     "latestValue": "int",
+     "maxValue": "int",
+     "minValue": "int"
+    },
+    "calendarDate": "str",
+    "calories": {
+     "burnedActive": "int",
+     "burnedResting": "int",
+     "burnedTotal": "int"
+    },
+    "heartRate": {
+     "maxValue": "int",
+     "minValue": "int",
+     "restingValue": "int"
+    },
+    "hydration": {
+     "consumedInFractionalMl": "float",
+     "consumedInMl": "int",
+     "goalInFractionalMl": "float",
+     "goalInMl": "int"
+    },
+    "includesActivityData": "bool",
+    "includesWellnessData": "bool",
+    "intensityMinutes": {
+     "goal": "int",
+     "moderate": "int",
+     "vigorous": "int"
+    },
+    "jetLag": {},
+    "movement": {
+     "floorsAscended": {
+      "goal": "..."
+     },
+     "floorsDescended": {},
+     "pushes": {},
+     "steps": {
+      "distanceInMeters": "...",
+      "goal": "...",
+      "value": "..."
+     }
+    },
+    "pulseOx": {
+     "avgAltitudeInMeters": "float"
+    },
+    "respiration": {
+     "algorithmVersion": "int",
+     "avgValue": "int",
+     "latestTimestampGmt": "str",
+     "latestValue": "int",
+     "maxValue": "int",
+     "minValue": "int"
+    },
+    "source": "str",
+    "stress": {
+     "activityDurationInMillis": "int",
+     "activityProportion": "float",
+     "avgLevel": "int",
+     "highStressDurationInMillis": "int",
+     "highStressProportion": "float",
+     "lowStressDurationInMillis": "int",
+     "lowStressProportion": "float",
+     "maxLevel": "int",
+     "mediumStressDurationInMillis": "int",
+     "mediumStressProportion": "float",
+     "qualifier": "str",
+     "restDurationInMillis": "int",
+     "restProportion": "float",
+     "totalDurationInMillis": "int",
+     "uncategorizedDurationInMillis": "int",
+     "uncategorizedProportion": "float"
+    },
+    "userProfilePk": "int",
+    "uuid": "str",
+    "wellnessChronology": {
+     "endTimestampGmt": "str",
+     "endTimestampLocal": "str",
+     "startTimestampGmt": "str",
+     "startTimestampLocal": "str",
+     "totalDurationInMillis": "int"
+    }
+   }
+  ]
+ },
+ "sleep_hours": [
+  {
+   "ageGroup": "str",
+   "autoSleepEndTimestampGMT": "NoneType",
+   "autoSleepStartTimestampGMT": "NoneType",
+   "averageRespirationValue": "float",
+   "avgHeartRate": "float",
+   "avgSleepStress": "float",
+   "awakeCount": "int",
+   "awakeSleepSeconds": "int",
+   "calendarDate": "str",
+   "deepSleepSeconds": "int",
+   "deviceRemCapable": "bool",
+   "highestRespirationValue": "float",
+   "id": "int",
+   "lightSleepSeconds": "int",
+   "lowestRespirationValue": "float",
+   "napTimeSeconds": "int",
+   "nextSleepNeed": {
+    "actual": "int",
+    "baseline": "int",
+    "calendarDate": "str",
+    "deviceId": "int",
+    "displayedForTheDay": "bool",
+    "feedback": "str",
+    "hrvAdjustment": "str",
+    "napAdjustment": "str",
+    "preferredActivityTracker": "bool",
+    "recommendedBedtimeEndMins": "int",
+    "recommendedBedtimeStartMins": "int",
+    "sleepHistoryAdjustment": "str",
+    "timestampGmt": "str",
+    "trainingFeedback": "str",
+    "userProfilePk": "int"
+   },
+   "remSleepSeconds": "int",
+   "retro": "bool",
+   "sleepEndTimestampGMT": "int",
+   "sleepEndTimestampLocal": "int",
+   "sleepFromDevice": "bool",
+   "sleepNeed": {
+    "actual": "int",
+    "baseline": "int",
+    "calendarDate": "str",
+    "deviceId": "int",
+    "displayedForTheDay": "bool",
+    "feedback": "str",
+    "hrvAdjustment": "str",
+    "napAdjustment": "str",
+    "preferredActivityTracker": "bool",
+    "recommendedBedtimeEndMins": "int",
+    "recommendedBedtimeStartMins": "int",
+    "sleepHistoryAdjustment": "str",
+    "timestampGmt": "str",
+    "trainingFeedback": "str",
+    "userProfilePk": "int"
+   },
+   "sleepQualityTypePK": "NoneType",
+   "sleepResultTypePK": "NoneType",
+   "sleepScoreFeedback": "str",
+   "sleepScoreInsight": "str",
+   "sleepScorePersonalizedInsight": "str",
+   "sleepScores": {
+    "awakeCount": {
+     "optimalEnd": "float",
+     "optimalStart": "float",
+     "qualifierKey": "str"
+    },
+    "deepPercentage": {
+     "idealEndInSeconds": "float",
+     "idealStartInSeconds": "float",
+     "optimalEnd": "float",
+     "optimalStart": "float",
+     "qualifierKey": "str",
+     "value": "int"
+    },
+    "lightPercentage": {
+     "idealEndInSeconds": "float",
+     "idealStartInSeconds": "float",
+     "optimalEnd": "float",
+     "optimalStart": "float",
+     "qualifierKey": "str",
+     "value": "int"
+    },
+    "overall": {
+     "qualifierKey": "str",
+     "value": "int"
+    },
+    "remPercentage": {
+     "idealEndInSeconds": "float",
+     "idealStartInSeconds": "float",
+     "optimalEnd": "float",
+     "optimalStart": "float",
+     "qualifierKey": "str",
+     "value": "int"
+    },
+    "restlessness": {
+     "optimalEnd": "float",
+     "optimalStart": "float",
+     "qualifierKey": "str"
+    },
+    "stress": {
+     "optimalEnd": "float",
+     "optimalStart": "float",
+     "qualifierKey": "str"
+    },
+    "totalDuration": {
+     "optimalEnd": "float",
+     "optimalStart": "float",
+     "qualifierKey": "str"
+    }
+   },
+   "sleepStartTimestampGMT": "int",
+   "sleepStartTimestampLocal": "int",
+   "sleepTimeSeconds": "int",
+   "sleepVersion": "int",
+   "sleepWindowConfirmationType": "str",
+   "sleepWindowConfirmed": "bool",
+   "unmeasurableSleepSeconds": "int",
+   "userProfilePK": "int"
+  }
+ ],
+ "sleep_score": [
+  {
+   "ageGroup": "str",
+   "autoSleepEndTimestampGMT": "NoneType",
+   "autoSleepStartTimestampGMT": "NoneType",
+   "averageRespirationValue": "float",
+   "avgHeartRate": "float",
+   "avgSleepStress": "float",
+   "awakeCount": "int",
+   "awakeSleepSeconds": "int",
+   "calendarDate": "str",
+   "deepSleepSeconds": "int",
+   "deviceRemCapable": "bool",
+   "highestRespirationValue": "float",
+   "id": "int",
+   "lightSleepSeconds": "int",
+   "lowestRespirationValue": "float",
+   "napTimeSeconds": "int",
+   "nextSleepNeed": {
+    "actual": "int",
+    "baseline": "int",
+    "calendarDate": "str",
+    "deviceId": "int",
+    "displayedForTheDay": "bool",
+    "feedback": "str",
+    "hrvAdjustment": "str",
+    "napAdjustment": "str",
+    "preferredActivityTracker": "bool",
+    "recommendedBedtimeEndMins": "int",
+    "recommendedBedtimeStartMins": "int",
+    "sleepHistoryAdjustment": "str",
+    "timestampGmt": "str",
+    "trainingFeedback": "str",
+    "userProfilePk": "int"
+   },
+   "remSleepSeconds": "int",
+   "retro": "bool",
+   "sleepEndTimestampGMT": "int",
+   "sleepEndTimestampLocal": "int",
+   "sleepFromDevice": "bool",
+   "sleepNeed": {
+    "actual": "int",
+    "baseline": "int",
+    "calendarDate": "str",
+    "deviceId": "int",
+    "displayedForTheDay": "bool",
+    "feedback": "str",
+    "hrvAdjustment": "str",
+    "napAdjustment": "str",
+    "preferredActivityTracker": "bool",
+    "recommendedBedtimeEndMins": "int",
+    "recommendedBedtimeStartMins": "int",
+    "sleepHistoryAdjustment": "str",
+    "timestampGmt": "str",
+    "trainingFeedback": "str",
+    "userProfilePk": "int"
+   },
+   "sleepQualityTypePK": "NoneType",
+   "sleepResultTypePK": "NoneType",
+   "sleepScoreFeedback": "str",
+   "sleepScoreInsight": "str",
+   "sleepScorePersonalizedInsight": "str",
+   "sleepScores": {
+    "awakeCount": {
+     "optimalEnd": "float",
+     "optimalStart": "float",
+     "qualifierKey": "str"
+    },
+    "deepPercentage": {
+     "idealEndInSeconds": "float",
+     "idealStartInSeconds": "float",
+     "optimalEnd": "float",
+     "optimalStart": "float",
+     "qualifierKey": "str",
+     "value": "int"
+    },
+    "lightPercentage": {
+     "idealEndInSeconds": "float",
+     "idealStartInSeconds": "float",
+     "optimalEnd": "float",
+     "optimalStart": "float",
+     "qualifierKey": "str",
+     "value": "int"
+    },
+    "overall": {
+     "qualifierKey": "str",
+     "value": "int"
+    },
+    "remPercentage": {
+     "idealEndInSeconds": "float",
+     "idealStartInSeconds": "float",
+     "optimalEnd": "float",
+     "optimalStart": "float",
+     "qualifierKey": "str",
+     "value": "int"
+    },
+    "restlessness": {
+     "optimalEnd": "float",
+     "optimalStart": "float",
+     "qualifierKey": "str"
+    },
+    "stress": {
+     "optimalEnd": "float",
+     "optimalStart": "float",
+     "qualifierKey": "str"
+    },
+    "totalDuration": {
+     "optimalEnd": "float",
+     "optimalStart": "float",
+     "qualifierKey": "str"
+    }
+   },
+   "sleepStartTimestampGMT": "int",
+   "sleepStartTimestampLocal": "int",
+   "sleepTimeSeconds": "int",
+   "sleepVersion": "int",
+   "sleepWindowConfirmationType": "str",
+   "sleepWindowConfirmed": "bool",
+   "unmeasurableSleepSeconds": "int",
+   "userProfilePK": "int"
+  }
+ ],
+ "vo2max": [
+  {
+   "cycling": "NoneType",
+   "generic": {
+    "calendarDate": "str",
+    "sport": "str",
+    "subSport": "str",
+    "vo2MaxPreciseValue": "float",
+    "vo2MaxValue": "float"
+   }
+  }
+ ]
+}
