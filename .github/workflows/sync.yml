@@ -61,7 +61,7 @@ jobs:
         run: |
           git config user.name "dashboard-bot"
           git config user.email "dashboard-bot@users.noreply.github.com"
-          git add data plan/plan.json plan/*.ics
+          git add data plan/plan.json
           git diff --cached --quiet || git commit -m "Sync Garmin data $(TZ=America/New_York date '+%b %d %H:%M')"
           git push
 
