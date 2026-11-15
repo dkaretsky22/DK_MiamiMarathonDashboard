@@ -321,10 +321,11 @@ function gators(){
   if(!G)return`<div class="card"><h2>🐊 Gators Hoops</h2><p class="sub">Basketball data appears after the next sync.</p></div>`;
   const t=G.team||{},games=G.games||[];
   const w=games.filter(g=>g.result==='W').length,l=games.filter(g=>g.result==='L').length;
+  const rec=a=>`${a.filter(g=>g.result==='W').length}-${a.filter(g=>g.result==='L').length}`;
   return`<div class="grid g4">
       <div class="card tile"><h3>Record</h3><div class="val">${esc(t.record||`${w}-${l}`)}</div><div class="note">${esc(t.standing||'')}</div></div>
       <div class="card tile"><h3>AP rank</h3><div class="val">${t.rank?'#'+t.rank:'NR'}</div><div class="note">2026–27 season</div></div>
-      <div class="card tile"><h3>Home</h3><div class="val">${esc((t.records||{}).home||'–')}</div><div class="note">Away ${esc((t.records||{}).road||(t.records||{}).away||'–')}</div></div>
+      <div class="card tile"><h3>Home</h3><div class="val">${rec(games.filter(g=>g.home&&!g.neutral))}</div><div class="note">Away ${rec(games.filter(g=>!g.home&&!g.neutral))} · Neutral ${rec(games.filter(g=>g.neutral))}</div></div>
       <div class="card tile"><h3>Last 5</h3><div class="val" style="font-size:26px">${games.filter(g=>g.result).slice(-5).map(g=>`<span class="wl ${g.result}" style="margin-right:3px">${g.result}</span>`).join('')||'–'}</div><div class="note">Most recent on the right</div></div>
     </div>
     <section class="grid g2">${G.live_game?gameCard(G.live_game,'Live now'):gameCard(G.next_game,'Next game')}${gameCard(G.last_game,'Last game')}</section>
@@ -335,7 +336,7 @@ function gators(){
         <td class="muted" style="white-space:nowrap">${esc(g.tv||'')}</td></tr>`).join('')}</tbody></table></div><p class="sub">* SEC game</p></div>
       <div class="card"><h2>Season averages</h2>${(G.players||[]).length?`<div class="scroll"><table><thead><tr><th>Player</th><th class="num">GP</th><th class="num">PPG</th><th class="num">RPG</th><th class="num">APG</th><th class="num">MPG</th></tr></thead><tbody>${G.players.filter(p=>p.minpg>=3).map(p=>`<tr><td>${esc(p.name)} <span class="muted">${esc(p.pos||'')}</span></td><td class="num">${p.gp}</td><td class="num"><b>${p.ptspg}</b></td><td class="num">${p.rebpg}</td><td class="num">${p.astpg}</td><td class="num">${p.minpg}</td></tr>`).join('')}</tbody></table></div>`:'<p class="sub">Appears once games are played.</p>'}</div>
     </section>
-    <section class="card"><h2>Latest news</h2><div class="news">${(G.news||[]).map(n=>`<a href="${esc(n.url)}" target="_blank" rel="noopener">${n.image?`<img src="${esc(n.image)}" alt="" loading="lazy">`:'<div></div>'}<div><b>${esc(n.headline)}</b><span>${esc(n.description||'')}</span><br><span>${n.published?ago(n.published):''}</span></div></a>`).join('')||'<p class="sub">No news right now.</p>'}</div></section>
+    <section class="card"><h2>Latest news</h2><div class="news">${(G.news||[]).map(n=>`<a href="${esc(n.url)}" target="_blank" rel="noopener">${n.image?`<img src="${esc(n.image)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`:'<div></div>'}<div><b>${esc(n.headline)}</b><span>${esc(n.description||'')}</span><br><span>${n.published?ago(n.published):''}</span></div></a>`).join('')||'<p class="sub">No news right now.</p>'}</div></section>
     <p class="sub" style="text-align:center">Scores and news from ESPN · updated ${G.updated?ago(G.updated):''}</p>`;
 }
 
