@@ -1,0 +1,90 @@
+name: Sync Garmin & update dashboard
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"     # every 15 minutes (GitHub may delay runs a few minutes)
+  workflow_dispatch:            # "Run workflow" button for an instant refresh
+  push:
+    branches: [main]
+    paths: ["plan/**", "site/**", "sync/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    outputs:
+      deploy: ${{ steps.check.outputs.deploy }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Build plan
+        run: python plan/build_plan.py
+
+      - name: Pull data from Garmin
+        continue-on-error: true   # if Garmin is down, still refresh the day's plan
+        env:
+          GARMIN_PERSONAL_API_KEY: ${{ secrets.GARMIN_PERSONAL_API_KEY }}
+        run: python sync/sync.py
+
+      - name: Compute dashboard
+        run: python sync/compute.py
+
+      - name: Decide whether anything changed
+        id: check
+        run: |
+          today=$(TZ=America/New_York date +%F)
+          last=$(cat data/.last_day 2>/dev/null || echo none)
+          changed=$(git status --porcelain data/activities.json data/wellness.json plan/plan.json)
+          if [ -n "$changed" ] || [ "$today" != "$last" ] || [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+          fi
+          echo "$today" > data/.last_day
+
+      - name: Save new data to the repo
+        if: steps.check.outputs.deploy == 'true'
+        run: |
+          git config user.name "dashboard-bot"
+          git config user.email "dashboard-bot@users.noreply.github.com"
+          git add data plan/plan.json plan/*.ics
+          git diff --cached --quiet || git commit -m "Sync Garmin data $(TZ=America/New_York date '+%b %d %H:%M')"
+          git push
+
+      - name: Assemble site
+        if: steps.check.outputs.deploy == 'true'
+        run: |
+          mkdir -p _site
+          cp site/* _site/
+          cp data/dashboard.json _site/
+          python -c "import sys; sys.path.insert(0,'plan'); import build_plan as b, json, pathlib; b.build_ics(json.load(open('plan/plan.json')), 1, pathlib.Path('_site/plan.ics'))"
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.check.outputs.deploy == 'true'
+        with:
+          path: _site
+
+  deploy:
+    needs: sync
+    if: needs.sync.outputs.deploy == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

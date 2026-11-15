@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miami Marathon · Sub-3:45</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏃</text></svg>">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f4f3f0; --surface:#fcfcfb; --ink:#0b0b0b; --ink-2:#52514e; --ink-3:#7a7974;
+  --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.10);
+  --s1:#2a78d6; --s2:#eb6834; --planned:#d9d8d1;
+  --good:#0ca30c; --good-text:#006300; --warn:#fab219; --serious:#ec835a; --crit:#d03b3b;
+  --wash:rgba(42,120,214,.08);
+}
+@media (prefers-color-scheme:dark){:root{
+  color-scheme:dark;
+  --bg:#111110; --surface:#1a1a19; --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#8f8e88;
+  --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10);
+  --s1:#3987e5; --s2:#d95926; --planned:#3a3a37; --good-text:#0ca30c; --wash:rgba(57,135,229,.12);
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1160px;margin:0 auto;padding:28px 20px 60px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+h1{font-size:28px;margin:0;letter-spacing:-.02em}
+h2{font-size:15px;margin:0 0 12px;font-weight:650}
+.sub{color:var(--ink-2);font-size:14px}
+.muted{color:var(--ink-3)}
+.grid{display:grid;gap:14px}
+.g5{grid-template-columns:repeat(5,1fr)} .g2{grid-template-columns:1fr 1fr} .g3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.g5{grid-template-columns:repeat(2,1fr)}.g2,.g3{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px}
+section{margin-top:14px}
+.tile .label{font-size:12px;color:var(--ink-2);text-transform:uppercase;letter-spacing:.04em}
+.tile .val{font-size:30px;font-weight:700;letter-spacing:-.02em;margin-top:4px;font-variant-numeric:tabular-nums}
+.tile .note{font-size:13px;color:var(--ink-2);margin-top:2px}
+.up{color:var(--good-text)} .down{color:var(--crit)}
+.bar{height:6px;border-radius:3px;background:var(--grid);margin-top:10px;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--s1);border-radius:3px}
+.day h3{margin:0 0 2px;font-size:13px;color:var(--ink-2);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.item{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--grid)}
+.item:first-of-type{border-top:0}
+.item .ic{font-size:18px;width:24px;text-align:center}
+.item b{display:block}
+.item span{color:var(--ink-2);font-size:13.5px}
+.pill{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:600;padding:2px 8px;border-radius:99px;border:1px solid var(--border);white-space:nowrap}
+.pill.done{color:var(--good-text)} .pill.missed{color:var(--crit)} .pill.partial{color:var(--ink-2)}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+@media (max-width:900px){.week{grid-template-columns:1fr}}
+.wd{border:1px solid var(--border);border-radius:10px;padding:10px;min-height:118px;font-size:13px;background:var(--surface)}
+.wd.is-today{outline:2px solid var(--s1);outline-offset:-1px}
+.wd .dname{font-weight:650;display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.wd .r{font-weight:600}
+.wd .x{color:var(--ink-2);margin-top:3px}
+.flag{background:color-mix(in srgb,var(--warn) 18%,var(--surface));border:1px solid color-mix(in srgb,var(--warn) 55%,transparent);border-radius:10px;padding:10px 14px;margin-top:14px;font-size:14px}
+table{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
+th{text-align:left;font-weight:600;color:var(--ink-2);font-size:12px;text-transform:uppercase;letter-spacing:.04em;padding:6px 8px;border-bottom:1px solid var(--axis)}
+td{padding:7px 8px;border-bottom:1px solid var(--grid)}
+tr.cur td{background:var(--wash)}
+.num{text-align:right}
+.chart{position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.legend{display:flex;gap:14px;font-size:12.5px;color:var(--ink-2);margin:-4px 0 8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--surface);font-size:12.5px;padding:6px 9px;border-radius:7px;white-space:nowrap;transform:translate(-50%,-110%);opacity:0;transition:opacity .08s;z-index:5}
+details summary{cursor:pointer;font-weight:650}
+footer{margin-top:28px;color:var(--ink-3);font-size:12.5px;text-align:center}
+.demo{background:var(--s2);color:#fff;font-weight:700;font-size:12px;padding:3px 9px;border-radius:6px;margin-left:8px;vertical-align:4px}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"><p class="muted">Loading…</p></div>
+
+<script>
+const $ = (s, el=document) => el.querySelector(s);
+const fmt = s => { if (s==null) return '–'; s=Math.round(s); const h=Math.floor(s/3600), m=Math.floor(s%3600/60), x=s%60;
+  return h ? `${h}:${String(m).padStart(2,'0')}:${String(x).padStart(2,'0')}` : `${m}:${String(x).padStart(2,'0')}`; };
+const D = iso => new Date(iso+'T12:00:00');
+const dayName = iso => D(iso).toLocaleDateString('en-US',{weekday:'short'});
+const md = iso => D(iso).toLocaleDateString('en-US',{month:'short',day:'numeric'});
+const esc = s => String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+
+const STATUS = {done:['✓','Done'], missed:['✕','Missed'], partial:['◐','Partial'], skipped:['–','Skipped']};
+const pill = st => STATUS[st] ? `<span class="pill ${st}">${STATUS[st][0]} ${STATUS[st][1]}</span>` : '';
+const ICON = {easy:'🏃',recovery:'🏃',long:'🏃',workout:'⚡',race:'🏁',shakeout:'🏃',bike:'🚴',incline_walk:'🚶'};
+
+function dayItems(d){
+  if(!d) return '<p class="muted">Outside the training block.</p>';
+  const out=[];
+  if(d.run) out.push(`<div class="item"><div class="ic">${ICON[d.run.type]||'🏃'}</div><div><b>${esc(d.run.title)} ${d.run.type!=='rest'&&d.date<=DATA.today?pill(d.status):''}</b><span>${esc(d.run.details)}</span>${d.actual.run_miles?`<span> · Logged ${d.actual.run_miles} mi</span>`:''}</div></div>`);
+  if(d.cross) out.push(`<div class="item"><div class="ic">${ICON[d.cross.type]}</div><div><b>${esc(d.cross.title)}${d.actual.cross?' <span class="pill done">✓ Logged</span>':''}</b><span>${esc(d.cross.details)}</span></div></div>`);
+  if(d.lift) out.push(`<div class="item"><div class="ic">🏋️</div><div><b>Lift – ${esc(d.lift.focus)}${d.actual.lift?' <span class="pill done">✓ Logged</span>':''}</b>${d.lift.details?`<span>${esc(d.lift.details)}</span>`:''}</div></div>`);
+  if(!out.length) out.push(`<div class="item"><div class="ic">😴</div><div><b>Rest day</b></div></div>`);
+  if(d.note) out.push(`<div class="item"><div class="ic">📝</div><div><span>${esc(d.note)}</span></div></div>`);
+  return out.join('');
+}
+
+/* ---------- tiny SVG chart kit (one y-axis, hover tooltips) ---------- */
+function chart(el, {series, labels, yFmt=v=>v, yMin, yMax, ref, height=220, width=560, kind='line', tip}){
+  const W=width, H=height, L=46, R=10, T=10, B=26, iw=W-L-R, ih=H-T-B;
+  const all = series.flatMap(s=>s.values.filter(v=>v!=null)).concat(ref?[ref.value]:[]);
+  let lo = yMin ?? Math.min(...all), hi = yMax ?? Math.max(...all);
+  if(lo===hi){lo-=1;hi+=1} const pad=(hi-lo)*0.08; if(yMin==null) lo-=pad; if(yMax==null) hi+=pad;
+  const n=labels.length, x = i => L + (kind==='bar' ? (i+0.5)*iw/n : (n<2? iw/2 : i*iw/(n-1)));
+  const y = v => T + ih - (v-lo)/(hi-lo)*ih;
+  let g='';
+  for(let k=0;k<=4;k++){ const v=lo+(hi-lo)*k/4, yy=y(v);
+    g+=`<line x1="${L}" x2="${W-R}" y1="${yy}" y2="${yy}" stroke="${css(k?'--grid':'--axis')}" stroke-width="1"/>`+
+       `<text x="${L-6}" y="${yy+4}" text-anchor="end" font-size="11" fill="${css('--ink-3')}">${yFmt(v)}</text>`; }
+  const step=Math.max(1,Math.ceil(n/8));
+  labels.forEach((lb,i)=>{ if((i%step===0 && n-1-i>=step*0.6)||i===n-1) g+=`<text x="${x(i)}" y="${H-6}" text-anchor="middle" font-size="11" fill="${css('--ink-3')}">${esc(lb)}</text>`; });
+  if(ref){ g+=`<line x1="${L}" x2="${W-R}" y1="${y(ref.value)}" y2="${y(ref.value)}" stroke="${css('--s2')}" stroke-width="1.5" stroke-dasharray="5 4"/>`+
+    `<text x="${W-R}" y="${y(ref.value)-6}" text-anchor="end" font-size="11.5" font-weight="600" fill="${css('--ink-2')}">${esc(ref.label)}</text>`; }
+  if(kind==='bar'){
+    const bw=Math.min(28, iw/n*0.62);
+    series.forEach((s,si)=>s.values.forEach((v,i)=>{ if(v==null) return;
+      const w = si===0? bw : bw*0.56, top=y(v), base=y(Math.max(lo,0)), hgt=Math.max(0,base-top), r=Math.min(4,hgt/2, w/2);
+      g+=`<path d="M${x(i)-w/2},${base} V${top+r} q0,-${r} ${r},-${r} H${x(i)+w/2-r} q${r},0 ${r},${r} V${base} Z" fill="${s.color}"/>`; }));
+  } else {
+    series.forEach(s=>{
+      if(s.dots){ s.values.forEach((v,i)=>{ if(v!=null) g+=`<circle cx="${x(i)}" cy="${y(v)}" r="3" fill="${s.color}" opacity=".45"/>`; }); return; }
+      let dpath='', on=false; s.values.forEach((v,i)=>{ if(v==null){on=false;return} dpath+=(on?'L':'M')+x(i)+','+y(v); on=true; });
+      g+=`<path d="${dpath}" fill="none" stroke="${s.color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" ${s.dash?'stroke-dasharray="4 4"':''}/>`;
+      const li=s.values.length-1; if(s.values[li]!=null && s.endDot) g+=`<circle cx="${x(li)}" cy="${y(s.values[li])}" r="4.5" fill="${s.color}" stroke="${css('--surface')}" stroke-width="2"/>`;
+    });
+  }
+  g+=`<line class="cross" x1="0" x2="0" y1="${T}" y2="${T+ih}" stroke="${css('--axis')}" stroke-width="1" opacity="0"/>`;
+  g+=`<rect x="${L}" y="${T}" width="${iw}" height="${ih}" fill="transparent"/>`;
+  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img">${g}</svg><div class="tip"></div>`;
+  const svg=$('svg',el), tipEl=$('.tip',el), cross=$('.cross',el);
+  svg.addEventListener('mousemove',e=>{
+    const r=svg.getBoundingClientRect(), px=(e.clientX-r.left)/r.width*W;
+    let i = kind==='bar' ? Math.floor((px-L)/(iw/n)) : Math.round((px-L)/(iw/Math.max(1,n-1)));
+    i=Math.max(0,Math.min(n-1,i)); const html=tip(i); if(!html){tipEl.style.opacity=0;return}
+    cross.setAttribute('x1',x(i)); cross.setAttribute('x2',x(i)); cross.setAttribute('opacity',kind==='bar'?0:1);
+    tipEl.innerHTML=html; tipEl.style.left=(x(i)/W*r.width)+'px'; tipEl.style.top=(T/H*r.height+20)+'px'; tipEl.style.opacity=1; });
+  svg.addEventListener('mouseleave',()=>{tipEl.style.opacity=0;cross.setAttribute('opacity',0)});
+}
+
+function spark(el, pts, {color, fmtV=v=>v}){
+  if(!pts.length){ el.innerHTML='<p class="muted">No data yet</p>'; return; }
+  chart(el,{kind:'line',height:150,width:340,labels:pts.map(p=>md(p.date)),series:[{values:pts.map(p=>p.v),color,endDot:true}],
+    yFmt:v=>{const vs=pts.map(p=>p.v);return (Math.max(...vs)-Math.min(...vs))<6?v.toFixed(1):Math.round(v)}, tip:i=>`${md(pts[i].date)}: <b>${fmtV(pts[i].v)}</b>`});
+}
+
+/* ---------- render ---------- */
+let DATA;
+async function main(){
+  DATA = await (await fetch('dashboard.json',{cache:'no-store'})).json();
+  const o=DATA, c=o.prediction.current, cw=o.current_week, goal=o.goal;
+  const gap=c.gap, gapTxt = gap<=0 ? `<span class="up">${fmt(-gap)} under goal</span>` : `<span class="down">${fmt(gap)} over goal</span>`;
+  const wkPct = cw.planned_miles? Math.min(100, Math.round(100*cw.actual_miles/cw.planned_miles)) : 0;
+  const longest=o.totals.longest;
+
+  $('#app').innerHTML = `
+  <header>
+    <div><h1>Miami Marathon · Sub-${goal.goal_time.replace(/:00$/,'')}${o.demo?'<span class="demo">DEMO DATA</span>':''}</h1>
+      <div class="sub">Sun, Jan 31, 2027 · goal pace ${goal.goal_pace}/mi · Week ${o.countdown.week} of ${o.countdown.weeks_total} — ${esc(cw.label)} (${esc(cw.location)})</div></div>
+    <div class="sub">${o.last_activity?`Last run: <b>${o.last_activity.miles} mi</b> on ${md(o.last_activity.date)} @ ${o.last_activity.pace}/mi`:''}</div>
+  </header>
+
+  <div class="grid g5">
+    <div class="card tile"><div class="label">Race day</div><div class="val">${o.countdown.race_days}</div><div class="note">days to go · ${o.countdown.half_days>0?'Half in '+o.countdown.half_days:o.countdown.half_days===0?'Half is today':'Half done ✓'}</div></div>
+    <div class="card tile"><div class="label">Projected finish</div><div class="val">${c.time}</div><div class="note">${gapTxt} · ${c.pace}/mi</div></div>
+    <div class="card tile"><div class="label">This week</div><div class="val">${cw.actual_miles}<span class="sub"> / ${cw.planned_miles} mi</span></div><div class="bar"><i style="width:${wkPct}%"></i></div></div>
+    <div class="card tile"><div class="label">Longest run (block)</div><div class="val">${longest}<span class="sub"> / 18 mi</span></div><div class="bar"><i style="width:${Math.min(100,longest/18*100)}%"></i></div></div>
+    <div class="card tile"><div class="label">Plan completed</div><div class="val">${o.compliance.pct==null?'–':o.compliance.pct+'%'}</div><div class="note">${o.compliance.runs_done}/${o.compliance.runs_planned} runs · ${o.compliance.miles_done}/${o.compliance.miles_planned} mi</div></div>
+  </div>
+  ${o.recovery.flags.map(f=>`<div class="flag">⚠️ ${esc(f)}</div>`).join('')}
+
+  <section class="grid g2">
+    <div class="card day"><h3>Today · ${o.today_plan?dayName(o.today)+' '+md(o.today):''}</h3>${dayItems(o.today_plan)}</div>
+    <div class="card day"><h3>Tomorrow</h3>${dayItems(o.tomorrow_plan)}</div>
+  </section>
+
+  <section class="card"><h2>This week · ${md(cw.start)} – ${md(cw.end)}</h2>
+    <div class="week">${cw.days.map(d=>`
+      <div class="wd ${d.date===o.today?'is-today':''}">
+        <div class="dname">${dayName(d.date)} ${md(d.date).split(' ')[1]} ${d.run&&d.date<=o.today?pill(d.status):''}</div>
+        ${d.run?`<div class="r">${ICON[d.run.type]||''} ${esc(d.run.title)}</div>`:''}
+        ${d.actual.run_miles?`<div class="x">Logged ${d.actual.run_miles} mi</div>`:''}
+        ${d.cross?`<div class="x">${ICON[d.cross.type]} ${esc(d.cross.title)}</div>`:''}
+        ${d.lift?`<div class="x">🏋️ ${esc(d.lift.focus)}${d.actual.lift?' ✓':''}</div>`:''}
+        ${!d.run&&!d.cross&&!d.lift?'<div class="x">Rest</div>':''}
+      </div>`).join('')}</div>
+  </section>
+
+  <section class="grid g2">
+    <div class="card"><h2>Weekly mileage</h2>
+      <div class="legend"><span><i style="background:var(--planned)"></i>Planned</span><span><i style="background:var(--s1)"></i>Actual</span></div>
+      <div class="chart" id="c-miles"></div></div>
+    <div class="card"><h2>Projected marathon finish</h2>
+      <div class="legend"><span><i style="background:var(--s1)"></i>Projection</span><span><i style="background:var(--s2)"></i>Goal ${goal.goal_time.replace(/:00$/,'')}</span></div>
+      <div class="chart" id="c-pred"></div>
+      <div class="sub" style="margin-top:6px">Based on: ${esc(c.method)}.${c.endurance_penalty?` Includes +${fmt(c.endurance_penalty)} because your longest recent run is under 18 mi — it shrinks as long runs grow.`:''} Lower is faster.</div></div>
+  </section>
+
+  <section class="grid g2">
+    <div class="card"><h2>Long runs</h2>
+      <div class="legend"><span><i style="background:var(--planned)"></i>Planned</span><span><i style="background:var(--s1)"></i>Actual</span></div>
+      <div class="chart" id="c-long"></div></div>
+    <div class="card"><h2>Aerobic efficiency (easy runs)</h2>
+      <div class="legend"><span><i style="background:var(--s1)"></i>5-run average</span><span><i style="background:var(--s1);opacity:.45;border-radius:50%"></i>Single run</span></div>
+      <div class="chart" id="c-eff"></div>
+      <div class="sub" style="margin-top:6px">Speed per heartbeat. Rising = running faster at the same effort.</div></div>
+  </section>
+
+  <section class="grid g3">
+    <div class="card"><h2>Resting heart rate</h2><div class="chart" id="c-rhr"></div><div class="sub">Lower / steady = recovered</div></div>
+    <div class="card"><h2>Overnight HRV</h2><div class="chart" id="c-hrv"></div><div class="sub">Higher / steady = recovered</div></div>
+    <div class="card"><h2>Sleep</h2><div class="chart" id="c-sleep"></div><div class="sub">Hours per night</div></div>
+  </section>
+
+  <section class="card"><h2>Recent runs</h2><div style="overflow-x:auto"><table>
+    <thead><tr><th>Date</th><th>Run</th><th class="num">Miles</th><th class="num">Time</th><th class="num">Pace</th><th class="num">Avg HR</th><th class="num">Elev ft</th><th class="num">Training effect</th></tr></thead>
+    <tbody>${o.recent_runs.map(r=>`<tr><td>${dayName(r.date)} ${md(r.date)}</td><td>${esc(r.name)}</td><td class="num">${r.miles}</td><td class="num">${r.time}</td><td class="num">${r.pace}</td><td class="num">${r.hr??'–'}</td><td class="num">${r.elev_ft}</td><td class="num">${r.te??'–'}</td></tr>`).join('')}</tbody>
+  </table></div></section>
+
+  <section class="card"><details><summary>Full plan · 11 weeks</summary><div style="overflow-x:auto;margin-top:12px"><table>
+    <thead><tr><th>Wk</th><th>Dates</th><th>Phase</th><th>Where</th><th class="num">Planned mi</th><th class="num">Actual mi</th><th class="num">Long run</th></tr></thead>
+    <tbody>${o.weeks.map(w=>`<tr class="${w.is_current?'cur':''}"><td>${w.week}</td><td>${md(w.start)} – ${md(w.end)}</td><td>${esc(w.label)}</td><td>${esc(w.location)}</td><td class="num">${w.planned_miles}</td><td class="num">${w.is_past||w.is_current?w.actual_miles:'–'}</td><td class="num">${w.long_planned}${w.long_actual?` <span class="muted">(${w.long_actual})</span>`:''}</td></tr>`).join('')}</tbody>
+  </table></div>
+  <p class="sub">Paces — easy ${o.paces.easy}, marathon ${o.paces.mp}, tempo ${o.paces.tempo} per mile.</p></details></section>
+
+  <footer>Updated ${new Date(o.generated_at).toLocaleString('en-US',{dateStyle:'medium',timeStyle:'short'})} · data from Garmin Connect</footer>`;
+
+  const W=o.weeks, wl=W.map(w=>'W'+w.week);
+  chart($('#c-miles'),{kind:'bar',labels:wl,yMin:0,series:[{values:W.map(w=>w.planned_miles),color:css('--planned')},{values:W.map(w=>(w.is_past||w.is_current)?w.actual_miles:null),color:css('--s1')}],
+    yFmt:v=>Math.round(v), tip:i=>`<b>Week ${W[i].week}</b> · ${esc(W[i].label)}<br>Planned ${W[i].planned_miles} mi${(W[i].is_past||W[i].is_current)?` · Actual <b>${W[i].actual_miles}</b>`:''}`});
+  chart($('#c-long'),{kind:'bar',labels:wl,yMin:0,series:[{values:W.map(w=>w.long_planned),color:css('--planned')},{values:W.map(w=>(w.is_past||w.is_current)?w.long_actual:null),color:css('--s1')}],
+    yFmt:v=>Math.round(v), tip:i=>`<b>Week ${W[i].week}</b><br>Planned ${W[i].long_planned} mi${(W[i].is_past||W[i].is_current)?` · Actual <b>${W[i].long_actual}</b>`:''}`});
+
+  const H=o.prediction.history;
+  chart($('#c-pred'),{kind:'line',labels:H.map(h=>md(h.date)),series:[{values:H.map(h=>h.seconds),color:css('--s1'),endDot:true}],
+    ref:{value:o.prediction.goal_seconds,label:'Goal '+fmt(o.prediction.goal_seconds)}, yFmt:v=>fmt(v).slice(0,4),
+    tip:i=>`${md(H[i].date)}: <b>${fmt(H[i].seconds)}</b><br><span style="opacity:.75">${esc(H[i].source)} · fitness alone ${fmt(H[i].fitness_seconds)}</span>`});
+
+  const E=o.efficiency;
+  if(E.length) chart($('#c-eff'),{kind:'line',labels:E.map(e=>md(e.date)),series:[{values:E.map(e=>e.ef),color:css('--s1'),dots:true},{values:E.map(e=>e.ef_avg),color:css('--s1'),endDot:true}],
+    yFmt:v=>v.toFixed(2), tip:i=>`${md(E[i].date)}: ${E[i].pace}/mi @ ${E[i].hr} bpm<br>Efficiency <b>${E[i].ef}</b> (avg ${E[i].ef_avg})`});
+  else $('#c-eff').innerHTML='<p class="muted">Appears after a few easy runs with heart rate.</p>';
+
+  spark($('#c-rhr'),o.recovery.resting_hr,{color:css('--s1'),fmtV:v=>v+' bpm'});
+  spark($('#c-hrv'),o.recovery.hrv,{color:css('--s1'),fmtV:v=>v+' ms'});
+  spark($('#c-sleep'),o.recovery.sleep_hours,{color:css('--s1'),fmtV:v=>v.toFixed(1)+' h'});
+}
+main().catch(e=>{ $('#app').innerHTML=`<p>Couldn't load dashboard data: ${esc(e.message)}</p>`; });
+</script>
+</body>
+</html>

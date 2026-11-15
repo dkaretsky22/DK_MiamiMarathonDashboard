@@ -1,0 +1,1290 @@
+{
+  "goal": {
+    "race": "Miami Marathon",
+    "race_date": "2027-01-31",
+    "goal_time": "3:45:00",
+    "goal_pace": "8:35",
+    "tuneup": {
+      "race": "Gainesville Half Marathon",
+      "date": "2027-01-16"
+    },
+    "reference_result": {
+      "race": "Half marathon (July 2026)",
+      "distance_mi": 13.1,
+      "time": "1:42:30"
+    }
+  },
+  "paces": {
+    "easy": "10:00\u201310:45",
+    "recovery": "10:30+",
+    "mp": "8:35",
+    "tempo": "7:55\u20138:05",
+    "interval": "7:30\u20137:40"
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "label": "Return",
+      "location": "Gainesville",
+      "start": "2026-11-16",
+      "end": "2026-11-22",
+      "planned_miles": 15.0
+    },
+    {
+      "week": 2,
+      "label": "Rebuild",
+      "location": "New York (Thanksgiving)",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "planned_miles": 23.0
+    },
+    {
+      "week": 3,
+      "label": "Build 1",
+      "location": "Gainesville",
+      "start": "2026-11-30",
+      "end": "2026-12-06",
+      "planned_miles": 27.0
+    },
+    {
+      "week": 4,
+      "label": "Build 2",
+      "location": "Gainesville",
+      "start": "2026-12-07",
+      "end": "2026-12-13",
+      "planned_miles": 31.0
+    },
+    {
+      "week": 5,
+      "label": "Cutback + travel",
+      "location": "Gainesville \u2192 New York",
+      "start": "2026-12-14",
+      "end": "2026-12-20",
+      "planned_miles": 27.0
+    },
+    {
+      "week": 6,
+      "label": "Build 3",
+      "location": "New York",
+      "start": "2026-12-21",
+      "end": "2026-12-27",
+      "planned_miles": 35.0
+    },
+    {
+      "week": 7,
+      "label": "Peak",
+      "location": "New York",
+      "start": "2026-12-28",
+      "end": "2027-01-03",
+      "planned_miles": 38.0
+    },
+    {
+      "week": 8,
+      "label": "Sharpen",
+      "location": "New York \u2192 Gainesville",
+      "start": "2027-01-04",
+      "end": "2027-01-10",
+      "planned_miles": 34.0
+    },
+    {
+      "week": 9,
+      "label": "Tune-up race",
+      "location": "Gainesville",
+      "start": "2027-01-11",
+      "end": "2027-01-17",
+      "planned_miles": 30.0
+    },
+    {
+      "week": 10,
+      "label": "Taper",
+      "location": "Gainesville",
+      "start": "2027-01-18",
+      "end": "2027-01-24",
+      "planned_miles": 27.0
+    },
+    {
+      "week": 11,
+      "label": "Race week",
+      "location": "Gainesville \u2192 Miami",
+      "start": "2027-01-25",
+      "end": "2027-01-31",
+      "planned_miles": 43.2
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-11-16",
+      "week": 1,
+      "location": "Gainesville",
+      "run": {
+        "type": "easy",
+        "miles": 3,
+        "title": "Easy 3 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest & Back",
+        "details": "~70% volume, 2\u20133 reps in reserve"
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-11-17",
+      "week": 1,
+      "location": "Gainesville",
+      "run": null,
+      "cross": {
+        "type": "bike",
+        "minutes": 30,
+        "title": "Easy bike 30 min",
+        "details": "Conversational / nose-breathing effort."
+      },
+      "lift": {
+        "focus": "Legs",
+        "details": "Light \u2014 ~70% volume"
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-11-18",
+      "week": 1,
+      "location": "Gainesville",
+      "run": {
+        "type": "easy",
+        "miles": 3,
+        "title": "Easy 3 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Shoulders & Arms",
+        "details": "~70% volume"
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-11-19",
+      "week": 1,
+      "location": "Gainesville",
+      "run": null,
+      "cross": {
+        "type": "incline_walk",
+        "minutes": 30,
+        "title": "Incline walk 30 min",
+        "details": "10\u201312% incline, 3.0\u20133.5 mph, no rails. Swap for bike if legs are sore."
+      },
+      "lift": {
+        "focus": "Back & Bis",
+        "details": "~70% volume"
+      },
+      "note": "Full rest instead if you feel run-down."
+    },
+    {
+      "date": "2026-11-20",
+      "week": 1,
+      "location": "Gainesville",
+      "run": {
+        "type": "long",
+        "miles": 6,
+        "title": "Long run 6 mi",
+        "details": "Easy the whole way. No lifting."
+      },
+      "cross": null,
+      "lift": null,
+      "note": ""
+    },
+    {
+      "date": "2026-11-21",
+      "week": 1,
+      "location": "Gainesville",
+      "run": {
+        "type": "easy",
+        "miles": 3,
+        "title": "Easy 3 mi + 4 strides",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest, Tris & Shoulders",
+        "details": "~70% volume"
+      },
+      "note": "Strides only if you feel good."
+    },
+    {
+      "date": "2026-11-22",
+      "week": 1,
+      "location": "Gainesville",
+      "run": null,
+      "cross": null,
+      "lift": null,
+      "note": "Travel to NY \u2014 full rest."
+    },
+    {
+      "date": "2026-11-23",
+      "week": 2,
+      "location": "New York (Thanksgiving)",
+      "run": {
+        "type": "easy",
+        "miles": 3,
+        "title": "Easy 3 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest & Back",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-11-24",
+      "week": 2,
+      "location": "New York (Thanksgiving)",
+      "run": {
+        "type": "easy",
+        "miles": 5,
+        "title": "Easy 5 mi + 6 strides",
+        "details": "Easy pace, then 6 \u00d7 20 sec quick & relaxed."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Legs",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-11-25",
+      "week": 2,
+      "location": "New York (Thanksgiving)",
+      "run": null,
+      "cross": {
+        "type": "bike",
+        "minutes": 35,
+        "title": "Easy bike 35 min",
+        "details": "Conversational / nose-breathing effort."
+      },
+      "lift": {
+        "focus": "Shoulders & Arms",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-11-26",
+      "week": 2,
+      "location": "New York (Thanksgiving)",
+      "run": {
+        "type": "easy",
+        "miles": 4,
+        "title": "Easy 4 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": null,
+      "note": "Thanksgiving \u2014 Turkey Trot is fine at steady effort, not a race."
+    },
+    {
+      "date": "2026-11-27",
+      "week": 2,
+      "location": "New York (Thanksgiving)",
+      "run": {
+        "type": "long",
+        "miles": 8,
+        "title": "Long run 8 mi",
+        "details": "Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."
+      },
+      "cross": null,
+      "lift": null,
+      "note": ""
+    },
+    {
+      "date": "2026-11-28",
+      "week": 2,
+      "location": "New York (Thanksgiving)",
+      "run": {
+        "type": "recovery",
+        "miles": 3,
+        "title": "Recovery 3 mi",
+        "details": "Very easy, 10:30+/mi. Shake out the long run."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Back & Bis",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-11-29",
+      "week": 2,
+      "location": "New York (Thanksgiving)",
+      "run": null,
+      "cross": null,
+      "lift": {
+        "focus": "Chest, Tris & Shoulders",
+        "details": ""
+      },
+      "note": "Travel back to Gainesville."
+    },
+    {
+      "date": "2026-11-30",
+      "week": 3,
+      "location": "Gainesville",
+      "run": {
+        "type": "easy",
+        "miles": 4,
+        "title": "Easy 4 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest & Back",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-01",
+      "week": 3,
+      "location": "Gainesville",
+      "run": {
+        "type": "workout",
+        "miles": 6,
+        "title": "Tempo: 3 \u00d7 1 mi",
+        "details": "1.5 mi warm-up \u00b7 3 \u00d7 1 mi @ 7:55\u20138:05 w/ 90 sec jog \u00b7 1.5 mi cool-down"
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Legs",
+        "details": ""
+      },
+      "note": "Run AM, lift PM."
+    },
+    {
+      "date": "2026-12-02",
+      "week": 3,
+      "location": "Gainesville",
+      "run": null,
+      "cross": {
+        "type": "bike",
+        "minutes": 40,
+        "title": "Easy bike 40 min",
+        "details": "Conversational / nose-breathing effort."
+      },
+      "lift": {
+        "focus": "Shoulders & Arms",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-03",
+      "week": 3,
+      "location": "Gainesville",
+      "run": {
+        "type": "easy",
+        "miles": 4,
+        "title": "Easy 4 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Back & Bis",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-04",
+      "week": 3,
+      "location": "Gainesville",
+      "run": {
+        "type": "long",
+        "miles": 10,
+        "title": "Long run 10 mi",
+        "details": "Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."
+      },
+      "cross": null,
+      "lift": null,
+      "note": ""
+    },
+    {
+      "date": "2026-12-05",
+      "week": 3,
+      "location": "Gainesville",
+      "run": {
+        "type": "recovery",
+        "miles": 3,
+        "title": "Recovery 3 mi",
+        "details": "Very easy, 10:30+/mi. Shake out the long run."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest, Tris & Shoulders",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-06",
+      "week": 3,
+      "location": "Gainesville",
+      "run": null,
+      "cross": null,
+      "lift": null,
+      "note": "Full rest."
+    },
+    {
+      "date": "2026-12-07",
+      "week": 4,
+      "location": "Gainesville",
+      "run": {
+        "type": "easy",
+        "miles": 4,
+        "title": "Easy 4 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest & Back",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-08",
+      "week": 4,
+      "location": "Gainesville",
+      "run": {
+        "type": "workout",
+        "miles": 6,
+        "title": "Tempo: 2 \u00d7 2 mi",
+        "details": "1 mi warm-up \u00b7 2 \u00d7 2 mi @ 7:55\u20138:05 w/ 2 min jog \u00b7 1 mi cool-down"
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Legs",
+        "details": ""
+      },
+      "note": "Run AM, lift PM."
+    },
+    {
+      "date": "2026-12-09",
+      "week": 4,
+      "location": "Gainesville",
+      "run": null,
+      "cross": {
+        "type": "incline_walk",
+        "minutes": 35,
+        "title": "Incline walk 35 min",
+        "details": "10\u201312% incline, 3.0\u20133.5 mph, no rails. Swap for bike if legs are sore."
+      },
+      "lift": {
+        "focus": "Shoulders & Arms",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-10",
+      "week": 4,
+      "location": "Gainesville",
+      "run": {
+        "type": "easy",
+        "miles": 5,
+        "title": "Easy 5 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Back & Bis",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-11",
+      "week": 4,
+      "location": "Gainesville",
+      "run": {
+        "type": "long",
+        "miles": 13,
+        "title": "Long run 13 mi",
+        "details": "10 easy, last 3 @ marathon pace (8:35)."
+      },
+      "cross": null,
+      "lift": null,
+      "note": "First marathon-pace miles."
+    },
+    {
+      "date": "2026-12-12",
+      "week": 4,
+      "location": "Gainesville",
+      "run": {
+        "type": "recovery",
+        "miles": 3,
+        "title": "Recovery 3 mi",
+        "details": "Very easy, 10:30+/mi. Shake out the long run."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest, Tris & Shoulders",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-13",
+      "week": 4,
+      "location": "Gainesville",
+      "run": null,
+      "cross": null,
+      "lift": null,
+      "note": "Full rest."
+    },
+    {
+      "date": "2026-12-14",
+      "week": 5,
+      "location": "Gainesville \u2192 New York",
+      "run": {
+        "type": "workout",
+        "miles": 5,
+        "title": "MP run: 3 mi @ 8:35",
+        "details": "1 mi warm-up \u00b7 3 mi @ 8:35 \u00b7 1 mi cool-down"
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Legs",
+        "details": ""
+      },
+      "note": "Before travel."
+    },
+    {
+      "date": "2026-12-15",
+      "week": 5,
+      "location": "Gainesville \u2192 New York",
+      "run": null,
+      "cross": null,
+      "lift": null,
+      "note": "Travel to NY (approx.) \u2014 rest."
+    },
+    {
+      "date": "2026-12-16",
+      "week": 5,
+      "location": "Gainesville \u2192 New York",
+      "run": {
+        "type": "easy",
+        "miles": 4,
+        "title": "Easy 4 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest & Back",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-17",
+      "week": 5,
+      "location": "Gainesville \u2192 New York",
+      "run": {
+        "type": "easy",
+        "miles": 4,
+        "title": "Easy 4 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Back & Bis",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-18",
+      "week": 5,
+      "location": "Gainesville \u2192 New York",
+      "run": null,
+      "cross": {
+        "type": "bike",
+        "minutes": 40,
+        "title": "Easy bike 40 min",
+        "details": "Conversational / nose-breathing effort."
+      },
+      "lift": {
+        "focus": "Shoulders & Arms",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-19",
+      "week": 5,
+      "location": "Gainesville \u2192 New York",
+      "run": {
+        "type": "long",
+        "miles": 11,
+        "title": "Long run 11 mi",
+        "details": "Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."
+      },
+      "cross": null,
+      "lift": null,
+      "note": "Cutback week."
+    },
+    {
+      "date": "2026-12-20",
+      "week": 5,
+      "location": "Gainesville \u2192 New York",
+      "run": {
+        "type": "recovery",
+        "miles": 3,
+        "title": "Recovery 3 mi",
+        "details": "Very easy, 10:30+/mi. Shake out the long run."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest, Tris & Shoulders",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-21",
+      "week": 6,
+      "location": "New York",
+      "run": {
+        "type": "easy",
+        "miles": 5,
+        "title": "Easy 5 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest & Back",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-22",
+      "week": 6,
+      "location": "New York",
+      "run": {
+        "type": "workout",
+        "miles": 7,
+        "title": "MP run: 5 mi @ 8:35",
+        "details": "1 mi warm-up \u00b7 5 mi @ 8:35 \u00b7 1 mi cool-down"
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Legs",
+        "details": ""
+      },
+      "note": "Treadmill at 1% if icy."
+    },
+    {
+      "date": "2026-12-23",
+      "week": 6,
+      "location": "New York",
+      "run": null,
+      "cross": {
+        "type": "bike",
+        "minutes": 40,
+        "title": "Easy bike 40 min",
+        "details": "Conversational / nose-breathing effort."
+      },
+      "lift": {
+        "focus": "Shoulders & Arms",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-24",
+      "week": 6,
+      "location": "New York",
+      "run": {
+        "type": "easy",
+        "miles": 5,
+        "title": "Easy 5 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Back & Bis",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-25",
+      "week": 6,
+      "location": "New York",
+      "run": null,
+      "cross": null,
+      "lift": null,
+      "note": "Christmas \u2014 rest (optional easy bike)."
+    },
+    {
+      "date": "2026-12-26",
+      "week": 6,
+      "location": "New York",
+      "run": {
+        "type": "long",
+        "miles": 15,
+        "title": "Long run 15 mi",
+        "details": "Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."
+      },
+      "cross": null,
+      "lift": null,
+      "note": ""
+    },
+    {
+      "date": "2026-12-27",
+      "week": 6,
+      "location": "New York",
+      "run": {
+        "type": "recovery",
+        "miles": 3,
+        "title": "Recovery 3 mi",
+        "details": "Very easy, 10:30+/mi. Shake out the long run."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest, Tris & Shoulders",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-28",
+      "week": 7,
+      "location": "New York",
+      "run": {
+        "type": "easy",
+        "miles": 4,
+        "title": "Easy 4 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest & Back",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-29",
+      "week": 7,
+      "location": "New York",
+      "run": {
+        "type": "workout",
+        "miles": 8,
+        "title": "Tempo: 3 \u00d7 1.5 mi",
+        "details": "1.5 mi warm-up \u00b7 3 \u00d7 1.5 mi @ 7:55\u20138:05 w/ 2 min jog \u00b7 1 mi cool-down"
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Legs",
+        "details": "Last heavy leg day \u2014 maintenance from here"
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-30",
+      "week": 7,
+      "location": "New York",
+      "run": null,
+      "cross": {
+        "type": "bike",
+        "minutes": 40,
+        "title": "Easy bike 40 min",
+        "details": "Conversational / nose-breathing effort."
+      },
+      "lift": {
+        "focus": "Shoulders & Arms",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2026-12-31",
+      "week": 7,
+      "location": "New York",
+      "run": {
+        "type": "easy",
+        "miles": 5,
+        "title": "Easy 5 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Back & Bis",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-01",
+      "week": 7,
+      "location": "New York",
+      "run": null,
+      "cross": null,
+      "lift": null,
+      "note": "New Year's Day \u2014 rest before the long run."
+    },
+    {
+      "date": "2027-01-02",
+      "week": 7,
+      "location": "New York",
+      "run": {
+        "type": "long",
+        "miles": 18,
+        "title": "Long run 18 mi",
+        "details": "Peak long run. Easy; gel every 45 min; last 2 mi can drift toward 8:35."
+      },
+      "cross": null,
+      "lift": null,
+      "note": "Biggest run of the block."
+    },
+    {
+      "date": "2027-01-03",
+      "week": 7,
+      "location": "New York",
+      "run": {
+        "type": "recovery",
+        "miles": 3,
+        "title": "Recovery 3 mi",
+        "details": "Very easy, 10:30+/mi. Shake out the long run."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest, Tris & Shoulders",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-04",
+      "week": 8,
+      "location": "New York \u2192 Gainesville",
+      "run": {
+        "type": "easy",
+        "miles": 4,
+        "title": "Easy 4 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest & Back",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-05",
+      "week": 8,
+      "location": "New York \u2192 Gainesville",
+      "run": {
+        "type": "workout",
+        "miles": 7,
+        "title": "Tempo: 2 \u00d7 2.5 mi",
+        "details": "1 mi warm-up \u00b7 2 \u00d7 2.5 mi @ 7:55\u20138:05 w/ 2 min jog \u00b7 1 mi cool-down"
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Legs",
+        "details": "Maintenance: lighter, fewer sets"
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-06",
+      "week": 8,
+      "location": "New York \u2192 Gainesville",
+      "run": {
+        "type": "easy",
+        "miles": 5,
+        "title": "Easy 5 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Shoulders & Arms",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-07",
+      "week": 8,
+      "location": "New York \u2192 Gainesville",
+      "run": {
+        "type": "easy",
+        "miles": 3,
+        "title": "Easy 3 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Back & Bis",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-08",
+      "week": 8,
+      "location": "New York \u2192 Gainesville",
+      "run": null,
+      "cross": null,
+      "lift": null,
+      "note": "Travel back to Gainesville \u2014 rest."
+    },
+    {
+      "date": "2027-01-09",
+      "week": 8,
+      "location": "New York \u2192 Gainesville",
+      "run": {
+        "type": "long",
+        "miles": 15,
+        "title": "Long run 15 mi",
+        "details": "7 easy, then 8 @ marathon pace (8:35). Race-day fueling and shoes."
+      },
+      "cross": null,
+      "lift": null,
+      "note": "Dress rehearsal for race pace."
+    },
+    {
+      "date": "2027-01-10",
+      "week": 8,
+      "location": "New York \u2192 Gainesville",
+      "run": null,
+      "cross": null,
+      "lift": {
+        "focus": "Chest, Tris & Shoulders",
+        "details": ""
+      },
+      "note": "Rest from running."
+    },
+    {
+      "date": "2027-01-11",
+      "week": 9,
+      "location": "Gainesville",
+      "run": {
+        "type": "easy",
+        "miles": 4,
+        "title": "Easy 4 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest & Back",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-12",
+      "week": 9,
+      "location": "Gainesville",
+      "run": {
+        "type": "workout",
+        "miles": 6,
+        "title": "MP run: 4 mi @ 8:35",
+        "details": "1 mi warm-up \u00b7 4 mi @ 8:35 \u00b7 1 mi cool-down"
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Legs",
+        "details": "Light maintenance"
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-13",
+      "week": 9,
+      "location": "Gainesville",
+      "run": null,
+      "cross": {
+        "type": "bike",
+        "minutes": 30,
+        "title": "Easy bike 30 min",
+        "details": "Conversational / nose-breathing effort."
+      },
+      "lift": {
+        "focus": "Shoulders & Arms",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-14",
+      "week": 9,
+      "location": "Gainesville",
+      "run": {
+        "type": "easy",
+        "miles": 4,
+        "title": "Easy 4 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Back & Bis",
+        "details": ""
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-15",
+      "week": 9,
+      "location": "Gainesville",
+      "run": {
+        "type": "shakeout",
+        "miles": 2,
+        "title": "Shakeout 2 mi + 4 strides",
+        "details": "Very easy."
+      },
+      "cross": null,
+      "lift": null,
+      "note": ""
+    },
+    {
+      "date": "2027-01-16",
+      "week": 9,
+      "location": "Gainesville",
+      "run": {
+        "type": "race",
+        "miles": 14,
+        "title": "Gainesville Half Marathon",
+        "details": "1 mi warm-up \u00b7 first 10 mi @ 8:35 \u00b7 last 5K ~8:00. Controlled \u2014 NOT all-out."
+      },
+      "cross": null,
+      "lift": null,
+      "note": "Race-day rehearsal: breakfast, gels, shoes."
+    },
+    {
+      "date": "2027-01-17",
+      "week": 9,
+      "location": "Gainesville",
+      "run": null,
+      "cross": null,
+      "lift": {
+        "focus": "Chest, Tris & Shoulders",
+        "details": "Light"
+      },
+      "note": "Rest from running."
+    },
+    {
+      "date": "2027-01-18",
+      "week": 10,
+      "location": "Gainesville",
+      "run": {
+        "type": "recovery",
+        "miles": 3,
+        "title": "Recovery 3 mi",
+        "details": "Very easy, 10:30+/mi. Shake out the long run."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest & Back",
+        "details": "Light"
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-19",
+      "week": 10,
+      "location": "Gainesville",
+      "run": {
+        "type": "workout",
+        "miles": 6,
+        "title": "Intervals: 4 \u00d7 1 mi",
+        "details": "1 mi warm-up \u00b7 4 \u00d7 1 mi @ 7:55\u20138:05 w/ 90 sec jog \u00b7 1 mi cool-down"
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Legs",
+        "details": "Light \u2014 last leg session"
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-20",
+      "week": 10,
+      "location": "Gainesville",
+      "run": null,
+      "cross": {
+        "type": "bike",
+        "minutes": 30,
+        "title": "Easy bike 30 min",
+        "details": "Conversational / nose-breathing effort."
+      },
+      "lift": {
+        "focus": "Shoulders & Arms",
+        "details": "Light"
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-21",
+      "week": 10,
+      "location": "Gainesville",
+      "run": {
+        "type": "easy",
+        "miles": 5,
+        "title": "Easy 5 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Back & Bis",
+        "details": "Light"
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-22",
+      "week": 10,
+      "location": "Gainesville",
+      "run": {
+        "type": "long",
+        "miles": 10,
+        "title": "Long run 10 mi",
+        "details": "Easy. Last long run."
+      },
+      "cross": null,
+      "lift": null,
+      "note": ""
+    },
+    {
+      "date": "2027-01-23",
+      "week": 10,
+      "location": "Gainesville",
+      "run": {
+        "type": "easy",
+        "miles": 3,
+        "title": "Easy 3 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest, Tris & Shoulders",
+        "details": "Light"
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-24",
+      "week": 10,
+      "location": "Gainesville",
+      "run": null,
+      "cross": null,
+      "lift": null,
+      "note": "Full rest."
+    },
+    {
+      "date": "2027-01-25",
+      "week": 11,
+      "location": "Gainesville \u2192 Miami",
+      "run": {
+        "type": "easy",
+        "miles": 4,
+        "title": "Easy 4 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Chest & Back",
+        "details": "Very light, upper only"
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-26",
+      "week": 11,
+      "location": "Gainesville \u2192 Miami",
+      "run": {
+        "type": "workout",
+        "miles": 5,
+        "title": "MP tune: 2 mi @ 8:35",
+        "details": "1.5 mi warm-up \u00b7 2 mi @ 8:35 \u00b7 1.5 mi cool-down"
+      },
+      "cross": null,
+      "lift": null,
+      "note": "No leg lifting this week."
+    },
+    {
+      "date": "2027-01-27",
+      "week": 11,
+      "location": "Gainesville \u2192 Miami",
+      "run": {
+        "type": "easy",
+        "miles": 3,
+        "title": "Easy 3 mi",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": {
+        "focus": "Shoulders & Arms",
+        "details": "Very light"
+      },
+      "note": ""
+    },
+    {
+      "date": "2027-01-28",
+      "week": 11,
+      "location": "Gainesville \u2192 Miami",
+      "run": {
+        "type": "easy",
+        "miles": 3,
+        "title": "Easy 3 mi + 4 strides",
+        "details": "Conversational, 10:00\u201310:45/mi."
+      },
+      "cross": null,
+      "lift": null,
+      "note": "Start carb-loading Friday."
+    },
+    {
+      "date": "2027-01-29",
+      "week": 11,
+      "location": "Gainesville \u2192 Miami",
+      "run": null,
+      "cross": null,
+      "lift": null,
+      "note": "Rest. Travel to Miami; pick up bib."
+    },
+    {
+      "date": "2027-01-30",
+      "week": 11,
+      "location": "Gainesville \u2192 Miami",
+      "run": {
+        "type": "shakeout",
+        "miles": 2,
+        "title": "Shakeout 2 mi",
+        "details": "15\u201320 min very easy + 3 strides."
+      },
+      "cross": null,
+      "lift": null,
+      "note": "Lay out gear tonight."
+    },
+    {
+      "date": "2027-01-31",
+      "week": 11,
+      "location": "Gainesville \u2192 Miami",
+      "run": {
+        "type": "race",
+        "miles": 26.2,
+        "title": "MIAMI MARATHON",
+        "details": "Goal 3:45 \u2192 8:35/mi. First 3 mi at 8:40\u20138:45, settle into 8:35, push only after mile 20."
+      },
+      "cross": null,
+      "lift": null,
+      "note": "Race day."
+    }
+  ]
+}
