@@ -151,7 +151,7 @@ def fetch_wellness(g: Garmin, start: date, end: date) -> dict:
     for s, e in date_chunks(start, end):
         jobs = [
             ("resting_hr", "/usersummary-service/v2/dailysummaries", {"startDate": s, "endDate": e},
-             ["restingHeartRate", "restingHeartRateValue", "restingHR", "currentDayRestingHeartRate"]),
+             ["heartRate.restingValue", "restingHeartRate", "restingHeartRateValue"]),
             ("hrv", f"/hrv-service/hrv/daily/{s}/{e}", None, ["lastNightAvg", "lastNight"]),
             ("sleep_hours", "/sleep-service/sleep/dailySleepSummariesByDate", {"startDate": s, "endDate": e},
              ["sleepTimeSeconds", "totalSleepSeconds"]),

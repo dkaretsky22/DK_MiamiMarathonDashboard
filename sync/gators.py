@@ -198,6 +198,12 @@ def main():
     except Exception as ex:
         errors.append(f"news: {ex}")
 
+    # AP rank: team endpoint sometimes omits it; fall back to the rank on Florida's latest game
+    if out.get("team") and not out["team"].get("rank"):
+        ranked = [g["fla_rank"] for g in games if g["fla_rank"] and g["state"] != "pre"] or \
+                 [g["fla_rank"] for g in games if g["fla_rank"]]
+        if ranked:
+            out["team"]["rank"] = ranked[-1]
     live = [g for g in games if g["state"] == "in"]
     upcoming = [g for g in games if g["state"] == "pre"]
     out.update({
