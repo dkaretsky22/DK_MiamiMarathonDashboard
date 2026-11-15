@@ -74,7 +74,7 @@ WEEKS = [
         1: (None, bike(30), lift(LEGS, "Light — ~70% volume"), ""),
         2: (easy(3), None, lift(SA, "~70% volume"), ""),
         3: (None, incline(30), lift(BB, "~70% volume"), "Full rest instead if you feel run-down."),
-        4: (long_(6, "Easy the whole way. No lifting."), None, None, ""),
+        4: (long_(6, f"Easy the whole way ({PACES['long']}/mi). No lifting."), None, None, ""),
         5: (easy(3, "4 strides"), None, lift(CTS, "~70% volume"), "Strides only if you feel good."),
         6: (None, None, None, "Travel to NY — full rest."),
     }),
@@ -166,11 +166,73 @@ WEEKS = [
         3: (easy(3, "4 strides"), None, None, "Start carb-loading Friday."),
         4: (None, None, None, "Rest. Travel to Miami; pick up bib."),
         5: (run("shakeout", 2, "Shakeout 2 mi", "15–20 min very easy + 3 strides."), None, None, "Lay out gear tonight."),
-        6: (run("race", 26.2, "MIAMI MARATHON", f"Goal 3:45 → {PACES['mp']}/mi. First 3 mi at 8:40–8:45, settle into 8:35, push only after mile 20."), None, None, "Race day."),
+        6: (run("race", 26.2, "MIAMI MARATHON", f"Goal 3:45 → {PACES['mp']}/mi. First 3 mi at 8:40–8:45, settle into 8:35, hold 8:35 through 20, then 8:20–8:30 to the finish."), None, None, "Race day."),
     }),
 ]
 
 START = date(2026, 11, 16)
+
+# ---------- pace guide: structured segments for every run ----------
+FEEL = {
+    "easy": "Conversational — you can speak in full sentences. RPE 3–4/10. Slow down for heat and hills.",
+    "long": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10.",
+    "recovery": "Very easy — slower than you think. RPE 2–3/10.",
+    "mp": "Goal marathon pace: controlled, rhythmic, short phrases only. RPE 5–6/10.",
+    "tempo": "Comfortably hard: 3–4 word answers, steady breathing. Even splits — don't start fast. RPE 7/10.",
+    "stride": "Smooth and fast (≈mile-race effort), relaxed shoulders. Not a sprint.",
+    "race": "Race effort, but patient — even splits win marathons.",
+}
+
+
+def S(label, miles, pace, kind):
+    return {"label": label, "miles": miles, "pace": pace, "kind": kind}
+
+
+def R(reps, rep_mi, pace, rest, kind="tempo"):
+    return {"label": f"{reps} × {rep_mi:g} mi", "reps": reps, "rep_miles": rep_mi, "miles": reps * rep_mi,
+            "pace": pace, "rest": rest, "kind": kind}
+
+
+def strides(n):
+    return {"label": f"{n} × strides", "reps": n, "rep_desc": "20 sec", "pace": "~6:30–7:00 feel",
+            "rest": "walk/jog 60 sec", "kind": "stride"}
+
+
+E, L, MP, T = PACES["easy"], PACES["long"], PACES["mp"], PACES["tempo"]
+STEPS = {
+    "Easy 5 mi + 6 strides": [S("Easy run", 5, E, "easy"), strides(6)],
+    "Easy 3 mi + 4 strides": [S("Easy run", 3, E, "easy"), strides(4)],
+    "Shakeout 2 mi + 4 strides": [S("Shakeout", 2, PACES["recovery"], "recovery"), strides(4)],
+    "Shakeout 2 mi": [S("Shakeout", 2, PACES["recovery"], "recovery"), strides(3)],
+    "Tempo: 3 × 1 mi": [S("Warm-up", 1.5, E, "easy"), R(3, 1, T, "90 sec easy jog"), S("Cool-down", 1.5, E, "easy")],
+    "Tempo: 2 × 2 mi": [S("Warm-up", 1, E, "easy"), R(2, 2, T, "2 min easy jog"), S("Cool-down", 1, E, "easy")],
+    "Tempo: 3 × 1.5 mi": [S("Warm-up", 1.5, E, "easy"), R(3, 1.5, T, "2 min easy jog"), S("Cool-down", 2, E, "easy")],
+    "Tempo: 2 × 2.5 mi": [S("Warm-up", 1, E, "easy"), R(2, 2.5, T, "2 min easy jog"), S("Cool-down", 1, E, "easy")],
+    "Intervals: 4 × 1 mi": [S("Warm-up", 1, E, "easy"), R(4, 1, T, "90 sec easy jog"), S("Cool-down", 1, E, "easy")],
+    "MP run: 3 mi @ 8:35": [S("Warm-up", 1, E, "easy"), S("Marathon pace", 3, MP, "mp"), S("Cool-down", 1, E, "easy")],
+    "MP run: 5 mi @ 8:35": [S("Warm-up", 1, E, "easy"), S("Marathon pace", 5, MP, "mp"), S("Cool-down", 1, E, "easy")],
+    "MP run: 4 mi @ 8:35": [S("Warm-up", 1, E, "easy"), S("Marathon pace", 4, MP, "mp"), S("Cool-down", 1, E, "easy")],
+    "MP tune: 2 mi @ 8:35": [S("Warm-up", 1.5, E, "easy"), S("Marathon pace", 2, MP, "mp"), S("Cool-down", 1.5, E, "easy")],
+    "Long run 13 mi": [S("Easy miles", 10, L, "long"), S("Marathon-pace finish", 3, MP, "mp")],
+    "Long run 15 mi": [S("Easy miles", 7, L, "long"), S("Marathon pace", 8, MP, "mp")],
+    "Long run 20 mi": [S("Easy miles", 18, L, "long"), S("Strong finish", 2, "8:35–9:00", "mp")],
+    "Gainesville Half Marathon": [S("Warm-up", 1, E, "easy"), S("Race miles 1–10", 10, MP, "mp"),
+                                  S("Race: last 5K", 3.1, "7:55–8:05", "tempo")],
+    "MIAMI MARATHON": [S("Miles 1–3: settle in", 3, "8:40–8:45", "race"), S("Miles 4–20: lock in", 17, MP, "mp"),
+                       S("Miles 21–26.2: bring it home", 6.2, "8:20–8:30", "race")],
+}
+
+
+def add_steps(r):
+    if not r:
+        return r
+    st = STEPS.get(r["title"])
+    if st is None:
+        kind = {"easy": "easy", "recovery": "recovery", "long": "long", "shakeout": "recovery"}.get(r["type"], "easy")
+        pace = {"easy": E, "recovery": PACES["recovery"], "long": L}[kind]
+        st = [S({"easy": "Easy run", "recovery": "Recovery run", "long": "Long run"}[kind], r["miles"], pace, kind)]
+    r["steps"] = [dict(x, feel=FEEL[x["kind"]]) for x in st]
+    return r
 
 
 def build():
@@ -181,6 +243,7 @@ def build():
         wk_miles = 0.0
         for d in range(7):
             run_, cross, lift_, note = sched.get(d, (None, None, None, ""))
+            run_ = add_steps(run_)
             day = wk_start + timedelta(days=d)
             miles = run_["miles"] if run_ else 0
             wk_miles += miles

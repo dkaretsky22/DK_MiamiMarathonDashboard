@@ -146,6 +146,21 @@ tr.cur td{background:rgba(250,70,22,.08)}
 .news span{font-size:12.5px;color:var(--ink-3)}
 @media(max-width:560px){.news a{grid-template-columns:1fr}.news img{width:100%;height:150px}}
 details summary{cursor:pointer;font-weight:600;padding:6px 0}
+details.pg{border-top:1px solid var(--line)}details.pg:first-of-type{border-top:0}
+details.pg>summary{list-style:none;padding:0;font-weight:400}details.pg>summary::-webkit-details-marker{display:none}
+details.pg>summary .item{border-top:0}
+.hint{display:inline-block;margin-top:4px;font:600 12px Inter;color:var(--orange-2)}
+details.pg[open] .hint .arr{transform:rotate(90deg)}.hint .arr{display:inline-block;transition:transform .15s}
+.guide{margin:0 0 12px 42px;background:rgba(255,255,255,.035);border:1px solid var(--line-2);border-radius:12px;padding:12px 14px}
+@media(max-width:560px){.guide{margin-left:0}}
+.guide table td,.guide table th{padding:7px 6px}
+.guide .feel{font-size:12.5px;color:var(--ink-3);margin-top:2px}
+.seg{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:6px;vertical-align:0}
+.k-easy,.k-long,.k-recovery{background:#5b7bd6}.k-mp{background:var(--orange)}.k-tempo{background:#ff2d55}.k-stride{background:var(--warn)}.k-race{background:#fff}
+.tl{display:flex;height:12px;border-radius:99px;overflow:hidden;margin:10px 0 4px;gap:2px}
+.tl i{display:block;height:100%}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.chips span{font-size:12px;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:8px;padding:4px 8px;color:var(--ink-2)}
+.chips b{color:var(--ink)}
 footer{margin-top:30px;color:var(--ink-3);font-size:12px;text-align:center}
 .demo{background:var(--orange);color:#fff;font:700 11px Inter;padding:2px 8px;border-radius:6px;margin-left:8px;vertical-align:4px}
 </style>
@@ -215,11 +230,39 @@ function chart(el,{series,labels,yFmt=v=>v,yMin,yMax,ref,height=230,width=560,ki
 const spark=(el,pts,unit,color)=>chart(el,{kind:'line',height:220,width:560,labels:pts.map(p=>md(p.date)),series:[{values:pts.map(p=>p.v),color:color||css('--orange'),endDot:true,area:true}],
   yFmt:v=>{const vs=pts.map(p=>p.v);return Math.max(...vs)-Math.min(...vs)<6?v.toFixed(1):Math.round(v)},tip:i=>`${md(pts[i].date)}: <b>${pts[i].v}${unit}</b>`});
 
+/* ---------- pace guide ---------- */
+const sec=t=>{const m=String(t).match(/(\d+):(\d{2})/);return m?(+m[1])*60+(+m[2]):null};
+const range=p=>{const all=[...String(p).matchAll(/(\d+):(\d{2})/g)].map(m=>(+m[1])*60+(+m[2]));return all.length?[Math.min(...all),Math.max(...all)]:null};
+const mmss=s=>{s=Math.round(s);const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return h?`${h}:${String(m).padStart(2,'0')}:${String(x).padStart(2,'0')}`:`${m}:${String(x).padStart(2,'0')}`};
+const rng=(a,b)=>a===b?mmss(a):`${mmss(a)}–${mmss(b)}`;
+function guide(r){
+  const st=r.steps||[];if(!st.length)return'';
+  let lo=0,hi=0,rows='',cum=0,miles=[];
+  st.forEach(x=>{const pr=range(x.pace);
+    if(x.rep_desc){rows+=`<tr><td><span class="seg k-stride"></span><b>${esc(x.label)}</b><div class="feel">${esc(x.feel)}</div></td><td class="num">${x.reps} × ${esc(x.rep_desc)}</td><td class="num">${esc(x.pace)}</td><td class="num muted">${esc(x.rest)}</td></tr>`;return}
+    const each=pr?rng(pr[0]*x.rep_miles,pr[1]*x.rep_miles):'';
+    if(pr){lo+=pr[0]*x.miles;hi+=pr[1]*x.miles}
+    if(x.reps){rows+=`<tr><td><span class="seg k-${x.kind}"></span><b>${esc(x.label)}</b><div class="feel">${esc(x.feel)}</div><div class="feel">Recovery: ${esc(x.rest)} between reps${pr?` · lap tip: ${rng(pr[0]/4,pr[1]/4)} per ¼ mi`:''}</div></td><td class="num">${x.miles} mi</td><td class="num"><b>${esc(x.pace)}</b>/mi</td><td class="num">${each} each</td></tr>`;
+      for(let k=1;k<=x.reps;k++){miles.push({a:cum,b:cum+x.rep_miles,lab:`Rep ${k}`,pace:x.pace,kind:x.kind});cum+=x.rep_miles}}
+    else{rows+=`<tr><td><span class="seg k-${x.kind}"></span><b>${esc(x.label)}</b><div class="feel">${esc(x.feel)}</div></td><td class="num">${x.miles} mi</td><td class="num"><b>${esc(x.pace)}</b>/mi</td><td class="num">${pr?rng(pr[0]*x.miles,pr[1]*x.miles):''}</td></tr>`;
+      miles.push({a:cum,b:cum+x.miles,lab:x.label,pace:x.pace,kind:x.kind});cum+=x.miles}});
+  const tot=miles.reduce((a,m)=>a+(m.b-m.a),0)||1;
+  const bar=`<div class="tl">${miles.map(m=>`<i class="k-${m.kind}" style="flex:${m.b-m.a}" title="${esc(m.lab)}"></i>`).join('')}</div><div class="sub" style="font-size:12px">Mile 0 → ${tot.toFixed(1).replace('.0','')}</div>`;
+  let extra='';
+  if(miles.length>1)extra+=`<div class="chips">${miles.map(m=>`<span>Mi ${+m.a.toFixed(1)}–${+m.b.toFixed(1)} · ${esc(m.lab)} · <b>${esc(m.pace)}</b></span>`).join('')}</div>`;
+  if(r.type==='race'){const marks=r.miles>20?[[3.1,'5K'],[6.2,'10K'],[13.1,'Half'],[20,'20 mi'],[26.2,'Finish']]:[[3.1,'5K'],[6.2,'10K'],[10,'10 mi'],[13.1,'Half']];
+    const at=(d,which)=>{let t=0,c=0;for(const m of miles){const pr=range(m.pace);if(!pr)continue;const seg=Math.min(m.b,d)-Math.max(m.a,c);if(seg>0){t+=pr[which]*seg;c=Math.max(m.a,c)+seg}if(m.b>=d)break}return t};
+    const off=miles[0]&&miles[0].lab==='Warm-up'?miles[0].b:0;
+    extra+=`<h3 style="margin-top:12px">Race clock checkpoints</h3><div class="chips">${marks.map(([d,l])=>`<span>${l} · <b>${rng(at(d+off,0)-at(off,0),at(d+off,1)-at(off,1))}</b></span>`).join('')}</div>`}
+  return`<div class="guide"><h3>Pace guide · est. ${rng(lo,hi)}${st.some(x=>x.reps&&!x.rep_desc)?' + recovery jogs':''}</h3>${bar}
+    <div class="scroll"><table><thead><tr><th>Segment</th><th class="num">Distance</th><th class="num">Target pace</th><th class="num">Time</th></tr></thead><tbody>${rows}</tbody></table></div>${extra}</div>`;
+}
+
 /* ---------- day rendering ---------- */
 function items(d){
   if(!d)return'<div class="item"><div class="ic">📅</div><div><b>Before the training block</b><span>Plan starts Mon, Nov 16.</span></div></div>';
   const o=[];
-  if(d.run)o.push(`<div class="item"><div class="ic">${ICON[d.run.type]||'🏃'}</div><div><b>${esc(d.run.title)}${d.date<=O.today?pill(d.status):''}</b><span>${esc(d.run.details)}</span>${d.actual.run_miles?`<span> · Logged <b style="display:inline">${d.actual.run_miles} mi</b></span>`:''}</div></div>`);
+  if(d.run)o.push(`<details class="pg"><summary><div class="item"><div class="ic">${ICON[d.run.type]||'🏃'}</div><div><b>${esc(d.run.title)}${d.date<=O.today?pill(d.status):''}</b><span>${esc(d.run.details)}</span>${d.actual.run_miles?`<span> · Logged <b style="display:inline">${d.actual.run_miles} mi</b></span>`:''}<br><span class="hint"><span class="arr">▸</span> Pace guide</span></div></div></summary>${guide(d.run)}</details>`);
   if(d.cross)o.push(`<div class="item"><div class="ic">${ICON[d.cross.type]}</div><div><b>${esc(d.cross.title)}${d.actual.cross?'<span class="pill done">✓ Logged</span>':''}</b><span>${esc(d.cross.details)}</span></div></div>`);
   if(d.lift)o.push(`<div class="item"><div class="ic">🏋️</div><div><b>Lift · ${esc(d.lift.focus)}${d.actual.lift?'<span class="pill done">✓ Logged</span>':''}</b>${d.lift.details?`<span>${esc(d.lift.details)}</span>`:''}</div></div>`);
   if(!o.length)o.push('<div class="item"><div class="ic">😴</div><div><b>Rest day</b><span>Recover — sleep, hydrate, eat well.</span></div></div>');

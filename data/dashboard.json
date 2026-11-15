@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T18:35-05:00",
+ "generated_at": "2026-11-15T18:40-05:00",
  "today": "2026-11-15",
  "goal": {
   "race": "Miami Marathon",
@@ -40,7 +40,16 @@
    "type": "easy",
    "miles": 3,
    "title": "Easy 3 mi",
-   "details": "Conversational, 9:00\u20139:45/mi."
+   "details": "Conversational, 9:00\u20139:45/mi.",
+   "steps": [
+    {
+     "label": "Easy run",
+     "miles": 3,
+     "pace": "9:00\u20139:45",
+     "kind": "easy",
+     "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+    }
+   ]
   },
   "cross": null,
   "lift": {
@@ -78,7 +87,16 @@
      "type": "easy",
      "miles": 3,
      "title": "Easy 3 mi",
-     "details": "Conversational, 9:00\u20139:45/mi."
+     "details": "Conversational, 9:00\u20139:45/mi.",
+     "steps": [
+      {
+       "label": "Easy run",
+       "miles": 3,
+       "pace": "9:00\u20139:45",
+       "kind": "easy",
+       "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+      }
+     ]
     },
     "cross": null,
     "lift": {
@@ -126,7 +144,16 @@
      "type": "easy",
      "miles": 3,
      "title": "Easy 3 mi",
-     "details": "Conversational, 9:00\u20139:45/mi."
+     "details": "Conversational, 9:00\u20139:45/mi.",
+     "steps": [
+      {
+       "label": "Easy run",
+       "miles": 3,
+       "pace": "9:00\u20139:45",
+       "kind": "easy",
+       "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+      }
+     ]
     },
     "cross": null,
     "lift": {
@@ -174,7 +201,16 @@
      "type": "long",
      "miles": 6,
      "title": "Long run 6 mi",
-     "details": "Easy the whole way. No lifting."
+     "details": "Easy the whole way (9:00\u20139:30/mi). No lifting.",
+     "steps": [
+      {
+       "label": "Long run",
+       "miles": 6,
+       "pace": "9:00\u20139:30",
+       "kind": "long",
+       "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
+      }
+     ]
     },
     "cross": null,
     "lift": null,
@@ -195,7 +231,25 @@
      "type": "easy",
      "miles": 3,
      "title": "Easy 3 mi + 4 strides",
-     "details": "Conversational, 9:00\u20139:45/mi."
+     "details": "Conversational, 9:00\u20139:45/mi.",
+     "steps": [
+      {
+       "label": "Easy run",
+       "miles": 3,
+       "pace": "9:00\u20139:45",
+       "kind": "easy",
+       "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+      },
+      {
+       "label": "4 \u00d7 strides",
+       "reps": 4,
+       "rep_desc": "20 sec",
+       "pace": "~6:30\u20137:00 feel",
+       "rest": "walk/jog 60 sec",
+       "kind": "stride",
+       "feel": "Smooth and fast (\u2248mile-race effort), relaxed shoulders. Not a sprint."
+      }
+     ]
     },
     "cross": null,
     "lift": {
@@ -394,7 +448,16 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 3,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -442,7 +505,16 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 3,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -490,7 +562,16 @@
     "type": "long",
     "miles": 6,
     "title": "Long run 6 mi",
-    "details": "Easy the whole way. No lifting."
+    "details": "Easy the whole way (9:00\u20139:30/mi). No lifting.",
+    "steps": [
+     {
+      "label": "Long run",
+      "miles": 6,
+      "pace": "9:00\u20139:30",
+      "kind": "long",
+      "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -511,7 +592,25 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi + 4 strides",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 3,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     },
+     {
+      "label": "4 \u00d7 strides",
+      "reps": 4,
+      "rep_desc": "20 sec",
+      "pace": "~6:30\u20137:00 feel",
+      "rest": "walk/jog 60 sec",
+      "kind": "stride",
+      "feel": "Smooth and fast (\u2248mile-race effort), relaxed shoulders. Not a sprint."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -551,7 +650,16 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 3,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -575,7 +683,25 @@
     "type": "easy",
     "miles": 5,
     "title": "Easy 5 mi + 6 strides",
-    "details": "Easy pace, then 6 \u00d7 20 sec quick & relaxed."
+    "details": "Easy pace, then 6 \u00d7 20 sec quick & relaxed.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 5,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     },
+     {
+      "label": "6 \u00d7 strides",
+      "reps": 6,
+      "rep_desc": "20 sec",
+      "pace": "~6:30\u20137:00 feel",
+      "rest": "walk/jog 60 sec",
+      "kind": "stride",
+      "feel": "Smooth and fast (\u2248mile-race effort), relaxed shoulders. Not a sprint."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -623,7 +749,16 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 4,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -644,7 +779,16 @@
     "type": "long",
     "miles": 8,
     "title": "Long run 8 mi",
-    "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi)."
+    "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi).",
+    "steps": [
+     {
+      "label": "Long run",
+      "miles": 8,
+      "pace": "9:00\u20139:30",
+      "kind": "long",
+      "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -665,7 +809,16 @@
     "type": "recovery",
     "miles": 3,
     "title": "Recovery 3 mi",
-    "details": "Very easy, 9:45+/mi. Shake out the long run."
+    "details": "Very easy, 9:45+/mi. Shake out the long run.",
+    "steps": [
+     {
+      "label": "Recovery run",
+      "miles": 3,
+      "pace": "9:45+",
+      "kind": "recovery",
+      "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -708,7 +861,16 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 4,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -732,7 +894,33 @@
     "type": "workout",
     "miles": 6,
     "title": "Tempo: 3 \u00d7 1 mi",
-    "details": "1.5 mi warm-up \u00b7 3 \u00d7 1 mi @ 7:40\u20137:55 w/ 90 sec jog \u00b7 1.5 mi cool-down"
+    "details": "1.5 mi warm-up \u00b7 3 \u00d7 1 mi @ 7:40\u20137:55 w/ 90 sec jog \u00b7 1.5 mi cool-down",
+    "steps": [
+     {
+      "label": "Warm-up",
+      "miles": 1.5,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     },
+     {
+      "label": "3 \u00d7 1 mi",
+      "reps": 3,
+      "rep_miles": 1,
+      "miles": 3,
+      "pace": "7:40\u20137:55",
+      "rest": "90 sec easy jog",
+      "kind": "tempo",
+      "feel": "Comfortably hard: 3\u20134 word answers, steady breathing. Even splits \u2014 don't start fast. RPE 7/10."
+     },
+     {
+      "label": "Cool-down",
+      "miles": 1.5,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -780,7 +968,16 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 4,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -804,7 +1001,16 @@
     "type": "long",
     "miles": 10,
     "title": "Long run 10 mi",
-    "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi)."
+    "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi).",
+    "steps": [
+     {
+      "label": "Long run",
+      "miles": 10,
+      "pace": "9:00\u20139:30",
+      "kind": "long",
+      "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -825,7 +1031,16 @@
     "type": "recovery",
     "miles": 3,
     "title": "Recovery 3 mi",
-    "details": "Very easy, 9:45+/mi. Shake out the long run."
+    "details": "Very easy, 9:45+/mi. Shake out the long run.",
+    "steps": [
+     {
+      "label": "Recovery run",
+      "miles": 3,
+      "pace": "9:45+",
+      "kind": "recovery",
+      "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -865,7 +1080,16 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 4,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -889,7 +1113,33 @@
     "type": "workout",
     "miles": 6,
     "title": "Tempo: 2 \u00d7 2 mi",
-    "details": "1 mi warm-up \u00b7 2 \u00d7 2 mi @ 7:40\u20137:55 w/ 2 min jog \u00b7 1 mi cool-down"
+    "details": "1 mi warm-up \u00b7 2 \u00d7 2 mi @ 7:40\u20137:55 w/ 2 min jog \u00b7 1 mi cool-down",
+    "steps": [
+     {
+      "label": "Warm-up",
+      "miles": 1,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     },
+     {
+      "label": "2 \u00d7 2 mi",
+      "reps": 2,
+      "rep_miles": 2,
+      "miles": 4,
+      "pace": "7:40\u20137:55",
+      "rest": "2 min easy jog",
+      "kind": "tempo",
+      "feel": "Comfortably hard: 3\u20134 word answers, steady breathing. Even splits \u2014 don't start fast. RPE 7/10."
+     },
+     {
+      "label": "Cool-down",
+      "miles": 1,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -937,7 +1187,16 @@
     "type": "easy",
     "miles": 5,
     "title": "Easy 5 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 5,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -961,7 +1220,23 @@
     "type": "long",
     "miles": 13,
     "title": "Long run 13 mi",
-    "details": "10 easy, last 3 @ marathon pace (8:35)."
+    "details": "10 easy, last 3 @ marathon pace (8:35).",
+    "steps": [
+     {
+      "label": "Easy miles",
+      "miles": 10,
+      "pace": "9:00\u20139:30",
+      "kind": "long",
+      "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
+     },
+     {
+      "label": "Marathon-pace finish",
+      "miles": 3,
+      "pace": "8:35",
+      "kind": "mp",
+      "feel": "Goal marathon pace: controlled, rhythmic, short phrases only. RPE 5\u20136/10."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -982,7 +1257,16 @@
     "type": "recovery",
     "miles": 3,
     "title": "Recovery 3 mi",
-    "details": "Very easy, 9:45+/mi. Shake out the long run."
+    "details": "Very easy, 9:45+/mi. Shake out the long run.",
+    "steps": [
+     {
+      "label": "Recovery run",
+      "miles": 3,
+      "pace": "9:45+",
+      "kind": "recovery",
+      "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1022,7 +1306,30 @@
     "type": "workout",
     "miles": 5,
     "title": "MP run: 3 mi @ 8:35",
-    "details": "1 mi warm-up \u00b7 3 mi @ 8:35 \u00b7 1 mi cool-down"
+    "details": "1 mi warm-up \u00b7 3 mi @ 8:35 \u00b7 1 mi cool-down",
+    "steps": [
+     {
+      "label": "Warm-up",
+      "miles": 1,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     },
+     {
+      "label": "Marathon pace",
+      "miles": 3,
+      "pace": "8:35",
+      "kind": "mp",
+      "feel": "Goal marathon pace: controlled, rhythmic, short phrases only. RPE 5\u20136/10."
+     },
+     {
+      "label": "Cool-down",
+      "miles": 1,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1062,7 +1369,16 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 4,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1086,7 +1402,16 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 4,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1134,7 +1459,16 @@
     "type": "long",
     "miles": 11,
     "title": "Long run 11 mi",
-    "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi)."
+    "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi).",
+    "steps": [
+     {
+      "label": "Long run",
+      "miles": 11,
+      "pace": "9:00\u20139:30",
+      "kind": "long",
+      "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -1155,7 +1489,16 @@
     "type": "recovery",
     "miles": 3,
     "title": "Recovery 3 mi",
-    "details": "Very easy, 9:45+/mi. Shake out the long run."
+    "details": "Very easy, 9:45+/mi. Shake out the long run.",
+    "steps": [
+     {
+      "label": "Recovery run",
+      "miles": 3,
+      "pace": "9:45+",
+      "kind": "recovery",
+      "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1179,7 +1522,16 @@
     "type": "easy",
     "miles": 5,
     "title": "Easy 5 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 5,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1203,7 +1555,30 @@
     "type": "workout",
     "miles": 7,
     "title": "MP run: 5 mi @ 8:35",
-    "details": "1 mi warm-up \u00b7 5 mi @ 8:35 \u00b7 1 mi cool-down"
+    "details": "1 mi warm-up \u00b7 5 mi @ 8:35 \u00b7 1 mi cool-down",
+    "steps": [
+     {
+      "label": "Warm-up",
+      "miles": 1,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     },
+     {
+      "label": "Marathon pace",
+      "miles": 5,
+      "pace": "8:35",
+      "kind": "mp",
+      "feel": "Goal marathon pace: controlled, rhythmic, short phrases only. RPE 5\u20136/10."
+     },
+     {
+      "label": "Cool-down",
+      "miles": 1,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1251,7 +1626,16 @@
     "type": "easy",
     "miles": 5,
     "title": "Easy 5 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 5,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1291,7 +1675,16 @@
     "type": "long",
     "miles": 16,
     "title": "Long run 16 mi",
-    "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi)."
+    "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi).",
+    "steps": [
+     {
+      "label": "Long run",
+      "miles": 16,
+      "pace": "9:00\u20139:30",
+      "kind": "long",
+      "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -1312,7 +1705,16 @@
     "type": "recovery",
     "miles": 3,
     "title": "Recovery 3 mi",
-    "details": "Very easy, 9:45+/mi. Shake out the long run."
+    "details": "Very easy, 9:45+/mi. Shake out the long run.",
+    "steps": [
+     {
+      "label": "Recovery run",
+      "miles": 3,
+      "pace": "9:45+",
+      "kind": "recovery",
+      "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1336,7 +1738,16 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 4,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1360,7 +1771,33 @@
     "type": "workout",
     "miles": 8,
     "title": "Tempo: 3 \u00d7 1.5 mi",
-    "details": "1.5 mi warm-up \u00b7 3 \u00d7 1.5 mi @ 7:40\u20137:55 w/ 2 min jog \u00b7 1 mi cool-down"
+    "details": "1.5 mi warm-up \u00b7 3 \u00d7 1.5 mi @ 7:40\u20137:55 w/ 2 min jog \u00b7 1 mi cool-down",
+    "steps": [
+     {
+      "label": "Warm-up",
+      "miles": 1.5,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     },
+     {
+      "label": "3 \u00d7 1.5 mi",
+      "reps": 3,
+      "rep_miles": 1.5,
+      "miles": 4.5,
+      "pace": "7:40\u20137:55",
+      "rest": "2 min easy jog",
+      "kind": "tempo",
+      "feel": "Comfortably hard: 3\u20134 word answers, steady breathing. Even splits \u2014 don't start fast. RPE 7/10."
+     },
+     {
+      "label": "Cool-down",
+      "miles": 2,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1408,7 +1845,16 @@
     "type": "easy",
     "miles": 5,
     "title": "Easy 5 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 5,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1448,7 +1894,23 @@
     "type": "long",
     "miles": 20,
     "title": "Long run 20 mi",
-    "details": "Peak long run. Easy (9:00\u20139:30/mi); gel every 45 min; last 2 mi can drift toward 8:35."
+    "details": "Peak long run. Easy (9:00\u20139:30/mi); gel every 45 min; last 2 mi can drift toward 8:35.",
+    "steps": [
+     {
+      "label": "Easy miles",
+      "miles": 18,
+      "pace": "9:00\u20139:30",
+      "kind": "long",
+      "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
+     },
+     {
+      "label": "Strong finish",
+      "miles": 2,
+      "pace": "8:35\u20139:00",
+      "kind": "mp",
+      "feel": "Goal marathon pace: controlled, rhythmic, short phrases only. RPE 5\u20136/10."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -1469,7 +1931,16 @@
     "type": "recovery",
     "miles": 3,
     "title": "Recovery 3 mi",
-    "details": "Very easy, 9:45+/mi. Shake out the long run."
+    "details": "Very easy, 9:45+/mi. Shake out the long run.",
+    "steps": [
+     {
+      "label": "Recovery run",
+      "miles": 3,
+      "pace": "9:45+",
+      "kind": "recovery",
+      "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1493,7 +1964,16 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 4,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1517,7 +1997,33 @@
     "type": "workout",
     "miles": 7,
     "title": "Tempo: 2 \u00d7 2.5 mi",
-    "details": "1 mi warm-up \u00b7 2 \u00d7 2.5 mi @ 7:40\u20137:55 w/ 2 min jog \u00b7 1 mi cool-down"
+    "details": "1 mi warm-up \u00b7 2 \u00d7 2.5 mi @ 7:40\u20137:55 w/ 2 min jog \u00b7 1 mi cool-down",
+    "steps": [
+     {
+      "label": "Warm-up",
+      "miles": 1,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     },
+     {
+      "label": "2 \u00d7 2.5 mi",
+      "reps": 2,
+      "rep_miles": 2.5,
+      "miles": 5.0,
+      "pace": "7:40\u20137:55",
+      "rest": "2 min easy jog",
+      "kind": "tempo",
+      "feel": "Comfortably hard: 3\u20134 word answers, steady breathing. Even splits \u2014 don't start fast. RPE 7/10."
+     },
+     {
+      "label": "Cool-down",
+      "miles": 1,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1541,7 +2047,16 @@
     "type": "easy",
     "miles": 5,
     "title": "Easy 5 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 5,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1565,7 +2080,16 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 3,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1605,7 +2129,23 @@
     "type": "long",
     "miles": 15,
     "title": "Long run 15 mi",
-    "details": "7 easy, then 8 @ marathon pace (8:35). Race-day fueling and shoes."
+    "details": "7 easy, then 8 @ marathon pace (8:35). Race-day fueling and shoes.",
+    "steps": [
+     {
+      "label": "Easy miles",
+      "miles": 7,
+      "pace": "9:00\u20139:30",
+      "kind": "long",
+      "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
+     },
+     {
+      "label": "Marathon pace",
+      "miles": 8,
+      "pace": "8:35",
+      "kind": "mp",
+      "feel": "Goal marathon pace: controlled, rhythmic, short phrases only. RPE 5\u20136/10."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -1645,7 +2185,16 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 4,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1669,7 +2218,30 @@
     "type": "workout",
     "miles": 6,
     "title": "MP run: 4 mi @ 8:35",
-    "details": "1 mi warm-up \u00b7 4 mi @ 8:35 \u00b7 1 mi cool-down"
+    "details": "1 mi warm-up \u00b7 4 mi @ 8:35 \u00b7 1 mi cool-down",
+    "steps": [
+     {
+      "label": "Warm-up",
+      "miles": 1,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     },
+     {
+      "label": "Marathon pace",
+      "miles": 4,
+      "pace": "8:35",
+      "kind": "mp",
+      "feel": "Goal marathon pace: controlled, rhythmic, short phrases only. RPE 5\u20136/10."
+     },
+     {
+      "label": "Cool-down",
+      "miles": 1,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1717,7 +2289,16 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 4,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1741,7 +2322,25 @@
     "type": "shakeout",
     "miles": 2,
     "title": "Shakeout 2 mi + 4 strides",
-    "details": "Very easy."
+    "details": "Very easy.",
+    "steps": [
+     {
+      "label": "Shakeout",
+      "miles": 2,
+      "pace": "9:45+",
+      "kind": "recovery",
+      "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
+     },
+     {
+      "label": "4 \u00d7 strides",
+      "reps": 4,
+      "rep_desc": "20 sec",
+      "pace": "~6:30\u20137:00 feel",
+      "rest": "walk/jog 60 sec",
+      "kind": "stride",
+      "feel": "Smooth and fast (\u2248mile-race effort), relaxed shoulders. Not a sprint."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -1762,7 +2361,30 @@
     "type": "race",
     "miles": 14,
     "title": "Gainesville Half Marathon",
-    "details": "1 mi warm-up \u00b7 first 10 mi @ 8:35 \u00b7 last 5K ~8:00. Controlled \u2014 NOT all-out."
+    "details": "1 mi warm-up \u00b7 first 10 mi @ 8:35 \u00b7 last 5K ~8:00. Controlled \u2014 NOT all-out.",
+    "steps": [
+     {
+      "label": "Warm-up",
+      "miles": 1,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     },
+     {
+      "label": "Race miles 1\u201310",
+      "miles": 10,
+      "pace": "8:35",
+      "kind": "mp",
+      "feel": "Goal marathon pace: controlled, rhythmic, short phrases only. RPE 5\u20136/10."
+     },
+     {
+      "label": "Race: last 5K",
+      "miles": 3.1,
+      "pace": "7:55\u20138:05",
+      "kind": "tempo",
+      "feel": "Comfortably hard: 3\u20134 word answers, steady breathing. Even splits \u2014 don't start fast. RPE 7/10."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -1802,7 +2424,16 @@
     "type": "recovery",
     "miles": 3,
     "title": "Recovery 3 mi",
-    "details": "Very easy, 9:45+/mi. Shake out the long run."
+    "details": "Very easy, 9:45+/mi. Shake out the long run.",
+    "steps": [
+     {
+      "label": "Recovery run",
+      "miles": 3,
+      "pace": "9:45+",
+      "kind": "recovery",
+      "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1826,7 +2457,33 @@
     "type": "workout",
     "miles": 6,
     "title": "Intervals: 4 \u00d7 1 mi",
-    "details": "1 mi warm-up \u00b7 4 \u00d7 1 mi @ 7:40\u20137:55 w/ 90 sec jog \u00b7 1 mi cool-down"
+    "details": "1 mi warm-up \u00b7 4 \u00d7 1 mi @ 7:40\u20137:55 w/ 90 sec jog \u00b7 1 mi cool-down",
+    "steps": [
+     {
+      "label": "Warm-up",
+      "miles": 1,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     },
+     {
+      "label": "4 \u00d7 1 mi",
+      "reps": 4,
+      "rep_miles": 1,
+      "miles": 4,
+      "pace": "7:40\u20137:55",
+      "rest": "90 sec easy jog",
+      "kind": "tempo",
+      "feel": "Comfortably hard: 3\u20134 word answers, steady breathing. Even splits \u2014 don't start fast. RPE 7/10."
+     },
+     {
+      "label": "Cool-down",
+      "miles": 1,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1874,7 +2531,16 @@
     "type": "easy",
     "miles": 5,
     "title": "Easy 5 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 5,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1898,7 +2564,16 @@
     "type": "long",
     "miles": 10,
     "title": "Long run 10 mi",
-    "details": "Easy. Last long run."
+    "details": "Easy. Last long run.",
+    "steps": [
+     {
+      "label": "Long run",
+      "miles": 10,
+      "pace": "9:00\u20139:30",
+      "kind": "long",
+      "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -1919,7 +2594,16 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 3,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1959,7 +2643,16 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 4,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -1983,7 +2676,30 @@
     "type": "workout",
     "miles": 5,
     "title": "MP tune: 2 mi @ 8:35",
-    "details": "1.5 mi warm-up \u00b7 2 mi @ 8:35 \u00b7 1.5 mi cool-down"
+    "details": "1.5 mi warm-up \u00b7 2 mi @ 8:35 \u00b7 1.5 mi cool-down",
+    "steps": [
+     {
+      "label": "Warm-up",
+      "miles": 1.5,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     },
+     {
+      "label": "Marathon pace",
+      "miles": 2,
+      "pace": "8:35",
+      "kind": "mp",
+      "feel": "Goal marathon pace: controlled, rhythmic, short phrases only. RPE 5\u20136/10."
+     },
+     {
+      "label": "Cool-down",
+      "miles": 1.5,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -2004,7 +2720,16 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 3,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -2028,7 +2753,25 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi + 4 strides",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 3,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     },
+     {
+      "label": "4 \u00d7 strides",
+      "reps": 4,
+      "rep_desc": "20 sec",
+      "pace": "~6:30\u20137:00 feel",
+      "rest": "walk/jog 60 sec",
+      "kind": "stride",
+      "feel": "Smooth and fast (\u2248mile-race effort), relaxed shoulders. Not a sprint."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -2065,7 +2808,25 @@
     "type": "shakeout",
     "miles": 2,
     "title": "Shakeout 2 mi",
-    "details": "15\u201320 min very easy + 3 strides."
+    "details": "15\u201320 min very easy + 3 strides.",
+    "steps": [
+     {
+      "label": "Shakeout",
+      "miles": 2,
+      "pace": "9:45+",
+      "kind": "recovery",
+      "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
+     },
+     {
+      "label": "3 \u00d7 strides",
+      "reps": 3,
+      "rep_desc": "20 sec",
+      "pace": "~6:30\u20137:00 feel",
+      "rest": "walk/jog 60 sec",
+      "kind": "stride",
+      "feel": "Smooth and fast (\u2248mile-race effort), relaxed shoulders. Not a sprint."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -2086,7 +2847,30 @@
     "type": "race",
     "miles": 26.2,
     "title": "MIAMI MARATHON",
-    "details": "Goal 3:45 \u2192 8:35/mi. First 3 mi at 8:40\u20138:45, settle into 8:35, push only after mile 20."
+    "details": "Goal 3:45 \u2192 8:35/mi. First 3 mi at 8:40\u20138:45, settle into 8:35, hold 8:35 through 20, then 8:20\u20138:30 to the finish.",
+    "steps": [
+     {
+      "label": "Miles 1\u20133: settle in",
+      "miles": 3,
+      "pace": "8:40\u20138:45",
+      "kind": "race",
+      "feel": "Race effort, but patient \u2014 even splits win marathons."
+     },
+     {
+      "label": "Miles 4\u201320: lock in",
+      "miles": 17,
+      "pace": "8:35",
+      "kind": "mp",
+      "feel": "Goal marathon pace: controlled, rhythmic, short phrases only. RPE 5\u20136/10."
+     },
+     {
+      "label": "Miles 21\u201326.2: bring it home",
+      "miles": 6.2,
+      "pace": "8:20\u20138:30",
+      "kind": "race",
+      "feel": "Race effort, but patient \u2014 even splits win marathons."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -4125,7 +4909,16 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 3,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -4173,7 +4966,16 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 3,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
    },
    "cross": null,
    "lift": {
@@ -4221,7 +5023,16 @@
     "type": "long",
     "miles": 6,
     "title": "Long run 6 mi",
-    "details": "Easy the whole way. No lifting."
+    "details": "Easy the whole way (9:00\u20139:30/mi). No lifting.",
+    "steps": [
+     {
+      "label": "Long run",
+      "miles": 6,
+      "pace": "9:00\u20139:30",
+      "kind": "long",
+      "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
+     }
+    ]
    },
    "cross": null,
    "lift": null,
@@ -4242,7 +5053,25 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi + 4 strides",
-    "details": "Conversational, 9:00\u20139:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 3,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     },
+     {
+      "label": "4 \u00d7 strides",
+      "reps": 4,
+      "rep_desc": "20 sec",
+      "pace": "~6:30\u20137:00 feel",
+      "rest": "walk/jog 60 sec",
+      "kind": "stride",
+      "feel": "Smooth and fast (\u2248mile-race effort), relaxed shoulders. Not a sprint."
+     }
+    ]
    },
    "cross": null,
    "lift": {
