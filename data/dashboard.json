@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T18:13-05:00",
+ "generated_at": "2026-11-15T18:24-05:00",
  "today": "2026-11-15",
  "goal": {
   "race": "Miami Marathon",
@@ -18,11 +18,12 @@
   "goal_seconds": 13500
  },
  "paces": {
-  "easy": "10:00\u201310:45",
-  "recovery": "10:30+",
+  "easy": "9:00\u20139:45",
+  "recovery": "9:45+",
+  "long": "9:00\u20139:30",
   "mp": "8:35",
-  "tempo": "7:55\u20138:05",
-  "interval": "7:30\u20137:40"
+  "tempo": "7:40\u20137:55",
+  "interval": "7:15\u20137:25"
  },
  "countdown": {
   "race_days": 77,
@@ -39,7 +40,7 @@
    "type": "easy",
    "miles": 3,
    "title": "Easy 3 mi",
-   "details": "Conversational, 10:00\u201310:45/mi."
+   "details": "Conversational, 9:00\u20139:45/mi."
   },
   "cross": null,
   "lift": {
@@ -77,7 +78,7 @@
      "type": "easy",
      "miles": 3,
      "title": "Easy 3 mi",
-     "details": "Conversational, 10:00\u201310:45/mi."
+     "details": "Conversational, 9:00\u20139:45/mi."
     },
     "cross": null,
     "lift": {
@@ -125,7 +126,7 @@
      "type": "easy",
      "miles": 3,
      "title": "Easy 3 mi",
-     "details": "Conversational, 10:00\u201310:45/mi."
+     "details": "Conversational, 9:00\u20139:45/mi."
     },
     "cross": null,
     "lift": {
@@ -194,7 +195,7 @@
      "type": "easy",
      "miles": 3,
      "title": "Easy 3 mi + 4 strides",
-     "details": "Conversational, 10:00\u201310:45/mi."
+     "details": "Conversational, 9:00\u20139:45/mi."
     },
     "cross": null,
     "lift": {
@@ -305,9 +306,9 @@
    "location": "New York",
    "start": "2026-12-21",
    "end": "2026-12-27",
-   "planned_miles": 35.0,
+   "planned_miles": 36.0,
    "actual_miles": 0,
-   "long_planned": 15,
+   "long_planned": 16,
    "long_actual": 0,
    "lifts": 0,
    "is_current": false,
@@ -319,9 +320,9 @@
    "location": "New York",
    "start": "2026-12-28",
    "end": "2027-01-03",
-   "planned_miles": 38.0,
+   "planned_miles": 40.0,
    "actual_miles": 0,
-   "long_planned": 18,
+   "long_planned": 20,
    "long_actual": 0,
    "lifts": 0,
    "is_current": false,
@@ -393,7 +394,7 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -441,7 +442,7 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -510,7 +511,7 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi + 4 strides",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -550,7 +551,7 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -622,7 +623,7 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": null,
@@ -643,7 +644,7 @@
     "type": "long",
     "miles": 8,
     "title": "Long run 8 mi",
-    "details": "Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."
+    "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi)."
    },
    "cross": null,
    "lift": null,
@@ -664,7 +665,7 @@
     "type": "recovery",
     "miles": 3,
     "title": "Recovery 3 mi",
-    "details": "Very easy, 10:30+/mi. Shake out the long run."
+    "details": "Very easy, 9:45+/mi. Shake out the long run."
    },
    "cross": null,
    "lift": {
@@ -707,7 +708,7 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -731,7 +732,7 @@
     "type": "workout",
     "miles": 6,
     "title": "Tempo: 3 \u00d7 1 mi",
-    "details": "1.5 mi warm-up \u00b7 3 \u00d7 1 mi @ 7:55\u20138:05 w/ 90 sec jog \u00b7 1.5 mi cool-down"
+    "details": "1.5 mi warm-up \u00b7 3 \u00d7 1 mi @ 7:40\u20137:55 w/ 90 sec jog \u00b7 1.5 mi cool-down"
    },
    "cross": null,
    "lift": {
@@ -779,7 +780,7 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -803,7 +804,7 @@
     "type": "long",
     "miles": 10,
     "title": "Long run 10 mi",
-    "details": "Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."
+    "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi)."
    },
    "cross": null,
    "lift": null,
@@ -824,7 +825,7 @@
     "type": "recovery",
     "miles": 3,
     "title": "Recovery 3 mi",
-    "details": "Very easy, 10:30+/mi. Shake out the long run."
+    "details": "Very easy, 9:45+/mi. Shake out the long run."
    },
    "cross": null,
    "lift": {
@@ -864,7 +865,7 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -888,7 +889,7 @@
     "type": "workout",
     "miles": 6,
     "title": "Tempo: 2 \u00d7 2 mi",
-    "details": "1 mi warm-up \u00b7 2 \u00d7 2 mi @ 7:55\u20138:05 w/ 2 min jog \u00b7 1 mi cool-down"
+    "details": "1 mi warm-up \u00b7 2 \u00d7 2 mi @ 7:40\u20137:55 w/ 2 min jog \u00b7 1 mi cool-down"
    },
    "cross": null,
    "lift": {
@@ -936,7 +937,7 @@
     "type": "easy",
     "miles": 5,
     "title": "Easy 5 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -981,7 +982,7 @@
     "type": "recovery",
     "miles": 3,
     "title": "Recovery 3 mi",
-    "details": "Very easy, 10:30+/mi. Shake out the long run."
+    "details": "Very easy, 9:45+/mi. Shake out the long run."
    },
    "cross": null,
    "lift": {
@@ -1061,7 +1062,7 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -1085,7 +1086,7 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -1133,7 +1134,7 @@
     "type": "long",
     "miles": 11,
     "title": "Long run 11 mi",
-    "details": "Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."
+    "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi)."
    },
    "cross": null,
    "lift": null,
@@ -1154,7 +1155,7 @@
     "type": "recovery",
     "miles": 3,
     "title": "Recovery 3 mi",
-    "details": "Very easy, 10:30+/mi. Shake out the long run."
+    "details": "Very easy, 9:45+/mi. Shake out the long run."
    },
    "cross": null,
    "lift": {
@@ -1178,7 +1179,7 @@
     "type": "easy",
     "miles": 5,
     "title": "Easy 5 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -1250,7 +1251,7 @@
     "type": "easy",
     "miles": 5,
     "title": "Easy 5 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -1288,9 +1289,9 @@
    "location": "New York",
    "run": {
     "type": "long",
-    "miles": 15,
-    "title": "Long run 15 mi",
-    "details": "Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."
+    "miles": 16,
+    "title": "Long run 16 mi",
+    "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi)."
    },
    "cross": null,
    "lift": null,
@@ -1311,7 +1312,7 @@
     "type": "recovery",
     "miles": 3,
     "title": "Recovery 3 mi",
-    "details": "Very easy, 10:30+/mi. Shake out the long run."
+    "details": "Very easy, 9:45+/mi. Shake out the long run."
    },
    "cross": null,
    "lift": {
@@ -1335,7 +1336,7 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -1359,7 +1360,7 @@
     "type": "workout",
     "miles": 8,
     "title": "Tempo: 3 \u00d7 1.5 mi",
-    "details": "1.5 mi warm-up \u00b7 3 \u00d7 1.5 mi @ 7:55\u20138:05 w/ 2 min jog \u00b7 1 mi cool-down"
+    "details": "1.5 mi warm-up \u00b7 3 \u00d7 1.5 mi @ 7:40\u20137:55 w/ 2 min jog \u00b7 1 mi cool-down"
    },
    "cross": null,
    "lift": {
@@ -1407,7 +1408,7 @@
     "type": "easy",
     "miles": 5,
     "title": "Easy 5 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -1445,9 +1446,9 @@
    "location": "New York",
    "run": {
     "type": "long",
-    "miles": 18,
-    "title": "Long run 18 mi",
-    "details": "Peak long run. Easy; gel every 45 min; last 2 mi can drift toward 8:35."
+    "miles": 20,
+    "title": "Long run 20 mi",
+    "details": "Peak long run. Easy (9:00\u20139:30/mi); gel every 45 min; last 2 mi can drift toward 8:35."
    },
    "cross": null,
    "lift": null,
@@ -1468,7 +1469,7 @@
     "type": "recovery",
     "miles": 3,
     "title": "Recovery 3 mi",
-    "details": "Very easy, 10:30+/mi. Shake out the long run."
+    "details": "Very easy, 9:45+/mi. Shake out the long run."
    },
    "cross": null,
    "lift": {
@@ -1492,7 +1493,7 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -1516,7 +1517,7 @@
     "type": "workout",
     "miles": 7,
     "title": "Tempo: 2 \u00d7 2.5 mi",
-    "details": "1 mi warm-up \u00b7 2 \u00d7 2.5 mi @ 7:55\u20138:05 w/ 2 min jog \u00b7 1 mi cool-down"
+    "details": "1 mi warm-up \u00b7 2 \u00d7 2.5 mi @ 7:40\u20137:55 w/ 2 min jog \u00b7 1 mi cool-down"
    },
    "cross": null,
    "lift": {
@@ -1540,7 +1541,7 @@
     "type": "easy",
     "miles": 5,
     "title": "Easy 5 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -1564,7 +1565,7 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -1644,7 +1645,7 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -1716,7 +1717,7 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -1801,7 +1802,7 @@
     "type": "recovery",
     "miles": 3,
     "title": "Recovery 3 mi",
-    "details": "Very easy, 10:30+/mi. Shake out the long run."
+    "details": "Very easy, 9:45+/mi. Shake out the long run."
    },
    "cross": null,
    "lift": {
@@ -1825,7 +1826,7 @@
     "type": "workout",
     "miles": 6,
     "title": "Intervals: 4 \u00d7 1 mi",
-    "details": "1 mi warm-up \u00b7 4 \u00d7 1 mi @ 7:55\u20138:05 w/ 90 sec jog \u00b7 1 mi cool-down"
+    "details": "1 mi warm-up \u00b7 4 \u00d7 1 mi @ 7:40\u20137:55 w/ 90 sec jog \u00b7 1 mi cool-down"
    },
    "cross": null,
    "lift": {
@@ -1873,7 +1874,7 @@
     "type": "easy",
     "miles": 5,
     "title": "Easy 5 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -1918,7 +1919,7 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -1958,7 +1959,7 @@
     "type": "easy",
     "miles": 4,
     "title": "Easy 4 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -2003,7 +2004,7 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": {
@@ -2027,7 +2028,7 @@
     "type": "easy",
     "miles": 3,
     "title": "Easy 3 mi + 4 strides",
-    "details": "Conversational, 10:00\u201310:45/mi."
+    "details": "Conversational, 9:00\u20139:45/mi."
    },
    "cross": null,
    "lift": null,
@@ -2524,81 +2525,186 @@
    "ef_avg": 1.049
   },
   {
+   "date": "2026-06-25",
+   "ef": 1.092,
+   "pace": "9:13",
+   "hr": 160.0,
+   "ef_avg": 1.071
+  },
+  {
+   "date": "2026-06-28",
+   "ef": 1.12,
+   "pace": "8:46",
+   "hr": 164.0,
+   "ef_avg": 1.087
+  },
+  {
+   "date": "2026-07-02",
+   "ef": 1.074,
+   "pace": "9:02",
+   "hr": 166.0,
+   "ef_avg": 1.084
+  },
+  {
+   "date": "2026-07-03",
+   "ef": 1.095,
+   "pace": "9:01",
+   "hr": 163.0,
+   "ef_avg": 1.086
+  },
+  {
+   "date": "2026-07-09",
+   "ef": 1.164,
+   "pace": "8:59",
+   "hr": 154.0,
+   "ef_avg": 1.109
+  },
+  {
+   "date": "2026-07-11",
+   "ef": 1.136,
+   "pace": "8:51",
+   "hr": 160.0,
+   "ef_avg": 1.118
+  },
+  {
+   "date": "2026-07-16",
+   "ef": 1.137,
+   "pace": "8:51",
+   "hr": 160.0,
+   "ef_avg": 1.121
+  },
+  {
+   "date": "2026-07-18",
+   "ef": 1.149,
+   "pace": "8:49",
+   "hr": 159.0,
+   "ef_avg": 1.136
+  },
+  {
+   "date": "2026-07-20",
+   "ef": 1.165,
+   "pace": "9:09",
+   "hr": 151.0,
+   "ef_avg": 1.15
+  },
+  {
    "date": "2026-07-29",
    "ef": 1.142,
    "pace": "9:43",
    "hr": 145.0,
-   "ef_avg": 1.095
+   "ef_avg": 1.146
   },
   {
    "date": "2026-07-31",
    "ef": 1.094,
    "pace": "9:29",
    "hr": 155.0,
-   "ef_avg": 1.095
+   "ef_avg": 1.137
   },
   {
    "date": "2026-08-03",
    "ef": 1.093,
    "pace": "9:53",
    "hr": 149.0,
-   "ef_avg": 1.095
+   "ef_avg": 1.129
+  },
+  {
+   "date": "2026-08-04",
+   "ef": 1.114,
+   "pace": "8:55",
+   "hr": 162.0,
+   "ef_avg": 1.122
   },
   {
    "date": "2026-08-06",
    "ef": 1.039,
    "pace": "9:27",
    "hr": 164.0,
-   "ef_avg": 1.083
+   "ef_avg": 1.096
+  },
+  {
+   "date": "2026-08-11",
+   "ef": 1.117,
+   "pace": "8:54",
+   "hr": 162.0,
+   "ef_avg": 1.091
+  },
+  {
+   "date": "2026-08-13",
+   "ef": 1.167,
+   "pace": "8:50",
+   "hr": 156.0,
+   "ef_avg": 1.106
+  },
+  {
+   "date": "2026-08-17",
+   "ef": 1.12,
+   "pace": "8:56",
+   "hr": 161.0,
+   "ef_avg": 1.111
   },
   {
    "date": "2026-08-18",
    "ef": 1.166,
    "pace": "9:27",
    "hr": 146.0,
-   "ef_avg": 1.107
+   "ef_avg": 1.122
   },
   {
    "date": "2026-08-21",
    "ef": 1.164,
    "pace": "9:24",
    "hr": 147.0,
-   "ef_avg": 1.111
+   "ef_avg": 1.147
   },
   {
    "date": "2026-08-23",
    "ef": 1.169,
    "pace": "9:22",
    "hr": 147.0,
-   "ef_avg": 1.126
+   "ef_avg": 1.157
+  },
+  {
+   "date": "2026-08-25",
+   "ef": 1.153,
+   "pace": "9:07",
+   "hr": 153.0,
+   "ef_avg": 1.154
+  },
+  {
+   "date": "2026-08-26",
+   "ef": 1.097,
+   "pace": "9:07",
+   "hr": 161.0,
+   "ef_avg": 1.15
   },
   {
    "date": "2026-08-28",
    "ef": 1.101,
    "pace": "9:30",
    "hr": 154.0,
-   "ef_avg": 1.128
+   "ef_avg": 1.137
   },
   {
    "date": "2026-09-02",
    "ef": 1.022,
    "pace": "10:06",
    "hr": 156.0,
-   "ef_avg": 1.124
+   "ef_avg": 1.108
   },
   {
    "date": "2026-09-03",
    "ef": 1.067,
    "pace": "9:22",
    "hr": 161.0,
-   "ef_avg": 1.105
+   "ef_avg": 1.088
   },
   {
    "date": "2026-09-04",
    "ef": 1.023,
    "pace": "9:43",
    "hr": 162.0,
-   "ef_avg": 1.076
+   "ef_avg": 1.062
   },
   {
    "date": "2026-09-08",
@@ -2615,67 +2721,165 @@
    "ef_avg": 1.055
   },
   {
+   "date": "2026-09-11",
+   "ef": 1.094,
+   "pace": "9:05",
+   "hr": 162.0,
+   "ef_avg": 1.069
+  },
+  {
+   "date": "2026-09-13",
+   "ef": 1.1,
+   "pace": "9:02",
+   "hr": 162.0,
+   "ef_avg": 1.076
+  },
+  {
    "date": "2026-09-14",
    "ef": 0.956,
    "pace": "10:31",
    "hr": 160.0,
-   "ef_avg": 1.042
+   "ef_avg": 1.063
   },
   {
    "date": "2026-09-15",
    "ef": 1.165,
    "pace": "9:32",
    "hr": 145.0,
-   "ef_avg": 1.061
+   "ef_avg": 1.077
+  },
+  {
+   "date": "2026-09-18",
+   "ef": 1.113,
+   "pace": "9:02",
+   "hr": 160.0,
+   "ef_avg": 1.086
   },
   {
    "date": "2026-09-20",
    "ef": 1.14,
    "pace": "9:21",
    "hr": 151.0,
-   "ef_avg": 1.085
+   "ef_avg": 1.095
+  },
+  {
+   "date": "2026-09-22",
+   "ef": 1.102,
+   "pace": "8:54",
+   "hr": 164.0,
+   "ef_avg": 1.095
   },
   {
    "date": "2026-09-23",
    "ef": 1.155,
    "pace": "10:14",
    "hr": 136.0,
-   "ef_avg": 1.097
+   "ef_avg": 1.135
   },
   {
    "date": "2026-09-25",
    "ef": 1.051,
    "pace": "9:53",
    "hr": 155.0,
-   "ef_avg": 1.093
+   "ef_avg": 1.112
+  },
+  {
+   "date": "2026-09-29",
+   "ef": 1.124,
+   "pace": "9:11",
+   "hr": 156.0,
+   "ef_avg": 1.114
+  },
+  {
+   "date": "2026-10-01",
+   "ef": 1.135,
+   "pace": "9:12",
+   "hr": 154.0,
+   "ef_avg": 1.113
+  },
+  {
+   "date": "2026-10-05",
+   "ef": 1.116,
+   "pace": "8:57",
+   "hr": 161.0,
+   "ef_avg": 1.116
   },
   {
    "date": "2026-10-06",
    "ef": 1.125,
    "pace": "9:48",
    "hr": 146.0,
-   "ef_avg": 1.127
+   "ef_avg": 1.11
   },
   {
    "date": "2026-10-09",
    "ef": 1.119,
    "pace": "9:16",
    "hr": 155.0,
-   "ef_avg": 1.118
+   "ef_avg": 1.124
   },
   {
    "date": "2026-10-11",
    "ef": 1.122,
    "pace": "9:26",
    "hr": 152.0,
-   "ef_avg": 1.114
+   "ef_avg": 1.123
+  },
+  {
+   "date": "2026-10-16",
+   "ef": 1.124,
+   "pace": "8:44",
+   "hr": 164.0,
+   "ef_avg": 1.121
   },
   {
    "date": "2026-10-17",
    "ef": 1.175,
    "pace": "9:51",
    "hr": 139.0,
-   "ef_avg": 1.118
+   "ef_avg": 1.133
+  },
+  {
+   "date": "2026-10-22",
+   "ef": 1.248,
+   "pace": "9:05",
+   "hr": 142.0,
+   "ef_avg": 1.158
+  },
+  {
+   "date": "2026-10-26",
+   "ef": 1.137,
+   "pace": "8:44",
+   "hr": 162.0,
+   "ef_avg": 1.161
+  },
+  {
+   "date": "2026-10-28",
+   "ef": 1.134,
+   "pace": "8:49",
+   "hr": 161.0,
+   "ef_avg": 1.164
+  },
+  {
+   "date": "2026-11-08",
+   "ef": 1.219,
+   "pace": "8:55",
+   "hr": 148.0,
+   "ef_avg": 1.183
+  },
+  {
+   "date": "2026-11-10",
+   "ef": 1.146,
+   "pace": "9:04",
+   "hr": 155.0,
+   "ef_avg": 1.177
+  },
+  {
+   "date": "2026-11-11",
+   "ef": 1.139,
+   "pace": "9:10",
+   "hr": 154.0,
+   "ef_avg": 1.155
   }
  ],
  "recovery": {
@@ -3240,8 +3444,704 @@
    "cadence": 170.5625,
    "te": 3.5999999046325684,
    "label": "TEMPO"
+  },
+  {
+   "id": 24773164782,
+   "date": "2026-10-18",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 2.23,
+   "time": "22:23",
+   "pace": "10:03",
+   "pace_s": 603,
+   "hr": 137.0,
+   "max_hr": 158.0,
+   "elev_ft": 59,
+   "cadence": 170.390625,
+   "te": 2.200000047683716,
+   "label": "RECOVERY"
+  },
+  {
+   "id": 24772782002,
+   "date": "2026-10-18",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 3.1,
+   "time": "26:38",
+   "pace": "8:35",
+   "pace_s": 515,
+   "hr": 146.0,
+   "max_hr": 187.0,
+   "elev_ft": 75,
+   "cadence": 168.3125,
+   "te": 3.0,
+   "label": "TEMPO"
+  },
+  {
+   "id": 24761666160,
+   "date": "2026-10-17",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 3.11,
+   "time": "30:38",
+   "pace": "9:51",
+   "pace_s": 591,
+   "hr": 139.0,
+   "max_hr": 149.0,
+   "elev_ft": 76,
+   "cadence": 168.671875,
+   "te": 2.299999952316284,
+   "label": "RECOVERY"
+  },
+  {
+   "id": 24748623854,
+   "date": "2026-10-16",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 10.01,
+   "time": "1:27:24",
+   "pace": "8:44",
+   "pace_s": 524,
+   "hr": 164.0,
+   "max_hr": 183.0,
+   "elev_ft": 178,
+   "cadence": 169.875,
+   "te": 4.5,
+   "label": "LACTATE_THRESHOLD"
+  },
+  {
+   "id": 24724998968,
+   "date": "2026-10-14",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 3.03,
+   "time": "24:53",
+   "pace": "8:12",
+   "pace_s": 492,
+   "hr": 173.0,
+   "max_hr": 195.0,
+   "elev_ft": 5,
+   "cadence": 170.71875,
+   "te": 3.4000000953674316,
+   "label": "TEMPO"
+  },
+  {
+   "id": 24698652463,
+   "date": "2026-10-12",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 2.06,
+   "time": "16:39",
+   "pace": "8:06",
+   "pace_s": 486,
+   "hr": 164.0,
+   "max_hr": 175.0,
+   "elev_ft": 42,
+   "cadence": 169.734375,
+   "te": 2.9000000953674316,
+   "label": "TEMPO"
+  },
+  {
+   "id": 24691148150,
+   "date": "2026-10-11",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 4.0,
+   "time": "37:47",
+   "pace": "9:26",
+   "pace_s": 566,
+   "hr": 152.0,
+   "max_hr": 169.0,
+   "elev_ft": 76,
+   "cadence": 167.90625,
+   "te": 3.0999999046325684,
+   "label": "AEROBIC_BASE"
+  },
+  {
+   "id": 24663201965,
+   "date": "2026-10-09",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 14.01,
+   "time": "2:09:53",
+   "pace": "9:16",
+   "pace_s": 556,
+   "hr": 155.0,
+   "max_hr": 179.0,
+   "elev_ft": 361,
+   "cadence": 169.34375,
+   "te": 4.199999809265137,
+   "label": "AEROBIC_BASE"
+  },
+  {
+   "id": 24641840928,
+   "date": "2026-10-07",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 5.23,
+   "time": "40:02",
+   "pace": "7:39",
+   "pace_s": 459,
+   "hr": 168.0,
+   "max_hr": 190.0,
+   "elev_ft": 4,
+   "cadence": 168.5625,
+   "te": 4.099999904632568,
+   "label": "LACTATE_THRESHOLD"
+  },
+  {
+   "id": 24632983672,
+   "date": "2026-10-06",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 6.02,
+   "time": "59:02",
+   "pace": "9:48",
+   "pace_s": 588,
+   "hr": 146.0,
+   "max_hr": 173.0,
+   "elev_ft": 109,
+   "cadence": 166.953125,
+   "te": 3.0,
+   "label": "AEROBIC_BASE"
+  },
+  {
+   "id": 24616573270,
+   "date": "2026-10-05",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 4.01,
+   "time": "35:53",
+   "pace": "8:57",
+   "pace_s": 537,
+   "hr": 161.0,
+   "max_hr": 181.0,
+   "elev_ft": 67,
+   "cadence": 165.53125,
+   "te": 3.4000000953674316,
+   "label": "TEMPO"
+  },
+  {
+   "id": 24567346930,
+   "date": "2026-10-01",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 3.03,
+   "time": "27:52",
+   "pace": "9:12",
+   "pace_s": 552,
+   "hr": 154.0,
+   "max_hr": 177.0,
+   "elev_ft": 72,
+   "cadence": 167.4375,
+   "te": 3.0,
+   "label": "AEROBIC_BASE"
+  },
+  {
+   "id": 24544642956,
+   "date": "2026-09-29",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 4.5,
+   "time": "41:20",
+   "pace": "9:11",
+   "pace_s": 551,
+   "hr": 156.0,
+   "max_hr": 172.0,
+   "elev_ft": 89,
+   "cadence": 168.90625,
+   "te": 3.299999952316284,
+   "label": "AEROBIC_BASE"
+  },
+  {
+   "id": 24534364186,
+   "date": "2026-09-28",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 4.0,
+   "time": "30:35",
+   "pace": "7:39",
+   "pace_s": 459,
+   "hr": 171.0,
+   "max_hr": 189.0,
+   "elev_ft": 84,
+   "cadence": 172.28125,
+   "te": 3.700000047683716,
+   "label": "LACTATE_THRESHOLD"
+  },
+  {
+   "id": 24492770487,
+   "date": "2026-09-25",
+   "name": "Sitges Running",
+   "type": "running",
+   "miles": 10.0,
+   "time": "1:38:53",
+   "pace": "9:53",
+   "pace_s": 593,
+   "hr": 155.0,
+   "max_hr": 176.0,
+   "elev_ft": 591,
+   "cadence": 167.421875,
+   "te": 3.5999999046325684,
+   "label": "AEROBIC_BASE"
+  },
+  {
+   "id": 24482160020,
+   "date": "2026-09-24",
+   "name": "Sitges Running",
+   "type": "running",
+   "miles": 2.01,
+   "time": "16:36",
+   "pace": "8:15",
+   "pace_s": 495,
+   "hr": 159.0,
+   "max_hr": 189.0,
+   "elev_ft": 69,
+   "cadence": 168.53125,
+   "te": 2.799999952316284,
+   "label": "TEMPO"
+  },
+  {
+   "id": 24467503997,
+   "date": "2026-09-23",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 4.5,
+   "time": "46:08",
+   "pace": "10:14",
+   "pace_s": 614,
+   "hr": 136.0,
+   "max_hr": 157.0,
+   "elev_ft": 116,
+   "cadence": 167.15625,
+   "te": 2.5,
+   "label": "AEROBIC_BASE"
+  },
+  {
+   "id": 24459265725,
+   "date": "2026-09-22",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 3.01,
+   "time": "26:49",
+   "pace": "8:54",
+   "pace_s": 534,
+   "hr": 164.0,
+   "max_hr": 180.0,
+   "elev_ft": 42,
+   "cadence": 169.84375,
+   "te": 3.200000047683716,
+   "label": "TEMPO"
+  },
+  {
+   "id": 24438264393,
+   "date": "2026-09-20",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 12.0,
+   "time": "1:52:12",
+   "pace": "9:21",
+   "pace_s": 561,
+   "hr": 151.0,
+   "max_hr": 173.0,
+   "elev_ft": 309,
+   "cadence": 170.21875,
+   "te": 3.9000000953674316,
+   "label": "AEROBIC_BASE"
+  },
+  {
+   "id": 24425324071,
+   "date": "2026-09-19",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 2.01,
+   "time": "21:16",
+   "pace": "10:36",
+   "pace_s": 636,
+   "hr": 134.0,
+   "max_hr": 143.0,
+   "elev_ft": 38,
+   "cadence": 165.609375,
+   "te": 2.0,
+   "label": "RECOVERY"
+  },
+  {
+   "id": 24408278053,
+   "date": "2026-09-18",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 6.0,
+   "time": "54:15",
+   "pace": "9:02",
+   "pace_s": 542,
+   "hr": 160.0,
+   "max_hr": 183.0,
+   "elev_ft": 105,
+   "cadence": 169.5625,
+   "te": 3.9000000953674316,
+   "label": "LACTATE_THRESHOLD"
+  },
+  {
+   "id": 24389684251,
+   "date": "2026-09-16",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 3.1,
+   "time": "21:41",
+   "pace": "6:59",
+   "pace_s": 419,
+   "hr": 180.0,
+   "max_hr": 191.0,
+   "elev_ft": 13,
+   "cadence": 172.84375,
+   "te": 3.5999999046325684,
+   "label": "VO2MAX"
+  },
+  {
+   "id": 24369485649,
+   "date": "2026-09-15",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 3.1,
+   "time": "29:35",
+   "pace": "9:32",
+   "pace_s": 572,
+   "hr": 145.0,
+   "max_hr": 160.0,
+   "elev_ft": 49,
+   "cadence": 167.15625,
+   "te": 2.700000047683716,
+   "label": "AEROBIC_BASE"
+  },
+  {
+   "id": 24360443282,
+   "date": "2026-09-14",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 3.0,
+   "time": "31:36",
+   "pace": "10:31",
+   "pace_s": 631,
+   "hr": 160.0,
+   "max_hr": 174.0,
+   "elev_ft": 68,
+   "cadence": 170.15625,
+   "te": 2.700000047683716,
+   "label": "TEMPO"
+  },
+  {
+   "id": 24351989758,
+   "date": "2026-09-13",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 6.21,
+   "time": "56:03",
+   "pace": "9:02",
+   "pace_s": 542,
+   "hr": 162.0,
+   "max_hr": 183.0,
+   "elev_ft": 132,
+   "cadence": 168.78125,
+   "te": 3.700000047683716,
+   "label": "LACTATE_THRESHOLD"
+  },
+  {
+   "id": 24327715007,
+   "date": "2026-09-11",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 10.01,
+   "time": "1:30:53",
+   "pace": "9:05",
+   "pace_s": 545,
+   "hr": 162.0,
+   "max_hr": 178.0,
+   "elev_ft": 317,
+   "cadence": 167.796875,
+   "te": 4.300000190734863,
+   "label": "TEMPO"
+  },
+  {
+   "id": 24311748748,
+   "date": "2026-09-10",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 4.01,
+   "time": "38:43",
+   "pace": "9:40",
+   "pace_s": 580,
+   "hr": 156.0,
+   "max_hr": 176.0,
+   "elev_ft": 78,
+   "cadence": 168.515625,
+   "te": 3.200000047683716,
+   "label": "AEROBIC_BASE"
+  },
+  {
+   "id": 24302789283,
+   "date": "2026-09-09",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 1.0,
+   "time": "10:21",
+   "pace": "10:19",
+   "pace_s": 619,
+   "hr": 137.0,
+   "max_hr": 151.0,
+   "elev_ft": 26,
+   "cadence": 165.890625,
+   "te": 1.399999976158142,
+   "label": "RECOVERY"
   }
  ],
+ "peak_long": 20,
+ "plan_total": 333.2,
+ "streak": 0,
+ "prs": [
+  {
+   "label": "Longest run",
+   "value": "15.0 mi",
+   "date": "2026-10-22"
+  },
+  {
+   "label": "Fastest pace (3+ mi)",
+   "value": "6:59/mi",
+   "date": "2026-09-16",
+   "note": "3.1 mi"
+  },
+  {
+   "label": "Biggest week",
+   "value": "33.3 mi",
+   "date": "2026-10-05"
+  }
+ ],
+ "badges": [
+  {
+   "icon": "\ud83d\udc5f",
+   "name": "Back in Business",
+   "desc": "First run of the Miami block",
+   "earned": null
+  },
+  {
+   "icon": "\ud83d\udd1f",
+   "name": "Double Digits",
+   "desc": "A 10+ mile run",
+   "earned": null
+  },
+  {
+   "icon": "\ud83c\udf17",
+   "name": "Half-Way Hero",
+   "desc": "A 13.1+ mile run",
+   "earned": null
+  },
+  {
+   "icon": "\ud83c\udf6c",
+   "name": "Sweet 16",
+   "desc": "A 16+ mile run",
+   "earned": null
+  },
+  {
+   "icon": "\ud83d\udc0a",
+   "name": "Chomp 20",
+   "desc": "The 20-mile peak run",
+   "earned": null
+  },
+  {
+   "icon": "\ud83d\udcaf",
+   "name": "Century",
+   "desc": "100 block miles",
+   "earned": null
+  },
+  {
+   "icon": "\ud83d\udd25",
+   "name": "Double Century",
+   "desc": "200 block miles",
+   "earned": null
+  },
+  {
+   "icon": "\ud83c\udf34",
+   "name": "Halfway to Miami",
+   "desc": "167 block miles",
+   "earned": null
+  },
+  {
+   "icon": "\u2705",
+   "name": "Perfect Week",
+   "desc": "Every planned run in a week",
+   "earned": null
+  },
+  {
+   "icon": "\ud83c\udfcb\ufe0f",
+   "name": "Iron Gator",
+   "desc": "5 lifts in one week",
+   "earned": null
+  },
+  {
+   "icon": "\u26a1",
+   "name": "Race-Pace Ready",
+   "desc": "6+ miles averaging 8:35 or faster",
+   "earned": null
+  },
+  {
+   "icon": "\ud83c\udfc1",
+   "name": "Gainesville Half",
+   "desc": "Finish the Jan 16 tune-up",
+   "earned": null
+  },
+  {
+   "icon": "\ud83c\udfc6",
+   "name": "Miami Marathoner",
+   "desc": "Finish the Miami Marathon",
+   "earned": null
+  }
+ ],
+ "week_ahead": [
+  {
+   "date": "2026-11-16",
+   "week": 1,
+   "location": "Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 3,
+    "title": "Easy 3 mi",
+    "details": "Conversational, 9:00\u20139:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest & Back",
+    "details": "~70% volume, 2\u20133 reps in reserve"
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-17",
+   "week": 1,
+   "location": "Gainesville",
+   "run": null,
+   "cross": {
+    "type": "bike",
+    "minutes": 30,
+    "title": "Easy bike 30 min",
+    "details": "Conversational / nose-breathing effort."
+   },
+   "lift": {
+    "focus": "Legs",
+    "details": "Light \u2014 ~70% volume"
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-18",
+   "week": 1,
+   "location": "Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 3,
+    "title": "Easy 3 mi",
+    "details": "Conversational, 9:00\u20139:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Shoulders & Arms",
+    "details": "~70% volume"
+   },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-19",
+   "week": 1,
+   "location": "Gainesville",
+   "run": null,
+   "cross": {
+    "type": "incline_walk",
+    "minutes": 30,
+    "title": "Incline walk 30 min",
+    "details": "10\u201312% incline, 3.0\u20133.5 mph, no rails. Swap for bike if legs are sore."
+   },
+   "lift": {
+    "focus": "Back & Bis",
+    "details": "~70% volume"
+   },
+   "note": "Full rest instead if you feel run-down.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-20",
+   "week": 1,
+   "location": "Gainesville",
+   "run": {
+    "type": "long",
+    "miles": 6,
+    "title": "Long run 6 mi",
+    "details": "Easy the whole way. No lifting."
+   },
+   "cross": null,
+   "lift": null,
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-21",
+   "week": 1,
+   "location": "Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 3,
+    "title": "Easy 3 mi + 4 strides",
+    "details": "Conversational, 9:00\u20139:45/mi."
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest, Tris & Shoulders",
+    "details": "~70% volume"
+   },
+   "note": "Strides only if you feel good.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  }
+ ],
+ "road": {
+  "miles": 0,
+  "total": 333.2
+ },
  "last_activity": {
   "id": 25048873274,
   "date": "2026-11-11",

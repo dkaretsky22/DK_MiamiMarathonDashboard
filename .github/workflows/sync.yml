@@ -40,6 +40,10 @@ jobs:
           GARMIN_PERSONAL_API_KEY: ${{ secrets.GARMIN_PERSONAL_API_KEY }}
         run: python sync/sync.py
 
+      - name: Pull Gators basketball (ESPN)
+        continue-on-error: true
+        run: python sync/gators.py
+
       - name: Compute dashboard
         run: python sync/compute.py
 
@@ -48,7 +52,7 @@ jobs:
         run: |
           today=$(TZ=America/New_York date +%F)
           last=$(cat data/.last_day 2>/dev/null || echo none)
-          changed=$(git status --porcelain data/activities.json data/wellness.json plan/plan.json)
+          changed=$(git status --porcelain data/activities.json data/wellness.json data/gators.json plan/plan.json)
           if [ -n "$changed" ] || [ "$today" != "$last" ] || [ "${{ github.event_name }}" != "schedule" ]; then
             echo "deploy=true" >> "$GITHUB_OUTPUT"
           else
@@ -69,8 +73,9 @@ jobs:
         if: steps.check.outputs.deploy == 'true'
         run: |
           mkdir -p _site
-          cp site/* _site/
+          cp -r site/. _site/
           cp data/dashboard.json _site/
+          if [ -f data/gators.json ]; then cp data/gators.json _site/; fi
           python -c "import sys; sys.path.insert(0,'plan'); import build_plan as b, json, pathlib; b.build_ics(json.load(open('plan/plan.json')), 1, pathlib.Path('_site/plan.ics'))"
 
       - uses: actions/upload-pages-artifact@v3

@@ -1,4 +1,9 @@
-# Miami Marathon Dashboard (sub-3:45)
+# Road to Miami — Marathon Dashboard (sub-3:45)
+
+Tabs: Home (countdown) · Week Ahead (+ fueling) · Progress (+ badges) · Road to Miami · Recovery · Runs · Plan · Gators Hoops.
+Install it like an app: open the site on your phone → Share → **Add to Home Screen**.
+
+Gators basketball scores, schedule, season averages and news come from ESPN's public API (`sync/gators.py`) on every sync.
 
 This is a personal training dashboard. Every 15 minutes it pulls your runs, heart rate, sleep and VO2max from Garmin Connect, compares them with your plan, and republishes the site.
 

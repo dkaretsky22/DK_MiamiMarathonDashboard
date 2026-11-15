@@ -2,252 +2,460 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Miami Marathon · Sub-3:45</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏃</text></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Road to Miami · Sub-3:45</title>
+<meta name="theme-color" content="#0a1330">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Miami 26.2">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  color-scheme:light;
-  --bg:#f4f3f0; --surface:#fcfcfb; --ink:#0b0b0b; --ink-2:#52514e; --ink-3:#7a7974;
-  --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.10);
-  --s1:#2a78d6; --s2:#eb6834; --planned:#d9d8d1;
-  --good:#0ca30c; --good-text:#006300; --warn:#fab219; --serious:#ec835a; --crit:#d03b3b;
-  --wash:rgba(42,120,214,.08);
+  --bg:#0a1330; --bg-2:#0d1838; --surface:#111d47; --surface-2:#172558; --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14);
+  --ink:#f3f5fb; --ink-2:#b9c2de; --ink-3:#7f8ab0;
+  --orange:#fa4616; --orange-2:#ff7a4d; --blue:#0021a5; --blue-2:#3e6bff;
+  --planned:rgba(255,255,255,.16); --good:#2fc26b; --warn:#fab219; --crit:#ff5a5a;
+  --grid:rgba(255,255,255,.07); --axis:rgba(255,255,255,.16);
+  --radius:16px;
 }
-@media (prefers-color-scheme:dark){:root{
-  color-scheme:dark;
-  --bg:#111110; --surface:#1a1a19; --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#8f8e88;
-  --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10);
-  --s1:#3987e5; --s2:#d95926; --planned:#3a3a37; --good-text:#0ca30c; --wash:rgba(57,135,229,.12);
-}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1160px;margin:0 auto;padding:28px 20px 60px}
-header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:20px}
-h1{font-size:28px;margin:0;letter-spacing:-.02em}
-h2{font-size:15px;margin:0 0 12px;font-weight:650}
-.sub{color:var(--ink-2);font-size:14px}
-.muted{color:var(--ink-3)}
+html{background:var(--bg)}
+body{margin:0;color:var(--ink);font:15px/1.45 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;
+  background:radial-gradient(1200px 500px at 85% -10%,rgba(250,70,22,.18),transparent 60%),radial-gradient(900px 500px at -10% 0%,rgba(0,33,165,.45),transparent 60%),var(--bg);min-height:100vh}
+a{color:var(--orange-2)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 18px 70px}
+.disp{font-family:Oswald,Inter,sans-serif;letter-spacing:.01em;text-transform:uppercase}
+/* header */
+.top{padding:calc(14px + env(safe-area-inset-top)) 0 10px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:42px;height:42px;border-radius:11px}
+.brand h1{margin:0;font-size:24px;line-height:1}
+.brand h1 span{color:var(--orange)}
+.brand .sub{font-size:12.5px;color:var(--ink-2);margin-top:3px}
+.chip{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line-2);border-radius:999px;padding:7px 13px;font-size:13px;color:var(--ink-2);white-space:nowrap}
+.chip b{color:var(--ink);font-family:Oswald,Inter,sans-serif;font-size:15px;letter-spacing:.03em;font-variant-numeric:tabular-nums}
+/* tabs */
+.tabs{position:sticky;top:0;z-index:20;background:linear-gradient(var(--bg) 70%,rgba(10,19,48,0));padding:8px 0 12px;margin:0 -18px;}
+.tabs nav{display:flex;gap:6px;overflow-x:auto;padding:0 18px;scrollbar-width:none}
+.tabs nav::-webkit-scrollbar{display:none}
+.tab{flex:none;border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);padding:9px 14px;border-radius:999px;font:600 13.5px Inter;cursor:pointer;white-space:nowrap}
+.tab:hover{color:var(--ink);border-color:rgba(255,255,255,.28)}
+.tab[aria-selected=true]{background:var(--orange);border-color:var(--orange);color:#fff}
+.view{display:none;animation:fade .25s ease}
+.view.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+/* layout */
 .grid{display:grid;gap:14px}
-.g5{grid-template-columns:repeat(5,1fr)} .g2{grid-template-columns:1fr 1fr} .g3{grid-template-columns:repeat(3,1fr)}
-@media (max-width:900px){.g5{grid-template-columns:repeat(2,1fr)}.g2,.g3{grid-template-columns:1fr}}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px}
-section{margin-top:14px}
-.tile .label{font-size:12px;color:var(--ink-2);text-transform:uppercase;letter-spacing:.04em}
-.tile .val{font-size:30px;font-weight:700;letter-spacing:-.02em;margin-top:4px;font-variant-numeric:tabular-nums}
-.tile .note{font-size:13px;color:var(--ink-2);margin-top:2px}
-.up{color:var(--good-text)} .down{color:var(--crit)}
-.bar{height:6px;border-radius:3px;background:var(--grid);margin-top:10px;overflow:hidden}
-.bar>i{display:block;height:100%;background:var(--s1);border-radius:3px}
-.day h3{margin:0 0 2px;font-size:13px;color:var(--ink-2);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
-.item{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--grid)}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:860px){.g2,.g3{grid-template-columns:1fr}.g4{grid-template-columns:1fr 1fr}}
+.card{background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.view>*+*,section+section,.mt{margin-top:14px}
+h2{font:600 18px Oswald,Inter,sans-serif;letter-spacing:.03em;text-transform:uppercase;margin:0 0 12px}
+h3{margin:0 0 4px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.muted{color:var(--ink-3)} .sub{color:var(--ink-2);font-size:13.5px}
+.tile .val{font:700 34px/1.05 Oswald,Inter,sans-serif;letter-spacing:.01em;margin-top:6px;font-variant-numeric:tabular-nums}
+.tile .val small{font:500 15px Inter;color:var(--ink-3)}
+.tile .note{font-size:13px;color:var(--ink-2);margin-top:4px}
+.up{color:var(--good)} .down{color:var(--crit)}
+.bar{height:8px;border-radius:99px;background:rgba(255,255,255,.08);margin-top:12px;overflow:hidden}
+.bar>i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--orange),var(--orange-2))}
+/* countdown hero */
+.hero{position:relative;overflow:hidden;padding:24px 22px}
+.hero:after{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;border-radius:50%;border:2px solid rgba(255,255,255,.07);box-shadow:0 0 0 46px rgba(255,255,255,.02)}
+.cd{display:grid;grid-template-columns:repeat(4,minmax(0,92px));gap:10px;margin-top:10px}
+.cd div{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:12px;padding:10px 6px;text-align:center}
+@media(max-width:560px){.cd{grid-template-columns:repeat(4,1fr)}.cd b{font-size:34px!important}.gauge .big{font-size:42px}}
+.cd b{display:block;font:700 44px/1 Oswald,Inter,sans-serif;font-variant-numeric:tabular-nums}
+.cd span{font-size:11px;letter-spacing:.12em;color:var(--ink-3);text-transform:uppercase}
+.cd .d b{color:var(--orange)}
+.gauge{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.gauge .big{font:700 52px/1 Oswald,Inter,sans-serif;font-variant-numeric:tabular-nums}
+/* day items */
+.item{display:flex;gap:12px;padding:11px 0;border-top:1px solid var(--line)}
 .item:first-of-type{border-top:0}
-.item .ic{font-size:18px;width:24px;text-align:center}
-.item b{display:block}
+.ic{width:30px;height:30px;flex:none;border-radius:9px;display:grid;place-items:center;background:rgba(255,255,255,.06);font-size:16px}
+.item b{display:block;font-weight:600}
 .item span{color:var(--ink-2);font-size:13.5px}
-.pill{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:600;padding:2px 8px;border-radius:99px;border:1px solid var(--border);white-space:nowrap}
-.pill.done{color:var(--good-text)} .pill.missed{color:var(--crit)} .pill.partial{color:var(--ink-2)}
-.week{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
-@media (max-width:900px){.week{grid-template-columns:1fr}}
-.wd{border:1px solid var(--border);border-radius:10px;padding:10px;min-height:118px;font-size:13px;background:var(--surface)}
-.wd.is-today{outline:2px solid var(--s1);outline-offset:-1px}
-.wd .dname{font-weight:650;display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
-.wd .r{font-weight:600}
-.wd .x{color:var(--ink-2);margin-top:3px}
-.flag{background:color-mix(in srgb,var(--warn) 18%,var(--surface));border:1px solid color-mix(in srgb,var(--warn) 55%,transparent);border-radius:10px;padding:10px 14px;margin-top:14px;font-size:14px}
+.pill{display:inline-flex;align-items:center;gap:4px;font:600 11.5px Inter;padding:2px 9px;border-radius:99px;border:1px solid var(--line-2);vertical-align:2px;margin-left:6px;white-space:nowrap}
+.pill.done{color:var(--good);border-color:rgba(47,194,107,.4)} .pill.missed{color:var(--crit);border-color:rgba(255,90,90,.4)} .pill.partial{color:var(--warn)}
+.pill.o{background:var(--orange);border-color:var(--orange);color:#fff}
+.flag{background:rgba(250,178,25,.1);border:1px solid rgba(250,178,25,.45);border-radius:12px;padding:11px 14px;margin-top:14px;font-size:14px}
+/* week ahead */
+.wa{display:grid;gap:12px}
+.wa .day{display:grid;grid-template-columns:96px 1fr 1.1fr;gap:16px;align-items:start}
+@media(max-width:860px){.wa .day{grid-template-columns:1fr}}
+.wa .date b{display:block;font:700 26px/1 Oswald}
+.wa .date span{font-size:12px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em}
+.wa .today{border-color:rgba(250,70,22,.6);box-shadow:0 0 0 1px rgba(250,70,22,.35) inset}
+.fuel{background:rgba(250,70,22,.07);border:1px solid rgba(250,70,22,.22);border-radius:12px;padding:12px 14px;font-size:13.5px}
+.fuel h4{margin:0 0 6px;font:600 13px Oswald,Inter,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--orange-2)}
+.fuel ul{margin:0;padding-left:18px}.fuel li{margin:3px 0;color:var(--ink-2)}.fuel li b{color:var(--ink)}
+input[type=number]{background:var(--bg);border:1px solid var(--line-2);color:var(--ink);border-radius:10px;padding:8px 10px;width:100px;font:600 15px Inter}
+/* tables */
 table{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
-th{text-align:left;font-weight:600;color:var(--ink-2);font-size:12px;text-transform:uppercase;letter-spacing:.04em;padding:6px 8px;border-bottom:1px solid var(--axis)}
-td{padding:7px 8px;border-bottom:1px solid var(--grid)}
-tr.cur td{background:var(--wash)}
+th{text-align:left;font-weight:600;color:var(--ink-3);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;padding:8px;border-bottom:1px solid var(--axis)}
+td{padding:9px 8px;border-bottom:1px solid var(--line)}
+tr.cur td{background:rgba(250,70,22,.08)}
 .num{text-align:right}
-.chart{position:relative}
-.chart svg{display:block;width:100%;height:auto;overflow:visible}
-.legend{display:flex;gap:14px;font-size:12.5px;color:var(--ink-2);margin:-4px 0 8px}
-.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
-.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--surface);font-size:12.5px;padding:6px 9px;border-radius:7px;white-space:nowrap;transform:translate(-50%,-110%);opacity:0;transition:opacity .08s;z-index:5}
-details summary{cursor:pointer;font-weight:650}
-footer{margin-top:28px;color:var(--ink-3);font-size:12.5px;text-align:center}
-.demo{background:var(--s2);color:#fff;font-weight:700;font-size:12px;padding:3px 9px;border-radius:6px;margin-left:8px;vertical-align:4px}
+.scroll{overflow-x:auto}
+/* charts */
+.chart{position:relative}.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.legend{display:flex;gap:14px;font-size:12.5px;color:var(--ink-2);margin:-4px 0 8px;flex-wrap:wrap}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.tip{position:absolute;pointer-events:none;background:#fff;color:#0a1330;font-size:12.5px;padding:7px 10px;border-radius:8px;white-space:nowrap;transform:translate(-50%,-110%);opacity:0;transition:opacity .08s;z-index:5;box-shadow:0 6px 20px rgba(0,0,0,.35)}
+/* badges */
+.badges{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.badge{border:1px solid var(--line-2);border-radius:14px;padding:14px;text-align:center;background:rgba(255,255,255,.03)}
+.badge .e{font-size:30px}
+.badge b{display:block;font:600 15px Oswald,Inter,sans-serif;letter-spacing:.03em;text-transform:uppercase;margin-top:6px}
+.badge span{font-size:12px;color:var(--ink-3)}
+.badge.on{border-color:rgba(250,70,22,.6);background:linear-gradient(180deg,rgba(250,70,22,.16),rgba(250,70,22,.03))}
+.badge:not(.on) .e{filter:grayscale(1);opacity:.35}
+/* road */
+.road{display:grid;grid-template-columns:minmax(260px,420px) 1fr;gap:18px;align-items:start}
+@media(max-width:860px){.road{grid-template-columns:1fr}}
+.stops{list-style:none;margin:0;padding:0}
+.stops li{display:flex;gap:12px;padding:9px 0;border-top:1px solid var(--line);align-items:flex-start}
+.stops li:first-child{border-top:0}
+.stops .dot{width:14px;height:14px;border-radius:50%;border:2px solid var(--ink-3);margin-top:4px;flex:none}
+.stops li.done .dot{background:var(--orange);border-color:var(--orange)}
+.stops li.next .dot{border-color:var(--orange);box-shadow:0 0 0 4px rgba(250,70,22,.25)}
+.stops b{display:block}.stops span{font-size:12.5px;color:var(--ink-3)}
+/* gators */
+.score{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.team{display:flex;align-items:center;gap:10px;font-weight:700}
+.tb{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font:700 13px Oswald,Inter,sans-serif;letter-spacing:.04em;color:#fff;flex:none}
+.tb.fla{background:linear-gradient(135deg,var(--blue),#0a2fd0);box-shadow:inset 0 -4px 0 var(--orange)}
+.pts{font:700 40px/1 Oswald,Inter,sans-serif;font-variant-numeric:tabular-nums}
+.wl{font:700 13px Oswald,Inter,sans-serif;padding:2px 8px;border-radius:6px}
+.wl.W{background:rgba(47,194,107,.18);color:var(--good)}.wl.L{background:rgba(255,90,90,.15);color:var(--crit)}
+.live{display:inline-flex;align-items:center;gap:6px;color:#fff;background:var(--crit);border-radius:6px;padding:2px 8px;font:700 12px Oswald,Inter,sans-serif;letter-spacing:.06em}
+.live:before{content:"";width:7px;height:7px;border-radius:50%;background:#fff;animation:pulse 1s infinite}
+@keyframes pulse{50%{opacity:.3}}
+.news{display:grid;gap:12px}
+.news a{display:grid;grid-template-columns:110px 1fr;gap:14px;text-decoration:none;color:inherit;padding:10px;border-radius:12px;border:1px solid var(--line)}
+.news a:hover{border-color:rgba(250,70,22,.5)}
+.news img{width:110px;height:72px;object-fit:cover;border-radius:8px;background:var(--surface-2)}
+.news b{display:block;font-size:14.5px}
+.news span{font-size:12.5px;color:var(--ink-3)}
+@media(max-width:560px){.news a{grid-template-columns:1fr}.news img{width:100%;height:150px}}
+details summary{cursor:pointer;font-weight:600;padding:6px 0}
+footer{margin-top:30px;color:var(--ink-3);font-size:12px;text-align:center}
+.demo{background:var(--orange);color:#fff;font:700 11px Inter;padding:2px 8px;border-radius:6px;margin-left:8px;vertical-align:4px}
 </style>
 </head>
 <body>
-<div class="wrap" id="app"><p class="muted">Loading…</p></div>
+<div class="wrap">
+  <div class="top">
+    <div class="brand"><img src="icons/icon-192.png" alt=""><div>
+      <h1 class="disp">Road to <span>Miami</span></h1>
+      <div class="sub" id="hdr-sub">Sub-3:45 · Jan 31, 2027</div></div></div>
+    <div class="chip">🏁 <b id="chip-cd">--</b> to race day</div>
+  </div>
+  <div class="tabs"><nav id="tabs" role="tablist"></nav></div>
+  <main id="app"><p class="muted">Loading…</p></main>
+  <footer id="foot"></footer>
+</div>
 
 <script>
-const $ = (s, el=document) => el.querySelector(s);
-const fmt = s => { if (s==null) return '–'; s=Math.round(s); const h=Math.floor(s/3600), m=Math.floor(s%3600/60), x=s%60;
-  return h ? `${h}:${String(m).padStart(2,'0')}:${String(x).padStart(2,'0')}` : `${m}:${String(x).padStart(2,'0')}`; };
-const D = iso => new Date(iso+'T12:00:00');
-const dayName = iso => D(iso).toLocaleDateString('en-US',{weekday:'short'});
-const md = iso => D(iso).toLocaleDateString('en-US',{month:'short',day:'numeric'});
-const esc = s => String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const $=(s,el=document)=>el.querySelector(s), $$=(s,el=document)=>[...el.querySelectorAll(s)];
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=s=>{if(s==null)return'–';s=Math.round(s);const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return h?`${h}:${String(m).padStart(2,'0')}:${String(x).padStart(2,'0')}`:`${m}:${String(x).padStart(2,'0')}`};
+const D=iso=>new Date(iso+'T12:00:00');
+const dn=iso=>D(iso).toLocaleDateString('en-US',{weekday:'short'});
+const md=iso=>D(iso).toLocaleDateString('en-US',{month:'short',day:'numeric'});
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const ICON={easy:'🏃',recovery:'🏃',long:'🛣️',workout:'⚡',race:'🏁',shakeout:'🏃',bike:'🚴',incline_walk:'🚶'};
+const ST={done:['✓','Done'],missed:['✕','Missed'],partial:['◐','Partial'],skipped:['–','Skipped']};
+const pill=st=>ST[st]?`<span class="pill ${st}">${ST[st][0]} ${ST[st][1]}</span>`:'';
+const RACE=new Date('2027-01-31T06:00:00-05:00');
+let O, G;
 
-const STATUS = {done:['✓','Done'], missed:['✕','Missed'], partial:['◐','Partial'], skipped:['–','Skipped']};
-const pill = st => STATUS[st] ? `<span class="pill ${st}">${STATUS[st][0]} ${STATUS[st][1]}</span>` : '';
-const ICON = {easy:'🏃',recovery:'🏃',long:'🏃',workout:'⚡',race:'🏁',shakeout:'🏃',bike:'🚴',incline_walk:'🚶'};
+const TABS=[['home','🏠','Home'],['week','📅','Week Ahead'],['progress','📈','Progress'],['road','🗺️','Road to Miami'],['recovery','❤️','Recovery'],['runs','🏃','Runs'],['plan','📋','Plan'],['gators','🐊','Gators Hoops']];
 
-function dayItems(d){
-  if(!d) return '<p class="muted">Outside the training block.</p>';
-  const out=[];
-  if(d.run) out.push(`<div class="item"><div class="ic">${ICON[d.run.type]||'🏃'}</div><div><b>${esc(d.run.title)} ${d.run.type!=='rest'&&d.date<=DATA.today?pill(d.status):''}</b><span>${esc(d.run.details)}</span>${d.actual.run_miles?`<span> · Logged ${d.actual.run_miles} mi</span>`:''}</div></div>`);
-  if(d.cross) out.push(`<div class="item"><div class="ic">${ICON[d.cross.type]}</div><div><b>${esc(d.cross.title)}${d.actual.cross?' <span class="pill done">✓ Logged</span>':''}</b><span>${esc(d.cross.details)}</span></div></div>`);
-  if(d.lift) out.push(`<div class="item"><div class="ic">🏋️</div><div><b>Lift – ${esc(d.lift.focus)}${d.actual.lift?' <span class="pill done">✓ Logged</span>':''}</b>${d.lift.details?`<span>${esc(d.lift.details)}</span>`:''}</div></div>`);
-  if(!out.length) out.push(`<div class="item"><div class="ic">😴</div><div><b>Rest day</b></div></div>`);
-  if(d.note) out.push(`<div class="item"><div class="ic">📝</div><div><span>${esc(d.note)}</span></div></div>`);
-  return out.join('');
-}
-
-/* ---------- tiny SVG chart kit (one y-axis, hover tooltips) ---------- */
-function chart(el, {series, labels, yFmt=v=>v, yMin, yMax, ref, height=220, width=560, kind='line', tip}){
-  const W=width, H=height, L=46, R=10, T=10, B=26, iw=W-L-R, ih=H-T-B;
-  const all = series.flatMap(s=>s.values.filter(v=>v!=null)).concat(ref?[ref.value]:[]);
-  let lo = yMin ?? Math.min(...all), hi = yMax ?? Math.max(...all);
-  if(lo===hi){lo-=1;hi+=1} const pad=(hi-lo)*0.08; if(yMin==null) lo-=pad; if(yMax==null) hi+=pad;
-  const n=labels.length, x = i => L + (kind==='bar' ? (i+0.5)*iw/n : (n<2? iw/2 : i*iw/(n-1)));
-  const y = v => T + ih - (v-lo)/(hi-lo)*ih;
+/* ---------- chart kit ---------- */
+function chart(el,{series,labels,yFmt=v=>v,yMin,yMax,ref,height=230,width=560,kind='line',tip}){
+  const W=width,H=height,L=44,R=10,T=12,B=26,iw=W-L-R,ih=H-T-B;
+  const all=series.flatMap(s=>s.values.filter(v=>v!=null)).concat(ref?[ref.value]:[]);
+  if(!all.length){el.innerHTML='<p class="muted">No data yet.</p>';return}
+  let lo=yMin??Math.min(...all),hi=yMax??Math.max(...all);if(lo===hi){lo-=1;hi+=1}
+  const pad=(hi-lo)*.1;if(yMin==null)lo-=pad;if(yMax==null)hi+=pad;
+  const n=labels.length,x=i=>L+(kind==='bar'?(i+.5)*iw/n:(n<2?iw/2:i*iw/(n-1))),y=v=>T+ih-(v-lo)/(hi-lo)*ih;
   let g='';
-  for(let k=0;k<=4;k++){ const v=lo+(hi-lo)*k/4, yy=y(v);
-    g+=`<line x1="${L}" x2="${W-R}" y1="${yy}" y2="${yy}" stroke="${css(k?'--grid':'--axis')}" stroke-width="1"/>`+
-       `<text x="${L-6}" y="${yy+4}" text-anchor="end" font-size="11" fill="${css('--ink-3')}">${yFmt(v)}</text>`; }
+  for(let k=0;k<=4;k++){const v=lo+(hi-lo)*k/4,yy=y(v);g+=`<line x1="${L}" x2="${W-R}" y1="${yy}" y2="${yy}" stroke="${css(k?'--grid':'--axis')}"/><text x="${L-7}" y="${yy+4}" text-anchor="end" font-size="11" fill="${css('--ink-3')}">${yFmt(v)}</text>`}
   const step=Math.max(1,Math.ceil(n/8));
-  labels.forEach((lb,i)=>{ if((i%step===0 && n-1-i>=step*0.6)||i===n-1) g+=`<text x="${x(i)}" y="${H-6}" text-anchor="middle" font-size="11" fill="${css('--ink-3')}">${esc(lb)}</text>`; });
-  if(ref){ g+=`<line x1="${L}" x2="${W-R}" y1="${y(ref.value)}" y2="${y(ref.value)}" stroke="${css('--s2')}" stroke-width="1.5" stroke-dasharray="5 4"/>`+
-    `<text x="${W-R}" y="${y(ref.value)-6}" text-anchor="end" font-size="11.5" font-weight="600" fill="${css('--ink-2')}">${esc(ref.label)}</text>`; }
-  if(kind==='bar'){
-    const bw=Math.min(28, iw/n*0.62);
-    series.forEach((s,si)=>s.values.forEach((v,i)=>{ if(v==null) return;
-      const w = si===0? bw : bw*0.56, top=y(v), base=y(Math.max(lo,0)), hgt=Math.max(0,base-top), r=Math.min(4,hgt/2, w/2);
-      g+=`<path d="M${x(i)-w/2},${base} V${top+r} q0,-${r} ${r},-${r} H${x(i)+w/2-r} q${r},0 ${r},${r} V${base} Z" fill="${s.color}"/>`; }));
-  } else {
-    series.forEach(s=>{
-      if(s.dots){ s.values.forEach((v,i)=>{ if(v!=null) g+=`<circle cx="${x(i)}" cy="${y(v)}" r="3" fill="${s.color}" opacity=".45"/>`; }); return; }
-      let dpath='', on=false; s.values.forEach((v,i)=>{ if(v==null){on=false;return} dpath+=(on?'L':'M')+x(i)+','+y(v); on=true; });
-      g+=`<path d="${dpath}" fill="none" stroke="${s.color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" ${s.dash?'stroke-dasharray="4 4"':''}/>`;
-      const li=s.values.length-1; if(s.values[li]!=null && s.endDot) g+=`<circle cx="${x(li)}" cy="${y(s.values[li])}" r="4.5" fill="${s.color}" stroke="${css('--surface')}" stroke-width="2"/>`;
-    });
-  }
-  g+=`<line class="cross" x1="0" x2="0" y1="${T}" y2="${T+ih}" stroke="${css('--axis')}" stroke-width="1" opacity="0"/>`;
-  g+=`<rect x="${L}" y="${T}" width="${iw}" height="${ih}" fill="transparent"/>`;
+  labels.forEach((lb,i)=>{if((i%step===0&&n-1-i>=step*.6)||i===n-1)g+=`<text x="${x(i)}" y="${H-6}" text-anchor="middle" font-size="11" fill="${css('--ink-3')}">${esc(lb)}</text>`});
+  if(ref)g+=`<line x1="${L}" x2="${W-R}" y1="${y(ref.value)}" y2="${y(ref.value)}" stroke="#fff" stroke-opacity=".7" stroke-width="1.5" stroke-dasharray="5 4"/><text x="${W-R}" y="${y(ref.value)-6}" text-anchor="end" font-size="11.5" font-weight="600" fill="${css('--ink-2')}">${esc(ref.label)}</text>`;
+  if(kind==='bar'){const bw=Math.min(28,iw/n*.62);
+    series.forEach((s,si)=>s.values.forEach((v,i)=>{if(v==null)return;const w=si===0?bw:bw*.56,top=y(v),base=y(Math.max(lo,0)),h=Math.max(0,base-top),r=Math.min(4,h/2,w/2);
+      g+=`<path d="M${x(i)-w/2},${base} V${top+r} q0,-${r} ${r},-${r} H${x(i)+w/2-r} q${r},0 ${r},${r} V${base} Z" fill="${s.color}"/>`}))}
+  else series.forEach(s=>{
+    if(s.dots){s.values.forEach((v,i)=>{if(v!=null)g+=`<circle cx="${x(i)}" cy="${y(v)}" r="3" fill="${s.color}" opacity=".45"/>`});return}
+    if(s.area){let a='',f=null,l=null;s.values.forEach((v,i)=>{if(v==null)return;a+=(f==null?'M':'L')+x(i)+','+y(v);if(f==null)f=i;l=i});
+      if(f!=null)g+=`<path d="${a}L${x(l)},${T+ih}L${x(f)},${T+ih}Z" fill="${s.color}" opacity=".12"/>`}
+    let d='',on=false;s.values.forEach((v,i)=>{if(v==null){on=false;return}d+=(on?'L':'M')+x(i)+','+y(v);on=true});
+    g+=`<path d="${d}" fill="none" stroke="${s.color}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`;
+    const li=s.values.length-1;if(s.values[li]!=null&&s.endDot)g+=`<circle cx="${x(li)}" cy="${y(s.values[li])}" r="5" fill="${s.color}" stroke="${css('--surface')}" stroke-width="2"/>`});
+  g+=`<line class="cr" x1="0" x2="0" y1="${T}" y2="${T+ih}" stroke="${css('--axis')}" opacity="0"/><rect x="${L}" y="${T}" width="${iw}" height="${ih}" fill="transparent"/>`;
   el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img">${g}</svg><div class="tip"></div>`;
-  const svg=$('svg',el), tipEl=$('.tip',el), cross=$('.cross',el);
-  svg.addEventListener('mousemove',e=>{
-    const r=svg.getBoundingClientRect(), px=(e.clientX-r.left)/r.width*W;
-    let i = kind==='bar' ? Math.floor((px-L)/(iw/n)) : Math.round((px-L)/(iw/Math.max(1,n-1)));
-    i=Math.max(0,Math.min(n-1,i)); const html=tip(i); if(!html){tipEl.style.opacity=0;return}
-    cross.setAttribute('x1',x(i)); cross.setAttribute('x2',x(i)); cross.setAttribute('opacity',kind==='bar'?0:1);
-    tipEl.innerHTML=html; tipEl.style.left=(x(i)/W*r.width)+'px'; tipEl.style.top=(T/H*r.height+20)+'px'; tipEl.style.opacity=1; });
-  svg.addEventListener('mouseleave',()=>{tipEl.style.opacity=0;cross.setAttribute('opacity',0)});
+  const svg=$('svg',el),tp=$('.tip',el),cr=$('.cr',el);
+  const move=e=>{const r=svg.getBoundingClientRect(),cx=(e.touches?e.touches[0].clientX:e.clientX),px=(cx-r.left)/r.width*W;
+    let i=kind==='bar'?Math.floor((px-L)/(iw/n)):Math.round((px-L)/(iw/Math.max(1,n-1)));i=Math.max(0,Math.min(n-1,i));const h=tip(i);if(!h){tp.style.opacity=0;return}
+    cr.setAttribute('x1',x(i));cr.setAttribute('x2',x(i));cr.setAttribute('opacity',kind==='bar'?0:1);tp.innerHTML=h;tp.style.left=(x(i)/W*r.width)+'px';tp.style.top='22px';tp.style.opacity=1};
+  svg.addEventListener('mousemove',move);svg.addEventListener('touchstart',move,{passive:true});
+  svg.addEventListener('mouseleave',()=>{tp.style.opacity=0;cr.setAttribute('opacity',0)});
+}
+const spark=(el,pts,unit,color)=>chart(el,{kind:'line',height:220,width:560,labels:pts.map(p=>md(p.date)),series:[{values:pts.map(p=>p.v),color:color||css('--orange'),endDot:true,area:true}],
+  yFmt:v=>{const vs=pts.map(p=>p.v);return Math.max(...vs)-Math.min(...vs)<6?v.toFixed(1):Math.round(v)},tip:i=>`${md(pts[i].date)}: <b>${pts[i].v}${unit}</b>`});
+
+/* ---------- day rendering ---------- */
+function items(d){
+  if(!d)return'<div class="item"><div class="ic">📅</div><div><b>Before the training block</b><span>Plan starts Mon, Nov 16.</span></div></div>';
+  const o=[];
+  if(d.run)o.push(`<div class="item"><div class="ic">${ICON[d.run.type]||'🏃'}</div><div><b>${esc(d.run.title)}${d.date<=O.today?pill(d.status):''}</b><span>${esc(d.run.details)}</span>${d.actual.run_miles?`<span> · Logged <b style="display:inline">${d.actual.run_miles} mi</b></span>`:''}</div></div>`);
+  if(d.cross)o.push(`<div class="item"><div class="ic">${ICON[d.cross.type]}</div><div><b>${esc(d.cross.title)}${d.actual.cross?'<span class="pill done">✓ Logged</span>':''}</b><span>${esc(d.cross.details)}</span></div></div>`);
+  if(d.lift)o.push(`<div class="item"><div class="ic">🏋️</div><div><b>Lift · ${esc(d.lift.focus)}${d.actual.lift?'<span class="pill done">✓ Logged</span>':''}</b>${d.lift.details?`<span>${esc(d.lift.details)}</span>`:''}</div></div>`);
+  if(!o.length)o.push('<div class="item"><div class="ic">😴</div><div><b>Rest day</b><span>Recover — sleep, hydrate, eat well.</span></div></div>');
+  if(d.note)o.push(`<div class="item"><div class="ic">📝</div><div><span>${esc(d.note)}</span></div></div>`);
+  return o.join('');
 }
 
-function spark(el, pts, {color, fmtV=v=>v}){
-  if(!pts.length){ el.innerHTML='<p class="muted">No data yet</p>'; return; }
-  chart(el,{kind:'line',height:150,width:340,labels:pts.map(p=>md(p.date)),series:[{values:pts.map(p=>p.v),color,endDot:true}],
-    yFmt:v=>{const vs=pts.map(p=>p.v);return (Math.max(...vs)-Math.min(...vs))<6?v.toFixed(1):Math.round(v)}, tip:i=>`${md(pts[i].date)}: <b>${fmtV(pts[i].v)}</b>`});
+/* ---------- fueling ---------- */
+function kg(){const lb=parseFloat(store.get('wt_lb'));return lb>0?lb/2.2046:null}
+const gr=(lo,hi)=>{const k=kg();return k?` (≈${Math.round(lo*k)}${hi?`–${Math.round(hi*k)}`:''} g for you)`:''};
+function fuel(d,next){
+  const r=d.run,t=r?.type,mi=r?.miles||0,tips=[];let title='Fuel';
+  const nextBig=next&&next.run&&(next.run.type==='long'||next.run.type==='race');
+  if(t==='race'&&mi>20){title='Race day';
+    tips.push(`<b>Breakfast 3 h before:</b> familiar, low-fiber carbs ~1–2 g/kg${gr(1,2)} — bagel + honey, banana, sports drink.`,
+      `<b>During:</b> a gel every ~40–45 min (≈30–60 g carbs/hr) with water; take electrolytes if warm.`,
+      `<b>Nothing new today</b> — only what you practiced on long runs.`)}
+  else if(t==='race'){title='Half marathon (rehearsal)';
+    tips.push(`<b>Practice your marathon breakfast</b> 2.5–3 h before${gr(1,2)}.`,`<b>Gel</b> at ~45 min and ~90 min. Note how your stomach handles it.`,`<b>After:</b> carbs + 20–30 g protein within an hour.`)}
+  else if(t==='long'){title=`Long run · ${mi} mi`;
+    tips.push(`<b>2–3 h before:</b> ~1–2 g carbs/kg${gr(1,2)} — oatmeal + banana, or bagel + PB + honey.`,
+      mi>=10?`<b>During:</b> gel every ~45 min (30–60 g carbs/hr). Carry water + electrolytes — Florida heat raises sweat loss.`:`<b>During:</b> water is enough; bring a gel to practice if you like.`,
+      `<b>Within 1 h after:</b> ~1 g carbs/kg${gr(1)} + 20–30 g protein (chocolate milk, rice bowl, smoothie).`)}
+  else if(t==='workout'){title='Workout day';
+    tips.push(`<b>60–90 min before:</b> easy carbs, ~30–50 g — toast + jam, banana, granola bar.`,`<b>After:</b> carbs + 20–30 g protein to recover for tomorrow.`)}
+  else if(r){title='Easy day';
+    tips.push(`<b>Under an hour:</b> no fuel needed during — just water.`,`<b>Normal balanced meals</b>: carbs at each meal keep your glycogen topped up.`)}
+  else if(d.cross){title='Cross-training';tips.push(`<b>30–45 min easy cardio:</b> no fuel needed during — water only.`,`<b>Normal balanced meals</b>; a good day to top up carbs before bigger runs.`)}
+  else tips.push(`<b>Rest/recovery:</b> normal meals, still hit your protein, extra water.`);
+  if(d.lift)tips.push(`<b>Lift recovery:</b> 20–40 g protein within ~2 h. Daily target ≈1.6–2.0 g/kg${gr(1.6,2.0)}.`);
+  if(nextBig&&next.run.miles>20)tips.push(`<b>Carb load:</b> ~8–10 g carbs/kg${gr(8,10)} today — rice, pasta, bagels, juice; cut back on fiber and fat.`);
+  else if(nextBig)tips.push(`<b>Tonight:</b> carb-focused dinner (pasta, rice, potatoes) for tomorrow's ${next.run.miles} mi.`);
+  return `<div class="fuel"><h4>🍝 ${esc(title)}</h4><ul>${tips.map(x=>`<li>${x}</li>`).join('')}</ul></div>`;
 }
 
-/* ---------- render ---------- */
-let DATA;
+/* ---------- Road to Miami ---------- */
+const STOPS=[['Gainesville',29.65,-82.32,0,'Start line — the Swamp.'],['Ocala',29.19,-82.14,37,'Horse Capital of the World.'],['Wildwood',28.86,-82.04,70,'Where I-75 meets the Turnpike.'],
+ ['Clermont',28.55,-81.77,100,'Florida hill country — the Citrus Tower.','L'],['Orlando',28.54,-81.38,120,'Theme-park capital.'],['Kissimmee',28.29,-81.41,137,'Lakes and cattle country.'],
+ ['Yeehaw Junction',27.70,-80.90,185,'Yes, that’s a real place.'],['Fort Pierce',27.45,-80.33,230,'Home of the Navy UDT-SEAL Museum.','L'],['Port St. Lucie',27.29,-80.35,245,'Mets spring training.'],
+ ['Jupiter',26.93,-80.09,280,'Jupiter Inlet Lighthouse.'],['West Palm Beach',26.71,-80.05,295,'Gateway to Palm Beach.'],['Boca Raton',26.37,-80.10,320,'Almost there — keep the pace.'],
+ ['Fort Lauderdale',26.12,-80.14,337,'The “Venice of America.”'],['Miami',25.76,-80.19,360,'FINISH — Miami Marathon.']];
+const FL=[[30.75,-83.7],[30.71,-81.45],[30.3,-81.39],[29.9,-81.29],[29.45,-81.12],[29.2,-81.0],[28.8,-80.83],[28.45,-80.55],[28.1,-80.6],[27.65,-80.37],[27.2,-80.17],[26.95,-80.07],[26.7,-80.03],[26.35,-80.07],[26.1,-80.1],[25.77,-80.13],[25.6,-80.3],[25.35,-80.4],[25.15,-80.75],[25.13,-81.08],[25.5,-81.2],[25.85,-81.4],[26.15,-81.8],[26.45,-81.95],[26.7,-82.25],[27.05,-82.45],[27.35,-82.6],[27.6,-82.75],[27.85,-82.85],[28.15,-82.8],[28.6,-82.66],[28.95,-82.75],[29.15,-83.05],[29.45,-83.25],[29.7,-83.42],[29.95,-83.62],[30.05,-83.7]];
+function road(){
+  const R=O.road,total=R.total,done=Math.min(R.miles,total),scale=total/360;
+  const pt=([la,lo])=>[(lo+83.85)*88.3,(31.0-la)*100];
+  const stops=STOPS.map(s=>({name:s[0],xy:pt([s[1],s[2]]),at:s[3]*scale,fact:s[4],left:s[5]==='L'||pt([s[1],s[2]])[0]>250}));
+  const shouldBe=O.days.filter(d=>d.date<O.today&&d.run).reduce((a,d)=>a+d.run.miles,0);
+  const posAt=m=>{m=Math.max(0,Math.min(total,m));for(let i=1;i<stops.length;i++){const a=stops[i-1],b=stops[i];if(m<=b.at){const f=(m-a.at)/((b.at-a.at)||1);return[a.xy[0]+(b.xy[0]-a.xy[0])*f,a.xy[1]+(b.xy[1]-a.xy[1])*f]}}return stops.at(-1).xy};
+  const pathTo=m=>{let d=`M${stops[0].xy}`;for(let i=1;i<stops.length;i++){if(stops[i].at<=m)d+=`L${stops[i].xy}`;else{d+=`L${posAt(m)}`;break}}return d};
+  const full=`M${stops.map(s=>s.xy).join('L')}`,me=posAt(done),ghost=posAt(shouldBe);
+  const next=stops.find(s=>s.at>done);
+  const fl=`M${FL.map(pt).join('L')}Z`;
+  const svg=`<svg viewBox="0 0 360 600" style="width:100%;height:auto;display:block">
+    <defs><pattern id="w" width="14" height="14" patternUnits="userSpaceOnUse"><path d="M0 7 q3.5 -3 7 0 t7 0" fill="none" stroke="rgba(255,255,255,.05)"/></pattern></defs>
+    <rect width="360" height="600" fill="url(#w)"/>
+    <path d="${fl}" fill="rgba(0,33,165,.35)" stroke="rgba(255,255,255,.22)" stroke-width="1.2" stroke-linejoin="round"/>
+    <path d="${full}" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/>
+    <path d="${pathTo(done)}" fill="none" stroke="${css('--orange')}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    ${stops.map((s,i)=>`<g><circle cx="${s.xy[0]}" cy="${s.xy[1]}" r="${i===0||i===stops.length-1?6:4}" fill="${s.at<=done?css('--orange'):'#0a1330'}" stroke="${s.at<=done?css('--orange'):'rgba(255,255,255,.6)'}" stroke-width="2"/>
+      <text x="${s.xy[0]+(s.left?-14:14)}" y="${s.xy[1]+4}" text-anchor="${s.left?'end':'start'}" font-size="${i===0||i===stops.length-1?13:11}" font-weight="${i===0||i===stops.length-1?700:500}" fill="${s.at<=done?'#fff':'rgba(255,255,255,.7)'}" font-family="Inter">${s.name}</text></g>`).join('')}
+    ${shouldBe>done+1?`<g opacity=".7"><circle cx="${ghost[0]}" cy="${ghost[1]}" r="7" fill="none" stroke="#fff" stroke-dasharray="3 3"/></g>`:''}
+    <g transform="translate(${me[0]},${me[1]})"><circle r="13" fill="${css('--orange')}" opacity=".25"><animate attributeName="r" values="11;17;11" dur="2s" repeatCount="indefinite"/></circle><circle r="10" fill="${css('--orange')}" stroke="#fff" stroke-width="2"/><text y="4.5" text-anchor="middle" font-size="12">🏃</text></g>
+  </svg>`;
+  const pct=Math.round(100*done/total);
+  return `<div class="road">
+    <div class="card" style="padding:10px">${svg}</div>
+    <div>
+      <div class="grid g2">
+        <div class="card tile"><h3>Miles covered</h3><div class="val">${done.toFixed(1)}<small> / ${total} mi</small></div><div class="bar"><i style="width:${pct}%"></i></div><div class="note">${pct}% of the way to Miami</div></div>
+        <div class="card tile"><h3>Next stop</h3><div class="val">${next?esc(next.name):'Miami 🏁'}</div><div class="note">${next?`${(next.at-done).toFixed(1)} mi away`:'You made it!'}${shouldBe>done+1?` · plan says you'd be at mile ${shouldBe.toFixed(0)}`:''}</div></div>
+      </div>
+      <div class="card mt"><h2>The route</h2><p class="sub" style="margin-top:-6px">Every block mile moves you down the road. Run the whole plan and you reach Miami on race weekend.</p>
+        <ul class="stops">${stops.map(s=>`<li class="${s.at<=done?'done':(s===next?'next':'')}"><div class="dot"></div><div><b>${esc(s.name)} <span>· mile ${s.at.toFixed(0)}</span></b><span>${esc(s.fact)}</span></div></li>`).join('')}</ul></div>
+    </div></div>`;
+}
+
+/* ---------- Gators ---------- */
+const etDate=iso=>new Date(iso).toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',timeZone:'America/New_York'});
+const etTime=iso=>new Date(iso).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/New_York'})+' ET';
+const ago=iso=>{const m=(Date.now()-new Date(iso))/6e4;return m<60?`${Math.max(1,Math.round(m))}m ago`:m<1440?`${Math.round(m/60)}h ago`:`${Math.round(m/1440)}d ago`};
+const rk=r=>r?`<span class="muted" style="font-weight:600">#${r}</span> `:'';
+const oppBadge=g=>`<div class="tb" style="background:${g.opp_color?'#'+g.opp_color:'#444'}">${esc(g.opp_abbr||'OPP')}</div>`;
+function gameCard(g,label){
+  if(!g)return'';
+  const vs=g.home?'vs':(g.neutral?'vs':'@');
+  if(g.state==='pre')return`<div class="card"><h3>${label}</h3>
+    <div class="score" style="margin-top:8px"><div class="team"><div class="tb fla">FLA</div>Florida</div><div class="disp" style="font-size:18px;color:var(--ink-3)">${vs}</div><div class="team">${rk(g.opp_rank)}${esc(g.opp_short||g.opponent)} ${oppBadge(g)}</div></div>
+    <p class="sub" style="margin:12px 0 0">📅 <b>${etDate(g.date)}</b> · ${etTime(g.date)}${g.tv?` · 📺 ${esc(g.tv)}`:''}<br>📍 ${esc(g.venue||'')}${g.city?`, ${esc(g.city)}`:''}</p>
+    <p class="sub" id="tipoff" data-t="${g.date}" style="margin:6px 0 0"></p></div>`;
+  const box=(g.box||[]).slice().sort((a,b)=>b.pts-a.pts).slice(0,5);
+  return`<div class="card"><h3>${label} ${g.state==='in'?'<span class="live">LIVE</span>':''}</h3>
+    <div class="score" style="margin-top:8px"><div class="team"><div class="tb fla">FLA</div><span class="pts">${g.fla_score??'–'}</span></div>
+      <div style="text-align:center">${g.result?`<span class="wl ${g.result}">${g.result}</span>`:''}<div class="sub">${esc(g.detail||'')}</div></div>
+      <div class="team"><span class="pts">${g.opp_score??'–'}</span>${oppBadge(g)}</div></div>
+    <p class="sub" style="margin:10px 0 0">${vs} ${rk(g.opp_rank)}${esc(g.opponent)} · ${etDate(g.date)}</p>
+    ${box.length?`<div class="scroll mt"><table><thead><tr><th>Top Gators</th><th class="num">PTS</th><th class="num">REB</th><th class="num">AST</th><th class="num">MIN</th></tr></thead><tbody>${box.map(p=>`<tr><td>${esc(p.short||p.name)}</td><td class="num"><b>${p.pts}</b></td><td class="num">${p.reb}</td><td class="num">${p.ast}</td><td class="num">${p.min}</td></tr>`).join('')}</tbody></table></div>`:''}</div>`;
+}
+function gators(){
+  if(!G)return`<div class="card"><h2>🐊 Gators Hoops</h2><p class="sub">Basketball data appears after the next sync.</p></div>`;
+  const t=G.team||{},games=G.games||[];
+  const w=games.filter(g=>g.result==='W').length,l=games.filter(g=>g.result==='L').length;
+  return`<div class="grid g4">
+      <div class="card tile"><h3>Record</h3><div class="val">${esc(t.record||`${w}-${l}`)}</div><div class="note">${esc(t.standing||'')}</div></div>
+      <div class="card tile"><h3>AP rank</h3><div class="val">${t.rank?'#'+t.rank:'NR'}</div><div class="note">2026–27 season</div></div>
+      <div class="card tile"><h3>Home</h3><div class="val">${esc((t.records||{}).home||'–')}</div><div class="note">Away ${esc((t.records||{}).road||(t.records||{}).away||'–')}</div></div>
+      <div class="card tile"><h3>Last 5</h3><div class="val" style="font-size:26px">${games.filter(g=>g.result).slice(-5).map(g=>`<span class="wl ${g.result}" style="margin-right:3px">${g.result}</span>`).join('')||'–'}</div><div class="note">Most recent on the right</div></div>
+    </div>
+    <section class="grid g2">${G.live_game?gameCard(G.live_game,'Live now'):gameCard(G.next_game,'Next game')}${gameCard(G.last_game,'Last game')}</section>
+    <section class="grid g2">
+      <div class="card"><h2>Schedule & results</h2><div class="scroll" style="max-height:560px;overflow:auto"><table><tbody>${games.map(g=>`<tr class="${g.state==='in'?'cur':''}">
+        <td style="white-space:nowrap">${etDate(g.date)}</td><td>${g.home?'vs':(g.neutral?'vs':'@')} ${rk(g.opp_rank)}${esc(g.opp_short||g.opponent)}${g.conference?' <span class="muted">*</span>':''}</td>
+        <td class="num" style="white-space:nowrap">${g.result?`<span class="wl ${g.result}">${g.result}</span> ${g.fla_score}-${g.opp_score}`:g.state==='in'?`<span class="live">LIVE</span> ${g.fla_score}-${g.opp_score}`:`${etTime(g.date)}`}</td>
+        <td class="muted" style="white-space:nowrap">${esc(g.tv||'')}</td></tr>`).join('')}</tbody></table></div><p class="sub">* SEC game</p></div>
+      <div class="card"><h2>Season averages</h2>${(G.players||[]).length?`<div class="scroll"><table><thead><tr><th>Player</th><th class="num">GP</th><th class="num">PPG</th><th class="num">RPG</th><th class="num">APG</th><th class="num">MPG</th></tr></thead><tbody>${G.players.filter(p=>p.minpg>=3).map(p=>`<tr><td>${esc(p.name)} <span class="muted">${esc(p.pos||'')}</span></td><td class="num">${p.gp}</td><td class="num"><b>${p.ptspg}</b></td><td class="num">${p.rebpg}</td><td class="num">${p.astpg}</td><td class="num">${p.minpg}</td></tr>`).join('')}</tbody></table></div>`:'<p class="sub">Appears once games are played.</p>'}</div>
+    </section>
+    <section class="card"><h2>Latest news</h2><div class="news">${(G.news||[]).map(n=>`<a href="${esc(n.url)}" target="_blank" rel="noopener">${n.image?`<img src="${esc(n.image)}" alt="" loading="lazy">`:'<div></div>'}<div><b>${esc(n.headline)}</b><span>${esc(n.description||'')}</span><br><span>${n.published?ago(n.published):''}</span></div></a>`).join('')||'<p class="sub">No news right now.</p>'}</div></section>
+    <p class="sub" style="text-align:center">Scores and news from ESPN · updated ${G.updated?ago(G.updated):''}</p>`;
+}
+
+/* ---------- views ---------- */
+function home(){
+  const c=O.prediction.current,cw=O.current_week,g=O.goal,wk=cw.planned_miles?Math.min(100,Math.round(100*cw.actual_miles/cw.planned_miles)):0;
+  const gap=c.gap,gapT=gap<=0?`<span class="up">${fmt(-gap)} under goal</span>`:`<span class="down">${fmt(gap)} over goal</span>`;
+  const la=O.last_activity;
+  return`<section class="grid g2">
+      <div class="card hero"><h3>Miami Marathon · Sun Jan 31 · 6:00 AM</h3><div class="cd" id="cd"></div>
+        <p class="sub" style="margin:12px 0 0">🏁 Gainesville Half in <b>${Math.max(0,O.countdown.half_days)}</b> days · Week <b>${O.countdown.week}</b> of ${O.countdown.weeks_total} — ${esc(cw.label)}</p></div>
+      <div class="card hero"><h3>Projected finish</h3><div class="gauge"><span class="big">${c.time}</span><span class="sub">${c.pace}/mi</span></div>
+        <p style="margin:8px 0 0;font-weight:600">${gapT} <span class="muted" style="font-weight:400">· goal ${g.goal_time.replace(/:00$/,'')}</span></p>
+        <p class="sub" style="margin:6px 0 0">${esc(c.method)}${c.endurance_penalty?` · +${fmt(c.endurance_penalty)} until your long run reaches 18 mi`:''}</p></div>
+    </section>
+    ${O.recovery.flags.map(f=>`<div class="flag">⚠️ ${esc(f)}</div>`).join('')}
+    <section class="grid g2">
+      <div class="card"><h3>Today · ${dn(O.today)} ${md(O.today)}</h3>${items(O.today_plan)}</div>
+      <div class="card"><h3>Tomorrow</h3>${items(O.tomorrow_plan)}</div>
+    </section>
+    <section class="grid g4">
+      <div class="card tile"><h3>This week</h3><div class="val">${cw.actual_miles}<small> / ${cw.planned_miles} mi</small></div><div class="bar"><i style="width:${wk}%"></i></div></div>
+      <div class="card tile"><h3>Streak</h3><div class="val">🔥 ${O.streak}</div><div class="note">planned runs in a row</div></div>
+      <div class="card tile"><h3>Road to Miami</h3><div class="val">${O.road.miles}<small> / ${O.road.total} mi</small></div><div class="bar"><i style="width:${Math.min(100,100*O.road.miles/O.road.total)}%"></i></div></div>
+      <div class="card tile"><h3>Last run</h3><div class="val">${la?la.miles:'–'}<small> mi</small></div><div class="note">${la?`${dn(la.date)} ${md(la.date)} · ${la.pace}/mi${la.hr?` · ${Math.round(la.hr)} bpm`:''}`:''}</div></div>
+    </section>`;
+}
+function weekAhead(){
+  const days=[];for(let i=0;i<7;i++){const d=new Date(D(O.today));d.setDate(d.getDate()+i);const iso=d.toLocaleDateString('en-CA');days.push(O.days.find(x=>x.date===iso)||{date:iso,run:null,cross:null,lift:null,note:'',actual:{},status:''})}
+  const plannedMi=days.reduce((a,d)=>a+(d.run?d.run.miles:0),0),lifts=days.filter(d=>d.lift).length;
+  return`<div class="card" style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap">
+      <div><h2 style="margin:0">The next 7 days</h2><div class="sub">${plannedMi} mi of running · ${lifts} lifts</div></div>
+      <label class="sub">Your weight (lb) for exact fuel grams: <input type="number" id="wt" min="80" max="350" value="${esc(store.get('wt_lb')||'')}" placeholder="e.g. 165"></label></div>
+    <div class="wa mt">${days.map((d,i)=>`<div class="card day ${d.date===O.today?'today':''}">
+      <div class="date"><span>${i===0?'Today':i===1?'Tomorrow':dn(d.date)}</span><b>${md(d.date)}</b><span>${esc(d.location||'')}</span></div>
+      <div>${items(d.date<'2026-11-16'?null:d)}</div>${fuel(d,days[i+1]||O.days.find(x=>x.date>d.date))}</div>`).join('')}</div>
+    <div class="card mt"><h2>Fueling playbook</h2><div class="grid g3">
+      <div><h3>Daily carbs</h3><p class="sub">Easy/rest days ≈3–5 g/kg${gr(3,5)}. Training days ≈5–7 g/kg${gr(5,7)}. Long-run & peak days ≈6–10 g/kg${gr(6,10)}.</p></div>
+      <div><h3>Long-run fuel</h3><p class="sub">Start a gel at ~40–45 min, then every 40–45 min (30–60 g carbs/hr). Practice the exact gels you'll use in Miami.</p></div>
+      <div><h3>Heat & hydration</h3><p class="sub">Florida sweat rates run high: drink to thirst, add sodium/electrolytes on runs over 60–75 min, and weigh before/after long runs to learn your losses.</p></div>
+      <div><h3>Protein</h3><p class="sub">≈1.6–2.0 g/kg/day${gr(1.6,2.0)}, spread over 4–5 meals; 20–40 g after lifts and long runs.</p></div>
+      <div><h3>Carb load (Jan 29–30)</h3><p class="sub">≈8–10 g/kg/day${gr(8,10)} for the 2 days before the marathon. Low fiber, low fat, familiar foods.</p></div>
+      <div><h3>Race morning</h3><p class="sub">Breakfast 3 h before (1–2 g/kg carbs), small top-up 15 min before the start, then your gel plan.</p></div>
+    </div><p class="sub" style="margin-bottom:0">General sports-nutrition guidance — adjust to what your stomach handles in training.</p></div>`;
+}
+function progress(){
+  const W=O.weeks,wl=W.map(w=>'W'+w.week),c=O.prediction.current;
+  return`<div class="grid g4">
+      <div class="card tile"><h3>Block miles</h3><div class="val">${O.totals.block_miles}<small> mi</small></div><div class="note">${O.totals.block_runs} runs</div></div>
+      <div class="card tile"><h3>Plan completed</h3><div class="val">${O.compliance.pct==null?'–':O.compliance.pct+'%'}</div><div class="note">${O.compliance.runs_done}/${O.compliance.runs_planned} runs · ${O.compliance.miles_done}/${O.compliance.miles_planned} mi</div></div>
+      <div class="card tile"><h3>Longest (block)</h3><div class="val">${O.totals.longest}<small> / ${O.peak_long} mi</small></div><div class="bar"><i style="width:${Math.min(100,100*O.totals.longest/O.peak_long)}%"></i></div></div>
+      <div class="card tile"><h3>Projected</h3><div class="val">${c.time}</div><div class="note">${c.gap<=0?'<span class="up">on track for sub-3:45</span>':'<span class="down">behind goal pace</span>'}</div></div></div>
+    <section class="grid g2">
+      <div class="card"><h2>Weekly mileage</h2><div class="legend"><span><i style="background:var(--planned)"></i>Planned</span><span><i style="background:var(--orange)"></i>Actual</span></div><div class="chart" id="c-miles"></div></div>
+      <div class="card"><h2>Projected finish</h2><div class="legend"><span><i style="background:var(--orange)"></i>Projection</span><span><i style="background:#fff"></i>Goal 3:45</span></div><div class="chart" id="c-pred"></div><p class="sub">Lower is faster. ${esc(c.method)}.</p></div></section>
+    <section class="grid g2">
+      <div class="card"><h2>Long runs</h2><div class="legend"><span><i style="background:var(--planned)"></i>Planned</span><span><i style="background:var(--orange)"></i>Actual</span></div><div class="chart" id="c-long"></div></div>
+      <div class="card"><h2>Aerobic efficiency</h2><div class="legend"><span><i style="background:var(--orange)"></i>5-run average</span><span><i style="background:var(--orange);opacity:.45;border-radius:50%"></i>Easy run</span></div><div class="chart" id="c-eff"></div><p class="sub">Speed per heartbeat on easy runs. Rising = fitter.</p></div></section>
+    <section class="card"><h2>Personal records</h2><div class="grid g3">${O.prs.map(p=>`<div class="tile"><h3>${esc(p.label)}</h3><div class="val">${esc(p.value)}</div><div class="note">${md(p.date)}${p.note?' · '+esc(p.note):''}</div></div>`).join('')}</div></section>
+    <section class="card"><h2>Badges · ${O.badges.filter(b=>b.earned).length}/${O.badges.length}</h2><div class="badges">${O.badges.map(b=>`<div class="badge ${b.earned?'on':''}"><div class="e">${b.icon}</div><b>${esc(b.name)}</b><span>${b.earned?'Earned '+md(b.earned):esc(b.desc)}</span></div>`).join('')}</div></section>`;
+}
+function recovery(){
+  const r=O.recovery,avg=a=>a.length?(a.reduce((s,p)=>s+p.v,0)/a.length):null,L7=a=>a.slice(-7);
+  const t=(lab,a,u,d=0)=>`<div class="card tile"><h3>${lab}</h3><div class="val">${avg(L7(a))!=null?avg(L7(a)).toFixed(d):'–'}<small> ${u}</small></div><div class="note">7-day avg · 30-day ${avg(a)!=null?avg(a).toFixed(d):'–'}</div></div>`;
+  return`${r.flags.map(f=>`<div class="flag" style="margin:0 0 14px">⚠️ ${esc(f)}</div>`).join('')}
+    <div class="grid g4">${t('Resting HR',r.resting_hr,'bpm')}${t('Overnight HRV',r.hrv,'ms')}${t('Sleep',r.sleep_hours,'h',1)}${t('Sleep score',r.sleep_score,'')}</div>
+    <section class="grid g2"><div class="card"><h2>Resting heart rate</h2><div class="chart" id="c-rhr"></div><p class="sub">Lower and steady = recovered. A jump of 5+ bpm = take it easy.</p></div>
+      <div class="card"><h2>Overnight HRV</h2><div class="chart" id="c-hrv"></div><p class="sub">Higher and steady = recovered.</p></div></section>
+    <section class="grid g2"><div class="card"><h2>Sleep hours</h2><div class="chart" id="c-sleep"></div></div>
+      <div class="card"><h2>Sleep score</h2><div class="chart" id="c-ss"></div></div></section>`;
+}
+function runs(){
+  return`<div class="card"><h2>Recent runs</h2><div class="scroll"><table><thead><tr><th>Date</th><th>Run</th><th class="num">Miles</th><th class="num">Time</th><th class="num">Pace</th><th class="num">Avg HR</th><th class="num">Elev ft</th><th class="num">Cadence</th><th class="num">TE</th></tr></thead>
+    <tbody>${O.recent_runs.map(r=>`<tr><td style="white-space:nowrap">${dn(r.date)} ${md(r.date)}</td><td>${esc(r.name)}</td><td class="num"><b>${r.miles}</b></td><td class="num">${r.time}</td><td class="num">${r.pace}</td><td class="num">${r.hr?Math.round(r.hr):'–'}</td><td class="num">${r.elev_ft}</td><td class="num">${r.cadence?Math.round(r.cadence):'–'}</td><td class="num">${r.te??'–'}</td></tr>`).join('')}</tbody></table></div></div>`;
+}
+function plan(){
+  return O.weeks.map(w=>`<details class="card ${w.is_current?'':''}" style="margin-bottom:10px" ${w.is_current?'open':''}><summary><span class="disp" style="font-size:16px">Week ${w.week} · ${esc(w.label)}</span> <span class="sub">${md(w.start)}–${md(w.end)} · ${esc(w.location)} · ${w.planned_miles} mi${w.is_past||w.is_current?` · actual ${w.actual_miles}`:''}</span>${w.is_current?' <span class="pill o">This week</span>':''}</summary>
+    <div class="scroll"><table><tbody>${O.days.filter(d=>d.week===w.week).map(d=>`<tr class="${d.date===O.today?'cur':''}"><td style="white-space:nowrap">${dn(d.date)} ${md(d.date)}</td><td>${d.run?`${ICON[d.run.type]||''} ${esc(d.run.title)}${d.date<=O.today?pill(d.status):''}`:'<span class="muted">Rest from running</span>'}</td><td class="muted">${d.cross?esc(d.cross.title):''}</td><td class="muted">${d.lift?'🏋️ '+esc(d.lift.focus):''}</td></tr>`).join('')}</tbody></table></div></details>`).join('')
+  +`<p class="sub">Paces — easy ${O.paces.easy}, long ${O.paces.long||O.paces.easy}, marathon ${O.paces.mp}, tempo ${O.paces.tempo} per mile.</p>`;
+}
+
+/* ---------- charts per view ---------- */
+function drawCharts(id){
+  const o=css('--orange'),pl=css('--planned');
+  if(id==='progress'){const W=O.weeks,wl=W.map(w=>'W'+w.week),act=w=>(w.is_past||w.is_current);
+    chart($('#c-miles'),{kind:'bar',labels:wl,yMin:0,series:[{values:W.map(w=>w.planned_miles),color:pl},{values:W.map(w=>act(w)?w.actual_miles:null),color:o}],yFmt:v=>Math.round(v),tip:i=>`<b>Week ${W[i].week}</b> · ${esc(W[i].label)}<br>Planned ${W[i].planned_miles} mi${act(W[i])?` · Actual <b>${W[i].actual_miles}</b>`:''}`});
+    chart($('#c-long'),{kind:'bar',labels:wl,yMin:0,series:[{values:W.map(w=>w.long_planned),color:pl},{values:W.map(w=>act(w)?w.long_actual:null),color:o}],yFmt:v=>Math.round(v),tip:i=>`<b>Week ${W[i].week}</b><br>Planned ${W[i].long_planned} mi${act(W[i])?` · Actual <b>${W[i].long_actual}</b>`:''}`});
+    const H=O.prediction.history;chart($('#c-pred'),{kind:'line',labels:H.map(h=>md(h.date)),series:[{values:H.map(h=>h.seconds),color:o,endDot:true,area:true}],ref:{value:O.prediction.goal_seconds,label:'Goal 3:45'},yFmt:v=>fmt(v).slice(0,4),tip:i=>`${md(H[i].date)}: <b>${fmt(H[i].seconds)}</b><br><span style="opacity:.7">${esc(H[i].source)}</span>`});
+    const E=O.efficiency;chart($('#c-eff'),{kind:'line',labels:E.map(e=>md(e.date)),series:[{values:E.map(e=>e.ef),color:o,dots:true},{values:E.map(e=>e.ef_avg),color:o,endDot:true}],yFmt:v=>v.toFixed(2),tip:i=>`${md(E[i].date)}: ${E[i].pace}/mi @ ${Math.round(E[i].hr)} bpm<br>Efficiency <b>${E[i].ef}</b>`})}
+  if(id==='recovery'){const r=O.recovery;spark($('#c-rhr'),r.resting_hr,' bpm');spark($('#c-hrv'),r.hrv,' ms',css('--blue-2'));spark($('#c-sleep'),r.sleep_hours,' h',css('--blue-2'));spark($('#c-ss'),r.sleep_score,'',o)}
+}
+
+/* ---------- router ---------- */
+const VIEWS={home,week:weekAhead,progress,road,recovery,runs,plan,gators};
+function show(id){if(!VIEWS[id])id='home';
+  $$('.tab').forEach(t=>t.setAttribute('aria-selected',t.dataset.id===id));
+  $('#app').innerHTML=`<div class="view on">${VIEWS[id]()}</div>`;drawCharts(id);
+  if(id==='week'){const w=$('#wt');w&&w.addEventListener('change',()=>{store.set('wt_lb',w.value);show('week')})}
+  tick();window.scrollTo({top:0});
+  const t=$(`.tab[data-id="${id}"]`);t&&t.scrollIntoView({inline:'center',block:'nearest'});
+}
+function tick(){const ms=RACE-Date.now(),d=Math.max(0,Math.floor(ms/864e5)),h=Math.max(0,Math.floor(ms%864e5/36e5)),m=Math.max(0,Math.floor(ms%36e5/6e4)),s=Math.max(0,Math.floor(ms%6e4/1e3));
+  $('#chip-cd').textContent=`${d}d ${h}h ${m}m`;
+  const c=$('#cd');if(c)c.innerHTML=`<div class="d"><b>${d}</b><span>days</span></div><div><b>${String(h).padStart(2,'0')}</b><span>hrs</span></div><div><b>${String(m).padStart(2,'0')}</b><span>min</span></div><div><b>${String(s).padStart(2,'0')}</b><span>sec</span></div>`;
+  const tp=$('#tipoff');if(tp){const x=new Date(tp.dataset.t)-Date.now();if(x>0){const dd=Math.floor(x/864e5),hh=Math.floor(x%864e5/36e5),mm=Math.floor(x%36e5/6e4);tp.textContent=`⏱️ Tip-off in ${dd?dd+'d ':''}${hh}h ${mm}m`}}}
+
 async function main(){
-  DATA = await (await fetch('dashboard.json',{cache:'no-store'})).json();
-  const o=DATA, c=o.prediction.current, cw=o.current_week, goal=o.goal;
-  const gap=c.gap, gapTxt = gap<=0 ? `<span class="up">${fmt(-gap)} under goal</span>` : `<span class="down">${fmt(gap)} over goal</span>`;
-  const wkPct = cw.planned_miles? Math.min(100, Math.round(100*cw.actual_miles/cw.planned_miles)) : 0;
-  const longest=o.totals.longest;
-
-  $('#app').innerHTML = `
-  <header>
-    <div><h1>Miami Marathon · Sub-${goal.goal_time.replace(/:00$/,'')}${o.demo?'<span class="demo">DEMO DATA</span>':''}</h1>
-      <div class="sub">Sun, Jan 31, 2027 · goal pace ${goal.goal_pace}/mi · Week ${o.countdown.week} of ${o.countdown.weeks_total} — ${esc(cw.label)} (${esc(cw.location)})</div></div>
-    <div class="sub">${o.last_activity?`Last run: <b>${o.last_activity.miles} mi</b> on ${md(o.last_activity.date)} @ ${o.last_activity.pace}/mi`:''}</div>
-  </header>
-
-  <div class="grid g5">
-    <div class="card tile"><div class="label">Race day</div><div class="val">${o.countdown.race_days}</div><div class="note">days to go · ${o.countdown.half_days>0?'Half in '+o.countdown.half_days:o.countdown.half_days===0?'Half is today':'Half done ✓'}</div></div>
-    <div class="card tile"><div class="label">Projected finish</div><div class="val">${c.time}</div><div class="note">${gapTxt} · ${c.pace}/mi</div></div>
-    <div class="card tile"><div class="label">This week</div><div class="val">${cw.actual_miles}<span class="sub"> / ${cw.planned_miles} mi</span></div><div class="bar"><i style="width:${wkPct}%"></i></div></div>
-    <div class="card tile"><div class="label">Longest run (block)</div><div class="val">${longest}<span class="sub"> / 18 mi</span></div><div class="bar"><i style="width:${Math.min(100,longest/18*100)}%"></i></div></div>
-    <div class="card tile"><div class="label">Plan completed</div><div class="val">${o.compliance.pct==null?'–':o.compliance.pct+'%'}</div><div class="note">${o.compliance.runs_done}/${o.compliance.runs_planned} runs · ${o.compliance.miles_done}/${o.compliance.miles_planned} mi</div></div>
-  </div>
-  ${o.recovery.flags.map(f=>`<div class="flag">⚠️ ${esc(f)}</div>`).join('')}
-
-  <section class="grid g2">
-    <div class="card day"><h3>Today · ${o.today_plan?dayName(o.today)+' '+md(o.today):''}</h3>${dayItems(o.today_plan)}</div>
-    <div class="card day"><h3>Tomorrow</h3>${dayItems(o.tomorrow_plan)}</div>
-  </section>
-
-  <section class="card"><h2>This week · ${md(cw.start)} – ${md(cw.end)}</h2>
-    <div class="week">${cw.days.map(d=>`
-      <div class="wd ${d.date===o.today?'is-today':''}">
-        <div class="dname">${dayName(d.date)} ${md(d.date).split(' ')[1]} ${d.run&&d.date<=o.today?pill(d.status):''}</div>
-        ${d.run?`<div class="r">${ICON[d.run.type]||''} ${esc(d.run.title)}</div>`:''}
-        ${d.actual.run_miles?`<div class="x">Logged ${d.actual.run_miles} mi</div>`:''}
-        ${d.cross?`<div class="x">${ICON[d.cross.type]} ${esc(d.cross.title)}</div>`:''}
-        ${d.lift?`<div class="x">🏋️ ${esc(d.lift.focus)}${d.actual.lift?' ✓':''}</div>`:''}
-        ${!d.run&&!d.cross&&!d.lift?'<div class="x">Rest</div>':''}
-      </div>`).join('')}</div>
-  </section>
-
-  <section class="grid g2">
-    <div class="card"><h2>Weekly mileage</h2>
-      <div class="legend"><span><i style="background:var(--planned)"></i>Planned</span><span><i style="background:var(--s1)"></i>Actual</span></div>
-      <div class="chart" id="c-miles"></div></div>
-    <div class="card"><h2>Projected marathon finish</h2>
-      <div class="legend"><span><i style="background:var(--s1)"></i>Projection</span><span><i style="background:var(--s2)"></i>Goal ${goal.goal_time.replace(/:00$/,'')}</span></div>
-      <div class="chart" id="c-pred"></div>
-      <div class="sub" style="margin-top:6px">Based on: ${esc(c.method)}.${c.endurance_penalty?` Includes +${fmt(c.endurance_penalty)} because your longest recent run is under 18 mi — it shrinks as long runs grow.`:''} Lower is faster.</div></div>
-  </section>
-
-  <section class="grid g2">
-    <div class="card"><h2>Long runs</h2>
-      <div class="legend"><span><i style="background:var(--planned)"></i>Planned</span><span><i style="background:var(--s1)"></i>Actual</span></div>
-      <div class="chart" id="c-long"></div></div>
-    <div class="card"><h2>Aerobic efficiency (easy runs)</h2>
-      <div class="legend"><span><i style="background:var(--s1)"></i>5-run average</span><span><i style="background:var(--s1);opacity:.45;border-radius:50%"></i>Single run</span></div>
-      <div class="chart" id="c-eff"></div>
-      <div class="sub" style="margin-top:6px">Speed per heartbeat. Rising = running faster at the same effort.</div></div>
-  </section>
-
-  <section class="grid g3">
-    <div class="card"><h2>Resting heart rate</h2><div class="chart" id="c-rhr"></div><div class="sub">Lower / steady = recovered</div></div>
-    <div class="card"><h2>Overnight HRV</h2><div class="chart" id="c-hrv"></div><div class="sub">Higher / steady = recovered</div></div>
-    <div class="card"><h2>Sleep</h2><div class="chart" id="c-sleep"></div><div class="sub">Hours per night</div></div>
-  </section>
-
-  <section class="card"><h2>Recent runs</h2><div style="overflow-x:auto"><table>
-    <thead><tr><th>Date</th><th>Run</th><th class="num">Miles</th><th class="num">Time</th><th class="num">Pace</th><th class="num">Avg HR</th><th class="num">Elev ft</th><th class="num">Training effect</th></tr></thead>
-    <tbody>${o.recent_runs.map(r=>`<tr><td>${dayName(r.date)} ${md(r.date)}</td><td>${esc(r.name)}</td><td class="num">${r.miles}</td><td class="num">${r.time}</td><td class="num">${r.pace}</td><td class="num">${r.hr??'–'}</td><td class="num">${r.elev_ft}</td><td class="num">${r.te??'–'}</td></tr>`).join('')}</tbody>
-  </table></div></section>
-
-  <section class="card"><details><summary>Full plan · 11 weeks</summary><div style="overflow-x:auto;margin-top:12px"><table>
-    <thead><tr><th>Wk</th><th>Dates</th><th>Phase</th><th>Where</th><th class="num">Planned mi</th><th class="num">Actual mi</th><th class="num">Long run</th></tr></thead>
-    <tbody>${o.weeks.map(w=>`<tr class="${w.is_current?'cur':''}"><td>${w.week}</td><td>${md(w.start)} – ${md(w.end)}</td><td>${esc(w.label)}</td><td>${esc(w.location)}</td><td class="num">${w.planned_miles}</td><td class="num">${w.is_past||w.is_current?w.actual_miles:'–'}</td><td class="num">${w.long_planned}${w.long_actual?` <span class="muted">(${w.long_actual})</span>`:''}</td></tr>`).join('')}</tbody>
-  </table></div>
-  <p class="sub">Paces — easy ${o.paces.easy}, marathon ${o.paces.mp}, tempo ${o.paces.tempo} per mile.</p></details></section>
-
-  <footer>Updated ${new Date(o.generated_at).toLocaleString('en-US',{dateStyle:'medium',timeStyle:'short'})} · data from Garmin Connect</footer>`;
-
-  const W=o.weeks, wl=W.map(w=>'W'+w.week);
-  chart($('#c-miles'),{kind:'bar',labels:wl,yMin:0,series:[{values:W.map(w=>w.planned_miles),color:css('--planned')},{values:W.map(w=>(w.is_past||w.is_current)?w.actual_miles:null),color:css('--s1')}],
-    yFmt:v=>Math.round(v), tip:i=>`<b>Week ${W[i].week}</b> · ${esc(W[i].label)}<br>Planned ${W[i].planned_miles} mi${(W[i].is_past||W[i].is_current)?` · Actual <b>${W[i].actual_miles}</b>`:''}`});
-  chart($('#c-long'),{kind:'bar',labels:wl,yMin:0,series:[{values:W.map(w=>w.long_planned),color:css('--planned')},{values:W.map(w=>(w.is_past||w.is_current)?w.long_actual:null),color:css('--s1')}],
-    yFmt:v=>Math.round(v), tip:i=>`<b>Week ${W[i].week}</b><br>Planned ${W[i].long_planned} mi${(W[i].is_past||W[i].is_current)?` · Actual <b>${W[i].long_actual}</b>`:''}`});
-
-  const H=o.prediction.history;
-  chart($('#c-pred'),{kind:'line',labels:H.map(h=>md(h.date)),series:[{values:H.map(h=>h.seconds),color:css('--s1'),endDot:true}],
-    ref:{value:o.prediction.goal_seconds,label:'Goal '+fmt(o.prediction.goal_seconds)}, yFmt:v=>fmt(v).slice(0,4),
-    tip:i=>`${md(H[i].date)}: <b>${fmt(H[i].seconds)}</b><br><span style="opacity:.75">${esc(H[i].source)} · fitness alone ${fmt(H[i].fitness_seconds)}</span>`});
-
-  const E=o.efficiency;
-  if(E.length) chart($('#c-eff'),{kind:'line',labels:E.map(e=>md(e.date)),series:[{values:E.map(e=>e.ef),color:css('--s1'),dots:true},{values:E.map(e=>e.ef_avg),color:css('--s1'),endDot:true}],
-    yFmt:v=>v.toFixed(2), tip:i=>`${md(E[i].date)}: ${E[i].pace}/mi @ ${E[i].hr} bpm<br>Efficiency <b>${E[i].ef}</b> (avg ${E[i].ef_avg})`});
-  else $('#c-eff').innerHTML='<p class="muted">Appears after a few easy runs with heart rate.</p>';
-
-  spark($('#c-rhr'),o.recovery.resting_hr,{color:css('--s1'),fmtV:v=>v+' bpm'});
-  spark($('#c-hrv'),o.recovery.hrv,{color:css('--s1'),fmtV:v=>v+' ms'});
-  spark($('#c-sleep'),o.recovery.sleep_hours,{color:css('--s1'),fmtV:v=>v.toFixed(1)+' h'});
+  const [a,b]=await Promise.allSettled([fetch('dashboard.json',{cache:'no-store'}).then(r=>r.json()),fetch('gators.json',{cache:'no-store'}).then(r=>r.ok?r.json():null)]);
+  if(a.status!=='fulfilled')throw new Error('dashboard data missing');
+  O=a.value;G=b.status==='fulfilled'?b.value:null;
+  $('#tabs').innerHTML=TABS.map(([id,ic,lab])=>`<button class="tab" role="tab" data-id="${id}">${ic} ${lab}</button>`).join('');
+  $$('.tab').forEach(t=>t.addEventListener('click',()=>{location.hash=t.dataset.id}));
+  if(O.demo)$('#hdr-sub').innerHTML+='<span class="demo">DEMO</span>';
+  $('#foot').innerHTML=`Updated ${new Date(O.generated_at).toLocaleString('en-US',{dateStyle:'medium',timeStyle:'short'})} · data from Garmin Connect`;
+  window.addEventListener('hashchange',()=>show(location.hash.slice(1)));
+  show(location.hash.slice(1)||'home');setInterval(tick,1000);
+  // refresh data every 5 minutes if the app stays open
+  setInterval(async()=>{try{const n=await (await fetch('dashboard.json',{cache:'no-store'})).json();if(n.generated_at!==O.generated_at){O=n;show(location.hash.slice(1)||'home')}}catch(e){}},3e5);
 }
-main().catch(e=>{ $('#app').innerHTML=`<p>Couldn't load dashboard data: ${esc(e.message)}</p>`; });
+main().catch(e=>{$('#app').innerHTML=`<div class="card">Couldn't load dashboard data: ${esc(e.message)}</div>`});
 </script>
 </body>
 </html>

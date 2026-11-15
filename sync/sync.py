@@ -99,7 +99,8 @@ def date_chunks(start: date, end: date, n=CHUNK):
 def find_by_date(obj, keys, out, current_date=None):
     """Walk any JSON shape; collect {calendarDate: value} for the first matching key found."""
     if isinstance(obj, dict):
-        d = obj.get("calendarDate") or obj.get("date") or current_date
+        d = (obj.get("calendarDate") or obj.get("date") or obj.get("summaryDate")
+             or obj.get("calendarDateString") or current_date)
         for k in keys:
             v = obj
             for part in k.split("."):  # dotted paths like "sleepScores.overall.value"
@@ -115,13 +116,42 @@ def find_by_date(obj, keys, out, current_date=None):
     return out
 
 
+def shape(obj, depth=0):
+    """Key structure only (no values) - used to debug field names without storing data."""
+    if depth > 4:
+        return "..."
+    if isinstance(obj, dict):
+        return {k: shape(v, depth + 1) for k, v in list(obj.items())[:40]}
+    if isinstance(obj, list):
+        return [shape(obj[0], depth + 1)] if obj else []
+    return type(obj).__name__
+
+
+def fetch_resting_hr_daily(g: Garmin, have: dict, today: date, days=60, cap=20) -> dict:
+    """Fallback: per-day heart-rate endpoint, filling in missing recent days (max `cap` calls per run)."""
+    out, calls = {}, 0
+    for i in range(days):
+        d = (today - timedelta(days=i)).isoformat()
+        if d in have or calls >= cap:
+            continue
+        calls += 1
+        try:
+            r = g.get("/wellness-service/wellness/dailyHeartRate", {"date": d})
+            v = (r or {}).get("restingHeartRate") if isinstance(r, dict) else None
+            if v:
+                out[d] = v
+        except Exception:
+            break
+    return out
+
+
 def fetch_wellness(g: Garmin, start: date, end: date) -> dict:
     series = {"resting_hr": {}, "hrv": {}, "sleep_hours": {}, "sleep_score": {}, "vo2max": {}, "body_battery": {}}
-    errors = []
+    errors, shapes = [], {}
     for s, e in date_chunks(start, end):
         jobs = [
             ("resting_hr", "/usersummary-service/v2/dailysummaries", {"startDate": s, "endDate": e},
-             ["restingHeartRate", "restingHeartRateValue"]),
+             ["restingHeartRate", "restingHeartRateValue", "restingHR", "currentDayRestingHeartRate"]),
             ("hrv", f"/hrv-service/hrv/daily/{s}/{e}", None, ["lastNightAvg", "lastNight"]),
             ("sleep_hours", "/sleep-service/sleep/dailySleepSummariesByDate", {"startDate": s, "endDate": e},
              ["sleepTimeSeconds", "totalSleepSeconds"]),
@@ -137,13 +167,14 @@ def fetch_wellness(g: Garmin, start: date, end: date) -> dict:
                 if ck not in cache:
                     p = {k: (v.isoformat() if isinstance(v, date) else v) for k, v in (params or {}).items()}
                     cache[ck] = g.get(path, p or None)
+                shapes.setdefault(key, shape(cache[ck]))
                 vals = find_by_date(cache[ck], fields, {})
                 if key == "sleep_hours":
                     vals = {d: round(v / 3600, 2) for d, v in vals.items() if v}
                 series[key].update(vals)
             except Exception as ex:  # one bad endpoint shouldn't stop the sync
                 errors.append(f"{key}: {ex}")
-    return {"series": series, "errors": errors[:10]}
+    return {"series": series, "errors": errors[:10], "shapes": shapes}
 
 
 def main():
@@ -167,8 +198,12 @@ def main():
     new = fetch_wellness(g, wstart, today)
     for k, v in new["series"].items():
         old["series"].setdefault(k, {}).update(v)
+    old.pop("demo", None)
     old["errors"] = new["errors"]
+    rhr = old["series"].setdefault("resting_hr", {})
+    rhr.update(fetch_resting_hr_daily(g, rhr, today))
     save("wellness.json", old)
+    save("debug_shapes.json", new["shapes"])  # field names only, no values
 
     print(f"Synced {len(fresh)} activities from {since} (total stored: {len(acts)}).")
     if new["errors"]:

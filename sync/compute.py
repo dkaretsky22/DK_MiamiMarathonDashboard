@@ -153,10 +153,12 @@ def build(today: date | None = None):
                 "te": a.get("aerobicTrainingEffect"), "label": a.get("trainingEffectLabel")}
 
     # aerobic efficiency on easy runs: metres/min per heartbeat (higher = fitter)
+    hard_days = {d["date"] for d in plan["days"] if d["run"] and d["run"]["type"] in ("workout", "race")}
     eff = []
     for a in runs:
         p, hr = pace_s(a), a.get("averageHR")
-        if p and hr and miles(a) >= 2.5 and p >= 9.25 * 60 and a_date(a) >= (today - timedelta(days=150)).isoformat():
+        if (p and hr and miles(a) >= 2.5 and p >= 520 and a_date(a) not in hard_days
+                and a_date(a) >= (today - timedelta(days=150)).isoformat()):
             eff.append({"date": a_date(a), "ef": round((M_PER_MI / p * 60) / hr, 3), "pace": fmt_time(p), "hr": hr})
     for i, e in enumerate(eff):
         win = [x["ef"] for x in eff[max(0, i - 4): i + 1]]
@@ -258,6 +260,81 @@ def build(today: date | None = None):
 
     today_s = today.isoformat()
     tomorrow_s = (today + timedelta(days=1)).isoformat()
+    peak_long = max((d["run"]["miles"] for d in plan["days"] if d["run"] and d["run"]["type"] == "long"), default=20)
+    plan_total = round(sum(w["planned_miles"] for w in plan["weeks"]), 1)
+    block_miles = sum(miles(a) for a in block_runs)
+
+    # ---------- streak: consecutive planned runs completed (most recent first) ----------
+    streak = 0
+    for d in sorted([x for x in days_out if x["run"] and x["date"] < today_s], key=lambda x: x["date"], reverse=True):
+        if d["status"] == "done":
+            streak += 1
+        else:
+            break
+    if (dt := next((x for x in days_out if x["date"] == today_s), None)) and dt["run"] and dt["status"] == "done":
+        streak += 1
+
+    # ---------- personal records (all synced history) ----------
+    wk_tot: dict[str, float] = {}
+    for a in runs:
+        d = date.fromisoformat(a_date(a))
+        k = (d - timedelta(days=d.weekday())).isoformat()
+        wk_tot[k] = wk_tot.get(k, 0) + miles(a)
+    longest_all = max(runs, key=miles, default=None)
+    fast = [a for a in runs if miles(a) >= 3 and pace_s(a)]
+    fastest = min(fast, key=pace_s, default=None)
+    big_wk = max(wk_tot.items(), key=lambda kv: kv[1], default=None)
+    prs = []
+    if longest_all:
+        prs.append({"label": "Longest run", "value": f"{miles(longest_all):.1f} mi", "date": a_date(longest_all)})
+    if fastest:
+        prs.append({"label": "Fastest pace (3+ mi)", "value": f"{fmt_time(pace_s(fastest))}/mi",
+                    "date": a_date(fastest), "note": f"{miles(fastest):.1f} mi"})
+    if big_wk:
+        prs.append({"label": "Biggest week", "value": f"{big_wk[1]:.1f} mi", "date": big_wk[0]})
+
+    # ---------- badges ----------
+    def first_run(pred):
+        return next((a_date(a) for a in block_runs if pred(a)), None)
+
+    perfect = None
+    for w in weeks:
+        if not w["is_past"]:
+            continue
+        wd = [x for x in days_out if x["week"] == w["week"] and x["run"]]
+        if wd and all(x["status"] == "done" for x in wd):
+            perfect = w["end"]
+            break
+    iron = next((w["end"] for w in weeks if w["lifts"] >= 5), None)
+
+    def mile_mark(n):
+        tot = 0
+        for a in block_runs:
+            tot += miles(a)
+            if tot >= n:
+                return a_date(a)
+        return None
+
+    B = [
+        ("👟", "Back in Business", "First run of the Miami block", first_run(lambda a: True), None),
+        ("🔟", "Double Digits", "A 10+ mile run", first_run(lambda a: miles(a) >= 9.9), 10),
+        ("🌗", "Half-Way Hero", "A 13.1+ mile run", first_run(lambda a: miles(a) >= 13.05), 13.1),
+        ("🍬", "Sweet 16", "A 16+ mile run", first_run(lambda a: miles(a) >= 15.9), 16),
+        ("🐊", "Chomp 20", "The 20-mile peak run", first_run(lambda a: miles(a) >= 19.8), 20),
+        ("💯", "Century", "100 block miles", mile_mark(100), None),
+        ("🔥", "Double Century", "200 block miles", mile_mark(200), None),
+        ("🌴", "Halfway to Miami", f"{plan_total / 2:.0f} block miles", mile_mark(plan_total / 2), None),
+        ("✅", "Perfect Week", "Every planned run in a week", perfect, None),
+        ("🏋️", "Iron Gator", "5 lifts in one week", iron, None),
+        ("⚡", "Race-Pace Ready", "6+ miles averaging 8:35 or faster",
+         first_run(lambda a: miles(a) >= 6 and (pace_s(a) or 999) <= 515), None),
+        ("🏁", "Gainesville Half", "Finish the Jan 16 tune-up",
+         first_run(lambda a: a_date(a) == goal["tuneup"]["date"] and miles(a) >= 13), None),
+        ("🏆", "Miami Marathoner", "Finish the Miami Marathon",
+         first_run(lambda a: a_date(a) == goal["race_date"] and miles(a) >= 26), None),
+    ]
+    badges = [{"icon": i, "name": n, "desc": d, "earned": e} for i, n, d, e, _ in B]
+
     out = {
         "generated_at": datetime.now(TZ).isoformat(timespec="minutes"),
         "today": today_s,
@@ -280,7 +357,14 @@ def build(today: date | None = None):
         "efficiency": eff,
         "recovery": {"resting_hr": last("resting_hr"), "hrv": last("hrv"), "sleep_hours": last("sleep_hours"),
                      "sleep_score": last("sleep_score"), "flags": flags},
-        "recent_runs": [run_row(a) for a in runs[::-1][:12]],
+        "recent_runs": [run_row(a) for a in runs[::-1][:40]],
+        "peak_long": peak_long,
+        "plan_total": plan_total,
+        "streak": streak,
+        "prs": prs,
+        "badges": badges,
+        "week_ahead": [x for x in days_out if today_s <= x["date"] <= (today + timedelta(days=6)).isoformat()],
+        "road": {"miles": round(block_miles, 1), "total": plan_total},
         "last_activity": run_row(runs[-1]) if runs else None,
         "sync_warnings": well.get("errors", []),
         "demo": bool(well.get("demo")),

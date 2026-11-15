@@ -20,11 +20,12 @@ GOAL = {
 }
 
 PACES = {
-    "easy": "10:00–10:45",
-    "recovery": "10:30+",
+    "easy": "9:00–9:45",
+    "recovery": "9:45+",
+    "long": "9:00–9:30",
     "mp": "8:35",
-    "tempo": "7:55–8:05",
-    "interval": "7:30–7:40",
+    "tempo": "7:40–7:55",
+    "interval": "7:15–7:25",
 }
 
 # Lift labels
@@ -43,7 +44,7 @@ def rec(m):
     return run("recovery", m, f"Recovery {m} mi", f"Very easy, {PACES['recovery']}/mi. Shake out the long run.")
 
 
-def long_(m, details="Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."):
+def long_(m, details=f"Easy, steady effort ({PACES['long']}/mi). Practice fueling (gel every ~45 min once over 10 mi)."):
     return run("long", m, f"Long run {m} mi", details)
 
 
@@ -119,7 +120,7 @@ WEEKS = [
         2: (None, bike(40), lift(SA), ""),
         3: (easy(5), None, lift(BB), ""),
         4: (None, None, None, "Christmas — rest (optional easy bike)."),
-        5: (long_(15), None, None, ""),
+        5: (long_(16), None, None, ""),
         6: (rec(3), None, lift(CTS), ""),
     }),
     ("Peak", "New York", {
@@ -128,7 +129,7 @@ WEEKS = [
         2: (None, bike(40), lift(SA), ""),
         3: (easy(5), None, lift(BB), ""),
         4: (None, None, None, "New Year's Day — rest before the long run."),
-        5: (long_(18, f"Peak long run. Easy; gel every 45 min; last 2 mi can drift toward {PACES['mp']}."), None, None, "Biggest run of the block."),
+        5: (long_(20, f"Peak long run. Easy ({PACES['long']}/mi); gel every 45 min; last 2 mi can drift toward {PACES['mp']}."), None, None, "Biggest run of the block."),
         6: (rec(3), None, lift(CTS), ""),
     }),
     ("Sharpen", "New York → Gainesville", {

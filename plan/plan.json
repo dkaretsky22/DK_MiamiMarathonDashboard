@@ -15,11 +15,12 @@
     }
   },
   "paces": {
-    "easy": "10:00\u201310:45",
-    "recovery": "10:30+",
+    "easy": "9:00\u20139:45",
+    "recovery": "9:45+",
+    "long": "9:00\u20139:30",
     "mp": "8:35",
-    "tempo": "7:55\u20138:05",
-    "interval": "7:30\u20137:40"
+    "tempo": "7:40\u20137:55",
+    "interval": "7:15\u20137:25"
   },
   "weeks": [
     {
@@ -68,7 +69,7 @@
       "location": "New York",
       "start": "2026-12-21",
       "end": "2026-12-27",
-      "planned_miles": 35.0
+      "planned_miles": 36.0
     },
     {
       "week": 7,
@@ -76,7 +77,7 @@
       "location": "New York",
       "start": "2026-12-28",
       "end": "2027-01-03",
-      "planned_miles": 38.0
+      "planned_miles": 40.0
     },
     {
       "week": 8,
@@ -120,7 +121,7 @@
         "type": "easy",
         "miles": 3,
         "title": "Easy 3 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -154,7 +155,7 @@
         "type": "easy",
         "miles": 3,
         "title": "Easy 3 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -202,7 +203,7 @@
         "type": "easy",
         "miles": 3,
         "title": "Easy 3 mi + 4 strides",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -228,7 +229,7 @@
         "type": "easy",
         "miles": 3,
         "title": "Easy 3 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -279,7 +280,7 @@
         "type": "easy",
         "miles": 4,
         "title": "Easy 4 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": null,
@@ -293,7 +294,7 @@
         "type": "long",
         "miles": 8,
         "title": "Long run 8 mi",
-        "details": "Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."
+        "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi)."
       },
       "cross": null,
       "lift": null,
@@ -307,7 +308,7 @@
         "type": "recovery",
         "miles": 3,
         "title": "Recovery 3 mi",
-        "details": "Very easy, 10:30+/mi. Shake out the long run."
+        "details": "Very easy, 9:45+/mi. Shake out the long run."
       },
       "cross": null,
       "lift": {
@@ -336,7 +337,7 @@
         "type": "easy",
         "miles": 4,
         "title": "Easy 4 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -353,7 +354,7 @@
         "type": "workout",
         "miles": 6,
         "title": "Tempo: 3 \u00d7 1 mi",
-        "details": "1.5 mi warm-up \u00b7 3 \u00d7 1 mi @ 7:55\u20138:05 w/ 90 sec jog \u00b7 1.5 mi cool-down"
+        "details": "1.5 mi warm-up \u00b7 3 \u00d7 1 mi @ 7:40\u20137:55 w/ 90 sec jog \u00b7 1.5 mi cool-down"
       },
       "cross": null,
       "lift": {
@@ -387,7 +388,7 @@
         "type": "easy",
         "miles": 4,
         "title": "Easy 4 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -404,7 +405,7 @@
         "type": "long",
         "miles": 10,
         "title": "Long run 10 mi",
-        "details": "Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."
+        "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi)."
       },
       "cross": null,
       "lift": null,
@@ -418,7 +419,7 @@
         "type": "recovery",
         "miles": 3,
         "title": "Recovery 3 mi",
-        "details": "Very easy, 10:30+/mi. Shake out the long run."
+        "details": "Very easy, 9:45+/mi. Shake out the long run."
       },
       "cross": null,
       "lift": {
@@ -444,7 +445,7 @@
         "type": "easy",
         "miles": 4,
         "title": "Easy 4 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -461,7 +462,7 @@
         "type": "workout",
         "miles": 6,
         "title": "Tempo: 2 \u00d7 2 mi",
-        "details": "1 mi warm-up \u00b7 2 \u00d7 2 mi @ 7:55\u20138:05 w/ 2 min jog \u00b7 1 mi cool-down"
+        "details": "1 mi warm-up \u00b7 2 \u00d7 2 mi @ 7:40\u20137:55 w/ 2 min jog \u00b7 1 mi cool-down"
       },
       "cross": null,
       "lift": {
@@ -495,7 +496,7 @@
         "type": "easy",
         "miles": 5,
         "title": "Easy 5 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -526,7 +527,7 @@
         "type": "recovery",
         "miles": 3,
         "title": "Recovery 3 mi",
-        "details": "Very easy, 10:30+/mi. Shake out the long run."
+        "details": "Very easy, 9:45+/mi. Shake out the long run."
       },
       "cross": null,
       "lift": {
@@ -578,7 +579,7 @@
         "type": "easy",
         "miles": 4,
         "title": "Easy 4 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -595,7 +596,7 @@
         "type": "easy",
         "miles": 4,
         "title": "Easy 4 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -629,7 +630,7 @@
         "type": "long",
         "miles": 11,
         "title": "Long run 11 mi",
-        "details": "Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."
+        "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi)."
       },
       "cross": null,
       "lift": null,
@@ -643,7 +644,7 @@
         "type": "recovery",
         "miles": 3,
         "title": "Recovery 3 mi",
-        "details": "Very easy, 10:30+/mi. Shake out the long run."
+        "details": "Very easy, 9:45+/mi. Shake out the long run."
       },
       "cross": null,
       "lift": {
@@ -660,7 +661,7 @@
         "type": "easy",
         "miles": 5,
         "title": "Easy 5 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -711,7 +712,7 @@
         "type": "easy",
         "miles": 5,
         "title": "Easy 5 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -735,9 +736,9 @@
       "location": "New York",
       "run": {
         "type": "long",
-        "miles": 15,
-        "title": "Long run 15 mi",
-        "details": "Easy, steady effort. Practice fueling (gel every ~45 min once over 10 mi)."
+        "miles": 16,
+        "title": "Long run 16 mi",
+        "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi)."
       },
       "cross": null,
       "lift": null,
@@ -751,7 +752,7 @@
         "type": "recovery",
         "miles": 3,
         "title": "Recovery 3 mi",
-        "details": "Very easy, 10:30+/mi. Shake out the long run."
+        "details": "Very easy, 9:45+/mi. Shake out the long run."
       },
       "cross": null,
       "lift": {
@@ -768,7 +769,7 @@
         "type": "easy",
         "miles": 4,
         "title": "Easy 4 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -785,7 +786,7 @@
         "type": "workout",
         "miles": 8,
         "title": "Tempo: 3 \u00d7 1.5 mi",
-        "details": "1.5 mi warm-up \u00b7 3 \u00d7 1.5 mi @ 7:55\u20138:05 w/ 2 min jog \u00b7 1 mi cool-down"
+        "details": "1.5 mi warm-up \u00b7 3 \u00d7 1.5 mi @ 7:40\u20137:55 w/ 2 min jog \u00b7 1 mi cool-down"
       },
       "cross": null,
       "lift": {
@@ -819,7 +820,7 @@
         "type": "easy",
         "miles": 5,
         "title": "Easy 5 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -843,9 +844,9 @@
       "location": "New York",
       "run": {
         "type": "long",
-        "miles": 18,
-        "title": "Long run 18 mi",
-        "details": "Peak long run. Easy; gel every 45 min; last 2 mi can drift toward 8:35."
+        "miles": 20,
+        "title": "Long run 20 mi",
+        "details": "Peak long run. Easy (9:00\u20139:30/mi); gel every 45 min; last 2 mi can drift toward 8:35."
       },
       "cross": null,
       "lift": null,
@@ -859,7 +860,7 @@
         "type": "recovery",
         "miles": 3,
         "title": "Recovery 3 mi",
-        "details": "Very easy, 10:30+/mi. Shake out the long run."
+        "details": "Very easy, 9:45+/mi. Shake out the long run."
       },
       "cross": null,
       "lift": {
@@ -876,7 +877,7 @@
         "type": "easy",
         "miles": 4,
         "title": "Easy 4 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -893,7 +894,7 @@
         "type": "workout",
         "miles": 7,
         "title": "Tempo: 2 \u00d7 2.5 mi",
-        "details": "1 mi warm-up \u00b7 2 \u00d7 2.5 mi @ 7:55\u20138:05 w/ 2 min jog \u00b7 1 mi cool-down"
+        "details": "1 mi warm-up \u00b7 2 \u00d7 2.5 mi @ 7:40\u20137:55 w/ 2 min jog \u00b7 1 mi cool-down"
       },
       "cross": null,
       "lift": {
@@ -910,7 +911,7 @@
         "type": "easy",
         "miles": 5,
         "title": "Easy 5 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -927,7 +928,7 @@
         "type": "easy",
         "miles": 3,
         "title": "Easy 3 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -979,7 +980,7 @@
         "type": "easy",
         "miles": 4,
         "title": "Easy 4 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -1030,7 +1031,7 @@
         "type": "easy",
         "miles": 4,
         "title": "Easy 4 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -1087,7 +1088,7 @@
         "type": "recovery",
         "miles": 3,
         "title": "Recovery 3 mi",
-        "details": "Very easy, 10:30+/mi. Shake out the long run."
+        "details": "Very easy, 9:45+/mi. Shake out the long run."
       },
       "cross": null,
       "lift": {
@@ -1104,7 +1105,7 @@
         "type": "workout",
         "miles": 6,
         "title": "Intervals: 4 \u00d7 1 mi",
-        "details": "1 mi warm-up \u00b7 4 \u00d7 1 mi @ 7:55\u20138:05 w/ 90 sec jog \u00b7 1 mi cool-down"
+        "details": "1 mi warm-up \u00b7 4 \u00d7 1 mi @ 7:40\u20137:55 w/ 90 sec jog \u00b7 1 mi cool-down"
       },
       "cross": null,
       "lift": {
@@ -1138,7 +1139,7 @@
         "type": "easy",
         "miles": 5,
         "title": "Easy 5 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -1169,7 +1170,7 @@
         "type": "easy",
         "miles": 3,
         "title": "Easy 3 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -1195,7 +1196,7 @@
         "type": "easy",
         "miles": 4,
         "title": "Easy 4 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -1226,7 +1227,7 @@
         "type": "easy",
         "miles": 3,
         "title": "Easy 3 mi",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": {
@@ -1243,7 +1244,7 @@
         "type": "easy",
         "miles": 3,
         "title": "Easy 3 mi + 4 strides",
-        "details": "Conversational, 10:00\u201310:45/mi."
+        "details": "Conversational, 9:00\u20139:45/mi."
       },
       "cross": null,
       "lift": null,
