@@ -75,7 +75,7 @@ WEEKS = [
         2: (easy(3), None, lift(SA, "~70% volume"), ""),
         3: (None, incline(30), lift(BB, "~70% volume"), "Full rest instead if you feel run-down."),
         4: (long_(6, f"Easy the whole way ({PACES['long']}/mi). No lifting."), None, None, ""),
-        5: (easy(3, "4 strides"), None, lift(CTS, "~70% volume"), "Strides only if you feel good."),
+        5: (None, None, None, "🐊 Gameday tailgate — full rest day. Hydrate well; yesterday was your long run."),
         6: (None, None, None, "Travel to NY — full rest."),
     }),
     ("Rebuild", "New York (Thanksgiving)", {
@@ -116,7 +116,7 @@ WEEKS = [
     }),
     ("Build 3", "New York", {
         0: (easy(5), None, lift(CB), ""),
-        1: (wo(7, "MP run: 5 mi @ 8:35", f"1 mi warm-up · 5 mi @ {PACES['mp']} · 1 mi cool-down"), None, lift(LEGS), "Treadmill at 1% if icy."),
+        1: (wo(7, "MP run: 5 mi @ 8:35", f"1 mi warm-up · 5 mi @ {PACES['mp']} · 1 mi cool-down"), None, lift(LEGS), "If icy, run midday or swap with Thursday's easy run."),
         2: (None, bike(40), lift(SA), ""),
         3: (easy(5), None, lift(BB), ""),
         4: (None, None, None, "Christmas — rest (optional easy bike)."),
@@ -171,6 +171,42 @@ WEEKS = [
 ]
 
 START = date(2026, 11, 16)
+
+# ---------- at-home strength (NY breaks: no gym) ----------
+HOME_DATES = [(date(2026, 11, 22), date(2026, 11, 29)), (date(2026, 12, 15), date(2027, 1, 7))]
+HOME_NOTE = "No equipment needed — a backpack loaded with books adds weight; a resistance band makes it even better."
+HOME = {
+    CB: ["Push-ups — 4 × max (stop 2 short of failure)", "Feet-elevated push-ups — 3 × 10–15",
+         "Table/inverted rows (under a sturdy table) — 4 × 8–12", "Backpack bent-over rows — 4 × 12",
+         "Y-T-W raises lying face-down — 3 × 8 each", "Plank — 3 × 45 sec"],
+    SA: ["Pike push-ups — 4 × 8–12", "Backpack overhead press — 3 × 12", "Lateral raises (water jugs or band) — 3 × 15",
+         "Backpack/band curls — 4 × 12–15", "Chair dips — 3 × 12–15", "Diamond push-ups — 3 × 10–12"],
+    LEGS: ["Bulgarian split squats (rear foot on couch) — 3 × 10/leg", "Single-leg Romanian deadlift (backpack) — 3 × 10/leg",
+           "Step-ups onto a stair or chair — 3 × 12/leg", "Single-leg glute bridges — 3 × 12/leg",
+           "Single-leg calf raises on a step — 3 × 15–20", "Wall sit — 3 × 45 sec", "Side plank — 2 × 30 sec/side"],
+    BB: ["Table/inverted rows — 4 × 8–12", "Backpack single-arm rows — 3 × 12/arm", "Towel or door-frame rows — 3 × 12",
+         "Backpack/band curls — 4 × 12", "Hammer curls (water jugs) — 3 × 12", "Supermans — 3 × 12", "Dead bugs — 3 × 10/side"],
+    CTS: ["Push-ups — 4 × max (stop 2 short)", "Pike push-ups — 3 × 10", "Close-grip push-ups — 3 × 12",
+          "Chair dips — 3 × 15", "Lateral raises (jugs or band) — 3 × 15", "Plank shoulder taps — 3 × 20"],
+}
+
+
+def at_home(d: date) -> bool:
+    return any(a <= d <= b for a, b in HOME_DATES)
+
+
+def homeify(day: date, cross, lift_):
+    if not at_home(day):
+        return cross, lift_
+    if lift_:
+        light = lift_["details"]
+        lift_ = {"focus": lift_["focus"], "home": True, "exercises": HOME[lift_["focus"]],
+                 "details": ("At home · " + (light + " · " if light else "") + "~40 min").strip()}
+    if cross:
+        cross = {"type": "walk", "minutes": cross["minutes"], "title": f"Brisk walk {cross['minutes']} min",
+                 "details": "Outdoor brisk walk (hills if you have them). Too icy? Stair climbing or an easy home cardio circuit."}
+    return cross, lift_
+
 
 # ---------- pace guide: structured segments for every run ----------
 FEEL = {
@@ -245,6 +281,7 @@ def build():
             run_, cross, lift_, note = sched.get(d, (None, None, None, ""))
             run_ = add_steps(run_)
             day = wk_start + timedelta(days=d)
+            cross, lift_ = homeify(day, cross, lift_)
             miles = run_["miles"] if run_ else 0
             wk_miles += miles
             days.append({

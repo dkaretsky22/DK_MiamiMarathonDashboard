@@ -187,7 +187,7 @@ const dn=iso=>D(iso).toLocaleDateString('en-US',{weekday:'short'});
 const md=iso=>D(iso).toLocaleDateString('en-US',{month:'short',day:'numeric'});
 const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
 const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
-const ICON={easy:'🏃',recovery:'🏃',long:'🛣️',workout:'⚡',race:'🏁',shakeout:'🏃',bike:'🚴',incline_walk:'🚶'};
+const ICON={easy:'🏃',recovery:'🏃',long:'🛣️',workout:'⚡',race:'🏁',shakeout:'🏃',bike:'🚴',incline_walk:'🚶',walk:'🚶'};
 const ST={done:['✓','Done'],missed:['✕','Missed'],partial:['◐','Partial'],skipped:['–','Skipped']};
 const pill=st=>ST[st]?`<span class="pill ${st}">${ST[st][0]} ${ST[st][1]}</span>`:'';
 const RACE=new Date('2027-01-31T06:00:00-05:00');
@@ -264,8 +264,11 @@ function items(d){
   const o=[];
   if(d.run)o.push(`<details class="pg"><summary><div class="item"><div class="ic">${ICON[d.run.type]||'🏃'}</div><div><b>${esc(d.run.title)}${d.date<=O.today?pill(d.status):''}</b><span>${esc(d.run.details)}</span>${d.actual.run_miles?`<span> · Logged <b style="display:inline">${d.actual.run_miles} mi</b></span>`:''}<br><span class="hint"><span class="arr">▸</span> Pace guide</span></div></div></summary>${guide(d.run)}</details>`);
   if(d.cross)o.push(`<div class="item"><div class="ic">${ICON[d.cross.type]}</div><div><b>${esc(d.cross.title)}${d.actual.cross?'<span class="pill done">✓ Logged</span>':''}</b><span>${esc(d.cross.details)}</span></div></div>`);
-  if(d.lift)o.push(`<div class="item"><div class="ic">🏋️</div><div><b>Lift · ${esc(d.lift.focus)}${d.actual.lift?'<span class="pill done">✓ Logged</span>':''}</b>${d.lift.details?`<span>${esc(d.lift.details)}</span>`:''}</div></div>`);
-  if(!o.length)o.push('<div class="item"><div class="ic">😴</div><div><b>Rest day</b><span>Recover — sleep, hydrate, eat well.</span></div></div>');
+  if(d.lift&&d.lift.exercises)o.push(`<details class="pg"><summary><div class="item"><div class="ic">🏠</div><div><b>Home lift · ${esc(d.lift.focus)}${d.actual.lift?'<span class="pill done">✓ Logged</span>':''}</b><span>${esc(d.lift.details)}</span><br><span class="hint"><span class="arr">▸</span> Workout</span></div></div></summary>
+    <div class="guide"><h3>At-home workout · ~40 min</h3><ol style="margin:6px 0 0;padding-left:20px">${d.lift.exercises.map(e=>`<li style="margin:5px 0">${esc(e)}</li>`).join('')}</ol>
+    <p class="sub" style="margin:10px 0 0">Rest 60–90 sec between sets. Use a backpack loaded with books for extra weight; a resistance band helps for rows, curls and raises.</p></div></details>`);
+  else if(d.lift)o.push(`<div class="item"><div class="ic">🏋️</div><div><b>Lift · ${esc(d.lift.focus)}${d.actual.lift?'<span class="pill done">✓ Logged</span>':''}</b>${d.lift.details?`<span>${esc(d.lift.details)}</span>`:''}</div></div>`);
+  if(!o.length)o.push(`<div class="item"><div class="ic">${/tailgate/i.test(d.note||'')?'🐊':'😴'}</div><div><b>${/tailgate/i.test(d.note||'')?'Gameday — rest day':'Rest day'}</b><span>Recover — sleep, hydrate, eat well.</span></div></div>`);
   if(d.note)o.push(`<div class="item"><div class="ic">📝</div><div><span>${esc(d.note)}</span></div></div>`);
   return o.join('');
 }
