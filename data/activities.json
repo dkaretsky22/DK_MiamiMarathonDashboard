@@ -4596,5 +4596,29 @@
   "startTimeLocal": "2026-11-12 17:56:35",
   "trainingEffectLabel": "SPEED",
   "type": "basketball"
+ },
+ {
+  "activityId": 25099939103,
+  "activityName": "Gainesville Running",
+  "activityTrainingLoad": 61.16481018066406,
+  "aerobicTrainingEffect": 2.799999952316284,
+  "anaerobicTrainingEffect": 0.0,
+  "averageHR": 149.0,
+  "averageRunningCadenceInStepsPerMinute": 166.078125,
+  "averageSpeed": 2.8889999389648438,
+  "avgStrideLength": 104.20999755859376,
+  "calories": 343.0,
+  "distance": 4833.3701171875,
+  "duration": 1673.04296875,
+  "elapsedDuration": 1673.04296875,
+  "elevationGain": 15.690986633300781,
+  "lapCount": 4,
+  "maxHR": 164.0,
+  "maxSpeed": 3.434000015258789,
+  "movingDuration": 1671.4559936523438,
+  "parentType": 17,
+  "startTimeLocal": "2026-11-16 12:38:11",
+  "trainingEffectLabel": "AEROBIC_BASE",
+  "type": "running"
  }
 ]

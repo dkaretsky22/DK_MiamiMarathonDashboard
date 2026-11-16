@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T23:33+00:00",
+ "updated": "2026-11-16T18:11+00:00",
  "team": {
   "name": "Florida Gators",
   "record": "4-0",
@@ -1100,6 +1100,20 @@
  ],
  "news": [
   {
+   "headline": "Ranking men's college basketball All-American, player of the year candidates",
+   "description": "It's a wide-open race to crown the best players in the sport, led by Jeremy Fears Jr. Plus, under-the-radar names to know.",
+   "published": "2026-11-16T13:07:39Z",
+   "url": "https://www.espn.com/mens-college-basketball/story/_/id/50492452/ranking-all-american-player-year-candidates",
+   "image": "https://a.espncdn.com/photo/2026/1111/r1744293_1296x729_16-9.jpg"
+  },
+  {
+   "headline": "No. 1 Florida takes on Notre Dame in Las Vegas, Nevada",
+   "description": "Notre Dame Fighting Irish (4-0) vs. Florida Gators (4-0)",
+   "published": "2026-11-16T09:47:51Z",
+   "url": "http://www.espn.com/ncb/preview?gameId=401906773",
+   "image": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401906773.png?templateId=espn.applewatch.awayhome.1"
+  },
+  {
    "headline": "Alex Condon on No. 1 Florida's frontcourt: 'It's like a well-oiled machine'",
    "description": "Condon joins SEC Now and details how the Gators are working to be an intense defense while also describing how his relationships with Thomas Haugh and Rueben Chinyelu translate to success.",
    "published": "2026-11-14T02:27:53Z",
@@ -1168,20 +1182,6 @@
    "published": "2026-11-11T01:38:28Z",
    "url": "https://www.espn.com/video/clip/_/id/50448080/game-highlights",
    "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1111/4a1e1255-a6bc-49cf-92ea-6de9bbd0e955/4a1e1255-a6bc-49cf-92ea-6de9bbd0e955.jpg"
-  },
-  {
-   "headline": "NCAA Bracketology: Predicting the 2027 men's March Madness field",
-   "description": "As Bracketology debuts two new features, we also look at why WAB is rewarding Memphis. Plus, UConn replaces Arizona as a 1-seed.",
-   "published": "2026-11-10T19:23:51Z",
-   "url": "https://www.espn.com/espn/feature/story/_/page/bracketology/ncaa-bracketology-2027-march-madness-men-field-predictions",
-   "image": "https://a.espncdn.com/photo/2026/1110/r1743787_1296x729_16-9.jpg"
-  },
-  {
-   "headline": "Breaking down the men's 2026-27 AP week 1 Top 25 basketball poll",
-   "description": "Stats, records and upcoming games for the Top 25 teams in the men's AP poll. Florida is No. 1.",
-   "published": "2026-11-09T20:18:22Z",
-   "url": "https://www.espn.com/mens-college-basketball/story/_/id/50431758/ap-mens-top-25-poll-reaction-2026-27-week-1",
-   "image": "https://a.espncdn.com/photo/2026/1109/r1743541_1296x729_16-9.jpg"
   }
  ],
  "boxscores": {
@@ -2100,9 +2100,11 @@
      "published": "str",
      "images": [
       {
+       "dataSourceIdentifier": "str",
+       "id": "int",
+       "type": "str",
        "name": "str",
-       "caption": "str",
-       "alt": "str",
+       "credit": "str",
        "height": "int",
        "width": "int",
        "url": "str"
@@ -2116,32 +2118,32 @@
        "guid": "str",
        "description": "str",
        "sportId": "int",
-       "athleteId": "int",
-       "athlete": {
+       "leagueId": "int",
+       "league": {
         "id": "...",
         "description": "...",
+        "abbreviation": "...",
         "links": "..."
        }
       }
      ],
+     "byline": "str",
      "links": {
       "api": {
-       "artwork": {
-        "href": "..."
-       },
        "self": {
         "href": "..."
        }
       },
-      "sportscenter": {
+      "app": {
+       "sportscenter": {
+        "href": "..."
+       }
+      },
+      "mobile": {
        "href": "str"
       },
       "web": {
-       "href": "str",
-       "self": {
-        "href": "...",
-        "dsi": "..."
-       }
+       "href": "str"
       }
      },
      "premium": "bool"
