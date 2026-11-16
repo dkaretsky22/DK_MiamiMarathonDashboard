@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-15T18:45-05:00",
- "today": "2026-11-15",
+ "generated_at": "2026-11-16T05:10-05:00",
+ "today": "2026-11-16",
  "goal": {
   "race": "Miami Marathon",
   "race_date": "2027-01-31",
@@ -26,13 +26,12 @@
   "interval": "7:15\u20137:25"
  },
  "countdown": {
-  "race_days": 77,
-  "half_days": 62,
+  "race_days": 76,
+  "half_days": 61,
   "week": 1,
   "weeks_total": 11
  },
- "today_plan": null,
- "tomorrow_plan": {
+ "today_plan": {
   "date": "2026-11-16",
   "week": 1,
   "location": "Gainesville",
@@ -63,6 +62,30 @@
    "lift": false,
    "cross": false
   },
+  "status": "today"
+ },
+ "tomorrow_plan": {
+  "date": "2026-11-17",
+  "week": 1,
+  "location": "Gainesville",
+  "run": null,
+  "cross": {
+   "type": "bike",
+   "minutes": 30,
+   "title": "Easy bike 30 min",
+   "details": "Conversational / nose-breathing effort."
+  },
+  "lift": {
+   "focus": "Legs",
+   "details": "Light \u2014 ~70% volume"
+  },
+  "note": "",
+  "actual": {
+   "run_miles": 0,
+   "runs": [],
+   "lift": false,
+   "cross": false
+  },
   "status": "planned"
  },
  "current_week": {
@@ -76,7 +99,7 @@
   "long_planned": 6,
   "long_actual": 0,
   "lifts": 0,
-  "is_current": false,
+  "is_current": true,
   "is_past": false,
   "days": [
    {
@@ -110,7 +133,7 @@
      "lift": false,
      "cross": false
     },
-    "status": "planned"
+    "status": "today"
    },
    {
     "date": "2026-11-17",
@@ -269,7 +292,7 @@
    "long_planned": 6,
    "long_actual": 0,
    "lifts": 0,
-   "is_current": false,
+   "is_current": true,
    "is_past": false
   },
   {
@@ -445,7 +468,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-17",
@@ -3456,7 +3479,7 @@
     "fitness_seconds": 12766
    },
    {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "seconds": 12805,
     "fitness_seconds": 12670,
     "source": "Today"
@@ -3466,39 +3489,32 @@
  },
  "efficiency": [
   {
-   "date": "2026-06-18",
-   "ef": 1.049,
-   "pace": "9:25",
-   "hr": 163.0,
-   "ef_avg": 1.049
-  },
-  {
    "date": "2026-06-25",
    "ef": 1.092,
    "pace": "9:13",
    "hr": 160.0,
-   "ef_avg": 1.071
+   "ef_avg": 1.092
   },
   {
    "date": "2026-06-28",
    "ef": 1.12,
    "pace": "8:46",
    "hr": 164.0,
-   "ef_avg": 1.087
+   "ef_avg": 1.106
   },
   {
    "date": "2026-07-02",
    "ef": 1.074,
    "pace": "9:02",
    "hr": 166.0,
-   "ef_avg": 1.084
+   "ef_avg": 1.095
   },
   {
    "date": "2026-07-03",
    "ef": 1.095,
    "pace": "9:01",
    "hr": 163.0,
-   "ef_avg": 1.086
+   "ef_avg": 1.095
   },
   {
    "date": "2026-07-09",
@@ -3833,10 +3849,6 @@
  "recovery": {
   "resting_hr": [
    {
-    "date": "2026-10-17",
-    "v": 45
-   },
-   {
     "date": "2026-10-18",
     "v": 48
    },
@@ -3954,10 +3966,6 @@
    }
   ],
   "hrv": [
-   {
-    "date": "2026-10-17",
-    "v": 68
-   },
    {
     "date": "2026-10-18",
     "v": 62
@@ -4077,10 +4085,6 @@
   ],
   "sleep_hours": [
    {
-    "date": "2026-10-17",
-    "v": 10.02
-   },
-   {
     "date": "2026-10-18",
     "v": 6.68
    },
@@ -4198,10 +4202,6 @@
    }
   ],
   "sleep_score": [
-   {
-    "date": "2026-10-17",
-    "v": 82
-   },
    {
     "date": "2026-10-18",
     "v": 68
@@ -5096,7 +5096,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-17",
@@ -5217,6 +5217,22 @@
    "cross": null,
    "lift": null,
    "note": "\ud83d\udc0a Gameday tailgate \u2014 full rest day. Hydrate well; yesterday was your long run.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-22",
+   "week": 1,
+   "location": "Gainesville",
+   "run": null,
+   "cross": null,
+   "lift": null,
+   "note": "Travel to NY \u2014 full rest.",
    "actual": {
     "run_miles": 0,
     "runs": [],
