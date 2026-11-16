@@ -2,11 +2,11 @@ name: Sync Garmin & update dashboard
 
 on:
   schedule:
-    - cron: "*/15 * * * *"     # every 15 minutes (GitHub may delay runs a few minutes)
+    - cron: "7,22,37,52 * * * *"   # every 15 min, off the busy :00/:15 marks (GitHub runs these best-effort)
   workflow_dispatch:            # "Run workflow" button for an instant refresh
   push:
     branches: [main]
-    paths: ["plan/**", "site/**", "sync/**"]
+    paths: ["plan/**", "site/**", "sync/**", ".github/**"]
 
 permissions:
   contents: write
