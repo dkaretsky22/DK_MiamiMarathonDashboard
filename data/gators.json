@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T10:33+00:00",
+ "updated": "2026-11-17T19:20+00:00",
  "team": {
   "name": "Florida Gators",
   "record": "4-0",
@@ -1100,6 +1100,20 @@
  ],
  "news": [
   {
+   "headline": "How the teams match up in the first round of the Players Era 8",
+   "description": "The storylines, players and matchups we're watching on the first day of the Players Era 8 in Las Vegas.",
+   "published": "2026-11-17T13:38:25Z",
+   "url": "https://www.espn.com/mens-college-basketball/story/_/id/50505898/players-era-8-matchups-analysis",
+   "image": "https://a.espncdn.com/photo/2026/1117/r1746921_1296x729_16-9.jpg"
+  },
+  {
+   "headline": "NCAA Bracketology: Predicting the 2027 men's March Madness field",
+   "description": "Forget the changes on the top line: The bigger story is the Big East having seven teams in the bracket -- with an eighth in the wings.",
+   "published": "2026-11-17T13:19:58Z",
+   "url": "https://www.espn.com/espn/feature/story/_/page/bracketology/ncaa-bracketology-2027-march-madness-men-field-predictions",
+   "image": "https://a.espncdn.com/photo/2026/1117/r1746980_1296x729_16-9.jpg"
+  },
+  {
    "headline": "Breaking down the 2026-27 AP Top 25 men's basketball poll for Week 2",
    "description": "Stats, records and upcoming games for the Top 25 teams in the AP men's basketball poll. Florida, Michigan State, UConn lead.",
    "published": "2026-11-16T19:28:44Z",
@@ -1168,20 +1182,6 @@
    "published": "2026-11-13T09:47:55Z",
    "url": "http://www.espn.com/ncb/preview?gameId=401906772",
    "image": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401906772.png?templateId=espn.applewatch.awayhome.1"
-  },
-  {
-   "headline": "Men's basketball recruiting early signing window storylines to watch",
-   "description": "From potential five-star commits to the race for the No. 1 class, what we're watching in the early signing window.",
-   "published": "2026-11-11T13:03:30Z",
-   "url": "https://www.espn.com/mens-college-basketball/story/_/id/50444077/mens-basketball-recruiting-early-signing-window-storylines",
-   "image": "https://a.espncdn.com/photo/2026/1110/r1744219_1296x729_16-9.jpg"
-  },
-  {
-   "headline": "Thomas Haugh wants to make coming back to No. 1 Florida count",
-   "description": "Another shot at a national title drew Haugh back but says playing for his favorite coach, Todd Golden, is part of what makes wearing Florida's orange and blue special.",
-   "published": "2026-11-11T02:14:46Z",
-   "url": "https://www.espn.com/video/clip/_/id/50448469/thomas-haugh-wants-make-coming-back-no-1-florida-count",
-   "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1110/dm_261110_SEC_NCB_Interview_Florida_Haugh_261110/dm_261110_SEC_NCB_Interview_Florida_Haugh_261110.jpg"
   }
  ],
  "boxscores": {
@@ -2114,10 +2114,17 @@
       {
        "id": "int",
        "type": "str",
+       "uid": "str",
        "guid": "str",
        "description": "str",
        "sportId": "int",
-       "topicId": "int"
+       "leagueId": "int",
+       "league": {
+        "id": "...",
+        "description": "...",
+        "abbreviation": "...",
+        "links": "..."
+       }
       }
      ],
      "byline": "str",

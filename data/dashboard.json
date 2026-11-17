@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T05:33-05:00",
+ "generated_at": "2026-11-17T14:20-05:00",
  "today": "2026-11-17",
  "goal": {
   "race": "Miami Marathon",
@@ -48,12 +48,14 @@
   },
   "note": "",
   "actual": {
-   "run_miles": 0,
-   "runs": [],
+   "run_miles": 4.0,
+   "runs": [
+    25109305203
+   ],
    "lift": false,
    "cross": false
   },
-  "status": "today"
+  "status": "done"
  },
  "tomorrow_plan": {
   "date": "2026-11-18",
@@ -95,9 +97,9 @@
   "start": "2026-11-16",
   "end": "2026-11-22",
   "planned_miles": 12.0,
-  "actual_miles": 3.0,
+  "actual_miles": 7.0,
   "long_planned": 6,
-  "long_actual": 3.0,
+  "long_actual": 4.0,
   "lifts": 1,
   "is_current": true,
   "is_past": false,
@@ -154,12 +156,14 @@
     },
     "note": "",
     "actual": {
-     "run_miles": 0,
-     "runs": [],
+     "run_miles": 4.0,
+     "runs": [
+      25109305203
+     ],
      "lift": false,
      "cross": false
     },
-    "status": "today"
+    "status": "done"
    },
    {
     "date": "2026-11-18",
@@ -290,9 +294,9 @@
    "start": "2026-11-16",
    "end": "2026-11-22",
    "planned_miles": 12.0,
-   "actual_miles": 3.0,
+   "actual_miles": 7.0,
    "long_planned": 6,
-   "long_actual": 3.0,
+   "long_actual": 4.0,
    "lifts": 1,
    "is_current": true,
    "is_past": false
@@ -491,12 +495,14 @@
    },
    "note": "",
    "actual": {
-    "run_miles": 0,
-    "runs": [],
+    "run_miles": 4.0,
+    "runs": [
+     25109305203
+    ],
     "lift": false,
     "cross": false
    },
-   "status": "today"
+   "status": "done"
   },
   {
    "date": "2026-11-18",
@@ -3083,19 +3089,19 @@
   "miles_done": 3.0
  },
  "totals": {
-  "block_miles": 3.0,
-  "block_runs": 1,
-  "longest": 3.0
+  "block_miles": 7.0,
+  "block_runs": 2,
+  "longest": 4.0
  },
  "prediction": {
   "current": {
-   "seconds": 12805,
+   "seconds": 12853,
    "method": "July half, adjusted by Garmin VO2max trend (56 \u2192 57)",
-   "fitness_seconds": 12670,
+   "fitness_seconds": 12718,
    "endurance_penalty": 135,
-   "time": "3:33:25",
-   "pace": "8:08",
-   "gap": -695
+   "time": "3:34:13",
+   "pace": "8:10",
+   "gap": -647
   },
   "history": [
    {
@@ -3490,9 +3496,9 @@
    },
    {
     "date": "2026-11-17",
-    "seconds": 12805,
-    "fitness_seconds": 12670,
-    "source": "Today"
+    "seconds": 12950,
+    "source": "VO2max trend",
+    "fitness_seconds": 12815
    }
   ],
   "goal_seconds": 13500
@@ -3861,6 +3867,13 @@
    "pace": "9:17",
    "hr": 149.0,
    "ef_avg": 1.16
+  },
+  {
+   "date": "2026-11-17",
+   "ef": 1.124,
+   "pace": "9:56",
+   "hr": 144.0,
+   "ef_avg": 1.158
   }
  ],
  "recovery": {
@@ -3980,6 +3993,10 @@
    {
     "date": "2026-11-16",
     "v": 44
+   },
+   {
+    "date": "2026-11-17",
+    "v": 45
    }
   ],
   "hrv": [
@@ -4098,6 +4115,10 @@
    {
     "date": "2026-11-16",
     "v": 74
+   },
+   {
+    "date": "2026-11-17",
+    "v": 65
    }
   ],
   "sleep_hours": [
@@ -4216,6 +4237,10 @@
    {
     "date": "2026-11-16",
     "v": 5.63
+   },
+   {
+    "date": "2026-11-17",
+    "v": 6.47
    }
   ],
   "sleep_score": [
@@ -4334,11 +4359,31 @@
    {
     "date": "2026-11-16",
     "v": 72
+   },
+   {
+    "date": "2026-11-17",
+    "v": 74
    }
   ],
   "flags": []
  },
  "recent_runs": [
+  {
+   "id": 25109305203,
+   "date": "2026-11-17",
+   "name": "Gainesville Running",
+   "type": "running",
+   "miles": 4.0,
+   "time": "39:49",
+   "pace": "9:56",
+   "pace_s": 596,
+   "hr": 144.0,
+   "max_hr": 167.0,
+   "elev_ft": 67,
+   "cadence": 166.75,
+   "te": 2.799999952316284,
+   "label": "AEROBIC_BASE"
+  },
   {
    "id": 25099939103,
    "date": "2026-11-16",
@@ -4962,22 +5007,6 @@
    "cadence": 167.796875,
    "te": 4.300000190734863,
    "label": "TEMPO"
-  },
-  {
-   "id": 24311748748,
-   "date": "2026-09-10",
-   "name": "Gainesville Running",
-   "type": "running",
-   "miles": 4.01,
-   "time": "38:43",
-   "pace": "9:40",
-   "pace_s": 580,
-   "hr": 156.0,
-   "max_hr": 176.0,
-   "elev_ft": 78,
-   "cadence": 168.515625,
-   "te": 3.200000047683716,
-   "label": "AEROBIC_BASE"
   }
  ],
  "peak_long": 20,
@@ -5099,12 +5128,14 @@
    },
    "note": "",
    "actual": {
-    "run_miles": 0,
-    "runs": [],
+    "run_miles": 4.0,
+    "runs": [
+     25109305203
+    ],
     "lift": false,
     "cross": false
    },
-   "status": "today"
+   "status": "done"
   },
   {
    "date": "2026-11-18",
@@ -5269,22 +5300,22 @@
   }
  ],
  "road": {
-  "miles": 3.0,
+  "miles": 7.0,
   "total": 330.2
  },
  "last_activity": {
-  "id": 25099939103,
-  "date": "2026-11-16",
+  "id": 25109305203,
+  "date": "2026-11-17",
   "name": "Gainesville Running",
   "type": "running",
-  "miles": 3.0,
-  "time": "27:53",
-  "pace": "9:17",
-  "pace_s": 557,
-  "hr": 149.0,
-  "max_hr": 164.0,
-  "elev_ft": 51,
-  "cadence": 166.078125,
+  "miles": 4.0,
+  "time": "39:49",
+  "pace": "9:56",
+  "pace_s": 596,
+  "hr": 144.0,
+  "max_hr": 167.0,
+  "elev_ft": 67,
+  "cadence": 166.75,
   "te": 2.799999952316284,
   "label": "AEROBIC_BASE"
  },

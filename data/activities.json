@@ -4640,5 +4640,29 @@
   "startTimeLocal": "2026-11-16 15:50:32",
   "trainingEffectLabel": "AEROBIC_BASE",
   "type": "strength_training"
+ },
+ {
+  "activityId": 25109305203,
+  "activityName": "Gainesville Running",
+  "activityTrainingLoad": 62.758544921875,
+  "aerobicTrainingEffect": 2.799999952316284,
+  "anaerobicTrainingEffect": 0.0,
+  "averageHR": 144.0,
+  "averageRunningCadenceInStepsPerMinute": 166.75,
+  "averageSpeed": 2.6979999542236324,
+  "avgStrideLength": 96.75,
+  "calories": 459.0,
+  "distance": 6445.419921875,
+  "duration": 2388.969970703125,
+  "elapsedDuration": 2418.219970703125,
+  "elevationGain": 20.5322265625,
+  "lapCount": 5,
+  "maxHR": 167.0,
+  "maxSpeed": 3.8440001010894775,
+  "movingDuration": 2386.7420043945312,
+  "parentType": 17,
+  "startTimeLocal": "2026-11-17 09:32:02",
+  "trainingEffectLabel": "AEROBIC_BASE",
+  "type": "running"
  }
 ]
