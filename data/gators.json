@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T18:11+00:00",
+ "updated": "2026-11-17T01:53+00:00",
  "team": {
   "name": "Florida Gators",
   "record": "4-0",
@@ -154,7 +154,7 @@
    "fla_score": null,
    "opp_score": null,
    "fla_rank": 1,
-   "opp_rank": 2,
+   "opp_rank": 5,
    "completed": false,
    "state": "pre",
    "detail": "12/1 - 9:30 PM EST",
@@ -286,7 +286,7 @@
    "fla_score": null,
    "opp_score": null,
    "fla_rank": 1,
-   "opp_rank": 7,
+   "opp_rank": 6,
    "completed": false,
    "state": "pre",
    "detail": "1/2 - 6:00 PM EST",
@@ -330,7 +330,7 @@
    "fla_score": null,
    "opp_score": null,
    "fla_rank": 1,
-   "opp_rank": 22,
+   "opp_rank": 15,
    "completed": false,
    "state": "pre",
    "detail": "1/9 - 11:00 AM EST",
@@ -374,7 +374,7 @@
    "fla_score": null,
    "opp_score": null,
    "fla_rank": 1,
-   "opp_rank": 18,
+   "opp_rank": 16,
    "completed": false,
    "state": "pre",
    "detail": "1/16 - 2:00 PM EST",
@@ -440,7 +440,7 @@
    "fla_score": null,
    "opp_score": null,
    "fla_rank": 1,
-   "opp_rank": 11,
+   "opp_rank": 14,
    "completed": false,
    "state": "pre",
    "detail": "TBD",
@@ -484,7 +484,7 @@
    "fla_score": null,
    "opp_score": null,
    "fla_rank": 1,
-   "opp_rank": 7,
+   "opp_rank": 6,
    "completed": false,
    "state": "pre",
    "detail": "2/6 - 12:00 PM EST",
@@ -550,7 +550,7 @@
    "fla_score": null,
    "opp_score": null,
    "fla_rank": 1,
-   "opp_rank": null,
+   "opp_rank": 25,
    "completed": false,
    "state": "pre",
    "detail": "2/17 - 8:00 PM EST",
@@ -616,7 +616,7 @@
    "fla_score": null,
    "opp_score": null,
    "fla_rank": 1,
-   "opp_rank": 19,
+   "opp_rank": 20,
    "completed": false,
    "state": "pre",
    "detail": "2/27 - 3:00 PM EST",
@@ -660,7 +660,7 @@
    "fla_score": null,
    "opp_score": null,
    "fla_rank": 1,
-   "opp_rank": 24,
+   "opp_rank": null,
    "completed": false,
    "state": "pre",
    "detail": "TBD",
@@ -1100,6 +1100,20 @@
  ],
  "news": [
   {
+   "headline": "Breaking down the 2026-27 AP Top 25 men's basketball poll for Week 2",
+   "description": "Stats, records and upcoming games for the Top 25 teams in the AP men's basketball poll. Florida, Michigan State, UConn lead.",
+   "published": "2026-11-16T19:28:44Z",
+   "url": "https://www.espn.com/mens-college-basketball/story/_/id/50493491/ap-mens-top-25-poll-reaction-2026-27-week-2",
+   "image": "https://a.espncdn.com/photo/2026/1116/r1746705_1296x729_16-9.jpg"
+  },
+  {
+   "headline": "Michigan State up to No. 2 in AP men's poll behind Florida",
+   "description": "Michigan State is up to No. 2 in the AP men's basketball poll behind Florida. UConn, Virginia and Duke, which lost to the Spartans last week, round out the top five.",
+   "published": "2026-11-16T18:54:22Z",
+   "url": "https://www.espn.com/mens-college-basketball/story/_/id/50503030/michigan-state-no-2-ap-men-poll-florida",
+   "image": "https://a.espncdn.com/photo/2026/1116/r1746728_1296x729_16-9.jpg"
+  },
+  {
    "headline": "Ranking men's college basketball All-American, player of the year candidates",
    "description": "It's a wide-open race to crown the best players in the sport, led by Jeremy Fears Jr. Plus, under-the-radar names to know.",
    "published": "2026-11-16T13:07:39Z",
@@ -1168,20 +1182,6 @@
    "published": "2026-11-11T02:14:46Z",
    "url": "https://www.espn.com/video/clip/_/id/50448469/thomas-haugh-wants-make-coming-back-no-1-florida-count",
    "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1110/dm_261110_SEC_NCB_Interview_Florida_Haugh_261110/dm_261110_SEC_NCB_Interview_Florida_Haugh_261110.jpg"
-  },
-  {
-   "headline": "Thomas Haugh records double-double as Florida defeats Florida St. for 6th straight time, 81-72",
-   "description": "\u2014 Thomas Haugh had 21 points and 10 rebounds as No. 1 Florida defeated Florida State 81-72 on Tuesday.",
-   "published": "2026-11-11T02:16:37Z",
-   "url": "http://www.espn.com/ncb/recap?gameId=401906771",
-   "image": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401906771.png?templateId=espn.applewatch.awayhome.1"
-  },
-  {
-   "headline": "Florida Gators vs. Florida State Seminoles: Game Highlights",
-   "description": "Florida Gators vs. Florida State Seminoles: Game Highlights",
-   "published": "2026-11-11T01:38:28Z",
-   "url": "https://www.espn.com/video/clip/_/id/50448080/game-highlights",
-   "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1111/4a1e1255-a6bc-49cf-92ea-6de9bbd0e955/4a1e1255-a6bc-49cf-92ea-6de9bbd0e955.jpg"
   }
  ],
  "boxscores": {
@@ -2114,17 +2114,10 @@
       {
        "id": "int",
        "type": "str",
-       "uid": "str",
        "guid": "str",
        "description": "str",
        "sportId": "int",
-       "leagueId": "int",
-       "league": {
-        "id": "...",
-        "description": "...",
-        "abbreviation": "...",
-        "links": "..."
-       }
+       "topicId": "int"
       }
      ],
      "byline": "str",
