@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-16T20:53-05:00",
- "today": "2026-11-16",
+ "generated_at": "2026-11-17T05:33-05:00",
+ "today": "2026-11-17",
  "goal": {
   "race": "Miami Marathon",
   "race_date": "2027-01-31",
@@ -26,13 +26,37 @@
   "interval": "7:15\u20137:25"
  },
  "countdown": {
-  "race_days": 76,
-  "half_days": 61,
+  "race_days": 75,
+  "half_days": 60,
   "week": 1,
   "weeks_total": 11
  },
  "today_plan": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
+  "week": 1,
+  "location": "Gainesville",
+  "run": null,
+  "cross": {
+   "type": "bike",
+   "minutes": 30,
+   "title": "Easy bike 30 min",
+   "details": "Conversational / nose-breathing effort."
+  },
+  "lift": {
+   "focus": "Legs",
+   "details": "Light \u2014 ~70% volume"
+  },
+  "note": "",
+  "actual": {
+   "run_miles": 0,
+   "runs": [],
+   "lift": false,
+   "cross": false
+  },
+  "status": "today"
+ },
+ "tomorrow_plan": {
+  "date": "2026-11-18",
   "week": 1,
   "location": "Gainesville",
   "run": {
@@ -52,34 +76,8 @@
   },
   "cross": null,
   "lift": {
-   "focus": "Chest & Back",
-   "details": "~70% volume, 2\u20133 reps in reserve"
-  },
-  "note": "",
-  "actual": {
-   "run_miles": 3.0,
-   "runs": [
-    25099939103
-   ],
-   "lift": true,
-   "cross": false
-  },
-  "status": "done"
- },
- "tomorrow_plan": {
-  "date": "2026-11-17",
-  "week": 1,
-  "location": "Gainesville",
-  "run": null,
-  "cross": {
-   "type": "bike",
-   "minutes": 30,
-   "title": "Easy bike 30 min",
-   "details": "Conversational / nose-breathing effort."
-  },
-  "lift": {
-   "focus": "Legs",
-   "details": "Light \u2014 ~70% volume"
+   "focus": "Shoulders & Arms",
+   "details": "~70% volume"
   },
   "note": "",
   "actual": {
@@ -161,7 +159,7 @@
      "lift": false,
      "cross": false
     },
-    "status": "planned"
+    "status": "today"
    },
    {
     "date": "2026-11-18",
@@ -498,7 +496,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-18",
@@ -3078,11 +3076,11 @@
   }
  ],
  "compliance": {
-  "runs_planned": 0,
-  "runs_done": 0,
-  "pct": null,
-  "miles_planned": 0,
-  "miles_done": 0
+  "runs_planned": 1,
+  "runs_done": 1,
+  "pct": 100,
+  "miles_planned": 3,
+  "miles_done": 3.0
  },
  "totals": {
   "block_miles": 3.0,
@@ -3489,6 +3487,12 @@
     "seconds": 12925,
     "source": "VO2max trend",
     "fitness_seconds": 12790
+   },
+   {
+    "date": "2026-11-17",
+    "seconds": 12805,
+    "fitness_seconds": 12670,
+    "source": "Today"
    }
   ],
   "goal_seconds": 13500
@@ -3862,10 +3866,6 @@
  "recovery": {
   "resting_hr": [
    {
-    "date": "2026-10-18",
-    "v": 48
-   },
-   {
     "date": "2026-10-19",
     "v": 44
    },
@@ -3983,10 +3983,6 @@
    }
   ],
   "hrv": [
-   {
-    "date": "2026-10-18",
-    "v": 62
-   },
    {
     "date": "2026-10-19",
     "v": 43
@@ -4106,10 +4102,6 @@
   ],
   "sleep_hours": [
    {
-    "date": "2026-10-18",
-    "v": 6.68
-   },
-   {
     "date": "2026-10-19",
     "v": 4.48
    },
@@ -4227,10 +4219,6 @@
    }
   ],
   "sleep_score": [
-   {
-    "date": "2026-10-18",
-    "v": 68
-   },
    {
     "date": "2026-10-19",
     "v": 56
@@ -5095,41 +5083,6 @@
  ],
  "week_ahead": [
   {
-   "date": "2026-11-16",
-   "week": 1,
-   "location": "Gainesville",
-   "run": {
-    "type": "easy",
-    "miles": 3,
-    "title": "Easy 3 mi",
-    "details": "Conversational, 9:00\u20139:45/mi.",
-    "steps": [
-     {
-      "label": "Easy run",
-      "miles": 3,
-      "pace": "9:00\u20139:45",
-      "kind": "easy",
-      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
-     }
-    ]
-   },
-   "cross": null,
-   "lift": {
-    "focus": "Chest & Back",
-    "details": "~70% volume, 2\u20133 reps in reserve"
-   },
-   "note": "",
-   "actual": {
-    "run_miles": 3.0,
-    "runs": [
-     25099939103
-    ],
-    "lift": true,
-    "cross": false
-   },
-   "status": "done"
-  },
-  {
    "date": "2026-11-17",
    "week": 1,
    "location": "Gainesville",
@@ -5151,7 +5104,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-18",
@@ -5264,6 +5217,48 @@
    "cross": null,
    "lift": null,
    "note": "Travel to NY \u2014 full rest.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-23",
+   "week": 2,
+   "location": "New York (Thanksgiving)",
+   "run": {
+    "type": "easy",
+    "miles": 3,
+    "title": "Easy 3 mi",
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 3,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest & Back",
+    "home": true,
+    "exercises": [
+     "Push-ups \u2014 4 \u00d7 max (stop 2 short of failure)",
+     "Feet-elevated push-ups \u2014 3 \u00d7 10\u201315",
+     "Table/inverted rows (under a sturdy table) \u2014 4 \u00d7 8\u201312",
+     "Backpack bent-over rows \u2014 4 \u00d7 12",
+     "Y-T-W raises lying face-down \u2014 3 \u00d7 8 each",
+     "Plank \u2014 3 \u00d7 45 sec"
+    ],
+    "details": "At home \u00b7 ~40 min"
+   },
+   "note": "",
    "actual": {
     "run_miles": 0,
     "runs": [],
