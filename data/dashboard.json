@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T11:52-05:00",
+ "generated_at": "2026-11-19T18:19-05:00",
  "today": "2026-11-19",
  "goal": {
   "race": "Miami Marathon",
@@ -48,12 +48,14 @@
   },
   "note": "Full rest instead if you feel run-down.",
   "actual": {
-   "run_miles": 0,
-   "runs": [],
-   "lift": false,
+   "run_miles": 1.2,
+   "runs": [
+    25133620932
+   ],
+   "lift": true,
    "cross": false
   },
-  "status": "today"
+  "status": "done"
  },
  "tomorrow_plan": {
   "date": "2026-11-20",
@@ -92,10 +94,10 @@
   "start": "2026-11-16",
   "end": "2026-11-22",
   "planned_miles": 12.0,
-  "actual_miles": 10.0,
+  "actual_miles": 11.2,
   "long_planned": 6,
   "long_actual": 4.0,
-  "lifts": 3,
+  "lifts": 4,
   "is_current": true,
   "is_past": false,
   "days": [
@@ -212,12 +214,14 @@
     },
     "note": "Full rest instead if you feel run-down.",
     "actual": {
-     "run_miles": 0,
-     "runs": [],
-     "lift": false,
+     "run_miles": 1.2,
+     "runs": [
+      25133620932
+     ],
+     "lift": true,
      "cross": false
     },
-    "status": "today"
+    "status": "done"
    },
    {
     "date": "2026-11-20",
@@ -291,10 +295,10 @@
    "start": "2026-11-16",
    "end": "2026-11-22",
    "planned_miles": 12.0,
-   "actual_miles": 10.0,
+   "actual_miles": 11.2,
    "long_planned": 6,
    "long_actual": 4.0,
-   "lifts": 3,
+   "lifts": 4,
    "is_current": true,
    "is_past": false
   },
@@ -553,12 +557,14 @@
    },
    "note": "Full rest instead if you feel run-down.",
    "actual": {
-    "run_miles": 0,
-    "runs": [],
-    "lift": false,
+    "run_miles": 1.2,
+    "runs": [
+     25133620932
+    ],
+    "lift": true,
     "cross": false
    },
-   "status": "today"
+   "status": "done"
   },
   {
    "date": "2026-11-20",
@@ -3088,8 +3094,8 @@
   "miles_done": 10.0
  },
  "totals": {
-  "block_miles": 10.0,
-  "block_runs": 3,
+  "block_miles": 11.2,
+  "block_runs": 4,
   "longest": 4.0
  },
  "prediction": {
@@ -4005,6 +4011,10 @@
    {
     "date": "2026-11-18",
     "v": 48
+   },
+   {
+    "date": "2026-11-19",
+    "v": 46
    }
   ],
   "hrv": [
@@ -4123,6 +4133,10 @@
    {
     "date": "2026-11-18",
     "v": 47
+   },
+   {
+    "date": "2026-11-19",
+    "v": 58
    }
   ],
   "sleep_hours": [
@@ -4241,6 +4255,10 @@
    {
     "date": "2026-11-18",
     "v": 7.77
+   },
+   {
+    "date": "2026-11-19",
+    "v": 8.85
    }
   ],
   "sleep_score": [
@@ -4359,11 +4377,31 @@
    {
     "date": "2026-11-18",
     "v": 42
+   },
+   {
+    "date": "2026-11-19",
+    "v": 75
    }
   ],
   "flags": []
  },
  "recent_runs": [
+  {
+   "id": 25133620932,
+   "date": "2026-11-19",
+   "name": "Treadmill Running",
+   "type": "treadmill_running",
+   "miles": 1.2,
+   "time": "21:02",
+   "pace": "17:32",
+   "pace_s": 1052,
+   "hr": 133.0,
+   "max_hr": 140.0,
+   "elev_ft": 0,
+   "cadence": 118.859375,
+   "te": 1.7999999523162842,
+   "label": "RECOVERY"
+  },
   {
    "id": 25125107798,
    "date": "2026-11-18",
@@ -4987,22 +5025,6 @@
    "cadence": 170.15625,
    "te": 2.700000047683716,
    "label": "TEMPO"
-  },
-  {
-   "id": 24351989758,
-   "date": "2026-09-13",
-   "name": "Gainesville Running",
-   "type": "running",
-   "miles": 6.21,
-   "time": "56:03",
-   "pace": "9:02",
-   "pace_s": 542,
-   "hr": 162.0,
-   "max_hr": 183.0,
-   "elev_ft": 132,
-   "cadence": 168.78125,
-   "te": 3.700000047683716,
-   "label": "LACTATE_THRESHOLD"
   }
  ],
  "peak_long": 20,
@@ -5124,12 +5146,14 @@
    },
    "note": "Full rest instead if you feel run-down.",
    "actual": {
-    "run_miles": 0,
-    "runs": [],
-    "lift": false,
+    "run_miles": 1.2,
+    "runs": [
+     25133620932
+    ],
+    "lift": true,
     "cross": false
    },
-   "status": "today"
+   "status": "done"
   },
   {
    "date": "2026-11-20",
@@ -5322,24 +5346,24 @@
   }
  ],
  "road": {
-  "miles": 10.0,
+  "miles": 11.2,
   "total": 330.2
  },
  "last_activity": {
-  "id": 25125107798,
-  "date": "2026-11-18",
-  "name": "Treadmill work",
+  "id": 25133620932,
+  "date": "2026-11-19",
+  "name": "Treadmill Running",
   "type": "treadmill_running",
-  "miles": 3.0,
-  "time": "28:01",
-  "pace": "9:20",
-  "pace_s": 560,
-  "hr": 157.0,
-  "max_hr": 174.0,
+  "miles": 1.2,
+  "time": "21:02",
+  "pace": "17:32",
+  "pace_s": 1052,
+  "hr": 133.0,
+  "max_hr": 140.0,
   "elev_ft": 0,
-  "cadence": null,
-  "te": 3.200000047683716,
-  "label": "AEROBIC_BASE"
+  "cadence": 118.859375,
+  "te": 1.7999999523162842,
+  "label": "RECOVERY"
  },
  "sync_warnings": [],
  "demo": false
