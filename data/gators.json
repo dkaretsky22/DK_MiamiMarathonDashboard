@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-18T18:11+00:00",
+ "updated": "2026-11-19T00:30+00:00",
  "team": {
   "name": "Florida Gators",
-  "record": "5-0",
+  "record": "5-1",
   "records": {
-   "total": "5-0"
+   "total": "5-1"
   },
   "rank": 1,
   "standing": "1st in SEC"
@@ -122,21 +122,21 @@
   },
   {
    "id": "401920514",
-   "date": "2026-11-18T21:30Z",
+   "date": "2026-11-18T21:48Z",
    "opponent": "Houston Cougars",
    "opp_short": "Houston",
    "opp_abbr": "HOU",
    "opp_color": null,
    "home": true,
    "neutral": true,
-   "fla_score": null,
-   "opp_score": null,
+   "fla_score": 76,
+   "opp_score": 86,
    "fla_rank": 1,
    "opp_rank": 8,
-   "completed": false,
-   "state": "pre",
-   "detail": "11/18 - 4:30 PM EST",
-   "result": null,
+   "completed": true,
+   "state": "post",
+   "detail": "Final",
+   "result": "L",
    "tv": "ESPN",
    "venue": "Michelob ULTRA Arena",
    "city": "Las Vegas, NV",
@@ -695,45 +695,45 @@
  ],
  "live_game": null,
  "next_game": {
+  "id": "401906774",
+  "date": "2026-11-25T00:00Z",
+  "opponent": "Milwaukee Panthers",
+  "opp_short": "Milwaukee",
+  "opp_abbr": "MILW",
+  "opp_color": null,
+  "home": true,
+  "neutral": false,
+  "fla_score": null,
+  "opp_score": null,
+  "fla_rank": 1,
+  "opp_rank": null,
+  "completed": false,
+  "state": "pre",
+  "detail": "11/24 - 7:00 PM EST",
+  "result": null,
+  "tv": "SECN+",
+  "venue": "Tower Hill Arena",
+  "city": "Gainesville, FL",
+  "conference": false,
+  "box": null
+ },
+ "last_game": {
   "id": "401920514",
-  "date": "2026-11-18T21:30Z",
+  "date": "2026-11-18T21:48Z",
   "opponent": "Houston Cougars",
   "opp_short": "Houston",
   "opp_abbr": "HOU",
   "opp_color": null,
   "home": true,
   "neutral": true,
-  "fla_score": null,
-  "opp_score": null,
+  "fla_score": 76,
+  "opp_score": 86,
   "fla_rank": 1,
   "opp_rank": 8,
-  "completed": false,
-  "state": "pre",
-  "detail": "11/18 - 4:30 PM EST",
-  "result": null,
-  "tv": "ESPN",
-  "venue": "Michelob ULTRA Arena",
-  "city": "Las Vegas, NV",
-  "conference": false,
-  "box": null
- },
- "last_game": {
-  "id": "401906773",
-  "date": "2026-11-17T21:51Z",
-  "opponent": "Notre Dame Fighting Irish",
-  "opp_short": "Notre Dame",
-  "opp_abbr": "ND",
-  "opp_color": null,
-  "home": true,
-  "neutral": true,
-  "fla_score": 86,
-  "opp_score": 78,
-  "fla_rank": 1,
-  "opp_rank": null,
   "completed": true,
   "state": "post",
   "detail": "Final",
-  "result": "W",
+  "result": "L",
   "tv": "ESPN",
   "venue": "Michelob ULTRA Arena",
   "city": "Las Vegas, NV",
@@ -746,12 +746,12 @@
     "jersey": "21",
     "starter": true,
     "min": 33.0,
-    "pts": 19.0,
-    "reb": 10.0,
-    "ast": 5.0,
+    "pts": 6.0,
+    "reb": 5.0,
+    "ast": 4.0,
     "stl": 1.0,
     "blk": 1.0,
-    "fg": "8-15",
+    "fg": "2-8",
     "3pt": "1-3"
    },
    {
@@ -760,14 +760,14 @@
     "pos": "F",
     "jersey": "10",
     "starter": true,
-    "min": 36.0,
-    "pts": 14.0,
-    "reb": 9.0,
+    "min": 39.0,
+    "pts": 18.0,
+    "reb": 1.0,
     "ast": 4.0,
     "stl": 0.0,
     "blk": 1.0,
-    "fg": "5-8",
-    "3pt": "1-3"
+    "fg": "6-11",
+    "3pt": "4-7"
    },
    {
     "name": "Rueben Chinyelu",
@@ -775,13 +775,13 @@
     "pos": "C",
     "jersey": "9",
     "starter": true,
-    "min": 21.0,
+    "min": 30.0,
     "pts": 6.0,
-    "reb": 3.0,
-    "ast": 0.0,
+    "reb": 7.0,
+    "ast": 2.0,
     "stl": 1.0,
     "blk": 0.0,
-    "fg": "3-5",
+    "fg": "2-6",
     "3pt": "0-0"
    },
    {
@@ -790,14 +790,14 @@
     "pos": "G",
     "jersey": "0",
     "starter": true,
-    "min": 8.0,
-    "pts": 0.0,
-    "reb": 0.0,
-    "ast": 1.0,
-    "stl": 0.0,
-    "blk": 0.0,
-    "fg": "0-0",
-    "3pt": "0-0"
+    "min": 29.0,
+    "pts": 4.0,
+    "reb": 3.0,
+    "ast": 3.0,
+    "stl": 2.0,
+    "blk": 1.0,
+    "fg": "2-5",
+    "3pt": "0-1"
    },
    {
     "name": "Denzel Aberdeen",
@@ -805,14 +805,14 @@
     "pos": "G",
     "jersey": "1",
     "starter": true,
-    "min": 30.0,
-    "pts": 13.0,
-    "reb": 5.0,
-    "ast": 3.0,
+    "min": 34.0,
+    "pts": 26.0,
+    "reb": 0.0,
+    "ast": 2.0,
     "stl": 0.0,
-    "blk": 1.0,
-    "fg": "4-7",
-    "3pt": "2-3"
+    "blk": 0.0,
+    "fg": "9-13",
+    "3pt": "6-9"
    },
    {
     "name": "Domen Petrovic",
@@ -820,14 +820,14 @@
     "pos": "F",
     "jersey": "19",
     "starter": false,
-    "min": 10.0,
-    "pts": 2.0,
-    "reb": 3.0,
-    "ast": 0.0,
+    "min": 7.0,
+    "pts": 0.0,
+    "reb": 0.0,
+    "ast": 1.0,
     "stl": 0.0,
     "blk": 0.0,
-    "fg": "1-1",
-    "3pt": "0-0"
+    "fg": "0-2",
+    "3pt": "0-1"
    },
    {
     "name": "Urban Klavzar",
@@ -835,14 +835,14 @@
     "pos": "G",
     "jersey": "7",
     "starter": false,
-    "min": 31.0,
-    "pts": 24.0,
-    "reb": 1.0,
-    "ast": 1.0,
-    "stl": 1.0,
+    "min": 18.0,
+    "pts": 14.0,
+    "reb": 3.0,
+    "ast": 0.0,
+    "stl": 0.0,
     "blk": 0.0,
-    "fg": "5-11",
-    "3pt": "3-5"
+    "fg": "5-7",
+    "3pt": "4-4"
    },
    {
     "name": "Isaiah Brown",
@@ -850,29 +850,14 @@
     "pos": "G",
     "jersey": "20",
     "starter": false,
-    "min": 21.0,
-    "pts": 5.0,
-    "reb": 3.0,
-    "ast": 1.0,
-    "stl": 1.0,
-    "blk": 1.0,
-    "fg": "2-5",
-    "3pt": "1-2"
-   },
-   {
-    "name": "Alex Lloyd",
-    "short": "A. Lloyd",
-    "pos": "G",
-    "jersey": "4",
-    "starter": false,
-    "min": 11.0,
-    "pts": 3.0,
-    "reb": 0.0,
-    "ast": 2.0,
+    "min": 12.0,
+    "pts": 2.0,
+    "reb": 1.0,
+    "ast": 0.0,
     "stl": 0.0,
     "blk": 0.0,
-    "fg": "1-3",
-    "3pt": "0-0"
+    "fg": "1-2",
+    "3pt": "0-1"
    }
   ]
  },
@@ -882,91 +867,91 @@
    "short": "T. Haugh",
    "pos": "F",
    "jersey": "10",
-   "gp": 5,
-   "minpg": 31.6,
-   "ptspg": 16.6,
-   "rebpg": 8.4,
-   "astpg": 2.8,
-   "stlpg": 0.8,
+   "gp": 6,
+   "minpg": 32.8,
+   "ptspg": 16.8,
+   "rebpg": 7.2,
+   "astpg": 3.0,
+   "stlpg": 0.7,
    "blkpg": 0.8
-  },
-  {
-   "name": "Alex Condon",
-   "short": "A. Condon",
-   "pos": "F",
-   "jersey": "21",
-   "gp": 5,
-   "minpg": 28.0,
-   "ptspg": 13.4,
-   "rebpg": 9.0,
-   "astpg": 4.4,
-   "stlpg": 0.8,
-   "blkpg": 1.2
   },
   {
    "name": "Urban Klavzar",
    "short": "U. Klavzar",
    "pos": "G",
    "jersey": "7",
-   "gp": 5,
-   "minpg": 22.2,
-   "ptspg": 12.6,
-   "rebpg": 1.4,
-   "astpg": 1.0,
-   "stlpg": 0.4,
+   "gp": 6,
+   "minpg": 21.5,
+   "ptspg": 12.8,
+   "rebpg": 1.7,
+   "astpg": 0.8,
+   "stlpg": 0.3,
    "blkpg": 0.0
   },
   {
-   "name": "Rueben Chinyelu",
-   "short": "R. Chinyelu",
-   "pos": "C",
-   "jersey": "9",
-   "gp": 5,
-   "minpg": 25.4,
-   "ptspg": 10.6,
-   "rebpg": 7.4,
-   "astpg": 1.2,
-   "stlpg": 0.4,
-   "blkpg": 1.0
+   "name": "Alex Condon",
+   "short": "A. Condon",
+   "pos": "F",
+   "jersey": "21",
+   "gp": 6,
+   "minpg": 28.8,
+   "ptspg": 12.2,
+   "rebpg": 8.3,
+   "astpg": 4.3,
+   "stlpg": 0.8,
+   "blkpg": 1.2
   },
   {
    "name": "Denzel Aberdeen",
    "short": "D. Aberdeen",
    "pos": "G",
    "jersey": "1",
-   "gp": 5,
-   "minpg": 26.2,
-   "ptspg": 8.4,
-   "rebpg": 2.4,
+   "gp": 6,
+   "minpg": 27.5,
+   "ptspg": 11.3,
+   "rebpg": 2.0,
    "astpg": 1.8,
-   "stlpg": 0.4,
+   "stlpg": 0.3,
    "blkpg": 0.2
+  },
+  {
+   "name": "Rueben Chinyelu",
+   "short": "R. Chinyelu",
+   "pos": "C",
+   "jersey": "9",
+   "gp": 6,
+   "minpg": 26.2,
+   "ptspg": 9.8,
+   "rebpg": 7.3,
+   "astpg": 1.3,
+   "stlpg": 0.5,
+   "blkpg": 0.8
   },
   {
    "name": "Boogie Fland",
    "short": "B. Fland",
    "pos": "G",
    "jersey": "0",
-   "gp": 4,
-   "minpg": 24.2,
-   "ptspg": 7.5,
-   "rebpg": 2.2,
+   "gp": 5,
+   "minpg": 25.2,
+   "ptspg": 6.8,
+   "rebpg": 2.4,
    "astpg": 3.0,
-   "stlpg": 1.2,
-   "blkpg": 0.0
+   "stlpg": 1.4,
+   "blkpg": 0.2
   },
   {
    "name": "Isaiah Brown",
    "short": "I. Brown",
    "pos": "G",
    "jersey": "20",
-   "gp": 5,
-   "minpg": 14.8,
-   "ptspg": 5.4,
-   "rebpg": 2.8,
+   "gp": 6,
+   "minpg": 14.3,
+   "ptspg": 4.8,
+   "rebpg": 2.5,
    "astpg": 0.2,
-   "stlpg": 0.8,
-   "blkpg": 0.4
+   "stlpg": 0.7,
+   "blkpg": 0.3
   },
   {
    "name": "Alex Lloyd",
@@ -1012,10 +997,10 @@
    "short": "D. Petrovic",
    "pos": "F",
    "jersey": "19",
-   "gp": 5,
-   "minpg": 11.6,
-   "ptspg": 3.0,
-   "rebpg": 2.6,
+   "gp": 6,
+   "minpg": 10.8,
+   "ptspg": 2.5,
+   "rebpg": 2.2,
    "astpg": 1.0,
    "stlpg": 0.0,
    "blkpg": 0.2
@@ -1062,6 +1047,20 @@
  ],
  "news": [
   {
+   "headline": "Gators PG Boogie Fland starts vs. Houston despite injury",
+   "description": "Florida guard Boogie Fland started against Houston on Wednesday despite being considered a game-time decision.",
+   "published": "2026-11-18T22:01:52Z",
+   "url": "https://www.espn.com/mens-college-basketball/story/_/id/50524333/gators-pg-boogie-fland-starts-vs-houston-injury",
+   "image": "https://a.espncdn.com/photo/2026/1118/r1747391_600x400_3-2.jpg"
+  },
+  {
+   "headline": "Georgia AG asks SEC to take action against LSU's 'contempt for the rules'",
+   "description": "The Georgia Attorney General blasted LSU in a letter to SEC commissioner Greg Sankey, encouraging sanctions against the Tigers, \"up to and including expulsion.\"",
+   "published": "2026-11-18T23:43:26Z",
+   "url": "https://www.espn.com/mens-college-basketball/story/_/id/50524054/georgia-ag-asks-sec-take-action-vs-lsu-expulsion",
+   "image": "https://a.espncdn.com/photo/2023/0412/r1158074_1296x729_16-9.jpg"
+  },
+  {
    "headline": "No. 8 Houston Cougars play the No. 1 Florida Gators",
    "description": "Florida Gators (5-0) vs. Houston Cougars (4-0)",
    "published": "2026-11-18T15:20:34Z",
@@ -1084,8 +1083,8 @@
   },
   {
    "headline": "Gators' Boogie Fland aggravates shoulder injury, status vs. Houston in question",
-   "description": "Boogie Fland left the Gators' 86-78 win over Notre Dame after aggravating a right shoulder injury and his availability for the Houston game is uncertain.",
-   "published": "2026-11-18T02:01:16Z",
+   "description": "Boogie Fland left the Gators' 86-78 win over Notre Dame after aggravating a right shoulder injury, and his availability for the Houston game is uncertain.",
+   "published": "2026-11-18T19:08:07Z",
    "url": "https://www.espn.com/mens-college-basketball/story/_/id/50515779/gators-boogie-fland-aggravates-shoulder-injury",
    "image": "https://a.espncdn.com/photo/2026/1118/r1747391_600x600_1-1.jpg"
   },
@@ -1130,20 +1129,6 @@
    "published": "2026-11-16T13:07:39Z",
    "url": "https://www.espn.com/mens-college-basketball/story/_/id/50492452/ranking-all-american-player-year-candidates",
    "image": "https://a.espncdn.com/photo/2026/1111/r1744293_1296x729_16-9.jpg"
-  },
-  {
-   "headline": "No. 1 Florida Gators play the Notre Dame Fighting Irish",
-   "description": "Notre Dame Fighting Irish (4-0) vs. Florida Gators (4-0)",
-   "published": "2026-11-17T09:45:47Z",
-   "url": "http://www.espn.com/ncb/preview?gameId=401906773",
-   "image": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401906773.png?templateId=espn.applewatch.awayhome.1"
-  },
-  {
-   "headline": "Alex Condon on No. 1 Florida's frontcourt: 'It's like a well-oiled machine'",
-   "description": "Condon joins SEC Now and details how the Gators are working to be an intense defense while also describing how his relationships with Thomas Haugh and Rueben Chinyelu translate to success.",
-   "published": "2026-11-14T02:27:53Z",
-   "url": "https://www.espn.com/video/clip/_/id/50476338/well-oiled-machine",
-   "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_SEC_NCB_Interview_Condon_UF_261113/dm_261113_SEC_NCB_Interview_Condon_UF_261113.jpg"
   }
  ],
  "boxscores": {
@@ -1951,6 +1936,128 @@
     "fg": "1-3",
     "3pt": "0-0"
    }
+  ],
+  "401920514": [
+   {
+    "name": "Alex Condon",
+    "short": "A. Condon",
+    "pos": "F",
+    "jersey": "21",
+    "starter": true,
+    "min": 33.0,
+    "pts": 6.0,
+    "reb": 5.0,
+    "ast": 4.0,
+    "stl": 1.0,
+    "blk": 1.0,
+    "fg": "2-8",
+    "3pt": "1-3"
+   },
+   {
+    "name": "Thomas Haugh",
+    "short": "T. Haugh",
+    "pos": "F",
+    "jersey": "10",
+    "starter": true,
+    "min": 39.0,
+    "pts": 18.0,
+    "reb": 1.0,
+    "ast": 4.0,
+    "stl": 0.0,
+    "blk": 1.0,
+    "fg": "6-11",
+    "3pt": "4-7"
+   },
+   {
+    "name": "Rueben Chinyelu",
+    "short": "R. Chinyelu",
+    "pos": "C",
+    "jersey": "9",
+    "starter": true,
+    "min": 30.0,
+    "pts": 6.0,
+    "reb": 7.0,
+    "ast": 2.0,
+    "stl": 1.0,
+    "blk": 0.0,
+    "fg": "2-6",
+    "3pt": "0-0"
+   },
+   {
+    "name": "Boogie Fland",
+    "short": "B. Fland",
+    "pos": "G",
+    "jersey": "0",
+    "starter": true,
+    "min": 29.0,
+    "pts": 4.0,
+    "reb": 3.0,
+    "ast": 3.0,
+    "stl": 2.0,
+    "blk": 1.0,
+    "fg": "2-5",
+    "3pt": "0-1"
+   },
+   {
+    "name": "Denzel Aberdeen",
+    "short": "D. Aberdeen",
+    "pos": "G",
+    "jersey": "1",
+    "starter": true,
+    "min": 34.0,
+    "pts": 26.0,
+    "reb": 0.0,
+    "ast": 2.0,
+    "stl": 0.0,
+    "blk": 0.0,
+    "fg": "9-13",
+    "3pt": "6-9"
+   },
+   {
+    "name": "Domen Petrovic",
+    "short": "D. Petrovic",
+    "pos": "F",
+    "jersey": "19",
+    "starter": false,
+    "min": 7.0,
+    "pts": 0.0,
+    "reb": 0.0,
+    "ast": 1.0,
+    "stl": 0.0,
+    "blk": 0.0,
+    "fg": "0-2",
+    "3pt": "0-1"
+   },
+   {
+    "name": "Urban Klavzar",
+    "short": "U. Klavzar",
+    "pos": "G",
+    "jersey": "7",
+    "starter": false,
+    "min": 18.0,
+    "pts": 14.0,
+    "reb": 3.0,
+    "ast": 0.0,
+    "stl": 0.0,
+    "blk": 0.0,
+    "fg": "5-7",
+    "3pt": "4-4"
+   },
+   {
+    "name": "Isaiah Brown",
+    "short": "I. Brown",
+    "pos": "G",
+    "jersey": "20",
+    "starter": false,
+    "min": 12.0,
+    "pts": 2.0,
+    "reb": 1.0,
+    "ast": 0.0,
+    "stl": 0.0,
+    "blk": 0.0,
+    "fg": "1-2",
+    "3pt": "0-1"
+   }
   ]
  },
  "errors": [],
@@ -2009,6 +2116,7 @@
         "neutralSite": "...",
         "notes": "...",
         "status": "...",
+        "tickets": "...",
         "ticketsAvailable": "...",
         "timeValid": "...",
         "type": "...",
@@ -2172,6 +2280,849 @@
     "displayName": "str"
    }
   },
+  "summary": {
+   "boxscore": {
+    "teams": [
+     {
+      "team": {
+       "id": "str",
+       "uid": "str",
+       "slug": "str",
+       "location": "str",
+       "name": "str",
+       "abbreviation": "str",
+       "displayName": "str",
+       "shortDisplayName": "str",
+       "color": "str",
+       "alternateColor": "str",
+       "logo": "str"
+      },
+      "statistics": [
+       {
+        "name": "...",
+        "displayValue": "...",
+        "label": "..."
+       }
+      ],
+      "displayOrder": "int",
+      "homeAway": "str"
+     }
+    ],
+    "players": [
+     {
+      "team": {
+       "id": "str",
+       "uid": "str",
+       "slug": "str",
+       "location": "str",
+       "name": "str",
+       "abbreviation": "str",
+       "displayName": "str",
+       "shortDisplayName": "str",
+       "color": "str",
+       "alternateColor": "str",
+       "logo": "str"
+      },
+      "statistics": [
+       {
+        "names": "...",
+        "keys": "...",
+        "labels": "...",
+        "descriptions": "...",
+        "athletes": "...",
+        "totals": "..."
+       }
+      ],
+      "displayOrder": "int"
+     }
+    ]
+   },
+   "format": {
+    "regulation": {
+     "periods": "int",
+     "displayName": "str",
+     "slug": "str",
+     "clock": "float"
+    },
+    "overtime": {
+     "displayName": "str",
+     "slug": "str",
+     "clock": "float"
+    }
+   },
+   "gameInfo": {
+    "venue": {
+     "id": "str",
+     "guid": "str",
+     "fullName": "str",
+     "address": {
+      "city": "str",
+      "state": "str"
+     },
+     "grass": "bool",
+     "images": []
+    },
+    "attendance": "int",
+    "officials": [
+     {
+      "fullName": "str",
+      "displayName": "str",
+      "position": {
+       "name": "str",
+       "displayName": "str",
+       "id": "str"
+      },
+      "order": "int"
+     }
+    ]
+   },
+   "leaders": [
+    {
+     "team": {
+      "id": "str",
+      "uid": "str",
+      "displayName": "str",
+      "abbreviation": "str",
+      "links": [
+       {
+        "href": "...",
+        "text": "..."
+       }
+      ],
+      "logo": "str",
+      "logos": [
+       {
+        "href": "...",
+        "width": "...",
+        "height": "...",
+        "alt": "...",
+        "rel": "...",
+        "lastUpdated": "..."
+       }
+      ]
+     },
+     "leaders": [
+      {
+       "name": "str",
+       "displayName": "str",
+       "leaders": [
+        "..."
+       ]
+      }
+     ]
+    }
+   ],
+   "broadcasts": [],
+   "pickcenter": [
+    {
+     "provider": {
+      "id": "str",
+      "name": "str",
+      "priority": "int",
+      "logos": [
+       {
+        "href": "...",
+        "rel": "..."
+       }
+      ]
+     },
+     "details": "str",
+     "overUnder": "float",
+     "spread": "float",
+     "overOdds": "float",
+     "underOdds": "float",
+     "awayTeamOdds": {
+      "favorite": "bool",
+      "underdog": "bool",
+      "moneyLine": "int",
+      "spreadOdds": "float",
+      "team": {
+       "$ref": "str"
+      },
+      "teamId": "str",
+      "favoriteAtOpen": "bool"
+     },
+     "homeTeamOdds": {
+      "favorite": "bool",
+      "underdog": "bool",
+      "moneyLine": "int",
+      "spreadOdds": "float",
+      "team": {
+       "$ref": "str"
+      },
+      "teamId": "str",
+      "favoriteAtOpen": "bool"
+     },
+     "links": [
+      {
+       "language": "str",
+       "rel": [
+        "..."
+       ],
+       "href": "str",
+       "text": "str",
+       "shortText": "str",
+       "isExternal": "bool",
+       "isPremium": "bool"
+      }
+     ],
+     "moneyline": {
+      "displayName": "str",
+      "shortDisplayName": "str",
+      "home": {
+       "close": {
+        "odds": "..."
+       },
+       "open": {
+        "odds": "..."
+       }
+      },
+      "away": {
+       "close": {
+        "odds": "..."
+       },
+       "open": {
+        "odds": "..."
+       }
+      }
+     },
+     "pointSpread": {
+      "displayName": "str",
+      "shortDisplayName": "str",
+      "home": {
+       "close": {
+        "line": "...",
+        "odds": "..."
+       },
+       "open": {
+        "line": "...",
+        "odds": "..."
+       }
+      },
+      "away": {
+       "close": {
+        "line": "...",
+        "odds": "..."
+       },
+       "open": {
+        "line": "...",
+        "odds": "..."
+       }
+      }
+     },
+     "total": {
+      "displayName": "str",
+      "shortDisplayName": "str",
+      "over": {
+       "close": {
+        "line": "...",
+        "odds": "..."
+       },
+       "open": {
+        "line": "...",
+        "odds": "..."
+       }
+      },
+      "under": {
+       "close": {
+        "line": "...",
+        "odds": "..."
+       },
+       "open": {
+        "line": "...",
+        "odds": "..."
+       }
+      }
+     },
+     "link": {
+      "text": "str",
+      "language": "str",
+      "rel": [
+       "str"
+      ],
+      "href": "str",
+      "isExternal": "bool",
+      "isPremium": "bool"
+     },
+     "header": {
+      "logo": {
+       "dark": "str",
+       "light": "str",
+       "exclusivesLogoDark": "str",
+       "exclusivesLogoLight": "str"
+      },
+      "text": "str"
+     },
+     "footer": {
+      "disclaimer": "str"
+     }
+    }
+   ],
+   "odds": [],
+   "againstTheSpread": [
+    {
+     "team": {
+      "id": "str",
+      "uid": "str",
+      "displayName": "str",
+      "abbreviation": "str",
+      "links": [
+       {
+        "href": "...",
+        "text": "..."
+       }
+      ],
+      "logo": "str",
+      "logos": [
+       {
+        "href": "...",
+        "width": "...",
+        "height": "...",
+        "alt": "...",
+        "rel": "...",
+        "lastUpdated": "..."
+       }
+      ]
+     },
+     "records": []
+    }
+   ],
+   "news": {
+    "header": "str",
+    "link": {
+     "language": "str",
+     "rel": [
+      "str"
+     ],
+     "href": "str",
+     "text": "str",
+     "shortText": "str",
+     "isExternal": "bool",
+     "isPremium": "bool"
+    },
+    "articles": [
+     {
+      "id": "int",
+      "nowId": "str",
+      "contentKey": "str",
+      "dataSourceIdentifier": "str",
+      "type": "str",
+      "headline": "str",
+      "description": "str",
+      "lastModified": "str",
+      "published": "str",
+      "images": [
+       {
+        "type": "...",
+        "name": "...",
+        "url": "..."
+       }
+      ],
+      "categories": [
+       {
+        "id": "...",
+        "type": "...",
+        "uid": "...",
+        "guid": "...",
+        "description": "...",
+        "sportId": "...",
+        "leagueId": "...",
+        "league": "..."
+       }
+      ],
+      "links": {
+       "api": {
+        "self": "..."
+       },
+       "app": {
+        "sportscenter": "..."
+       },
+       "mobile": {
+        "href": "..."
+       },
+       "web": {
+        "href": "..."
+       }
+      },
+      "premium": "bool"
+     }
+    ]
+   },
+   "plays": [
+    {
+     "id": "str",
+     "sequenceNumber": "str",
+     "type": {
+      "id": "str",
+      "text": "str"
+     },
+     "text": "str",
+     "awayScore": "int",
+     "homeScore": "int",
+     "period": {
+      "number": "int",
+      "displayValue": "str"
+     },
+     "clock": {
+      "displayValue": "str"
+     },
+     "scoringPlay": "bool",
+     "scoreValue": "int",
+     "wallclock": "str",
+     "shootingPlay": "bool",
+     "coordinate": {
+      "x": "int",
+      "y": "int"
+     },
+     "pointsAttempted": "int",
+     "shortDescription": "str"
+    }
+   ],
+   "winprobability": [
+    {
+     "homeWinPercentage": "float",
+     "tiePercentage": "float",
+     "playId": "str"
+    }
+   ],
+   "header": {
+    "id": "str",
+    "uid": "str",
+    "season": {
+     "year": "int",
+     "current": "bool",
+     "type": "int"
+    },
+    "timeValid": "bool",
+    "competitions": [
+     {
+      "id": "str",
+      "uid": "str",
+      "date": "str",
+      "neutralSite": "bool",
+      "conferenceCompetition": "bool",
+      "boxscoreAvailable": "bool",
+      "commentaryAvailable": "bool",
+      "liveAvailable": "bool",
+      "shotChartAvailable": "bool",
+      "timeoutsAvailable": "bool",
+      "possessionArrowAvailable": "bool",
+      "onWatchESPN": "bool",
+      "recent": "bool",
+      "wallclockAvailable": "bool",
+      "boxscoreSource": "str",
+      "playByPlaySource": "str",
+      "competitors": [
+       {
+        "id": "...",
+        "uid": "...",
+        "order": "...",
+        "homeAway": "...",
+        "winner": "...",
+        "team": "...",
+        "score": "...",
+        "linescores": "...",
+        "record": "...",
+        "possession": "...",
+        "rank": "..."
+       }
+      ],
+      "status": {
+       "type": {
+        "id": "...",
+        "name": "...",
+        "state": "...",
+        "completed": "...",
+        "description": "...",
+        "detail": "...",
+        "shortDetail": "..."
+       }
+      },
+      "broadcasts": [
+       {
+        "type": "...",
+        "market": "...",
+        "media": "...",
+        "lang": "...",
+        "region": "...",
+        "isNational": "..."
+       }
+      ],
+      "boxscoreMinutes": "bool"
+     }
+    ],
+    "links": [
+     {
+      "rel": [
+       "str"
+      ],
+      "href": "str",
+      "text": "str",
+      "shortText": "str",
+      "isExternal": "bool",
+      "isPremium": "bool"
+     }
+    ],
+    "week": "int",
+    "league": {
+     "id": "str",
+     "uid": "str",
+     "name": "str",
+     "abbreviation": "str",
+     "shortName": "str",
+     "midsizeName": "str",
+     "slug": "str",
+     "isTournament": "bool",
+     "links": [
+      {
+       "rel": [
+        "..."
+       ],
+       "href": "str",
+       "text": "str"
+      }
+     ],
+     "logos": [
+      {
+       "href": "str",
+       "rel": [
+        "..."
+       ]
+      }
+     ]
+    },
+    "gameNote": "str"
+   },
+   "article": {
+    "id": "int",
+    "nowId": "str",
+    "contentKey": "str",
+    "dataSourceIdentifier": "str",
+    "publishedkey": "str",
+    "type": "str",
+    "gameId": "str",
+    "headline": "str",
+    "description": "str",
+    "linkText": "str",
+    "categorized": "str",
+    "originallyPosted": "str",
+    "lastModified": "str",
+    "published": "str",
+    "section": "str",
+    "source": "str",
+    "images": [
+     {
+      "type": "str",
+      "name": "str",
+      "caption": "str",
+      "height": "int",
+      "width": "int",
+      "url": "str"
+     }
+    ],
+    "video": [
+     {
+      "id": "int",
+      "dataSourceIdentifier": "str",
+      "cerebroId": "str",
+      "pccId": "str",
+      "source": "str",
+      "headline": "str",
+      "shortHeadline": "str",
+      "caption": "str",
+      "title": "str",
+      "description": "str",
+      "shortDescription": "str",
+      "lastModified": "str",
+      "originalPublishDate": "str",
+      "premium": "bool",
+      "syndicatable": "bool",
+      "duration": "int",
+      "videoRatio": "str",
+      "timeRestrictions": {
+       "embargoDate": "str",
+       "expirationDate": "str"
+      },
+      "deviceRestrictions": {
+       "devices": [
+        "..."
+       ],
+       "type": "str"
+      },
+      "gameId": "int",
+      "plays": [
+       {
+        "id": "..."
+       }
+      ],
+      "thumbnail": "str",
+      "images": [
+       {
+        "name": "...",
+        "caption": "...",
+        "alt": "...",
+        "credit": "...",
+        "height": "...",
+        "width": "...",
+        "url": "..."
+       }
+      ],
+      "posterImages": {
+       "default": {
+        "href": "...",
+        "width": "...",
+        "height": "..."
+       },
+       "firstFrame": {
+        "href": "..."
+       },
+       "full": {
+        "href": "..."
+       },
+       "square": {
+        "href": "..."
+       },
+       "vertical": {
+        "href": "..."
+       },
+       "verticalFirstFrame": {
+        "href": "..."
+       },
+       "wide": {
+        "href": "..."
+       }
+      },
+      "links": {
+       "api": {
+        "artwork": "...",
+        "self": "..."
+       },
+       "mobile": {
+        "href": "...",
+        "alert": "...",
+        "progressiveDownload": "...",
+        "source": "...",
+        "streaming": "..."
+       },
+       "source": {
+        "href": "...",
+        "HD": "...",
+        "HLS": "...",
+        "flash": "...",
+        "full": "...",
+        "mezzanine": "..."
+       },
+       "sportscenter": {
+        "href": "..."
+       },
+       "web": {
+        "href": "...",
+        "self": "..."
+       }
+      },
+      "categories": [
+       {
+        "id": "...",
+        "type": "...",
+        "uid": "...",
+        "guid": "...",
+        "description": "...",
+        "sportId": "...",
+        "teamId": "...",
+        "team": "..."
+       }
+      ],
+      "ad": {
+       "bundle": "str",
+       "sport": "str"
+      },
+      "contributingPartner": "str",
+      "contributingSystem": "str",
+      "tracking": {
+       "coverageType": "str",
+       "leagueName": "str",
+       "program": "str",
+       "sportName": "str",
+       "trackingId": "str",
+       "trackingName": "str"
+      }
+     }
+    ],
+    "categories": [
+     {
+      "id": "int",
+      "type": "str",
+      "uid": "str",
+      "guid": "str",
+      "description": "str",
+      "sportId": "int",
+      "leagueId": "int",
+      "league": {
+       "id": "int",
+       "description": "str",
+       "abbreviation": "str",
+       "links": {
+        "mobile": "...",
+        "web": "..."
+       }
+      }
+     }
+    ],
+    "keywords": [
+     "str"
+    ],
+    "story": "str",
+    "allowComments": "bool",
+    "allowContentReactions": "bool",
+    "allowSearch": "bool",
+    "isLiveBlog": "bool",
+    "links": {
+     "api": {
+      "self": {
+       "href": "str"
+      }
+     },
+     "app": {
+      "sportscenter": {
+       "href": "str"
+      }
+     },
+     "mobile": {
+      "href": "str"
+     },
+     "web": {
+      "href": "str"
+     }
+    },
+    "premium": "bool"
+   },
+   "videos": [
+    {
+     "id": "int",
+     "cerebroId": "str",
+     "source": "str",
+     "headline": "str",
+     "description": "str",
+     "lastModified": "str",
+     "originalPublishDate": "str",
+     "duration": "int",
+     "timeRestrictions": {
+      "embargoDate": "str",
+      "expirationDate": "str"
+     },
+     "deviceRestrictions": {
+      "devices": [
+       "str"
+      ],
+      "type": "str"
+     },
+     "thumbnail": "str",
+     "links": {
+      "api": {
+       "artwork": {
+        "href": "..."
+       },
+       "self": {
+        "href": "..."
+       }
+      },
+      "mobile": {
+       "href": "str",
+       "alert": {
+        "href": "..."
+       },
+       "progressiveDownload": {
+        "href": "..."
+       },
+       "source": {
+        "href": "..."
+       },
+       "streaming": {
+        "href": "..."
+       }
+      },
+      "source": {
+       "href": "str",
+       "HD": {
+        "href": "..."
+       },
+       "HLS": {
+        "href": "...",
+        "9x16": "...",
+        "HD": "...",
+        "cmaf": "...",
+        "cmb": "...",
+        "shield": "..."
+       },
+       "flash": {
+        "href": "..."
+       },
+       "full": {
+        "href": "..."
+       },
+       "mezzanine": {
+        "href": "..."
+       }
+      },
+      "sportscenter": {
+       "href": "str"
+      },
+      "web": {
+       "href": "str",
+       "self": {
+        "href": "...",
+        "dsi": "..."
+       }
+      }
+     },
+     "ad": {
+      "bundle": "str",
+      "sport": "str"
+     },
+     "tracking": {
+      "coverageType": "str",
+      "leagueName": "str",
+      "program": "str",
+      "sportName": "str",
+      "trackingId": "str",
+      "trackingName": "str"
+     }
+    }
+   ],
+   "wallclockAvailable": "bool",
+   "meta": {
+    "gp_topic": "str",
+    "gameSwitcherEnabled": "bool",
+    "picker_topic": "str",
+    "lastUpdatedAt": "str",
+    "firstPlayWallClock": "str",
+    "lastPlayWallClock": "str",
+    "gameState": "str",
+    "syncUrl": "str"
+   },
+   "standings": {
+    "fullViewLink": {
+     "text": "str",
+     "href": "str"
+    },
+    "header": "str",
+    "groups": [
+     {
+      "standings": {
+       "entries": [
+        "..."
+       ]
+      },
+      "header": "str",
+      "href": "str",
+      "conferenceHeader": "str",
+      "divisionHeader": "str",
+      "shortDivisionHeader": "str"
+     }
+    ],
+    "isSameConference": "bool"
+   }
+  },
   "news": {
    "header": "str",
    "link": {
@@ -2198,8 +3149,13 @@
      "published": "str",
      "images": [
       {
+       "dataSourceIdentifier": "str",
+       "id": "int",
        "type": "str",
        "name": "str",
+       "credit": "str",
+       "height": "int",
+       "width": "int",
        "url": "str"
       }
      ],
@@ -2220,6 +3176,7 @@
        }
       }
      ],
+     "byline": "str",
      "links": {
       "api": {
        "self": {
