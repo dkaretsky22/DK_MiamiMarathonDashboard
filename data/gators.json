@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T04:03+00:00",
+ "updated": "2026-11-20T12:44+00:00",
  "team": {
   "name": "Florida Gators",
   "record": "6-1",
@@ -1099,6 +1099,13 @@
  ],
  "news": [
   {
+   "headline": "Breaking down the Players Era 8 Houston-Kansas championship game",
+   "description": "Houston was crowned the Players Era 8 champions Thursday night. How did it pull off the win?",
+   "published": "2026-11-20T07:10:56Z",
+   "url": "https://www.espn.com/mens-college-basketball/story/_/id/50505898/players-era-8-matchups-analysis",
+   "image": "https://a.espncdn.com/photo/2026/1120/r1748438_1296x729_16-9.jpg"
+  },
+  {
    "headline": "Thomas Haugh scores 22 as No. 1 Florida bounces back from first loss, beating West Virginia 85-72",
    "description": "\u2014 Thomas Haugh scored 22 points and No. 1 Florida defeated West Virginia 85-72 on Thursday in the third-place game of the Players Era 8 tournament.",
    "published": "2026-11-19T22:08:33Z",
@@ -1111,13 +1118,6 @@
    "published": "2026-11-20T00:41:01Z",
    "url": "https://www.espn.com/video/clip/_/id/50534339/game-highlights",
    "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1119/60897d19-a824-4da0-9c26-db5ac28473d8/60897d19-a824-4da0-9c26-db5ac28473d8.jpg"
-  },
-  {
-   "headline": "Breaking down the Players Era 8 Houston-Kansas championship game",
-   "description": "It's a Big 12 showdown in Las Vegas. How did Houston and Kansas each get here, and how will they match up?",
-   "published": "2026-11-19T15:31:57Z",
-   "url": "https://www.espn.com/mens-college-basketball/story/_/id/50505898/players-era-8-matchups-analysis",
-   "image": "https://a.espncdn.com/photo/2026/1119/r1748071_1296x729_16-9.jpg"
   },
   {
    "headline": "Men's college basketball Power Rankings: Duke drops, Kansas is new No. 1",
@@ -2511,8 +2511,13 @@
      "published": "str",
      "images": [
       {
+       "dataSourceIdentifier": "str",
+       "id": "int",
        "type": "str",
        "name": "str",
+       "credit": "str",
+       "height": "int",
+       "width": "int",
        "url": "str"
       }
      ],
@@ -2533,6 +2538,7 @@
        }
       }
      ],
+     "byline": "str",
      "links": {
       "api": {
        "self": {

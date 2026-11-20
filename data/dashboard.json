@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-19T23:03-05:00",
- "today": "2026-11-19",
+ "generated_at": "2026-11-20T07:44-05:00",
+ "today": "2026-11-20",
  "goal": {
   "race": "Miami Marathon",
   "race_date": "2027-01-31",
@@ -26,38 +26,12 @@
   "interval": "7:15\u20137:25"
  },
  "countdown": {
-  "race_days": 73,
-  "half_days": 58,
+  "race_days": 72,
+  "half_days": 57,
   "week": 1,
   "weeks_total": 11
  },
  "today_plan": {
-  "date": "2026-11-19",
-  "week": 1,
-  "location": "Gainesville",
-  "run": null,
-  "cross": {
-   "type": "incline_walk",
-   "minutes": 30,
-   "title": "Incline walk 30 min",
-   "details": "10\u201312% incline, 3.0\u20133.5 mph, no rails. Swap for bike if legs are sore."
-  },
-  "lift": {
-   "focus": "Back & Bis",
-   "details": "~70% volume"
-  },
-  "note": "Full rest instead if you feel run-down.",
-  "actual": {
-   "run_miles": 1.2,
-   "runs": [
-    25133620932
-   ],
-   "lift": true,
-   "cross": false
-  },
-  "status": "done"
- },
- "tomorrow_plan": {
   "date": "2026-11-20",
   "week": 1,
   "location": "Gainesville",
@@ -79,6 +53,22 @@
   "cross": null,
   "lift": null,
   "note": "",
+  "actual": {
+   "run_miles": 0,
+   "runs": [],
+   "lift": false,
+   "cross": false
+  },
+  "status": "today"
+ },
+ "tomorrow_plan": {
+  "date": "2026-11-21",
+  "week": 1,
+  "location": "Gainesville",
+  "run": null,
+  "cross": null,
+  "lift": null,
+  "note": "\ud83d\udc0a Gameday tailgate \u2014 full rest day. Hydrate well; yesterday was your long run.",
   "actual": {
    "run_miles": 0,
    "runs": [],
@@ -251,7 +241,7 @@
      "lift": false,
      "cross": false
     },
-    "status": "planned"
+    "status": "today"
    },
    {
     "date": "2026-11-21",
@@ -594,7 +584,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-21",
@@ -3091,7 +3081,7 @@
   "runs_done": 2,
   "pct": 100,
   "miles_planned": 6,
-  "miles_done": 10.0
+  "miles_done": 11.2
  },
  "totals": {
   "block_miles": 11.2,
@@ -3506,7 +3496,7 @@
     "fitness_seconds": 12815
    },
    {
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "seconds": 12853,
     "fitness_seconds": 12718,
     "source": "Today"
@@ -3897,10 +3887,6 @@
  "recovery": {
   "resting_hr": [
    {
-    "date": "2026-10-21",
-    "v": 51
-   },
-   {
     "date": "2026-10-22",
     "v": 44
    },
@@ -4018,10 +4004,6 @@
    }
   ],
   "hrv": [
-   {
-    "date": "2026-10-21",
-    "v": 44
-   },
    {
     "date": "2026-10-22",
     "v": 49
@@ -4141,10 +4123,6 @@
   ],
   "sleep_hours": [
    {
-    "date": "2026-10-21",
-    "v": 3.7
-   },
-   {
     "date": "2026-10-22",
     "v": 6.57
    },
@@ -4262,10 +4240,6 @@
    }
   ],
   "sleep_score": [
-   {
-    "date": "2026-10-21",
-    "v": 39
-   },
    {
     "date": "2026-10-22",
     "v": 63
@@ -5130,32 +5104,6 @@
  ],
  "week_ahead": [
   {
-   "date": "2026-11-19",
-   "week": 1,
-   "location": "Gainesville",
-   "run": null,
-   "cross": {
-    "type": "incline_walk",
-    "minutes": 30,
-    "title": "Incline walk 30 min",
-    "details": "10\u201312% incline, 3.0\u20133.5 mph, no rails. Swap for bike if legs are sore."
-   },
-   "lift": {
-    "focus": "Back & Bis",
-    "details": "~70% volume"
-   },
-   "note": "Full rest instead if you feel run-down.",
-   "actual": {
-    "run_miles": 1.2,
-    "runs": [
-     25133620932
-    ],
-    "lift": true,
-    "cross": false
-   },
-   "status": "done"
-  },
-  {
    "date": "2026-11-20",
    "week": 1,
    "location": "Gainesville",
@@ -5183,7 +5131,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-21",
@@ -5336,6 +5284,36 @@
     "details": "At home \u00b7 ~40 min"
    },
    "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-26",
+   "week": 2,
+   "location": "New York (Thanksgiving)",
+   "run": {
+    "type": "easy",
+    "miles": 4,
+    "title": "Easy 4 mi",
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 4,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
+   },
+   "cross": null,
+   "lift": null,
+   "note": "Thanksgiving \u2014 Turkey Trot is fine at steady effort, not a race.",
    "actual": {
     "run_miles": 0,
     "runs": [],
