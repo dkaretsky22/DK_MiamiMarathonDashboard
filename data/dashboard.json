@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-20T20:49-05:00",
- "today": "2026-11-20",
+ "generated_at": "2026-11-21T03:52-05:00",
+ "today": "2026-11-21",
  "goal": {
   "race": "Miami Marathon",
   "race_date": "2027-01-31",
@@ -26,44 +26,12 @@
   "interval": "7:15\u20137:25"
  },
  "countdown": {
-  "race_days": 72,
-  "half_days": 57,
+  "race_days": 71,
+  "half_days": 56,
   "week": 1,
   "weeks_total": 11
  },
  "today_plan": {
-  "date": "2026-11-20",
-  "week": 1,
-  "location": "Gainesville",
-  "run": {
-   "type": "long",
-   "miles": 6,
-   "title": "Long run 6 mi",
-   "details": "Easy the whole way (9:00\u20139:30/mi). No lifting.",
-   "steps": [
-    {
-     "label": "Long run",
-     "miles": 6,
-     "pace": "9:00\u20139:30",
-     "kind": "long",
-     "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
-    }
-   ]
-  },
-  "cross": null,
-  "lift": null,
-  "note": "",
-  "actual": {
-   "run_miles": 6.1,
-   "runs": [
-    25146401589
-   ],
-   "lift": false,
-   "cross": false
-  },
-  "status": "done"
- },
- "tomorrow_plan": {
   "date": "2026-11-21",
   "week": 1,
   "location": "Gainesville",
@@ -71,6 +39,22 @@
   "cross": null,
   "lift": null,
   "note": "\ud83d\udc0a Gameday tailgate \u2014 full rest day. Hydrate well; yesterday was your long run.",
+  "actual": {
+   "run_miles": 0,
+   "runs": [],
+   "lift": false,
+   "cross": false
+  },
+  "status": "today"
+ },
+ "tomorrow_plan": {
+  "date": "2026-11-22",
+  "week": 1,
+  "location": "Gainesville",
+  "run": null,
+  "cross": null,
+  "lift": null,
+  "note": "Travel to NY \u2014 full rest.",
   "actual": {
    "run_miles": 0,
    "runs": [],
@@ -259,7 +243,7 @@
      "lift": false,
      "cross": false
     },
-    "status": "planned"
+    "status": "today"
    },
    {
     "date": "2026-11-22",
@@ -602,7 +586,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-22",
@@ -3079,11 +3063,11 @@
   }
  ],
  "compliance": {
-  "runs_planned": 2,
-  "runs_done": 2,
+  "runs_planned": 3,
+  "runs_done": 3,
   "pct": 100,
-  "miles_planned": 6,
-  "miles_done": 10.0
+  "miles_planned": 12,
+  "miles_done": 16.1
  },
  "totals": {
   "block_miles": 16.1,
@@ -3498,7 +3482,7 @@
     "fitness_seconds": 12815
    },
    {
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "seconds": 12853,
     "fitness_seconds": 12718,
     "source": "Today"
@@ -3896,10 +3880,6 @@
  "recovery": {
   "resting_hr": [
    {
-    "date": "2026-10-22",
-    "v": 44
-   },
-   {
     "date": "2026-10-23",
     "v": 43
    },
@@ -4017,10 +3997,6 @@
    }
   ],
   "hrv": [
-   {
-    "date": "2026-10-22",
-    "v": 49
-   },
    {
     "date": "2026-10-23",
     "v": 49
@@ -4140,10 +4116,6 @@
   ],
   "sleep_hours": [
    {
-    "date": "2026-10-22",
-    "v": 6.57
-   },
-   {
     "date": "2026-10-23",
     "v": 4.3
    },
@@ -4261,10 +4233,6 @@
    }
   ],
   "sleep_score": [
-   {
-    "date": "2026-10-22",
-    "v": 63
-   },
    {
     "date": "2026-10-23",
     "v": 50
@@ -5131,38 +5099,6 @@
  ],
  "week_ahead": [
   {
-   "date": "2026-11-20",
-   "week": 1,
-   "location": "Gainesville",
-   "run": {
-    "type": "long",
-    "miles": 6,
-    "title": "Long run 6 mi",
-    "details": "Easy the whole way (9:00\u20139:30/mi). No lifting.",
-    "steps": [
-     {
-      "label": "Long run",
-      "miles": 6,
-      "pace": "9:00\u20139:30",
-      "kind": "long",
-      "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
-     }
-    ]
-   },
-   "cross": null,
-   "lift": null,
-   "note": "",
-   "actual": {
-    "run_miles": 6.1,
-    "runs": [
-     25146401589
-    ],
-    "lift": false,
-    "cross": false
-   },
-   "status": "done"
-  },
-  {
    "date": "2026-11-21",
    "week": 1,
    "location": "Gainesville",
@@ -5176,7 +5112,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-22",
@@ -5343,6 +5279,36 @@
    "cross": null,
    "lift": null,
    "note": "Thanksgiving \u2014 Turkey Trot is fine at steady effort, not a race.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-27",
+   "week": 2,
+   "location": "New York (Thanksgiving)",
+   "run": {
+    "type": "long",
+    "miles": 8,
+    "title": "Long run 8 mi",
+    "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi).",
+    "steps": [
+     {
+      "label": "Long run",
+      "miles": 8,
+      "pace": "9:00\u20139:30",
+      "kind": "long",
+      "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
+     }
+    ]
+   },
+   "cross": null,
+   "lift": null,
+   "note": "",
    "actual": {
     "run_miles": 0,
     "runs": [],
