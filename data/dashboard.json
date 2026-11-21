@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T07:44-05:00",
+ "generated_at": "2026-11-20T20:49-05:00",
  "today": "2026-11-20",
  "goal": {
   "race": "Miami Marathon",
@@ -54,12 +54,14 @@
   "lift": null,
   "note": "",
   "actual": {
-   "run_miles": 0,
-   "runs": [],
+   "run_miles": 6.1,
+   "runs": [
+    25146401589
+   ],
    "lift": false,
    "cross": false
   },
-  "status": "today"
+  "status": "done"
  },
  "tomorrow_plan": {
   "date": "2026-11-21",
@@ -84,9 +86,9 @@
   "start": "2026-11-16",
   "end": "2026-11-22",
   "planned_miles": 12.0,
-  "actual_miles": 11.2,
+  "actual_miles": 16.1,
   "long_planned": 6,
-  "long_actual": 4.0,
+  "long_actual": 6.1,
   "lifts": 4,
   "is_current": true,
   "is_past": false,
@@ -204,12 +206,10 @@
     },
     "note": "Full rest instead if you feel run-down.",
     "actual": {
-     "run_miles": 1.2,
-     "runs": [
-      25133620932
-     ],
+     "run_miles": 0,
+     "runs": [],
      "lift": true,
-     "cross": false
+     "cross": true
     },
     "status": "done"
    },
@@ -236,12 +236,14 @@
     "lift": null,
     "note": "",
     "actual": {
-     "run_miles": 0,
-     "runs": [],
+     "run_miles": 6.1,
+     "runs": [
+      25146401589
+     ],
      "lift": false,
      "cross": false
     },
-    "status": "today"
+    "status": "done"
    },
    {
     "date": "2026-11-21",
@@ -285,9 +287,9 @@
    "start": "2026-11-16",
    "end": "2026-11-22",
    "planned_miles": 12.0,
-   "actual_miles": 11.2,
+   "actual_miles": 16.1,
    "long_planned": 6,
-   "long_actual": 4.0,
+   "long_actual": 6.1,
    "lifts": 4,
    "is_current": true,
    "is_past": false
@@ -547,12 +549,10 @@
    },
    "note": "Full rest instead if you feel run-down.",
    "actual": {
-    "run_miles": 1.2,
-    "runs": [
-     25133620932
-    ],
+    "run_miles": 0,
+    "runs": [],
     "lift": true,
-    "cross": false
+    "cross": true
    },
    "status": "done"
   },
@@ -579,12 +579,14 @@
    "lift": null,
    "note": "",
    "actual": {
-    "run_miles": 0,
-    "runs": [],
+    "run_miles": 6.1,
+    "runs": [
+     25146401589
+    ],
     "lift": false,
     "cross": false
    },
-   "status": "today"
+   "status": "done"
   },
   {
    "date": "2026-11-21",
@@ -3081,12 +3083,12 @@
   "runs_done": 2,
   "pct": 100,
   "miles_planned": 6,
-  "miles_done": 11.2
+  "miles_done": 10.0
  },
  "totals": {
-  "block_miles": 11.2,
+  "block_miles": 16.1,
   "block_runs": 4,
-  "longest": 4.0
+  "longest": 6.1
  },
  "prediction": {
   "current": {
@@ -3882,6 +3884,13 @@
    "pace": "9:20",
    "hr": 157.0,
    "ef_avg": 1.134
+  },
+  {
+   "date": "2026-11-20",
+   "ef": 1.251,
+   "pace": "9:03",
+   "hr": 142.0,
+   "ef_avg": 1.155
   }
  ],
  "recovery": {
@@ -4001,6 +4010,10 @@
    {
     "date": "2026-11-19",
     "v": 46
+   },
+   {
+    "date": "2026-11-20",
+    "v": 54
    }
   ],
   "hrv": [
@@ -4119,6 +4132,10 @@
    {
     "date": "2026-11-19",
     "v": 58
+   },
+   {
+    "date": "2026-11-20",
+    "v": 43
    }
   ],
   "sleep_hours": [
@@ -4237,6 +4254,10 @@
    {
     "date": "2026-11-19",
     "v": 8.85
+   },
+   {
+    "date": "2026-11-20",
+    "v": 4.87
    }
   ],
   "sleep_score": [
@@ -4355,26 +4376,32 @@
    {
     "date": "2026-11-19",
     "v": 75
+   },
+   {
+    "date": "2026-11-20",
+    "v": 36
    }
   ],
-  "flags": []
+  "flags": [
+   "HRV is well below normal \u2014 prioritize sleep and keep runs easy."
+  ]
  },
  "recent_runs": [
   {
-   "id": 25133620932,
-   "date": "2026-11-19",
+   "id": 25146401589,
+   "date": "2026-11-20",
    "name": "Treadmill Running",
    "type": "treadmill_running",
-   "miles": 1.2,
-   "time": "21:02",
-   "pace": "17:32",
-   "pace_s": 1052,
-   "hr": 133.0,
-   "max_hr": 140.0,
+   "miles": 6.1,
+   "time": "55:15",
+   "pace": "9:03",
+   "pace_s": 543,
+   "hr": 142.0,
+   "max_hr": 157.0,
    "elev_ft": 0,
-   "cadence": 118.859375,
-   "te": 1.7999999523162842,
-   "label": "RECOVERY"
+   "cadence": 162.75,
+   "te": 2.700000047683716,
+   "label": "AEROBIC_BASE"
   },
   {
    "id": 25125107798,
@@ -5003,7 +5030,7 @@
  ],
  "peak_long": 20,
  "plan_total": 330.2,
- "streak": 2,
+ "streak": 3,
  "prs": [
   {
    "label": "Longest run",
@@ -5126,12 +5153,14 @@
    "lift": null,
    "note": "",
    "actual": {
-    "run_miles": 0,
-    "runs": [],
+    "run_miles": 6.1,
+    "runs": [
+     25146401589
+    ],
     "lift": false,
     "cross": false
    },
-   "status": "today"
+   "status": "done"
   },
   {
    "date": "2026-11-21",
@@ -5324,24 +5353,24 @@
   }
  ],
  "road": {
-  "miles": 11.2,
+  "miles": 16.1,
   "total": 330.2
  },
  "last_activity": {
-  "id": 25133620932,
-  "date": "2026-11-19",
+  "id": 25146401589,
+  "date": "2026-11-20",
   "name": "Treadmill Running",
   "type": "treadmill_running",
-  "miles": 1.2,
-  "time": "21:02",
-  "pace": "17:32",
-  "pace_s": 1052,
-  "hr": 133.0,
-  "max_hr": 140.0,
+  "miles": 6.1,
+  "time": "55:15",
+  "pace": "9:03",
+  "pace_s": 543,
+  "hr": 142.0,
+  "max_hr": 157.0,
   "elev_ft": 0,
-  "cadence": 118.859375,
-  "te": 1.7999999523162842,
-  "label": "RECOVERY"
+  "cadence": 162.75,
+  "te": 2.700000047683716,
+  "label": "AEROBIC_BASE"
  },
  "sync_warnings": [],
  "demo": false
