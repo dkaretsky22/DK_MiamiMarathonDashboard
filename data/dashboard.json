@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-21T16:55-05:00",
- "today": "2026-11-21",
+ "generated_at": "2026-11-22T04:41-05:00",
+ "today": "2026-11-22",
  "goal": {
   "race": "Miami Marathon",
   "race_date": "2027-01-31",
@@ -26,19 +26,19 @@
   "interval": "7:15\u20137:25"
  },
  "countdown": {
-  "race_days": 71,
-  "half_days": 56,
+  "race_days": 70,
+  "half_days": 55,
   "week": 1,
   "weeks_total": 11
  },
  "today_plan": {
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "week": 1,
   "location": "Gainesville",
   "run": null,
   "cross": null,
   "lift": null,
-  "note": "\ud83d\udc0a Gameday tailgate \u2014 full rest day. Hydrate well; yesterday was your long run.",
+  "note": "Travel to NY \u2014 full rest.",
   "actual": {
    "run_miles": 0,
    "runs": [],
@@ -48,13 +48,39 @@
   "status": "today"
  },
  "tomorrow_plan": {
-  "date": "2026-11-22",
-  "week": 1,
-  "location": "Gainesville",
-  "run": null,
+  "date": "2026-11-23",
+  "week": 2,
+  "location": "New York (Thanksgiving)",
+  "run": {
+   "type": "easy",
+   "miles": 3,
+   "title": "Easy 3 mi",
+   "details": "Conversational, 9:00\u20139:45/mi.",
+   "steps": [
+    {
+     "label": "Easy run",
+     "miles": 3,
+     "pace": "9:00\u20139:45",
+     "kind": "easy",
+     "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+    }
+   ]
+  },
   "cross": null,
-  "lift": null,
-  "note": "Travel to NY \u2014 full rest.",
+  "lift": {
+   "focus": "Chest & Back",
+   "home": true,
+   "exercises": [
+    "Push-ups \u2014 4 \u00d7 max (stop 2 short of failure)",
+    "Feet-elevated push-ups \u2014 3 \u00d7 10\u201315",
+    "Table/inverted rows (under a sturdy table) \u2014 4 \u00d7 8\u201312",
+    "Backpack bent-over rows \u2014 4 \u00d7 12",
+    "Y-T-W raises lying face-down \u2014 3 \u00d7 8 each",
+    "Plank \u2014 3 \u00d7 45 sec"
+   ],
+   "details": "At home \u00b7 ~40 min"
+  },
+  "note": "",
   "actual": {
    "run_miles": 0,
    "runs": [],
@@ -243,7 +269,7 @@
      "lift": false,
      "cross": false
     },
-    "status": "today"
+    "status": "rest"
    },
    {
     "date": "2026-11-22",
@@ -259,7 +285,7 @@
      "lift": false,
      "cross": false
     },
-    "status": "planned"
+    "status": "today"
    }
   ]
  },
@@ -586,7 +612,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "today"
+   "status": "rest"
   },
   {
    "date": "2026-11-22",
@@ -602,7 +628,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-23",
@@ -3482,7 +3508,7 @@
     "fitness_seconds": 12815
    },
    {
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "seconds": 12853,
     "fitness_seconds": 12718,
     "source": "Today"
@@ -3880,10 +3906,6 @@
  "recovery": {
   "resting_hr": [
    {
-    "date": "2026-10-23",
-    "v": 43
-   },
-   {
     "date": "2026-10-24",
     "v": 55
    },
@@ -3998,13 +4020,13 @@
    {
     "date": "2026-11-21",
     "v": 44
+   },
+   {
+    "date": "2026-11-22",
+    "v": 51
    }
   ],
   "hrv": [
-   {
-    "date": "2026-10-23",
-    "v": 49
-   },
    {
     "date": "2026-10-24",
     "v": 51
@@ -4124,10 +4146,6 @@
   ],
   "sleep_hours": [
    {
-    "date": "2026-10-23",
-    "v": 4.3
-   },
-   {
     "date": "2026-10-24",
     "v": 6.48
    },
@@ -4245,10 +4263,6 @@
    }
   ],
   "sleep_score": [
-   {
-    "date": "2026-10-23",
-    "v": 50
-   },
    {
     "date": "2026-10-24",
     "v": 50
@@ -5115,22 +5129,6 @@
  ],
  "week_ahead": [
   {
-   "date": "2026-11-21",
-   "week": 1,
-   "location": "Gainesville",
-   "run": null,
-   "cross": null,
-   "lift": null,
-   "note": "\ud83d\udc0a Gameday tailgate \u2014 full rest day. Hydrate well; yesterday was your long run.",
-   "actual": {
-    "run_miles": 0,
-    "runs": [],
-    "lift": false,
-    "cross": false
-   },
-   "status": "today"
-  },
-  {
    "date": "2026-11-22",
    "week": 1,
    "location": "Gainesville",
@@ -5144,7 +5142,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-23",
@@ -5324,6 +5322,49 @@
    },
    "cross": null,
    "lift": null,
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-28",
+   "week": 2,
+   "location": "New York (Thanksgiving)",
+   "run": {
+    "type": "recovery",
+    "miles": 3,
+    "title": "Recovery 3 mi",
+    "details": "Very easy, 9:45+/mi. Shake out the long run.",
+    "steps": [
+     {
+      "label": "Recovery run",
+      "miles": 3,
+      "pace": "9:45+",
+      "kind": "recovery",
+      "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
+     }
+    ]
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Back & Bis",
+    "home": true,
+    "exercises": [
+     "Table/inverted rows \u2014 4 \u00d7 8\u201312",
+     "Backpack single-arm rows \u2014 3 \u00d7 12/arm",
+     "Towel or door-frame rows \u2014 3 \u00d7 12",
+     "Backpack/band curls \u2014 4 \u00d7 12",
+     "Hammer curls (water jugs) \u2014 3 \u00d7 12",
+     "Supermans \u2014 3 \u00d7 12",
+     "Dead bugs \u2014 3 \u00d7 10/side"
+    ],
+    "details": "At home \u00b7 ~40 min"
+   },
    "note": "",
    "actual": {
     "run_miles": 0,

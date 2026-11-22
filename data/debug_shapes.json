@@ -56,12 +56,7 @@
      "minValue": "int",
      "restingValue": "int"
     },
-    "hydration": {
-     "consumedInFractionalMl": "float",
-     "consumedInMl": "int",
-     "goalInFractionalMl": "float",
-     "goalInMl": "int"
-    },
+    "hydration": {},
     "includesActivityData": "bool",
     "includesWellnessData": "bool",
     "intensityMinutes": {
