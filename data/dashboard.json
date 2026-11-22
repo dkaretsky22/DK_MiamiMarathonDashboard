@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T04:41-05:00",
+ "generated_at": "2026-11-22T12:26-05:00",
  "today": "2026-11-22",
  "goal": {
   "race": "Miami Marathon",
@@ -4023,7 +4023,7 @@
    },
    {
     "date": "2026-11-22",
-    "v": 51
+    "v": 45
    }
   ],
   "hrv": [
@@ -4142,6 +4142,10 @@
    {
     "date": "2026-11-21",
     "v": 54
+   },
+   {
+    "date": "2026-11-22",
+    "v": 65
    }
   ],
   "sleep_hours": [
@@ -4260,6 +4264,10 @@
    {
     "date": "2026-11-21",
     "v": 5.52
+   },
+   {
+    "date": "2026-11-22",
+    "v": 5.28
    }
   ],
   "sleep_score": [
@@ -4378,11 +4386,13 @@
    {
     "date": "2026-11-21",
     "v": 61
+   },
+   {
+    "date": "2026-11-22",
+    "v": 66
    }
   ],
-  "flags": [
-   "HRV is well below normal \u2014 prioritize sleep and keep runs easy."
-  ]
+  "flags": []
  },
  "recent_runs": [
   {
