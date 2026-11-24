@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-23T20:00-05:00",
- "today": "2026-11-23",
+ "generated_at": "2026-11-24T05:50-05:00",
+ "today": "2026-11-24",
  "goal": {
   "race": "Miami Marathon",
   "race_date": "2027-01-31",
@@ -26,56 +26,12 @@
   "interval": "7:15\u20137:25"
  },
  "countdown": {
-  "race_days": 69,
-  "half_days": 54,
+  "race_days": 68,
+  "half_days": 53,
   "week": 2,
   "weeks_total": 11
  },
  "today_plan": {
-  "date": "2026-11-23",
-  "week": 2,
-  "location": "New York (Thanksgiving)",
-  "run": {
-   "type": "easy",
-   "miles": 3,
-   "title": "Easy 3 mi",
-   "details": "Conversational, 9:00\u20139:45/mi.",
-   "steps": [
-    {
-     "label": "Easy run",
-     "miles": 3,
-     "pace": "9:00\u20139:45",
-     "kind": "easy",
-     "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
-    }
-   ]
-  },
-  "cross": null,
-  "lift": {
-   "focus": "Chest & Back",
-   "home": true,
-   "exercises": [
-    "Push-ups \u2014 4 \u00d7 max (stop 2 short of failure)",
-    "Feet-elevated push-ups \u2014 3 \u00d7 10\u201315",
-    "Table/inverted rows (under a sturdy table) \u2014 4 \u00d7 8\u201312",
-    "Backpack bent-over rows \u2014 4 \u00d7 12",
-    "Y-T-W raises lying face-down \u2014 3 \u00d7 8 each",
-    "Plank \u2014 3 \u00d7 45 sec"
-   ],
-   "details": "At home \u00b7 ~40 min"
-  },
-  "note": "",
-  "actual": {
-   "run_miles": 3.1,
-   "runs": [
-    25174350627
-   ],
-   "lift": true,
-   "cross": false
-  },
-  "status": "done"
- },
- "tomorrow_plan": {
   "date": "2026-11-24",
   "week": 2,
   "location": "New York (Thanksgiving)",
@@ -115,6 +71,39 @@
     "Single-leg calf raises on a step \u2014 3 \u00d7 15\u201320",
     "Wall sit \u2014 3 \u00d7 45 sec",
     "Side plank \u2014 2 \u00d7 30 sec/side"
+   ],
+   "details": "At home \u00b7 ~40 min"
+  },
+  "note": "",
+  "actual": {
+   "run_miles": 0,
+   "runs": [],
+   "lift": false,
+   "cross": false
+  },
+  "status": "today"
+ },
+ "tomorrow_plan": {
+  "date": "2026-11-25",
+  "week": 2,
+  "location": "New York (Thanksgiving)",
+  "run": null,
+  "cross": {
+   "type": "walk",
+   "minutes": 35,
+   "title": "Brisk walk 35 min",
+   "details": "Outdoor brisk walk (hills if you have them). Too icy? Stair climbing or an easy home cardio circuit."
+  },
+  "lift": {
+   "focus": "Shoulders & Arms",
+   "home": true,
+   "exercises": [
+    "Pike push-ups \u2014 4 \u00d7 8\u201312",
+    "Backpack overhead press \u2014 3 \u00d7 12",
+    "Lateral raises (water jugs or band) \u2014 3 \u00d7 15",
+    "Backpack/band curls \u2014 4 \u00d7 12\u201315",
+    "Chair dips \u2014 3 \u00d7 12\u201315",
+    "Diamond push-ups \u2014 3 \u00d7 10\u201312"
    ],
    "details": "At home \u00b7 ~40 min"
   },
@@ -235,7 +224,7 @@
      "lift": false,
      "cross": false
     },
-    "status": "planned"
+    "status": "today"
    },
    {
     "date": "2026-11-25",
@@ -838,7 +827,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-25",
@@ -3205,11 +3194,11 @@
   }
  ],
  "compliance": {
-  "runs_planned": 3,
-  "runs_done": 3,
+  "runs_planned": 4,
+  "runs_done": 4,
   "pct": 100,
-  "miles_planned": 12,
-  "miles_done": 16.1
+  "miles_planned": 15,
+  "miles_done": 19.2
  },
  "totals": {
   "block_miles": 19.2,
@@ -3628,6 +3617,12 @@
     "seconds": 12925,
     "source": "VO2max trend",
     "fitness_seconds": 12790
+   },
+   {
+    "date": "2026-11-24",
+    "seconds": 12901,
+    "fitness_seconds": 12766,
+    "source": "Today"
    }
   ],
   "goal_seconds": 13500
@@ -4015,10 +4010,6 @@
  "recovery": {
   "resting_hr": [
    {
-    "date": "2026-10-25",
-    "v": 49
-   },
-   {
     "date": "2026-10-26",
     "v": 42
    },
@@ -4133,13 +4124,13 @@
    {
     "date": "2026-11-23",
     "v": 44
+   },
+   {
+    "date": "2026-11-24",
+    "v": 48
    }
   ],
   "hrv": [
-   {
-    "date": "2026-10-25",
-    "v": 65
-   },
    {
     "date": "2026-10-26",
     "v": 64
@@ -4259,10 +4250,6 @@
   ],
   "sleep_hours": [
    {
-    "date": "2026-10-25",
-    "v": 6.03
-   },
-   {
     "date": "2026-10-26",
     "v": 10.0
    },
@@ -4380,10 +4367,6 @@
    }
   ],
   "sleep_score": [
-   {
-    "date": "2026-10-25",
-    "v": 72
-   },
    {
     "date": "2026-10-26",
     "v": 89
@@ -5248,50 +5231,6 @@
  ],
  "week_ahead": [
   {
-   "date": "2026-11-23",
-   "week": 2,
-   "location": "New York (Thanksgiving)",
-   "run": {
-    "type": "easy",
-    "miles": 3,
-    "title": "Easy 3 mi",
-    "details": "Conversational, 9:00\u20139:45/mi.",
-    "steps": [
-     {
-      "label": "Easy run",
-      "miles": 3,
-      "pace": "9:00\u20139:45",
-      "kind": "easy",
-      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
-     }
-    ]
-   },
-   "cross": null,
-   "lift": {
-    "focus": "Chest & Back",
-    "home": true,
-    "exercises": [
-     "Push-ups \u2014 4 \u00d7 max (stop 2 short of failure)",
-     "Feet-elevated push-ups \u2014 3 \u00d7 10\u201315",
-     "Table/inverted rows (under a sturdy table) \u2014 4 \u00d7 8\u201312",
-     "Backpack bent-over rows \u2014 4 \u00d7 12",
-     "Y-T-W raises lying face-down \u2014 3 \u00d7 8 each",
-     "Plank \u2014 3 \u00d7 45 sec"
-    ],
-    "details": "At home \u00b7 ~40 min"
-   },
-   "note": "",
-   "actual": {
-    "run_miles": 3.1,
-    "runs": [
-     25174350627
-    ],
-    "lift": true,
-    "cross": false
-   },
-   "status": "done"
-  },
-  {
    "date": "2026-11-24",
    "week": 2,
    "location": "New York (Thanksgiving)",
@@ -5341,7 +5280,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-25",
@@ -5499,6 +5438,39 @@
     "details": "At home \u00b7 ~40 min"
    },
    "note": "Travel back to Gainesville.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-11-30",
+   "week": 3,
+   "location": "Gainesville",
+   "run": {
+    "type": "easy",
+    "miles": 4,
+    "title": "Easy 4 mi",
+    "details": "Conversational, 9:00\u20139:45/mi.",
+    "steps": [
+     {
+      "label": "Easy run",
+      "miles": 4,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Chest & Back",
+    "details": ""
+   },
+   "note": "",
    "actual": {
     "run_miles": 0,
     "runs": [],
