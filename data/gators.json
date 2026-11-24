@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T01:00+00:00",
+ "updated": "2026-11-24T20:54+00:00",
  "team": {
   "name": "Florida Gators",
   "record": "6-1",
@@ -1099,6 +1099,13 @@
  ],
  "news": [
   {
+   "headline": "NCAA Bracketology: Predicting the 2027 men's March Madness field",
+   "description": "Kelvin Sampson's legacy is secure, and if the Players Era 8 was any indication, the Cougars are serious about that elusive national title.",
+   "published": "2026-11-24T14:14:22Z",
+   "url": "https://www.espn.com/espn/feature/story/_/page/bracketology/ncaa-bracketology-2027-march-madness-men-field-predictions",
+   "image": "https://a.espncdn.com/photo/2026/1124/r1750571_1296x729_16-9.jpg"
+  },
+  {
    "headline": "Breaking down the 2026-27 AP Top 25 men's basketball poll for Week 3",
    "description": "Stats, records and upcoming games for the Top-25 teams in the AP men's basketball poll. Houston rises, Duke falls.",
    "published": "2026-11-23T19:00:23Z",
@@ -1174,13 +1181,6 @@
    "published": "2026-11-19T14:06:38Z",
    "url": "https://www.espn.com/mens-college-basketball/story/_/id/50524054/georgia-ag-asks-sec-take-action-vs-lsu-expulsion",
    "image": "https://a.espncdn.com/photo/2023/0412/r1158074_1296x729_16-9.jpg"
-  },
-  {
-   "headline": "No. 8 Houston Cougars play the No. 1 Florida Gators",
-   "description": "Florida Gators (5-0) vs. Houston Cougars (4-0)",
-   "published": "2026-11-18T15:20:34Z",
-   "url": "http://www.espn.com/ncb/preview?gameId=401920514",
-   "image": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920514.png?templateId=espn.applewatch.awayhome.1"
   }
  ],
  "boxscores": {
@@ -2525,10 +2525,17 @@
       {
        "id": "int",
        "type": "str",
+       "uid": "str",
        "guid": "str",
        "description": "str",
        "sportId": "int",
-       "topicId": "int"
+       "leagueId": "int",
+       "league": {
+        "id": "...",
+        "description": "...",
+        "abbreviation": "...",
+        "links": "..."
+       }
       }
      ],
      "byline": "str",

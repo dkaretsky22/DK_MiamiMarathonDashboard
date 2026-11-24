@@ -4832,5 +4832,29 @@
   "startTimeLocal": "2026-11-23 12:09:10",
   "trainingEffectLabel": "UNKNOWN",
   "type": "strength_training"
+ },
+ {
+  "activityId": 25188679291,
+  "activityName": "Rye Brook Running",
+  "activityTrainingLoad": 74.145263671875,
+  "aerobicTrainingEffect": 3.0,
+  "anaerobicTrainingEffect": 0.0,
+  "averageHR": 140.0,
+  "averageRunningCadenceInStepsPerMinute": 167.234375,
+  "averageSpeed": 2.9800000190734863,
+  "avgStrideLength": 106.5699951171875,
+  "calories": 600.0,
+  "distance": 9039.830078125,
+  "duration": 3033.14501953125,
+  "elapsedDuration": 4002.39501953125,
+  "elevationGain": 101.71299743652344,
+  "lapCount": 6,
+  "maxHR": 164.0,
+  "maxSpeed": 4.369999885559082,
+  "movingDuration": 3030.3729858398438,
+  "parentType": 17,
+  "startTimeLocal": "2026-11-24 14:39:37",
+  "trainingEffectLabel": "AEROBIC_BASE",
+  "type": "running"
  }
 ]
