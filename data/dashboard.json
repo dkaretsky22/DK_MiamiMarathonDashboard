@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T08:12-05:00",
+ "generated_at": "2026-11-23T20:00-05:00",
  "today": "2026-11-23",
  "goal": {
   "race": "Miami Marathon",
@@ -66,12 +66,14 @@
   },
   "note": "",
   "actual": {
-   "run_miles": 0,
-   "runs": [],
-   "lift": false,
+   "run_miles": 3.1,
+   "runs": [
+    25174350627
+   ],
+   "lift": true,
    "cross": false
   },
-  "status": "today"
+  "status": "done"
  },
  "tomorrow_plan": {
   "date": "2026-11-24",
@@ -132,10 +134,10 @@
   "start": "2026-11-23",
   "end": "2026-11-29",
   "planned_miles": 23.0,
-  "actual_miles": 0,
+  "actual_miles": 3.1,
   "long_planned": 8,
-  "long_actual": 0,
-  "lifts": 0,
+  "long_actual": 3.1,
+  "lifts": 1,
   "is_current": true,
   "is_past": false,
   "days": [
@@ -174,12 +176,14 @@
     },
     "note": "",
     "actual": {
-     "run_miles": 0,
-     "runs": [],
-     "lift": false,
+     "run_miles": 3.1,
+     "runs": [
+      25174350627
+     ],
+     "lift": true,
      "cross": false
     },
-    "status": "today"
+    "status": "done"
    },
    {
     "date": "2026-11-24",
@@ -421,10 +425,10 @@
    "start": "2026-11-23",
    "end": "2026-11-29",
    "planned_miles": 23.0,
-   "actual_miles": 0,
+   "actual_miles": 3.1,
    "long_planned": 8,
-   "long_actual": 0,
-   "lifts": 0,
+   "long_actual": 3.1,
+   "lifts": 1,
    "is_current": true,
    "is_past": false
   },
@@ -775,12 +779,14 @@
    },
    "note": "",
    "actual": {
-    "run_miles": 0,
-    "runs": [],
-    "lift": false,
+    "run_miles": 3.1,
+    "runs": [
+     25174350627
+    ],
+    "lift": true,
     "cross": false
    },
-   "status": "today"
+   "status": "done"
   },
   {
    "date": "2026-11-24",
@@ -3206,19 +3212,19 @@
   "miles_done": 16.1
  },
  "totals": {
-  "block_miles": 16.1,
-  "block_runs": 4,
+  "block_miles": 19.2,
+  "block_runs": 5,
   "longest": 6.1
  },
  "prediction": {
   "current": {
-   "seconds": 12853,
-   "method": "July half, adjusted by Garmin VO2max trend (56 \u2192 57)",
-   "fitness_seconds": 12718,
+   "seconds": 12901,
+   "method": "July half, adjusted by Garmin VO2max trend (56 \u2192 56)",
+   "fitness_seconds": 12766,
    "endurance_penalty": 135,
-   "time": "3:34:13",
-   "pace": "8:10",
-   "gap": -647
+   "time": "3:35:01",
+   "pace": "8:12",
+   "gap": -599
   },
   "history": [
    {
@@ -3619,9 +3625,9 @@
    },
    {
     "date": "2026-11-23",
-    "seconds": 12853,
-    "fitness_seconds": 12718,
-    "source": "Today"
+    "seconds": 12925,
+    "source": "VO2max trend",
+    "fitness_seconds": 12790
    }
   ],
   "goal_seconds": 13500
@@ -4126,7 +4132,7 @@
    },
    {
     "date": "2026-11-23",
-    "v": 51
+    "v": 44
    }
   ],
   "hrv": [
@@ -4245,6 +4251,10 @@
    {
     "date": "2026-11-22",
     "v": 65
+   },
+   {
+    "date": "2026-11-23",
+    "v": 60
    }
   ],
   "sleep_hours": [
@@ -4363,6 +4373,10 @@
    {
     "date": "2026-11-22",
     "v": 5.28
+   },
+   {
+    "date": "2026-11-23",
+    "v": 9.02
    }
   ],
   "sleep_score": [
@@ -4481,11 +4495,31 @@
    {
     "date": "2026-11-22",
     "v": 66
+   },
+   {
+    "date": "2026-11-23",
+    "v": 77
    }
   ],
   "flags": []
  },
  "recent_runs": [
+  {
+   "id": 25174350627,
+   "date": "2026-11-23",
+   "name": "Rye Brook Running",
+   "type": "running",
+   "miles": 3.1,
+   "time": "26:27",
+   "pace": "8:31",
+   "pace_s": 511,
+   "hr": 144.0,
+   "max_hr": 173.0,
+   "elev_ft": 198,
+   "cadence": 166.609375,
+   "te": 3.0,
+   "label": "AEROBIC_BASE"
+  },
   {
    "id": 25146401589,
    "date": "2026-11-20",
@@ -5109,27 +5143,11 @@
    "cadence": 167.15625,
    "te": 2.700000047683716,
    "label": "AEROBIC_BASE"
-  },
-  {
-   "id": 24360443282,
-   "date": "2026-09-14",
-   "name": "Gainesville Running",
-   "type": "running",
-   "miles": 3.0,
-   "time": "31:36",
-   "pace": "10:31",
-   "pace_s": 631,
-   "hr": 160.0,
-   "max_hr": 174.0,
-   "elev_ft": 68,
-   "cadence": 170.15625,
-   "te": 2.700000047683716,
-   "label": "TEMPO"
   }
  ],
  "peak_long": 20,
  "plan_total": 330.2,
- "streak": 3,
+ "streak": 4,
  "prs": [
   {
    "label": "Longest run",
@@ -5264,12 +5282,14 @@
    },
    "note": "",
    "actual": {
-    "run_miles": 0,
-    "runs": [],
-    "lift": false,
+    "run_miles": 3.1,
+    "runs": [
+     25174350627
+    ],
+    "lift": true,
     "cross": false
    },
-   "status": "today"
+   "status": "done"
   },
   {
    "date": "2026-11-24",
@@ -5489,23 +5509,23 @@
   }
  ],
  "road": {
-  "miles": 16.1,
+  "miles": 19.2,
   "total": 330.2
  },
  "last_activity": {
-  "id": 25146401589,
-  "date": "2026-11-20",
-  "name": "Treadmill Running",
-  "type": "treadmill_running",
-  "miles": 6.1,
-  "time": "55:15",
-  "pace": "9:03",
-  "pace_s": 543,
-  "hr": 142.0,
-  "max_hr": 157.0,
-  "elev_ft": 0,
-  "cadence": 162.75,
-  "te": 2.700000047683716,
+  "id": 25174350627,
+  "date": "2026-11-23",
+  "name": "Rye Brook Running",
+  "type": "running",
+  "miles": 3.1,
+  "time": "26:27",
+  "pace": "8:31",
+  "pace_s": 511,
+  "hr": 144.0,
+  "max_hr": 173.0,
+  "elev_ft": 198,
+  "cadence": 166.609375,
+  "te": 3.0,
   "label": "AEROBIC_BASE"
  },
  "sync_warnings": [],
