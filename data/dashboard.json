@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T09:12-05:00",
+ "generated_at": "2026-11-25T18:09-05:00",
  "today": "2026-11-25",
  "goal": {
   "race": "Miami Marathon",
@@ -59,10 +59,10 @@
   "actual": {
    "run_miles": 0,
    "runs": [],
-   "lift": false,
-   "cross": false
+   "lift": true,
+   "cross": true
   },
-  "status": "today"
+  "status": "done"
  },
  "tomorrow_plan": {
   "date": "2026-11-26",
@@ -104,7 +104,7 @@
   "actual_miles": 8.7,
   "long_planned": 8,
   "long_actual": 5.6,
-  "lifts": 2,
+  "lifts": 3,
   "is_current": true,
   "is_past": false,
   "days": [
@@ -234,10 +234,10 @@
     "actual": {
      "run_miles": 0,
      "runs": [],
-     "lift": false,
-     "cross": false
+     "lift": true,
+     "cross": true
     },
-    "status": "today"
+    "status": "done"
    },
    {
     "date": "2026-11-26",
@@ -397,7 +397,7 @@
    "actual_miles": 8.7,
    "long_planned": 8,
    "long_actual": 5.6,
-   "lifts": 2,
+   "lifts": 3,
    "is_current": true,
    "is_past": false
   },
@@ -839,10 +839,10 @@
    "actual": {
     "run_miles": 0,
     "runs": [],
-    "lift": false,
-    "cross": false
+    "lift": true,
+    "cross": true
    },
-   "status": "today"
+   "status": "done"
   },
   {
    "date": "2026-11-26",
@@ -4122,7 +4122,7 @@
    },
    {
     "date": "2026-11-25",
-    "v": 48
+    "v": 47
    }
   ],
   "hrv": [
@@ -5265,10 +5265,10 @@
    "actual": {
     "run_miles": 0,
     "runs": [],
-    "lift": false,
-    "cross": false
+    "lift": true,
+    "cross": true
    },
-   "status": "today"
+   "status": "done"
   },
   {
    "date": "2026-11-26",
