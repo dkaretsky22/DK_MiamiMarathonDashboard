@@ -4856,5 +4856,23 @@
   "startTimeLocal": "2026-11-24 14:39:37",
   "trainingEffectLabel": "AEROBIC_BASE",
   "type": "running"
+ },
+ {
+  "activityId": 25189595650,
+  "activityName": "Strength",
+  "activityTrainingLoad": 28.434127807617188,
+  "aerobicTrainingEffect": 1.5,
+  "anaerobicTrainingEffect": 1.0,
+  "averageHR": 113.0,
+  "calories": 239.0,
+  "duration": 2218.527099609375,
+  "elapsedDuration": 2218.527099609375,
+  "lapCount": 1,
+  "maxHR": 163.0,
+  "movingDuration": 2218.527099609375,
+  "parentType": 29,
+  "startTimeLocal": "2026-11-24 17:18:57",
+  "trainingEffectLabel": "ANAEROBIC_CAPACITY",
+  "type": "strength_training"
  }
 ]

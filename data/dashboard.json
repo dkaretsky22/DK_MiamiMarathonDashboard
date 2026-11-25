@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T15:54-05:00",
+ "generated_at": "2026-11-24T23:05-05:00",
  "today": "2026-11-24",
  "goal": {
   "race": "Miami Marathon",
@@ -80,7 +80,7 @@
    "runs": [
     25188679291
    ],
-   "lift": false,
+   "lift": true,
    "cross": false
   },
   "status": "done"
@@ -128,7 +128,7 @@
   "actual_miles": 8.7,
   "long_planned": 8,
   "long_actual": 5.6,
-  "lifts": 1,
+  "lifts": 2,
   "is_current": true,
   "is_past": false,
   "days": [
@@ -225,7 +225,7 @@
      "runs": [
       25188679291
      ],
-     "lift": false,
+     "lift": true,
      "cross": false
     },
     "status": "done"
@@ -421,7 +421,7 @@
    "actual_miles": 8.7,
    "long_planned": 8,
    "long_actual": 5.6,
-   "lifts": 1,
+   "lifts": 2,
    "is_current": true,
    "is_past": false
   },
@@ -830,7 +830,7 @@
     "runs": [
      25188679291
     ],
-    "lift": false,
+    "lift": true,
     "cross": false
    },
    "status": "done"
@@ -5304,7 +5304,7 @@
     "runs": [
      25188679291
     ],
-    "lift": false,
+    "lift": true,
     "cross": false
    },
    "status": "done"
