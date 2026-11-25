@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-24T23:05-05:00",
- "today": "2026-11-24",
+ "generated_at": "2026-11-25T09:12-05:00",
+ "today": "2026-11-25",
  "goal": {
   "race": "Miami Marathon",
   "race_date": "2027-01-31",
@@ -26,66 +26,12 @@
   "interval": "7:15\u20137:25"
  },
  "countdown": {
-  "race_days": 68,
-  "half_days": 53,
+  "race_days": 67,
+  "half_days": 52,
   "week": 2,
   "weeks_total": 11
  },
  "today_plan": {
-  "date": "2026-11-24",
-  "week": 2,
-  "location": "New York (Thanksgiving)",
-  "run": {
-   "type": "easy",
-   "miles": 5,
-   "title": "Easy 5 mi + 6 strides",
-   "details": "Easy pace, then 6 \u00d7 20 sec quick & relaxed.",
-   "steps": [
-    {
-     "label": "Easy run",
-     "miles": 5,
-     "pace": "9:00\u20139:45",
-     "kind": "easy",
-     "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
-    },
-    {
-     "label": "6 \u00d7 strides",
-     "reps": 6,
-     "rep_desc": "20 sec",
-     "pace": "~6:30\u20137:00 feel",
-     "rest": "walk/jog 60 sec",
-     "kind": "stride",
-     "feel": "Smooth and fast (\u2248mile-race effort), relaxed shoulders. Not a sprint."
-    }
-   ]
-  },
-  "cross": null,
-  "lift": {
-   "focus": "Legs",
-   "home": true,
-   "exercises": [
-    "Bulgarian split squats (rear foot on couch) \u2014 3 \u00d7 10/leg",
-    "Single-leg Romanian deadlift (backpack) \u2014 3 \u00d7 10/leg",
-    "Step-ups onto a stair or chair \u2014 3 \u00d7 12/leg",
-    "Single-leg glute bridges \u2014 3 \u00d7 12/leg",
-    "Single-leg calf raises on a step \u2014 3 \u00d7 15\u201320",
-    "Wall sit \u2014 3 \u00d7 45 sec",
-    "Side plank \u2014 2 \u00d7 30 sec/side"
-   ],
-   "details": "At home \u00b7 ~40 min"
-  },
-  "note": "",
-  "actual": {
-   "run_miles": 5.62,
-   "runs": [
-    25188679291
-   ],
-   "lift": true,
-   "cross": false
-  },
-  "status": "done"
- },
- "tomorrow_plan": {
   "date": "2026-11-25",
   "week": 2,
   "location": "New York (Thanksgiving)",
@@ -110,6 +56,36 @@
    "details": "At home \u00b7 ~40 min"
   },
   "note": "",
+  "actual": {
+   "run_miles": 0,
+   "runs": [],
+   "lift": false,
+   "cross": false
+  },
+  "status": "today"
+ },
+ "tomorrow_plan": {
+  "date": "2026-11-26",
+  "week": 2,
+  "location": "New York (Thanksgiving)",
+  "run": {
+   "type": "easy",
+   "miles": 4,
+   "title": "Easy 4 mi",
+   "details": "Conversational, 9:00\u20139:45/mi.",
+   "steps": [
+    {
+     "label": "Easy run",
+     "miles": 4,
+     "pace": "9:00\u20139:45",
+     "kind": "easy",
+     "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+    }
+   ]
+  },
+  "cross": null,
+  "lift": null,
+  "note": "Thanksgiving \u2014 Turkey Trot is fine at steady effort, not a race.",
   "actual": {
    "run_miles": 0,
    "runs": [],
@@ -261,7 +237,7 @@
      "lift": false,
      "cross": false
     },
-    "status": "planned"
+    "status": "today"
    },
    {
     "date": "2026-11-26",
@@ -866,7 +842,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-26",
@@ -3200,11 +3176,11 @@
   }
  ],
  "compliance": {
-  "runs_planned": 4,
-  "runs_done": 4,
+  "runs_planned": 5,
+  "runs_done": 5,
   "pct": 100,
-  "miles_planned": 15,
-  "miles_done": 19.2
+  "miles_planned": 20,
+  "miles_done": 24.8
  },
  "totals": {
   "block_miles": 24.8,
@@ -3629,6 +3605,12 @@
     "seconds": 12877,
     "source": "VO2max trend",
     "fitness_seconds": 12742
+   },
+   {
+    "date": "2026-11-25",
+    "seconds": 12901,
+    "fitness_seconds": 12766,
+    "source": "Today"
    }
   ],
   "goal_seconds": 13500
@@ -4023,10 +4005,6 @@
  "recovery": {
   "resting_hr": [
    {
-    "date": "2026-10-26",
-    "v": 42
-   },
-   {
     "date": "2026-10-27",
     "v": 48
    },
@@ -4141,13 +4119,13 @@
    {
     "date": "2026-11-24",
     "v": 44
+   },
+   {
+    "date": "2026-11-25",
+    "v": 48
    }
   ],
   "hrv": [
-   {
-    "date": "2026-10-26",
-    "v": 64
-   },
    {
     "date": "2026-10-27",
     "v": 59
@@ -4263,13 +4241,13 @@
    {
     "date": "2026-11-24",
     "v": 61
+   },
+   {
+    "date": "2026-11-25",
+    "v": 45
    }
   ],
   "sleep_hours": [
-   {
-    "date": "2026-10-26",
-    "v": 10.0
-   },
    {
     "date": "2026-10-27",
     "v": 5.8
@@ -4385,13 +4363,13 @@
    {
     "date": "2026-11-24",
     "v": 9.08
+   },
+   {
+    "date": "2026-11-25",
+    "v": 6.35
    }
   ],
   "sleep_score": [
-   {
-    "date": "2026-10-26",
-    "v": 89
-   },
    {
     "date": "2026-10-27",
     "v": 61
@@ -4507,6 +4485,10 @@
    {
     "date": "2026-11-24",
     "v": 76
+   },
+   {
+    "date": "2026-11-25",
+    "v": 73
    }
   ],
   "flags": []
@@ -5256,60 +5238,6 @@
  ],
  "week_ahead": [
   {
-   "date": "2026-11-24",
-   "week": 2,
-   "location": "New York (Thanksgiving)",
-   "run": {
-    "type": "easy",
-    "miles": 5,
-    "title": "Easy 5 mi + 6 strides",
-    "details": "Easy pace, then 6 \u00d7 20 sec quick & relaxed.",
-    "steps": [
-     {
-      "label": "Easy run",
-      "miles": 5,
-      "pace": "9:00\u20139:45",
-      "kind": "easy",
-      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
-     },
-     {
-      "label": "6 \u00d7 strides",
-      "reps": 6,
-      "rep_desc": "20 sec",
-      "pace": "~6:30\u20137:00 feel",
-      "rest": "walk/jog 60 sec",
-      "kind": "stride",
-      "feel": "Smooth and fast (\u2248mile-race effort), relaxed shoulders. Not a sprint."
-     }
-    ]
-   },
-   "cross": null,
-   "lift": {
-    "focus": "Legs",
-    "home": true,
-    "exercises": [
-     "Bulgarian split squats (rear foot on couch) \u2014 3 \u00d7 10/leg",
-     "Single-leg Romanian deadlift (backpack) \u2014 3 \u00d7 10/leg",
-     "Step-ups onto a stair or chair \u2014 3 \u00d7 12/leg",
-     "Single-leg glute bridges \u2014 3 \u00d7 12/leg",
-     "Single-leg calf raises on a step \u2014 3 \u00d7 15\u201320",
-     "Wall sit \u2014 3 \u00d7 45 sec",
-     "Side plank \u2014 2 \u00d7 30 sec/side"
-    ],
-    "details": "At home \u00b7 ~40 min"
-   },
-   "note": "",
-   "actual": {
-    "run_miles": 5.62,
-    "runs": [
-     25188679291
-    ],
-    "lift": true,
-    "cross": false
-   },
-   "status": "done"
-  },
-  {
    "date": "2026-11-25",
    "week": 2,
    "location": "New York (Thanksgiving)",
@@ -5340,7 +5268,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-26",
@@ -5498,6 +5426,56 @@
     "details": ""
    },
    "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-01",
+   "week": 3,
+   "location": "Gainesville",
+   "run": {
+    "type": "workout",
+    "miles": 6,
+    "title": "Tempo: 3 \u00d7 1 mi",
+    "details": "1.5 mi warm-up \u00b7 3 \u00d7 1 mi @ 7:40\u20137:55 w/ 90 sec jog \u00b7 1.5 mi cool-down",
+    "steps": [
+     {
+      "label": "Warm-up",
+      "miles": 1.5,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     },
+     {
+      "label": "3 \u00d7 1 mi",
+      "reps": 3,
+      "rep_miles": 1,
+      "miles": 3,
+      "pace": "7:40\u20137:55",
+      "rest": "90 sec easy jog",
+      "kind": "tempo",
+      "feel": "Comfortably hard: 3\u20134 word answers, steady breathing. Even splits \u2014 don't start fast. RPE 7/10."
+     },
+     {
+      "label": "Cool-down",
+      "miles": 1.5,
+      "pace": "9:00\u20139:45",
+      "kind": "easy",
+      "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
+     }
+    ]
+   },
+   "cross": null,
+   "lift": {
+    "focus": "Legs",
+    "details": ""
+   },
+   "note": "Run AM, lift PM.",
    "actual": {
     "run_miles": 0,
     "runs": [],
