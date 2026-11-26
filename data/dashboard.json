@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-25T18:09-05:00",
- "today": "2026-11-25",
+ "generated_at": "2026-11-26T00:10-05:00",
+ "today": "2026-11-26",
  "goal": {
   "race": "Miami Marathon",
   "race_date": "2027-01-31",
@@ -26,45 +26,12 @@
   "interval": "7:15\u20137:25"
  },
  "countdown": {
-  "race_days": 67,
-  "half_days": 52,
+  "race_days": 66,
+  "half_days": 51,
   "week": 2,
   "weeks_total": 11
  },
  "today_plan": {
-  "date": "2026-11-25",
-  "week": 2,
-  "location": "New York (Thanksgiving)",
-  "run": null,
-  "cross": {
-   "type": "walk",
-   "minutes": 35,
-   "title": "Brisk walk 35 min",
-   "details": "Outdoor brisk walk (hills if you have them). Too icy? Stair climbing or an easy home cardio circuit."
-  },
-  "lift": {
-   "focus": "Shoulders & Arms",
-   "home": true,
-   "exercises": [
-    "Pike push-ups \u2014 4 \u00d7 8\u201312",
-    "Backpack overhead press \u2014 3 \u00d7 12",
-    "Lateral raises (water jugs or band) \u2014 3 \u00d7 15",
-    "Backpack/band curls \u2014 4 \u00d7 12\u201315",
-    "Chair dips \u2014 3 \u00d7 12\u201315",
-    "Diamond push-ups \u2014 3 \u00d7 10\u201312"
-   ],
-   "details": "At home \u00b7 ~40 min"
-  },
-  "note": "",
-  "actual": {
-   "run_miles": 0,
-   "runs": [],
-   "lift": true,
-   "cross": true
-  },
-  "status": "done"
- },
- "tomorrow_plan": {
   "date": "2026-11-26",
   "week": 2,
   "location": "New York (Thanksgiving)",
@@ -86,6 +53,36 @@
   "cross": null,
   "lift": null,
   "note": "Thanksgiving \u2014 Turkey Trot is fine at steady effort, not a race.",
+  "actual": {
+   "run_miles": 0,
+   "runs": [],
+   "lift": false,
+   "cross": false
+  },
+  "status": "today"
+ },
+ "tomorrow_plan": {
+  "date": "2026-11-27",
+  "week": 2,
+  "location": "New York (Thanksgiving)",
+  "run": {
+   "type": "long",
+   "miles": 8,
+   "title": "Long run 8 mi",
+   "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi).",
+   "steps": [
+    {
+     "label": "Long run",
+     "miles": 8,
+     "pace": "9:00\u20139:30",
+     "kind": "long",
+     "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
+    }
+   ]
+  },
+  "cross": null,
+  "lift": null,
+  "note": "",
   "actual": {
    "run_miles": 0,
    "runs": [],
@@ -267,7 +264,7 @@
      "lift": false,
      "cross": false
     },
-    "status": "planned"
+    "status": "today"
    },
    {
     "date": "2026-11-27",
@@ -872,7 +869,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-27",
@@ -3607,7 +3604,7 @@
     "fitness_seconds": 12742
    },
    {
-    "date": "2026-11-25",
+    "date": "2026-11-26",
     "seconds": 12901,
     "fitness_seconds": 12766,
     "source": "Today"
@@ -3617,39 +3614,32 @@
  },
  "efficiency": [
   {
-   "date": "2026-06-28",
-   "ef": 1.12,
-   "pace": "8:46",
-   "hr": 164.0,
-   "ef_avg": 1.12
-  },
-  {
    "date": "2026-07-02",
    "ef": 1.074,
    "pace": "9:02",
    "hr": 166.0,
-   "ef_avg": 1.097
+   "ef_avg": 1.074
   },
   {
    "date": "2026-07-03",
    "ef": 1.095,
    "pace": "9:01",
    "hr": 163.0,
-   "ef_avg": 1.096
+   "ef_avg": 1.085
   },
   {
    "date": "2026-07-09",
    "ef": 1.164,
    "pace": "8:59",
    "hr": 154.0,
-   "ef_avg": 1.113
+   "ef_avg": 1.111
   },
   {
    "date": "2026-07-11",
    "ef": 1.136,
    "pace": "8:51",
    "hr": 160.0,
-   "ef_avg": 1.118
+   "ef_avg": 1.117
   },
   {
    "date": "2026-07-16",
@@ -4005,10 +3995,6 @@
  "recovery": {
   "resting_hr": [
    {
-    "date": "2026-10-27",
-    "v": 48
-   },
-   {
     "date": "2026-10-28",
     "v": 48
    },
@@ -4126,10 +4112,6 @@
    }
   ],
   "hrv": [
-   {
-    "date": "2026-10-27",
-    "v": 59
-   },
    {
     "date": "2026-10-28",
     "v": 58
@@ -4249,10 +4231,6 @@
   ],
   "sleep_hours": [
    {
-    "date": "2026-10-27",
-    "v": 5.8
-   },
-   {
     "date": "2026-10-28",
     "v": 8.33
    },
@@ -4370,10 +4348,6 @@
    }
   ],
   "sleep_score": [
-   {
-    "date": "2026-10-27",
-    "v": 61
-   },
    {
     "date": "2026-10-28",
     "v": 76
@@ -5238,39 +5212,6 @@
  ],
  "week_ahead": [
   {
-   "date": "2026-11-25",
-   "week": 2,
-   "location": "New York (Thanksgiving)",
-   "run": null,
-   "cross": {
-    "type": "walk",
-    "minutes": 35,
-    "title": "Brisk walk 35 min",
-    "details": "Outdoor brisk walk (hills if you have them). Too icy? Stair climbing or an easy home cardio circuit."
-   },
-   "lift": {
-    "focus": "Shoulders & Arms",
-    "home": true,
-    "exercises": [
-     "Pike push-ups \u2014 4 \u00d7 8\u201312",
-     "Backpack overhead press \u2014 3 \u00d7 12",
-     "Lateral raises (water jugs or band) \u2014 3 \u00d7 15",
-     "Backpack/band curls \u2014 4 \u00d7 12\u201315",
-     "Chair dips \u2014 3 \u00d7 12\u201315",
-     "Diamond push-ups \u2014 3 \u00d7 10\u201312"
-    ],
-    "details": "At home \u00b7 ~40 min"
-   },
-   "note": "",
-   "actual": {
-    "run_miles": 0,
-    "runs": [],
-    "lift": true,
-    "cross": true
-   },
-   "status": "done"
-  },
-  {
    "date": "2026-11-26",
    "week": 2,
    "location": "New York (Thanksgiving)",
@@ -5298,7 +5239,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-27",
@@ -5476,6 +5417,30 @@
     "details": ""
    },
    "note": "Run AM, lift PM.",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-02",
+   "week": 3,
+   "location": "Gainesville",
+   "run": null,
+   "cross": {
+    "type": "bike",
+    "minutes": 40,
+    "title": "Easy bike 40 min",
+    "details": "Conversational / nose-breathing effort."
+   },
+   "lift": {
+    "focus": "Shoulders & Arms",
+    "details": ""
+   },
+   "note": "",
    "actual": {
     "run_miles": 0,
     "runs": [],

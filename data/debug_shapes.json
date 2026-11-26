@@ -135,6 +135,22 @@
    "awakeCount": "int",
    "awakeSleepSeconds": "int",
    "calendarDate": "str",
+   "dailyNapDTOS": [
+    {
+     "calendarDate": "str",
+     "createTimestampGMT": "NoneType",
+     "deviceId": "int",
+     "napEndTimeOffset": "int",
+     "napEndTimestampGMT": "str",
+     "napFeedback": "str",
+     "napSource": "int",
+     "napStartTimeOffset": "int",
+     "napStartTimestampGMT": "str",
+     "napTimeSec": "int",
+     "updateTimestampGMT": "NoneType",
+     "userProfilePK": "int"
+    }
+   ],
    "deepSleepSeconds": "int",
    "deviceRemCapable": "bool",
    "highestRespirationValue": "float",
@@ -257,6 +273,22 @@
    "awakeCount": "int",
    "awakeSleepSeconds": "int",
    "calendarDate": "str",
+   "dailyNapDTOS": [
+    {
+     "calendarDate": "str",
+     "createTimestampGMT": "NoneType",
+     "deviceId": "int",
+     "napEndTimeOffset": "int",
+     "napEndTimestampGMT": "str",
+     "napFeedback": "str",
+     "napSource": "int",
+     "napStartTimeOffset": "int",
+     "napStartTimestampGMT": "str",
+     "napTimeSec": "int",
+     "updateTimestampGMT": "NoneType",
+     "userProfilePK": "int"
+    }
+   ],
    "deepSleepSeconds": "int",
    "deviceRemCapable": "bool",
    "highestRespirationValue": "float",
