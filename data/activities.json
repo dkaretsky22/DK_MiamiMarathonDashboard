@@ -4916,5 +4916,28 @@
   "startTimeLocal": "2026-11-25 15:48:23",
   "trainingEffectLabel": "RECOVERY",
   "type": "walking"
+ },
+ {
+  "activityId": 25209985081,
+  "activityName": "Treadmill Running",
+  "activityTrainingLoad": 93.18408203125,
+  "aerobicTrainingEffect": 3.299999952316284,
+  "anaerobicTrainingEffect": 0.0,
+  "averageHR": 152.0,
+  "averageRunningCadenceInStepsPerMinute": 164.421875,
+  "averageSpeed": 3.078000068664551,
+  "avgStrideLength": 98.55999755859375,
+  "calories": 445.0,
+  "distance": 6469.56005859375,
+  "duration": 2101.97705078125,
+  "elapsedDuration": 2131.193115234375,
+  "lapCount": 4,
+  "maxHR": 170.0,
+  "maxSpeed": 2.9600000381469727,
+  "movingDuration": 2091.6680297851562,
+  "parentType": 1,
+  "startTimeLocal": "2026-11-26 14:50:29",
+  "trainingEffectLabel": "AEROBIC_BASE",
+  "type": "treadmill_running"
  }
 ]

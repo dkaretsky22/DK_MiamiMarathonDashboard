@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T10:27-05:00",
+ "generated_at": "2026-11-26T18:58-05:00",
  "today": "2026-11-26",
  "goal": {
   "race": "Miami Marathon",
@@ -54,12 +54,14 @@
   "lift": null,
   "note": "Thanksgiving \u2014 Turkey Trot is fine at steady effort, not a race.",
   "actual": {
-   "run_miles": 0,
-   "runs": [],
+   "run_miles": 4.02,
+   "runs": [
+    25209985081
+   ],
    "lift": false,
    "cross": false
   },
-  "status": "today"
+  "status": "done"
  },
  "tomorrow_plan": {
   "date": "2026-11-27",
@@ -98,7 +100,7 @@
   "start": "2026-11-23",
   "end": "2026-11-29",
   "planned_miles": 23.0,
-  "actual_miles": 8.7,
+  "actual_miles": 12.7,
   "long_planned": 8,
   "long_actual": 5.6,
   "lifts": 3,
@@ -259,12 +261,14 @@
     "lift": null,
     "note": "Thanksgiving \u2014 Turkey Trot is fine at steady effort, not a race.",
     "actual": {
-     "run_miles": 0,
-     "runs": [],
+     "run_miles": 4.02,
+     "runs": [
+      25209985081
+     ],
      "lift": false,
      "cross": false
     },
-    "status": "today"
+    "status": "done"
    },
    {
     "date": "2026-11-27",
@@ -391,7 +395,7 @@
    "start": "2026-11-23",
    "end": "2026-11-29",
    "planned_miles": 23.0,
-   "actual_miles": 8.7,
+   "actual_miles": 12.7,
    "long_planned": 8,
    "long_actual": 5.6,
    "lifts": 3,
@@ -864,12 +868,14 @@
    "lift": null,
    "note": "Thanksgiving \u2014 Turkey Trot is fine at steady effort, not a race.",
    "actual": {
-    "run_miles": 0,
-    "runs": [],
+    "run_miles": 4.02,
+    "runs": [
+     25209985081
+    ],
     "lift": false,
     "cross": false
    },
-   "status": "today"
+   "status": "done"
   },
   {
    "date": "2026-11-27",
@@ -3180,8 +3186,8 @@
   "miles_done": 24.8
  },
  "totals": {
-  "block_miles": 24.8,
-  "block_runs": 6,
+  "block_miles": 28.8,
+  "block_runs": 7,
   "longest": 6.1
  },
  "prediction": {
@@ -3990,6 +3996,13 @@
    "pace": "9:00",
    "hr": 140.0,
    "ef_avg": 1.183
+  },
+  {
+   "date": "2026-11-26",
+   "ef": 1.215,
+   "pace": "8:43",
+   "hr": 152.0,
+   "ef_avg": 1.193
   }
  ],
  "recovery": {
@@ -4112,7 +4125,7 @@
    },
    {
     "date": "2026-11-26",
-    "v": 50
+    "v": 49
    }
   ],
   "hrv": [
@@ -4231,6 +4244,10 @@
    {
     "date": "2026-11-25",
     "v": 45
+   },
+   {
+    "date": "2026-11-26",
+    "v": 56
    }
   ],
   "sleep_hours": [
@@ -4349,6 +4366,10 @@
    {
     "date": "2026-11-25",
     "v": 6.35
+   },
+   {
+    "date": "2026-11-26",
+    "v": 6.6
    }
   ],
   "sleep_score": [
@@ -4467,11 +4488,31 @@
    {
     "date": "2026-11-25",
     "v": 73
+   },
+   {
+    "date": "2026-11-26",
+    "v": 45
    }
   ],
   "flags": []
  },
  "recent_runs": [
+  {
+   "id": 25209985081,
+   "date": "2026-11-26",
+   "name": "Treadmill Running",
+   "type": "treadmill_running",
+   "miles": 4.02,
+   "time": "35:02",
+   "pace": "8:43",
+   "pace_s": 523,
+   "hr": 152.0,
+   "max_hr": 170.0,
+   "elev_ft": 0,
+   "cadence": 164.421875,
+   "te": 3.299999952316284,
+   "label": "AEROBIC_BASE"
+  },
   {
    "id": 25188679291,
    "date": "2026-11-24",
@@ -5095,27 +5136,11 @@
    "cadence": 169.5625,
    "te": 3.9000000953674316,
    "label": "LACTATE_THRESHOLD"
-  },
-  {
-   "id": 24389684251,
-   "date": "2026-09-16",
-   "name": "Gainesville Running",
-   "type": "running",
-   "miles": 3.1,
-   "time": "21:41",
-   "pace": "6:59",
-   "pace_s": 419,
-   "hr": 180.0,
-   "max_hr": 191.0,
-   "elev_ft": 13,
-   "cadence": 172.84375,
-   "te": 3.5999999046325684,
-   "label": "VO2MAX"
   }
  ],
  "peak_long": 20,
  "plan_total": 330.2,
- "streak": 5,
+ "streak": 6,
  "prs": [
   {
    "label": "Longest run",
@@ -5238,12 +5263,14 @@
    "lift": null,
    "note": "Thanksgiving \u2014 Turkey Trot is fine at steady effort, not a race.",
    "actual": {
-    "run_miles": 0,
-    "runs": [],
+    "run_miles": 4.02,
+    "runs": [
+     25209985081
+    ],
     "lift": false,
     "cross": false
    },
-   "status": "today"
+   "status": "done"
   },
   {
    "date": "2026-11-27",
@@ -5455,23 +5482,23 @@
   }
  ],
  "road": {
-  "miles": 24.8,
+  "miles": 28.8,
   "total": 330.2
  },
  "last_activity": {
-  "id": 25188679291,
-  "date": "2026-11-24",
-  "name": "Rye Brook Running",
-  "type": "running",
-  "miles": 5.62,
-  "time": "50:33",
-  "pace": "9:00",
-  "pace_s": 540,
-  "hr": 140.0,
-  "max_hr": 164.0,
-  "elev_ft": 334,
-  "cadence": 167.234375,
-  "te": 3.0,
+  "id": 25209985081,
+  "date": "2026-11-26",
+  "name": "Treadmill Running",
+  "type": "treadmill_running",
+  "miles": 4.02,
+  "time": "35:02",
+  "pace": "8:43",
+  "pace_s": 523,
+  "hr": 152.0,
+  "max_hr": 170.0,
+  "elev_ft": 0,
+  "cadence": 164.421875,
+  "te": 3.299999952316284,
   "label": "AEROBIC_BASE"
  },
  "sync_warnings": [],
