@@ -130,7 +130,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -173,7 +179,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -216,7 +228,13 @@
             "kind": "long",
             "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy long run. Max cushion keeps your legs fresh and saves Megablast miles."
+        }
       },
       "cross": null,
       "lift": null,
@@ -257,7 +275,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -301,7 +325,13 @@
             "kind": "stride",
             "feel": "Smooth and fast (\u2248mile-race effort), relaxed shoulders. Not a sprint."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -363,7 +393,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": null,
@@ -386,7 +422,13 @@
             "kind": "long",
             "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy long run. Max cushion keeps your legs fresh and saves Megablast miles."
+        }
       },
       "cross": null,
       "lift": null,
@@ -409,7 +451,13 @@
             "kind": "recovery",
             "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -466,7 +514,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -509,7 +563,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "megablast",
+          "name": "ASICS Megablast",
+          "short": "Megablast",
+          "why": "Faster work. The Megablast's springy foam is built for tempo and marathon-pace running."
+        }
       },
       "cross": null,
       "lift": {
@@ -552,7 +612,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -578,7 +644,13 @@
             "kind": "long",
             "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy long run. Max cushion keeps your legs fresh and saves Megablast miles."
+        }
       },
       "cross": null,
       "lift": null,
@@ -601,7 +673,13 @@
             "kind": "recovery",
             "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -636,7 +714,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -679,7 +763,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "megablast",
+          "name": "ASICS Megablast",
+          "short": "Megablast",
+          "why": "Faster work. The Megablast's springy foam is built for tempo and marathon-pace running."
+        }
       },
       "cross": null,
       "lift": {
@@ -722,7 +812,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -755,7 +851,13 @@
             "kind": "mp",
             "feel": "Goal marathon pace: controlled, rhythmic, short phrases only. RPE 5\u20136/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "megablast",
+          "name": "ASICS Megablast",
+          "short": "Megablast",
+          "why": "Marathon-pace miles in this run. Wear the faster, lighter shoe."
+        }
       },
       "cross": null,
       "lift": null,
@@ -778,7 +880,13 @@
             "kind": "recovery",
             "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -827,7 +935,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "megablast",
+          "name": "ASICS Megablast",
+          "short": "Megablast",
+          "why": "Faster work. The Megablast's springy foam is built for tempo and marathon-pace running."
+        }
       },
       "cross": null,
       "lift": {
@@ -862,7 +976,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -897,7 +1017,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -959,7 +1085,13 @@
             "kind": "long",
             "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy long run. Max cushion keeps your legs fresh and saves Megablast miles."
+        }
       },
       "cross": null,
       "lift": null,
@@ -982,7 +1114,13 @@
             "kind": "recovery",
             "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -1017,7 +1155,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -1066,7 +1210,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "megablast",
+          "name": "ASICS Megablast",
+          "short": "Megablast",
+          "why": "Faster work. The Megablast's springy foam is built for tempo and marathon-pace running."
+        }
       },
       "cross": null,
       "lift": {
@@ -1128,7 +1278,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -1173,7 +1329,13 @@
             "kind": "long",
             "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy long run. Max cushion keeps your legs fresh and saves Megablast miles."
+        }
       },
       "cross": null,
       "lift": null,
@@ -1196,7 +1358,13 @@
             "kind": "recovery",
             "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -1231,7 +1399,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -1283,7 +1457,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "megablast",
+          "name": "ASICS Megablast",
+          "short": "Megablast",
+          "why": "Faster work. The Megablast's springy foam is built for tempo and marathon-pace running."
+        }
       },
       "cross": null,
       "lift": {
@@ -1345,7 +1525,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -1397,7 +1583,13 @@
             "kind": "mp",
             "feel": "Goal marathon pace: controlled, rhythmic, short phrases only. RPE 5\u20136/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "megablast",
+          "name": "ASICS Megablast",
+          "short": "Megablast",
+          "why": "Race-shoe test: 20 mi in the shoe you'll race in, to make sure it feels good past mile 18."
+        }
       },
       "cross": null,
       "lift": null,
@@ -1420,7 +1612,13 @@
             "kind": "recovery",
             "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -1455,7 +1653,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -1507,7 +1711,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "megablast",
+          "name": "ASICS Megablast",
+          "short": "Megablast",
+          "why": "Faster work. The Megablast's springy foam is built for tempo and marathon-pace running."
+        }
       },
       "cross": null,
       "lift": {
@@ -1543,7 +1753,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -1578,7 +1794,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -1630,7 +1852,13 @@
             "kind": "mp",
             "feel": "Goal marathon pace: controlled, rhythmic, short phrases only. RPE 5\u20136/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "megablast",
+          "name": "ASICS Megablast",
+          "short": "Megablast",
+          "why": "Marathon-pace miles in this run. Wear the faster, lighter shoe."
+        }
       },
       "cross": null,
       "lift": null,
@@ -1665,7 +1893,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -1705,7 +1939,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "megablast",
+          "name": "ASICS Megablast",
+          "short": "Megablast",
+          "why": "Faster work. The Megablast's springy foam is built for tempo and marathon-pace running."
+        }
       },
       "cross": null,
       "lift": {
@@ -1748,7 +1988,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -1783,7 +2029,13 @@
             "kind": "stride",
             "feel": "Smooth and fast (\u2248mile-race effort), relaxed shoulders. Not a sprint."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": null,
@@ -1820,7 +2072,13 @@
             "kind": "tempo",
             "feel": "Comfortably hard: 3\u20134 word answers, steady breathing. Even splits \u2014 don't start fast. RPE 7/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "megablast",
+          "name": "ASICS Megablast",
+          "short": "Megablast",
+          "why": "Race day. Lightest, most energetic shoe you've already broken in."
+        }
       },
       "cross": null,
       "lift": null,
@@ -1855,7 +2113,13 @@
             "kind": "recovery",
             "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -1898,7 +2162,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "megablast",
+          "name": "ASICS Megablast",
+          "short": "Megablast",
+          "why": "Faster work. The Megablast's springy foam is built for tempo and marathon-pace running."
+        }
       },
       "cross": null,
       "lift": {
@@ -1941,7 +2211,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -1967,7 +2243,13 @@
             "kind": "long",
             "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy long run. Max cushion keeps your legs fresh and saves Megablast miles."
+        }
       },
       "cross": null,
       "lift": null,
@@ -1990,7 +2272,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -2025,7 +2313,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -2065,7 +2359,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "megablast",
+          "name": "ASICS Megablast",
+          "short": "Megablast",
+          "why": "Faster work. The Megablast's springy foam is built for tempo and marathon-pace running."
+        }
       },
       "cross": null,
       "lift": null,
@@ -2088,7 +2388,13 @@
             "kind": "easy",
             "feel": "Conversational \u2014 you can speak in full sentences. RPE 3\u20134/10. Slow down for heat and hills."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": {
@@ -2123,7 +2429,13 @@
             "kind": "stride",
             "feel": "Smooth and fast (\u2248mile-race effort), relaxed shoulders. Not a sprint."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": null,
@@ -2164,7 +2476,13 @@
             "kind": "stride",
             "feel": "Smooth and fast (\u2248mile-race effort), relaxed shoulders. Not a sprint."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "vomero",
+          "name": "Nike Vomero Plus",
+          "short": "Vomero+",
+          "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+        }
       },
       "cross": null,
       "lift": null,
@@ -2201,7 +2519,13 @@
             "kind": "race",
             "feel": "Race effort, but patient \u2014 even splits win marathons."
           }
-        ]
+        ],
+        "shoe": {
+          "key": "megablast",
+          "name": "ASICS Megablast",
+          "short": "Megablast",
+          "why": "Race day. Lightest, most energetic shoe you've already broken in."
+        }
       },
       "cross": null,
       "lift": null,

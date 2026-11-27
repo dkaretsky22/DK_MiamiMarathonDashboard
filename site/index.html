@@ -162,6 +162,9 @@ details.pg[open] .hint .arr{transform:rotate(90deg)}.hint .arr{display:inline-bl
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.chips span{font-size:12px;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:8px;padding:4px 8px;color:var(--ink-2)}
 .chips b{color:var(--ink)}
 footer{margin-top:30px;color:var(--ink-3);font-size:12px;text-align:center}
+.shoe{display:inline-flex;white-space:nowrap;align-items:center;gap:6px;margin-top:5px;font:600 12px Inter;padding:3px 9px;border-radius:99px;border:1px solid var(--line-2);background:rgba(255,255,255,.05);color:var(--ink)}
+.shoe.s-megablast,.shoe.s-vaporfly{border-color:rgba(250,70,22,.55);background:rgba(250,70,22,.12)}
+.shoe-why{display:block;font-size:12px;color:var(--ink-3);margin-top:3px}
 .demo{background:var(--orange);color:#fff;font:700 11px Inter;padding:2px 8px;border-radius:6px;margin-left:8px;vertical-align:4px}
 </style>
 </head>
@@ -259,10 +262,21 @@ function guide(r){
 }
 
 /* ---------- day rendering ---------- */
+function shoeTag(r,why){const sh=r&&r.shoe;if(!sh)return'';
+  return`<br><span class="shoe s-${esc(sh.key)}">👟 ${esc(sh.name)}</span>${why?`<span class="shoe-why">${esc(sh.why)}</span>`:''}`}
+function shoeCard(){
+  const t={};O.days.forEach(d=>{const sh=d.run&&d.run.shoe;if(!sh)return;const x=t[sh.key]||(t[sh.key]={name:sh.name,key:sh.key,plan:0,done:0,runs:0});
+    x.plan+=d.run.miles;x.runs++;if(d.date<=O.today)x.done+=(d.actual&&d.actual.run_miles)||0});
+  const r=Object.values(t).sort((a,b)=>b.plan-a.plan);if(!r.length)return'';
+  return`<div class="card" style="margin-bottom:10px"><h2>👟 Shoe rotation</h2>
+    <p class="sub">Vomero Plus for easy days, recovery runs and easy long runs. Megablast for tempo, intervals, marathon-pace work and the race.</p>
+    <div class="scroll"><table><thead><tr><th>Shoe</th><th class="num">Runs</th><th class="num">Block miles (plan)</th><th class="num">Logged so far*</th></tr></thead><tbody>
+    ${r.map(x=>`<tr><td><span class="shoe s-${esc(x.key)}">${esc(x.name)}</span></td><td class="num">${x.runs}</td><td class="num"><b>${Math.round(x.plan)}</b></td><td class="num">${Math.round(x.done*10)/10}</td></tr>`).join('')}</tbody></table></div>
+    <p class="sub" style="margin-bottom:0">*Counts logged miles toward the shoe the plan says to wear that day. Most daily trainers last about 300–500 mi.</p></div>`}
 function items(d){
   if(!d)return'<div class="item"><div class="ic">📅</div><div><b>Before the training block</b><span>Plan starts Mon, Nov 16.</span></div></div>';
   const o=[];
-  if(d.run)o.push(`<details class="pg"><summary><div class="item"><div class="ic">${ICON[d.run.type]||'🏃'}</div><div><b>${esc(d.run.title)}${d.date<=O.today?pill(d.status):''}</b><span>${esc(d.run.details)}</span>${d.actual.run_miles?`<span> · Logged <b style="display:inline">${d.actual.run_miles} mi</b></span>`:''}<br><span class="hint"><span class="arr">▸</span> Pace guide</span></div></div></summary>${guide(d.run)}</details>`);
+  if(d.run)o.push(`<details class="pg"><summary><div class="item"><div class="ic">${ICON[d.run.type]||'🏃'}</div><div><b>${esc(d.run.title)}${d.date<=O.today?pill(d.status):''}</b><span>${esc(d.run.details)}</span>${shoeTag(d.run,true)}${d.actual.run_miles?`<span> · Logged <b style="display:inline">${d.actual.run_miles} mi</b></span>`:''}<br><span class="hint"><span class="arr">▸</span> Pace guide</span></div></div></summary>${guide(d.run)}</details>`);
   if(d.cross)o.push(`<div class="item"><div class="ic">${ICON[d.cross.type]}</div><div><b>${esc(d.cross.title)}${d.actual.cross?'<span class="pill done">✓ Logged</span>':''}</b><span>${esc(d.cross.details)}</span></div></div>`);
   if(d.lift&&d.lift.exercises)o.push(`<details class="pg"><summary><div class="item"><div class="ic">🏠</div><div><b>Home lift · ${esc(d.lift.focus)}${d.actual.lift?'<span class="pill done">✓ Logged</span>':''}</b><span>${esc(d.lift.details)}</span><br><span class="hint"><span class="arr">▸</span> Workout</span></div></div></summary>
     <div class="guide"><h3>At-home workout · ~40 min</h3><ol style="margin:6px 0 0;padding-left:20px">${d.lift.exercises.map(e=>`<li style="margin:5px 0">${esc(e)}</li>`).join('')}</ol>
@@ -459,8 +473,8 @@ function runs(){
     <tbody>${O.recent_runs.map(r=>`<tr><td style="white-space:nowrap">${dn(r.date)} ${md(r.date)}</td><td>${esc(r.name)}</td><td class="num"><b>${r.miles}</b></td><td class="num">${r.time}</td><td class="num">${r.pace}</td><td class="num">${r.hr?Math.round(r.hr):'–'}</td><td class="num">${r.elev_ft}</td><td class="num">${r.cadence?Math.round(r.cadence):'–'}</td><td class="num">${r.te??'–'}</td></tr>`).join('')}</tbody></table></div></div>`;
 }
 function plan(){
-  return O.weeks.map(w=>`<details class="card ${w.is_current?'':''}" style="margin-bottom:10px" ${w.is_current?'open':''}><summary><span class="disp" style="font-size:16px">Week ${w.week} · ${esc(w.label)}</span> <span class="sub">${md(w.start)}–${md(w.end)} · ${esc(w.location)} · ${w.planned_miles} mi${w.is_past||w.is_current?` · actual ${w.actual_miles}`:''}</span>${w.is_current?' <span class="pill o">This week</span>':''}</summary>
-    <div class="scroll"><table><tbody>${O.days.filter(d=>d.week===w.week).map(d=>`<tr class="${d.date===O.today?'cur':''}"><td style="white-space:nowrap">${dn(d.date)} ${md(d.date)}</td><td>${d.run?`${ICON[d.run.type]||''} ${esc(d.run.title)}${d.date<=O.today?pill(d.status):''}`:'<span class="muted">Rest from running</span>'}</td><td class="muted">${d.cross?esc(d.cross.title):''}</td><td class="muted">${d.lift?'🏋️ '+esc(d.lift.focus):''}</td></tr>`).join('')}</tbody></table></div></details>`).join('')
+  return shoeCard()+O.weeks.map(w=>`<details class="card ${w.is_current?'':''}" style="margin-bottom:10px" ${w.is_current?'open':''}><summary><span class="disp" style="font-size:16px">Week ${w.week} · ${esc(w.label)}</span> <span class="sub">${md(w.start)}–${md(w.end)} · ${esc(w.location)} · ${w.planned_miles} mi${w.is_past||w.is_current?` · actual ${w.actual_miles}`:''}</span>${w.is_current?' <span class="pill o">This week</span>':''}</summary>
+    <div class="scroll"><table><tbody>${O.days.filter(d=>d.week===w.week).map(d=>`<tr class="${d.date===O.today?'cur':''}"><td style="white-space:nowrap">${dn(d.date)} ${md(d.date)}</td><td>${d.run?`${ICON[d.run.type]||''} ${esc(d.run.title)}${d.date<=O.today?pill(d.status):''}${d.run.shoe?` <span class="muted" style="font-size:12px">· 👟 ${esc(d.run.shoe.short)}</span>`:''}`:'<span class="muted">Rest from running</span>'}</td><td class="muted">${d.cross?esc(d.cross.title):''}</td><td class="muted">${d.lift?'🏋️ '+esc(d.lift.focus):''}</td></tr>`).join('')}</tbody></table></div></details>`).join('')
   +`<p class="sub">Paces — easy ${O.paces.easy}, long ${O.paces.long||O.paces.easy}, marathon ${O.paces.mp}, tempo ${O.paces.tempo} per mile.</p>`;
 }
 

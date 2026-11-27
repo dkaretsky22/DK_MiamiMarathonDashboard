@@ -271,6 +271,44 @@ def add_steps(r):
     return r
 
 
+# ---------- shoe rotation ----------
+# Vomero Plus = daily trainer (easy, recovery, easy long runs). Megablast = workout / race-pace shoe.
+# Races default to the Megablast; set RACE_SHOE = "vaporfly" if you buy Vaporfly 4s (break them in on the
+# Jan 9 dress-rehearsal long run).
+SHOES = {
+    "vomero": {"key": "vomero", "name": "Nike Vomero Plus", "short": "Vomero+"},
+    "megablast": {"key": "megablast", "name": "ASICS Megablast", "short": "Megablast"},
+    "vaporfly": {"key": "vaporfly", "name": "Nike Vaporfly 4", "short": "Vaporfly"},
+}
+RACE_SHOE = "megablast"
+# long runs that get the faster shoe: race-pace finishes, plus the 20-miler as a race-shoe test
+FAST_LONG = {"Long run 13 mi", "Long run 15 mi", "Long run 20 mi"}
+
+
+def shoe_for(r):
+    t, title = r["type"], r["title"]
+    if t == "race":
+        return RACE_SHOE, "Race day. Lightest, most energetic shoe you've already broken in."
+    if t == "workout":
+        return "megablast", "Faster work. The Megablast's springy foam is built for tempo and marathon-pace running."
+    if t == "long" and title in FAST_LONG:
+        if title == "Long run 15 mi" and RACE_SHOE != "megablast":
+            return RACE_SHOE, "Race dress rehearsal: wear exactly what you'll race in."
+        why = ("Race-shoe test: 20 mi in the shoe you'll race in, to make sure it feels good past mile 18."
+               if title == "Long run 20 mi" else "Marathon-pace miles in this run. Wear the faster, lighter shoe.")
+        return "megablast", why
+    if t == "long":
+        return "vomero", "Easy long run. Max cushion keeps your legs fresh and saves Megablast miles."
+    return "vomero", "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+
+
+def add_shoe(r):
+    if r:
+        key, why = shoe_for(r)
+        r["shoe"] = dict(SHOES[key], why=why)
+    return r
+
+
 def build():
     days = []
     weeks = []
@@ -279,7 +317,7 @@ def build():
         wk_miles = 0.0
         for d in range(7):
             run_, cross, lift_, note = sched.get(d, (None, None, None, ""))
-            run_ = add_steps(run_)
+            run_ = add_shoe(add_steps(run_))
             day = wk_start + timedelta(days=d)
             cross, lift_ = homeify(day, cross, lift_)
             miles = run_["miles"] if run_ else 0
@@ -346,7 +384,8 @@ def build_ics(plan, from_week=1, path=None):
                 hhmm, mins = TIMES["run_weekend" if weekend else "run_weekday"]
                 mins = max(mins, int(r["miles"] * 11) + 10)
                 summ = f"🏃 {r['title']}"
-            evs.append(_vevent(f"{d['date']}-run", day, hhmm, mins, summ, "\n".join(x for x in [r["details"], d["note"]] if x)))
+            shoe = f"👟 {r['shoe']['name']}" if r.get("shoe") else ""
+            evs.append(_vevent(f"{d['date']}-run", day, hhmm, mins, summ, "\n".join(x for x in [r["details"], shoe, d["note"]] if x)))
         if c:
             icon = "🚴" if c["type"] == "bike" else "🚶"
             evs.append(_vevent(f"{d['date']}-cross", day, TIMES["cross"][0], c["minutes"] + 15, f"{icon} {c['title']}", c["details"]))
