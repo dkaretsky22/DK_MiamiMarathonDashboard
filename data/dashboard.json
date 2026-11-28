@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-27T23:26-05:00",
- "today": "2026-11-27",
+ "generated_at": "2026-11-28T04:23-05:00",
+ "today": "2026-11-28",
  "goal": {
   "race": "Miami Marathon",
   "race_date": "2027-01-31",
@@ -26,28 +26,12 @@
   "interval": "7:15\u20137:25"
  },
  "countdown": {
-  "race_days": 65,
-  "half_days": 50,
+  "race_days": 64,
+  "half_days": 49,
   "week": 2,
   "weeks_total": 11
  },
  "today_plan": {
-  "date": "2026-11-27",
-  "week": 2,
-  "location": "New York (Thanksgiving)",
-  "run": null,
-  "cross": null,
-  "lift": null,
-  "note": "Sick \u2014 rest. Long run moved to Saturday.",
-  "actual": {
-   "run_miles": 0,
-   "runs": [],
-   "lift": false,
-   "cross": false
-  },
-  "status": "today"
- },
- "tomorrow_plan": {
   "date": "2026-11-28",
   "week": 2,
   "location": "New York (Thanksgiving)",
@@ -75,6 +59,54 @@
   "cross": null,
   "lift": null,
   "note": "Moved from Friday (sick). Take it easy \u2014 back off if you still feel run-down.",
+  "actual": {
+   "run_miles": 0,
+   "runs": [],
+   "lift": false,
+   "cross": false
+  },
+  "status": "today"
+ },
+ "tomorrow_plan": {
+  "date": "2026-11-29",
+  "week": 2,
+  "location": "New York (Thanksgiving)",
+  "run": {
+   "type": "recovery",
+   "miles": 3,
+   "title": "Recovery 3 mi",
+   "details": "Very easy, 9:45+/mi. Shake out the long run.",
+   "steps": [
+    {
+     "label": "Recovery run",
+     "miles": 3,
+     "pace": "9:45+",
+     "kind": "recovery",
+     "feel": "Very easy \u2014 slower than you think. RPE 2\u20133/10."
+    }
+   ],
+   "shoe": {
+    "key": "vomero",
+    "name": "Nike Vomero Plus",
+    "short": "Vomero+",
+    "why": "Easy day. Cushioned daily trainer. Keep the Megablast for faster days."
+   }
+  },
+  "cross": null,
+  "lift": {
+   "focus": "Chest, Tris & Shoulders",
+   "home": true,
+   "exercises": [
+    "Push-ups \u2014 4 \u00d7 max (stop 2 short)",
+    "Pike push-ups \u2014 3 \u00d7 10",
+    "Close-grip push-ups \u2014 3 \u00d7 12",
+    "Chair dips \u2014 3 \u00d7 15",
+    "Lateral raises (jugs or band) \u2014 3 \u00d7 15",
+    "Plank shoulder taps \u2014 3 \u00d7 20"
+   ],
+   "details": "At home \u00b7 ~40 min"
+  },
+  "note": "Optional run (moved from Sat) + lift only if feeling OK. Travel back to Gainesville.",
   "actual": {
    "run_miles": 0,
    "runs": [],
@@ -292,7 +324,7 @@
      "lift": false,
      "cross": false
     },
-    "status": "today"
+    "status": "rest"
    },
    {
     "date": "2026-11-28",
@@ -328,7 +360,7 @@
      "lift": false,
      "cross": false
     },
-    "status": "planned"
+    "status": "today"
    },
    {
     "date": "2026-11-29",
@@ -934,7 +966,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "today"
+   "status": "rest"
   },
   {
    "date": "2026-11-28",
@@ -970,7 +1002,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-29",
@@ -3928,7 +3960,7 @@
     "fitness_seconds": 12742
    },
    {
-    "date": "2026-11-27",
+    "date": "2026-11-28",
     "seconds": 12901,
     "fitness_seconds": 12766,
     "source": "Today"
@@ -4326,10 +4358,6 @@
  "recovery": {
   "resting_hr": [
    {
-    "date": "2026-10-29",
-    "v": 48
-   },
-   {
     "date": "2026-10-30",
     "v": 45
    },
@@ -4444,13 +4472,13 @@
    {
     "date": "2026-11-27",
     "v": 45
+   },
+   {
+    "date": "2026-11-28",
+    "v": 50
    }
   ],
   "hrv": [
-   {
-    "date": "2026-10-29",
-    "v": 48
-   },
    {
     "date": "2026-10-30",
     "v": 57
@@ -4570,10 +4598,6 @@
   ],
   "sleep_hours": [
    {
-    "date": "2026-10-29",
-    "v": 4.3
-   },
-   {
     "date": "2026-10-30",
     "v": 8.38
    },
@@ -4691,10 +4715,6 @@
    }
   ],
   "sleep_score": [
-   {
-    "date": "2026-10-29",
-    "v": 40
-   },
    {
     "date": "2026-10-30",
     "v": 68
@@ -5559,22 +5579,6 @@
  ],
  "week_ahead": [
   {
-   "date": "2026-11-27",
-   "week": 2,
-   "location": "New York (Thanksgiving)",
-   "run": null,
-   "cross": null,
-   "lift": null,
-   "note": "Sick \u2014 rest. Long run moved to Saturday.",
-   "actual": {
-    "run_miles": 0,
-    "runs": [],
-    "lift": false,
-    "cross": false
-   },
-   "status": "today"
-  },
-  {
    "date": "2026-11-28",
    "week": 2,
    "location": "New York (Thanksgiving)",
@@ -5608,7 +5612,7 @@
     "lift": false,
     "cross": false
    },
-   "status": "planned"
+   "status": "today"
   },
   {
    "date": "2026-11-29",
@@ -5807,6 +5811,42 @@
     "focus": "Back & Bis",
     "details": ""
    },
+   "note": "",
+   "actual": {
+    "run_miles": 0,
+    "runs": [],
+    "lift": false,
+    "cross": false
+   },
+   "status": "planned"
+  },
+  {
+   "date": "2026-12-04",
+   "week": 3,
+   "location": "Gainesville",
+   "run": {
+    "type": "long",
+    "miles": 10,
+    "title": "Long run 10 mi",
+    "details": "Easy, steady effort (9:00\u20139:30/mi). Practice fueling (gel every ~45 min once over 10 mi).",
+    "steps": [
+     {
+      "label": "Long run",
+      "miles": 10,
+      "pace": "9:00\u20139:30",
+      "kind": "long",
+      "feel": "Relaxed and steady. Should feel like you could keep going at the end. RPE 4/10."
+     }
+    ],
+    "shoe": {
+     "key": "vomero",
+     "name": "Nike Vomero Plus",
+     "short": "Vomero+",
+     "why": "Easy long run. Max cushion keeps your legs fresh and saves Megablast miles."
+    }
+   },
+   "cross": null,
+   "lift": null,
    "note": "",
    "actual": {
     "run_miles": 0,
