@@ -83,9 +83,9 @@ WEEKS = [
         1: (run("easy", 5, "Easy 5 mi + 6 strides", "Easy pace, then 6 × 20 sec quick & relaxed."), None, lift(LEGS), ""),
         2: (None, bike(35), lift(SA), ""),
         3: (easy(4), None, None, "Thanksgiving — Turkey Trot is fine at steady effort, not a race."),
-        4: (long_(8), None, None, ""),
-        5: (rec(3), None, lift(BB), ""),
-        6: (None, None, lift(CTS), "Travel back to Gainesville."),
+        4: (None, None, None, "Sick — rest. Long run moved to Saturday."),
+        5: (long_(8), None, None, "Moved from Friday (sick). Take it easy — back off if you still feel run-down."),
+        6: (rec(3), None, lift(CTS), "Optional run (moved from Sat) + lift only if feeling OK. Travel back to Gainesville."),
     }),
     ("Build 1", "Gainesville", {
         0: (easy(4), None, lift(CB), ""),
